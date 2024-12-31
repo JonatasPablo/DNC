@@ -1,0 +1,71 @@
+OBTENÇÃO DE DADOS COM O VERBO GET
+Introdução
+Nesta aula, vamos aprender sobre a obtenção de dados utilizando o verbo GET do protocolo HTTP. Para fazer isso, utilizaremos algumas ferramentas que nos permitem testar APIs antes de implementá-las no código.
+
+Ferramentas para testar APIs
+As principais ferramentas que podemos usar para testar APIs são:
+
+Insomnia: interface gráfica que permite realizar requisições HTTP e visualizar as respostas.
+
+Postman: similar ao Insomnia, muito utilizado para testar APIs REST.
+
+Thunder Client: extensão do VS Code que também serve para testar APIs.
+
+Todas essas ferramentas têm a mesma finalidade: enviar requisições HTTP e inspecionar as respostas. Dessa forma, podemos testar uma API antes de implementá-la no código.
+
+Nesta aula, utilizaremos o Insomnia por ser uma ferramenta completa e de fácil uso.
+
+Criando uma collection no Insomnia
+Para começar a testar APIs com o Insomnia, primeiro precisamos criar uma collection (coleção). Isso permite agrupar várias requisições relacionadas a uma mesma API.
+
+Vamos criar uma collection chamada "API" e dentro dela adicionar uma requisição chamada "VSAP". Essa requisição irá consumir a API ViaCEP para buscar informações de CEPs.
+
+Requisição GET com Insomnia
+Agora que temos a requisição VSAP criada, vamos configurá-la:
+
+Cole a URL base da API ViaCEP: https://viacep.com.br/ws/
+
+Como se trata de uma requisição GET, não precisamos definir um body. Apenas a URL é suficiente.
+
+A URL da ViaCEP recebe o CEP direto na path. Então podemos testar com CEPs diferentes apenas alterando o final da URL.
+
+Clique em "Send" para executar a requisição e visualizar a resposta.
+
+Dessa forma muito simples já estamos consumindo uma API real e inspecionando os dados de resposta.
+
+Testando outra API
+Agora vamos testar a API OpenWeather, que fornece dados meteorológicos.
+
+Crie outra requisição chamada "OpenWeather".
+
+Cole a URL: https://api.openweathermap.org/data/2.5/forecast
+
+Diferente da API anterior, agora temos parâmetros de query string (?lat=...).
+
+Podemos alterar esses parâmetros manualmente ou pela interface do Insomnia para obter respostas diferentes.
+
+Teste adicionar o parâmetro "rain" na URL para obter dados de previsão de chuva.
+
+Essa API apresenta mais complexidade, com vários parâmetros possíveis. Testando dessa forma fica muito mais fácil entender como consumi-la.
+
+Implementando as APIs no front-end
+Usando o Insomnia, testamos duas APIs distintas. A primeira recebe o CEP direto na URL, enquanto a segunda utiliza query parameters.
+
+Essas APIs poderão agora ser implementadas no front-end com JavaScript puro ou com frameworks como React e Vue. Como já sabemos exatamente como consumi-las, fica muito mais simples.
+
+No próximo módulo veremos como implementar essas chamadas GET no front-end, exibindo os dados em tela para o usuário.
+
+Conclusão
+Nesta aula aprendemos:
+
+Ferramentas para testar APIs (Insomnia, Postman, Thunder Client)
+
+Como criar collections e requisições no Insomnia
+
+Diferença entre path params e query string params
+
+Testar APIs é fundamental antes de implementá-las no front
+
+Requisições GET simplesmente obtém dados, sem alterar recursos
+
+Agora temos as bases necessárias para consumir APIs diversas no nosso front-end, aumentando muito as possibilidades de aplicações web interativas e valiosas para o usuário.

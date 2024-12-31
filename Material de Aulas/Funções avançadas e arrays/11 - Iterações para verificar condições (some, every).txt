@@ -1,0 +1,4 @@
+Some > O método some verifica se pelo menos um elemento do arry satisfaz uma condição.
+
+Every > O método every verifica se todos os elementos do array satisfazem uma condição.
+

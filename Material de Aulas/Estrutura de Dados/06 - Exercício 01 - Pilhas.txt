@@ -1,0 +1,436 @@
+Material de apoio - https://github.com/EscolaDnc/LP-Exercicios/tree/main/Estrutura%20de%20dados%20-%20Exerc%C3%ADcios
+
+Introdução
+
+As estruturas de dados são fundamentais na programação, permitindo organizar e manipular informações de maneira eficiente. Entre essas estruturas, a pilha se destaca por sua simplicidade e utilidade em diversos cenários. Este ebook explora em detalhes a implementação de pilhas, desde os conceitos básicos até técnicas avançadas de manipulação.
+
+Capítulo 1: Fundamentos de Pilhas
+
+1.1 O que é uma Pilha?
+
+Uma pilha é uma estrutura de dados linear que segue o princípio LIFO (Last In, First Out), ou seja, o último elemento inserido é o primeiro a ser removido. Imagine uma pilha de pratos: você sempre adiciona ou remove pratos do topo.
+
+1.2 Operações Básicas
+
+As principais operações em uma pilha são:
+
+
+Empilhar (Push): Adiciona um elemento no topo da pilha.
+Desempilhar (Pop): Remove o elemento do topo da pilha.
+Topo (Top): Retorna o elemento no topo da pilha sem removê-lo.
+Vazia (Empty): Verifica se a pilha está vazia.
+Cheia (Full): Verifica se a pilha está cheia (em implementações com tamanho fixo).
+
+1.3 Aplicações de Pilhas
+
+Pilhas são utilizadas em diversos cenários, como:
+
+
+Avaliação de expressões matemáticas
+Gerenciamento de chamadas de funções em programas
+Implementação do comando "desfazer" em editores de texto
+Navegação em históricos de páginas web
+
+Capítulo 2: Implementação de Pilhas em Português Estruturado
+
+2.1 Estrutura Básica
+
+Para implementar uma pilha, precisamos definir sua estrutura básica:
+
+constante TAMANHO = 100
+
+tipo Pilha = registro
+itens: vetor[1..TAMANHO] de inteiro
+topo: inteiro
+fim_registro
+
+
+2.2 Inicialização da Pilha
+
+A função de inicialização prepara a pilha para uso:
+
+procedimento inicializa(var p: Pilha)
+inicio
+p.topo <- 0
+fim
+
+
+2.3 Verificação de Pilha Vazia
+
+funcao verifica_vazia(p: Pilha): logico
+inicio
+retorne p.topo = 0
+fim
+
+
+2.4 Verificação de Pilha Cheia
+
+funcao verifica_cheia(p: Pilha): logico
+inicio
+retorne p.topo = TAMANHO
+fim
+
+
+2.5 Empilhamento (Push)
+
+procedimento empilha(var p: Pilha, valor: inteiro)
+inicio
+se nao verifica_cheia(p) entao
+p.topo <- p.topo + 1
+p.itens[p.topo] <- valor
+senao
+escreva("Erro: Pilha cheia")
+fim_se
+fim
+
+
+2.6 Desempilhamento (Pop)
+
+funcao desempilha(var p: Pilha): inteiro
+inicio
+se nao verifica_vazia(p) entao
+p.topo <- p.topo - 1
+retorne p.itens[p.topo + 1]
+senao
+escreva("Erro: Pilha vazia")
+retorne -1 // Valor de erro
+fim_se
+fim
+
+
+2.7 Impressão da Pilha
+
+procedimento imprime(p: Pilha)
+var
+i: inteiro
+inicio
+escreva("Pilha: ")
+para i de 1 ate p.topo faca
+escreva(p.itens[i], " ")
+fim_para
+escreva("\n")
+fim
+
+
+Capítulo 3: Implementação Avançada
+
+3.1 Pilha Dinâmica
+
+A implementação anterior usa um array de tamanho fixo. Uma abordagem mais flexível é usar alocação dinâmica de memória:
+
+tipo No = registro
+valor: inteiro
+proximo: ^No
+fim_registro
+
+tipo PilhaDinamica = registro
+topo: ^No
+fim_registro
+
+procedimento inicializa_dinamica(var p: PilhaDinamica)
+inicio
+p.topo <- nulo
+fim
+
+procedimento empilha_dinamica(var p: PilhaDinamica, valor: inteiro)
+var
+novo: ^No
+inicio
+novo <- novo No
+novo^.valor <- valor
+novo^.proximo <- p.topo
+p.topo <- novo
+fim
+
+funcao desempilha_dinamica(var p: PilhaDinamica): inteiro
+var
+temp: ^No
+valor: inteiro
+inicio
+se p.topo <> nulo entao
+temp <- p.topo
+valor <- temp^.valor
+p.topo <- p.topo^.proximo
+libera(temp)
+retorne valor
+senao
+escreva("Erro: Pilha vazia")
+retorne -1
+fim_se
+fim
+
+
+3.2 Pilha com Capacidade de Redimensionamento
+
+Podemos criar uma pilha que aumenta seu tamanho automaticamente quando necessário:
+
+tipo PilhaRedimensionavel = registro
+itens: ^vetor de inteiro
+capacidade: inteiro
+topo: inteiro
+fim_registro
+
+procedimento inicializa_redimensionavel(var p: PilhaRedimensionavel, capacidade_inicial: inteiro)
+inicio
+p.capacidade <- capacidade_inicial
+p.itens <- novo vetor[1..p.capacidade] de inteiro
+p.topo <- 0
+fim
+
+procedimento redimensiona(var p: PilhaRedimensionavel)
+var
+nova_capacidade: inteiro
+novos_itens: ^vetor de inteiro
+i: inteiro
+inicio
+nova_capacidade <- p.capacidade * 2
+novos_itens <- novo vetor[1..nova_capacidade] de inteiro
+
+para i de 1 ate p.topo faca
+novos_itens[i] <- p.itens[i]
+fim_para
+
+libera(p.itens)
+p.itens <- novos_itens
+p.capacidade <- nova_capacidade
+fim
+
+procedimento empilha_redimensionavel(var p: PilhaRedimensionavel, valor: inteiro)
+inicio
+se p.topo = p.capacidade entao
+redimensiona(p)
+fim_se
+
+p.topo <- p.topo + 1
+p.itens[p.topo] <- valor
+fim
+
+
+Capítulo 4: Otimizações e Boas Práticas
+
+4.1 Gerenciamento de Erros
+
+Em vez de apenas imprimir mensagens de erro, podemos usar exceções ou códigos de retorno para um melhor tratamento de erros:
+
+tipo CodigoErro = (SUCESSO, PILHA_CHEIA, PILHA_VAZIA)
+
+funcao empilha_seguro(var p: Pilha, valor: inteiro): CodigoErro
+inicio
+se verifica_cheia(p) entao
+retorne PILHA_CHEIA
+senao
+p.topo <- p.topo + 1
+p.itens[p.topo] <- valor
+retorne SUCESSO
+fim_se
+fim
+
+funcao desempilha_seguro(var p: Pilha, var valor: inteiro): CodigoErro
+inicio
+se verifica_vazia(p) entao
+retorne PILHA_VAZIA
+senao
+valor <- p.itens[p.topo]
+p.topo <- p.topo - 1
+retorne SUCESSO
+fim_se
+fim
+
+
+4.2 Pilha Genérica
+
+Podemos criar uma pilha que aceita diferentes tipos de dados usando tipos genéricos (se a linguagem suportar):
+
+tipo Elemento = ?T // T é um tipo genérico
+
+tipo PilhaGenerica<T> = registro
+itens: vetor[1..TAMANHO] de T
+topo: inteiro
+fim_registro
+
+procedimento empilha_generico<T>(var p: PilhaGenerica<T>, valor: T)
+inicio
+se nao verifica_cheia(p) entao
+p.topo <- p.topo + 1
+p.itens[p.topo] <- valor
+senao
+escreva("Erro: Pilha cheia")
+fim_se
+fim
+
+
+4.3 Iterador de Pilha
+
+Implementar um iterador para a pilha pode facilitar a travessia dos elementos:
+
+tipo IteradorPilha = registro
+pilha: ^Pilha
+posicao_atual: inteiro
+fim_registro
+
+funcao cria_iterador(p: ^Pilha): IteradorPilha
+var
+it: IteradorPilha
+inicio
+it.pilha <- p
+it.posicao_atual <- 1
+retorne it
+fim
+
+funcao proximo(var it: IteradorPilha): inteiro
+inicio
+se it.posicao_atual <= it.pilha^.topo entao
+retorne it.pilha^.itens[it.posicao_atual]
+it.posicao_atual <- it.posicao_atual + 1
+senao
+retorne -1 // Indica fim da pilha
+fim_se
+fim
+
+
+Capítulo 5: Aplicações Práticas de Pilhas
+
+5.1 Verificação de Parênteses Balanceados
+
+Uma aplicação comum de pilhas é verificar se uma expressão matemática tem parênteses balanceados:
+
+funcao verifica_parenteses(expressao: cadeia): logico
+var
+p: Pilha
+i: inteiro
+c: caractere
+inicio
+inicializa(p)
+para i de 1 ate comprimento(expressao) faca
+c <- expressao[i]
+se c = '(' entao
+empilha(p, 1) // Usamos 1 como marcador
+senao se c = ')' entao
+se verifica_vazia(p) entao
+retorne falso
+senao
+desempilha(p)
+fim_se
+fim_se
+fim_para
+retorne verifica_vazia(p)
+fim
+
+
+5.2 Conversão de Notação Infixa para Pós-fixa
+
+Pilhas são úteis para converter expressões matemáticas da notação infixa (comum) para pós-fixa (notação polonesa reversa):
+
+funcao precedencia(operador: caractere): inteiro
+inicio
+caso operador seja
+'+', '-': retorne 1
+'*', '/': retorne 2
+'^': retorne 3
+senao: retorne 0
+fim_caso
+fim
+
+funcao infixa_para_posfixa(infixa: cadeia): cadeia
+var
+p: Pilha
+posfixa: cadeia
+i: inteiro
+c: caractere
+inicio
+inicializa(p)
+para i de 1 ate comprimento(infixa) faca
+c <- infixa[i]
+se c >= '0' e c <= '9' entao
+posfixa <- posfixa + c
+senao se c = '(' entao
+empilha(p, c)
+senao se c = ')' entao
+enquanto nao verifica_vazia(p) e topo(p) <> '(' faca
+posfixa <- posfixa + desempilha(p)
+fim_enquanto
+se nao verifica_vazia(p) e topo(p) = '(' entao
+desempilha(p)
+fim_se
+senao // c é um operador
+enquanto nao verifica_vazia(p) e precedencia(c) <= precedencia(topo(p)) faca
+posfixa <- posfixa + desempilha(p)
+fim_enquanto
+empilha(p, c)
+fim_se
+fim_para
+
+enquanto nao verifica_vazia(p) faca
+posfixa <- posfixa + desempilha(p)
+fim_enquanto
+
+retorne posfixa
+fim
+
+
+5.3 Avaliação de Expressões Pós-fixas
+
+Após converter para notação pós-fixa, podemos facilmente avaliar a expressão usando uma pilha:
+
+funcao avalia_posfixa(expressao: cadeia): real
+var
+p: Pilha
+i: inteiro
+c: caractere
+operando1, operando2: real
+inicio
+inicializa(p)
+para i de 1 ate comprimento(expressao) faca
+c <- expressao[i]
+se c >= '0' e c <= '9' entao
+empilha(p, valor_numerico(c))
+senao // c é um operador
+operando2 <- desempilha(p)
+operando1 <- desempilha(p)
+caso c seja
+'+': empilha(p, operando1 + operando2)
+'-': empilha(p, operando1 - operando2)
+'*': empilha(p, operando1 * operando2)
+'/': empilha(p, operando1 / operando2)
+'^': empilha(p, potencia(operando1, operando2))
+fim_caso
+fim_se
+fim_para
+retorne desempilha(p)
+fim
+
+
+Capítulo 6: Análise de Complexidade e Desempenho
+
+6.1 Complexidade de Tempo
+
+As operações básicas de uma pilha (empilhar, desempilhar, verificar topo) têm complexidade de tempo O(1), ou seja, são executadas em tempo constante, independentemente do tamanho da pilha.
+
+6.2 Complexidade de Espaço
+
+A complexidade de espaço de uma pilha é O(n), onde n é o número máximo de elementos que a pilha pode conter.
+
+6.3 Comparação com Outras Estruturas
+
+Comparando com outras estruturas de dados:
+
+
+Listas: Pilhas são mais eficientes para operações no topo, mas menos flexíveis para acesso aleatório.
+Filas: Pilhas seguem LIFO, enquanto filas seguem FIFO (First In, First Out).
+Árvores: Pilhas são mais simples, mas árvores são melhores para busca e organização hierárquica.
+
+6.4 Otimizações de Desempenho
+
+Para melhorar o desempenho de pilhas em cenários específicos:
+
+
+Pré-alocação: Alocar memória antecipadamente para evitar realocações frequentes.
+Pilha circular: Usar um array circular para implementar a pilha, evitando a necessidade de mover elementos.
+Pilha com dois ponteiros: Manter ponteiros para o topo e a base da pilha para operações mais eficientes em ambas as extremidades.
+
+Capítulo 7: Depuração e Testes
+
+7.1 Técnicas de Depuração
+
+
+Impressão de Estado: Implementar uma função para imprimir o esta

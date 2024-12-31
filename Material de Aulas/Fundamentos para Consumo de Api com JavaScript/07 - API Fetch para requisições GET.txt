@@ -1,0 +1,90 @@
+A API Fetch é uma ferramenta nativa do JavaScript que permite fazer requisições a APIs externas sem a necessidade de importar módulos adicionais. Ela é responsável por estabelecer a comunicação entre o cliente e o servidor, enviando requisições e recebendo respostas.
+
+Funcionamento Assíncrono
+
+A API Fetch funciona de forma assíncrona. Isso significa que se não for solicitado para aguardar uma resposta, ela seguirá executando o código sem esperar o retorno da requisição anterior.
+
+Essa característica permite que o JavaScript, que é uma linguagem multithread, execute várias ações ao mesmo tempo. Enquanto uma requisição está sendo processada, o código continua sua execução normalmente.
+
+É importante tratar os dados retornados de forma assíncrona para não travar a interface com o usuário. Um exemplo é a busca de CEP, que pode demorar alguns segundos. Ao invés de deixar a tela parada esperando a resposta, pode-se mostrar uma animação de loading e permitir que o usuário continue preenchendo o formulário.
+
+Assim que os dados forem recebidos, os campos do formulário são preenchidos automaticamente com o logradouro, cidade, estado, etc.
+
+Requisições Síncronas vs Assíncronas
+
+Há casos em que é necessário aguardar o processamento de uma requisição antes de continuar a execução do código.
+
+Por exemplo, se for preciso exibir o valor total de um pedido, incluindo o valor do frete. A requisição para o cálculo do frete precisa ser síncrona, travando o botão de finalização da compra até que o valor seja recebido e somado ao valor dos produtos.
+
+Já em um caso como o envio de e-mails de uma newsletter, não é necessário travar o sistema até que todos sejam enviados. A requisição pode ser assíncrona, enviando os e-mails em background e notificando o usuário quando a ação estiver concluída.
+
+Promessas (Promises)
+
+Em JavaScript, é comum utilizar o conceito de promises para lidar com ações assíncronas. Uma promise representa um valor que ainda não está disponível, mas que será resolvido em algum momento no futuro.
+
+Quando uma função assíncrona é executada, ela retorna imediatamente uma promise. A promise fica pendente enquanto a operação assíncrona é processada e assume um dos seguintes estados:
+
+
+Fulfilled: a operação foi concluída com sucesso e a promise foi "realizada", retornando o valor resultante.
+
+Rejected: ocorreu algum erro durante a operação e a promise foi "rejeitada", retornando o erro ocorrido.
+
+Pending: a operação ainda está em andamento e a promise permanece no estado "pendente".
+
+
+É possível encadear callbacks às promises para serem executados quando ela for realizada ou rejeitada. Dessa forma, é possível tratar os dados ou erros retornados pelas requisições assíncronas.
+
+A API Fetch faz uso extensivo de promises para lidar com as respostas das requisições.
+
+Utilizando a API Fetch
+
+Para fazer uma requisição utilizando a API Fetch, basta chamar o método fetch() passando o endereço da API como parâmetro:
+
+fetch("https://api.exemplo.com/dados")
+.then(response => {
+// tratar resposta
+})
+.catch(error => {
+// tratar erro
+});
+
+
+O método fetch retorna uma Promise que deve ter callbacks anexados para tratar a resposta ou erros.
+
+
+O primeiro callback .then() lida com a resposta, caso a requisição seja bem sucedida.
+
+Já o .catch() trata de possíveis erros ocorridos.
+
+
+A resposta fetch é também uma espécie de promise, que precisa ser convertida primeiro antes que os dados estejam disponíveis:
+
+fetch("https://api.exemplo.com/dados")
+.then(response => response.json()) // converte resposta para JSON
+.then(data => {
+// dados JSON disponíveis
+})
+
+
+Desta forma, é possível fazer chamadas à APIs, obtendo e tratando os dados de forma assíncrona com a API Fetch.
+
+Vantagens do Fetch sobre Ajax
+
+A API Fetch traz alguns benefícios em relação ao uso de Ajax:
+
+
+Utiliza promises instead de callbacks aninhados, melhorando a legibilidade;
+Retornos mais consistentes em caso de erro de rede;
+Sintaxe mais simples e limpa;
+Permite o envio de requests HTTP mais complexos, como PUT e DELETE, de forma nativa.
+
+Por isso, o Fetch se tornou a abordagem preferida para requisições HTTP assíncronas em JavaScript.
+
+
+A API Fetch é uma poderosa ferramenta nativa do JavaScript moderno que permite consumir APIs externas de forma simples e com melhor tratamento de erros.
+
+Seu funcionamento assíncrono baseado em promises facilita executar múltiplas operações em background sem travar a interface com o usuário.
+
+Manipular requisições assíncronas com Fetch torna o código mais legível, conciso e consistente comparado a outras abordagens como Ajax. Portanto, é altamente recomendado utilizá-lo em aplicações web modernas.
+
+Espero que este ebook tenha sido útil para apresentar os principais conceitos e funcionamento da API Fetch do JavaScript. Fique à vontade para entrar em contato em caso de qualquer dúvida.

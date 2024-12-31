@@ -1,0 +1,269 @@
+                                        TEMA CENTRAL: Gestão de projeto de emagrecimento usando Scrum e Trello
+
+Product Backlog
+Lista de tudo que precisa ser feito no projeto a longo prazo
+Sprint Planning
+Seleciona parte do Product Backlog para a Sprint
+Constroi o Sprint Backlog
+Sprint Backlog
+Tarefas selecionadas para a Sprint
+Doing
+Tarefas que estão sendo realizadas
+Blocked
+Tarefas pausadas por alguma dificuldade
+Scrum Master precisa ajudar a destravar
+Done
+Tarefas concluídas
+Power Ups Trello
+Personalizam e adicionam funcionalidades ao Trello
+Epic Cards: vincula cards a épicos
+Card Size: pontua as tarefas por esforço
+O vídeo mostra como utilizar essas funcionalidades do Trello para gerenciar um projeto ágil seguindo o Scrum, controlando o andamento das tarefas em cada Sprint.
+
+
+                                        TEMA CENTRAL: Construção de backlog para um programa de recompensas de bem-estar em uma empresa
+
+Acompanhamento nutricional
+Solicitar cotação de nutricionistas para área de compras
+Definição de pronto: e-mail com orçamento e disponibilidade de agenda
+Definir orçamento máximo por consulta
+Definição de pronto: e-mail confirmando orçamento
+Verificar disponibilidade dos membros da equipe
+Definição de pronto: agenda Google com horários
+Fechar consulta para membros
+Não precisa ser mesmo nutricionista ou semana
+Definição de pronto: e-mail de confirmação por membro
+Enviar comprovante para RH
+Cada membro envia seu comprovante
+Definição de pronto: e-mail com anexo para RH
+Criar programa de recompensas
+Link para planilha de pontos
+Regra: 10 pontos por comprovante
+Definição de pronto: registro na planilha
+Alimentação saudável
+Academia e exercícios
+Reportar progresso
+Métodos:
+
+ARO: Ação, Referência, Objeto
+Histórias de usuário: Eu, como [usuário], quero [ação] para [objetivo]
+Próximos passos:
+
+Sprint planning
+Pontuação de tarefas
+Esse resumo traz o tema central, os tópicos abordados em detalhes e os próximos passos, conforme solicitado. Utilizei markdown para destacar títulos e tópicos. Avise se precisar de algum esclarecimento!
+
+
+                                        Tema central: Planejamento da sprint
+Tópicos abordados
+Introdução
+Apresentação do planejamento da primeira sprint
+Explicação sobre a dinâmica de pontuação e estimação de tarefas
+Pontuação de tarefas
+Planning poker (sequência de Fibonacci)
+Regra prática: 1 ponto = 15 minutos de trabalho
+Estimando tarefas no Trello
+Definindo o tamanho das tarefas (pontuação)
+Distribuindo as tarefas entre os membros da equipe
+Adicionando etiquetas e checklists
+Definindo datas de entrega (deadlines)
+Finalizando o planejamento
+Visualizando a pontuação por pessoa
+Calculando a velocidade da sprint
+Importância de aumentar a velocidade a cada sprint
+Esse é um resumo abrangente dos principais tópicos apresentados no vídeo sobre o planejamento da sprint utilizando alguns recursos do Trello. Foram abordados conceitos como planning poker, pontuação de tarefas, distribuição de tarefas, definição de deadlines e cálculo da velocidade da sprint.
+
+
+                                        Gestão de projetos ágeis
+Scrum Board
+Divisão de tarefas entre membros da equipe
+Boas práticas
+Cada membro faz apenas 1 tarefa por vez
+Se travou em uma tarefa, atualiza pontos gastos e move para "bloqueado"
+Daily Meeting
+Reunião diária de no máx. 15 minutos
+Objetivos:
+Reportar o que foi feito
+O que se pretende fazer
+Levantar problemas
+Não é para discutir soluções
+Simulação
+Felipe reporta tarefa bloqueada
+Bruno reporta tarefa em andamento
+SM pode ajudar a destravar tarefas
+A sprint continua, redistribuição de tarefas conforme necessário
+Importante
+Evitar discussões desnecessárias
+Daily é só para levantar problemas, não resolver
+SM agenda discussões individuais após
+O vídeo aborda boas práticas de gestão ágil de projetos, com foco em ferramentas do Scrum como o Scrum Board para organizar e acompanhar tarefas, e a Daily Meeting para reportar andamento e problemas.
+São simuladas situações comuns e o papel do Scrum Master em facilitar o andamento do projeto.
+O resumo buscou trazer os principais tópicos e conceitos, formatados visualmente para facilitar a assimilação das informações.
+
+
+                                        TEMA CENTRAL: Simulação de uma sprint no Scrum
+
+TÓPICOS ABORDADOS:
+
+Ferramentas utilizadas
+
+Power Up Card Size no Trello: pontua as atividades e converte tempo em pontos (15min = 1 ponto)
+Acompanhamento do Progresso
+
+Só conta pontos de tarefas concluídas
+Scrum Master acompanha pontos concluídos por dia
+Compara com linha ideal de conclusão (pontos totais / dias da sprint)
+Gera gráfico Burn Down Chart
+Burn Down Chart
+
+Eixo X: Dias da Sprint (0 a 5)
+Eixo Y: Pontos a serem concluídos (40)
+Linha azul = ideal
+Linha vermelha = real
+Auxilia a visualizar atrasos ou adiantamentos
+Cancelamento
+
+Só o PO pode cancelar a Sprint
+Somente se o objetivo ficou obsoleto
+Time tenta se realinhar com PO
+Importância
+
+Fornece visibilidade sobre capacidade e problemas do time
+Baseia as discussões da retrospectiva
+
+
+                                        Tema central: Sprint Review no Scrum
+Tópicos abordados:
+Validação do objetivo da sprint
+
+Todas as tasks devem estar concluídas
+Se não foram, voltam para a sprint backlog com nova tag (sprint 2)
+Análise dos DoDs (Definition of Done)
+
+PO valida se a entrega atende o DoD
+Se não atende, a task não é aprovada e volta para a sprint backlog
+Impacto no cronograma
+
+Scrum é adaptativo, então cronograma pode mudar
+PO comunica novo planejamento de incrementos
+Registro de buffers
+
+Imprevistos que consomem tempo da equipe
+Devem ser registrados como tasks no backlog
+Cálculo da velocidade da equipe
+
+Pontos concluídos / tempo
+Usado para planejar a capacidade da próxima sprint
+Retrospective
+
+Analisar buffers e distribuição de trabalho
+Usar ferramenta Velocity Chart
+Esse é um resumo estruturado em forma de mapa mental abordando o processo de Sprint Review no Scrum, os principais tópicos discutidos e os próximos passos. Foi destacado o tema central, os tópicos abordados com breves explicações e a indicação do que vem a seguir, buscando facilitar a visualização do conteúdo.
+
+
+                                        Tema central: Retrospectivas de Sprint em Scrum
+Introdução
+Retrospectivas são importantes, mas muitos times negligenciam
+Permite que o time se integre e melhore continuamente
+Times felizes produzem mais
+Análise inicial
+Analisar pontos concluídos por membro
+Analisar burndown da sprint
+Identificar problemas e sucessos
+Metodologia Fun Retrospective
+Criada pelo Paulo Caroli
+7 passos
+Estabelecer contexto
+Definir diretiva primária
+Retrospectiva, Futurespective, Team Building
+Dinâmica energizadora
+Quebra-gelo
+Check-in
+Sentimentos iniciais da equipe
+Prato principal
+Discussão aprofundada
+Filtrar
+Identificar itens prioritários
+Check-out
+Resumo/conclusão
+Exemplo prático
+Ferramenta online para retrospectiva
+Criação colaborativa pelos membros
+Anônima e visual
+Permite classificar, votar e criar planos de ação
+Conclusão
+Fundamental para melhoria contínua
+Integra e motiva o time
+Use ferramentas criativas como o Fun Retrospective
+
+
+                                        TEMA CENTRAL: Planejamento da próxima sprint
+
+TÓPICOS ABORDADOS:
+
+Velocidade da sprint
+
+Pontos concluídos na sprint = velocidade (ex: 29 pontos)
+Permite estimar melhor os pontos para a próxima sprint
+Assertividade na capacidade de entrega
+Análise da velocidade
+
+Comparação entre pontos estimados e pontos gastos por tarefa
+Superestimação vs subestimação
+Identificar padrões
+Gráfico de velocidades (Velocity chart)
+
+Compara pontos planejados e executados por sprint
+Calcula média para definir velocidade do time (ex: 49 pontos)
+Buffers
+
+Reservar pontos em cada sprint para imprevistos
+Contabilizar separadamente dos pontos de tarefas
+O vídeo aborda técnicas e métricas importantes para analisar o desempenho da equipe sprint a sprint, permitindo um planejamento mais assertivo das próximas sprints. O resumo cobre os principais tópicos, incluindo velocidade, análise de pontos, gráfico de velocidades e uso de buffers.
+
+
+                                        Gestão de projetos com Scrum no Trello
+Introdução
+Finalização da segunda parte do módulo sobre gestão de projetos Scrum no Trello
+Aprendizagem sobre como criar um quadro Scrum (Scrum Board) no Trello
+Scrum Board
+Cinco etapas principais:
+Product Backlog
+Sprint Backlog
+Fazendo
+Bloqueado
+Concluído
+Importância de manter o quadro atualizado durante toda a execução do projeto
+Construção do Backlog
+Criação de épicos com o Power Up Epics
+Criação de cards na Sprint Backlog representando tarefas
+Vinculação das tarefas aos épicos
+Boa prática: criar um épico "Buffers" para tarefas não planejadas que consomem tempo
+Sprint Planning
+Detalhamento das tarefas com DOD (Definition of Done) e DOR (Definition of Ready)
+Indicação do tamanho das tarefas em pontos com o Power Up Card Size (1 ponto = 15 minutos de trabalho)
+Atribuição de etiquetas indicando o número da sprint
+Execução da Sprint
+Movimentação dos cards pelo quadro conforme o andamento
+Regra: só um card "Fazendo" por pessoa do time
+Atualização do tempo já gasto na tarefa antes de movê-la de volta para o Backlog ou para "Bloqueado"
+Reunião diária (Daily Meeting)
+15 minutos
+3 perguntas:
+O que fiz ontem?
+O que farei hoje?
+Problemas ou blocos?
+Gestão da Sprint
+Acompanhamento do trabalho não concluído por dia/pessoa
+Atualização do Burn Down Chart para visualizar o progresso em relação à estimativa inicial
+Finalização da Sprint
+Revisão (Review): validação dos DODs pelo Product Owner (PO)
+Retrospectiva (Retrospective): discussão sobre processos, distribuição de tarefas, lições aprendidas
+Cálculo da velocidade da equipe em pontos
+Uso do Velocity Chart para planejar as próximas sprints com base na velocidade
+Considerações finais
+Evolução de caso simples no Notion para caso completo no Trello
+Preparação para gestão de primeiro projeto real com Scrum
+Próxima parte: boas práticas e solução de problemas comuns
+
+

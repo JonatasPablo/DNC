@@ -1,0 +1,225 @@
+Introdução
+
+Nesta aula, vamos aprender como processar dados de uma API utilizando JavaScript puro e a API Fetch. Serão abordados conceitos como:
+
+
+Utilização da API Fetch
+Async/Await
+Tratamento de erros
+Consumo de múltiplas APIs numa mesma página
+Integração de front-end com back-end
+
+Preparando o Ambiente
+
+Inicialmente, temos uma estrutura HTML simples com Bootstrap já configurado. Para começar a utilizar a API, o professor decide criar um formulário para capturar o CEP do usuário.
+
+<div class="container">
+<div class="row">
+<div class="col">
+<label for="CEP">CEP</label>
+<input type="text" id="CEP" class="form-control">
+</div>
+</div>
+
+<div class="row mt-5">
+<div class="col">
+<label for="rua">Rua</label>
+<input type="text" id="rua" class="form-control" readonly>
+</div>
+</div>
+</div>
+
+<button class="btn btn-success w-100">OK</button>
+
+
+O formulário conta com:
+
+
+Campo para entrada do CEP
+Campo somente leitura para exibir o nome da rua
+Botão OK para disparar a busca dos dados
+
+O objetivo é que, ao inserir um CEP válido e clicar em OK, os demais campos sejam preenchidos automaticamente com os dados da API.
+
+Buscando o CEP
+
+Para buscar os dados do CEP, vamos utilizar uma API pública e gratuita chamada ViaCEP.
+
+A primeira coisa a se fazer é criar uma função JavaScript que será executada ao clicar no botão OK:
+
+function getAddressByCep() {
+
+console.log(document.getElementById('CEP').value);
+
+}
+
+
+E associar essa função ao evento de clique no botão:
+
+<button onclick="getAddressByCep()">OK</button>
+
+
+Assim, ao digitar um CEP e clicar em OK, o valor será exibido no console.
+
+Consumindo a API
+
+Agora precisamos fazer a integração com a API ViaCEP. Para isso, vamos utilizar a Fetch API nativa do JavaScript, seguindo a estrutura:
+
+fetch(url)
+.then(response => {
+// tratar resposta
+})
+.catch(error => {
+// tratar erro
+});
+
+
+Substituindo a URL pelo endereço da API + o CEP buscado:
+
+function getAddressByCep() {
+
+const cep = document.getElementById('CEP').value;
+
+fetch(`https://viacep.com.br/ws/${cep}/json/`)
+.then(response => {
+console.log(response);
+})
+.catch(error => {
+console.log(error);
+});
+
+}
+
+
+Podemos melhorar o tratamento de erros verificando o status da resposta:
+
+.catch(error => {
+if(!error.response.ok) {
+alert('CEP inválido!');
+return;
+}
+});
+
+
+E também convertendo o retorno para JSON antes de utilizá-lo:
+
+.then(async response => {
+const data = await response.json();
+console.log(data);
+});
+
+
+Exibindo os Dados
+
+Com a API retornando os dados corretamente, podemos populá-los nos campos do formulário:
+
+document.getElementById('rua').value = data.logradouro;
+document.getElementById('bairro').value = data.bairro;
+document.getElementById('cidade').value = data.localidade;
+
+
+Pronto! Agora estamos consumindo uma API externa e populando os campos automaticamente 😊
+
+Lidando com Respostas Assíncronas
+
+Um problema comum ao trabalhar com APIs é lidar com respostas assíncronas.
+
+Isso ocorre porque a chamada à API é feita em background e o código continua executando sem esperar o retorno.
+
+Uma solução é utilizar async/await:
+
+async function getAddressByCep() {
+
+// código anterior
+
+const response = await fetch(url);
+const data = await response.json();
+
+// restante do código
+
+}
+
+
+O await faz com que a execução espere a Promise ser resolvida antes de continuar. Dessa forma, garantimos que os dados serão populados corretamente.
+
+Tratando Erros com Try/Catch
+
+Outra vantagem do async/await é permitir o uso de try/catch para tratamento de erros:
+
+async function getAddressByCep() {
+
+try {
+
+const response = await fetch(url);
+const data = await response.json();
+
+// código
+
+} catch (error) {
+
+alert(error.message);
+
+}
+
+}
+
+
+Assim fica muito mais simples lidar com erros da API.
+
+Consumindo Múltiplas APIs
+
+Agora que dominamos o consumo de API com JavaScript, podemos integrar quantas quisermos na mesma página!
+
+Basta criar uma função para cada API e tratá-las de forma independente.
+
+Por exemplo, além da API de CEP, podemos consumir uma API de previsão do tempo:
+
+async function getWeatherForecast() {
+
+const lat = document.getElementById('lat').value;
+const long = document.getElementById('long').value;
+
+try {
+
+const response = await fetch(`https://api.weather.com/v3/wx/forecast/hourly/${lat};${long}?apiKey=${API_KEY}&units=m`);
+const data = await response.json();
+
+let forecastHTML = '';
+
+data.hourly.temperature.forEach(temp => {
+forecastHTML += `
+<div>
+${temp.time} - ${temp.value} °C
+</div>
+`;
+});
+
+document.getElementById('forecast').innerHTML = forecastHTML;
+
+} catch (error) {
+
+alert(error.message);
+
+}
+
+}
+
+
+E atrelar essa função a outro botão de busca na mesma página. Dessa forma, podemos integrar e combinar dados de várias fontes com nosso front-end!
+
+Considerações Finais
+
+Nesta aula, vimos:
+
+
+Como utilizar a Fetch API nativa do JavaScript
+Tratamento de erros e respostas assíncronas
+Integração do front-end com APIs externas
+População de formulários com dados dinâmicos
+Consumo de múltiplas APIs na mesma página
+
+Isso permite que criemos páginas ricas, com dados sempre atualizados, de forma fácil e com JavaScript puro!
+
+Espero que este material seja útil como base para consumir APIs em projetos mais avançados.
+
+Até a próxima!

@@ -1,0 +1,124 @@
+Introdução
+
+As APIs (Application Programming Interfaces) estão cada vez mais presentes no desenvolvimento de software e na integração entre sistemas. Para poder consumir e utilizar uma API corretamente, é essencial saber ler e interpretar sua documentação.
+
+Neste ebook, vamos aprender como ler uma documentação de API utilizando dois exemplos: a API ViaCEP e a API OpenWeatherMap. Veremos na prática como interpretar os endpoints, parâmetros, estrutura de dados e demais informações presentes em uma documentação.
+
+Testando APIs no Navegador
+Antes de mergulharmos na documentação das APIs, é importante entender que podemos testar e consumir APIs diretamente no navegador.
+Isso porque o navegador é capaz de fazer requisições HTTP e lidar com respostas em JSON, que é o formato padrão de resposta de muitas APIs hoje em dia.
+
+Vamos ver um exemplo testando a página inicial do Bootstrap no navegador:
+Acesse a página inicial do Bootstrap no navegador
+Abra as ferramentas de desenvolvedor (F12)
+Vá na aba Network
+Atualize a página com F5
+Você verá todas as requisições HTTP feitas para carregar a página. A requisição principal para buscar o conteúdo HTML tem o status 200 OK.
+Nos headers dessa requisição, vemos que o navegador informou aceitar HTML e solicitou esse formato na resposta. Por isso o response veio com um HTML completo, que é renderizado na página.
+
+Agora vamos testar o endpoint raiz da API do ViaCEP:
+Acesse https://viacep.com.br/ws/ no navegador
+Inspecione a resposta na aba Network
+Perceba que o response dessa requisição contém um JSON, não um HTML. Isso ocorre porque APIs retornam dados, não uma interface.
+
+Portanto, podemos testar e consumir APIs facilmente no navegador para entender seu funcionamento antes de codificar.
+
+Lendo a Documentação da API ViaCEP
+
+A API ViaCEP permite consultar informações de endereços a partir de CEPs brasileiros. Sua documentação é bem simples, conforme podemos ver em https://viacep.com.br/ws/:
+
+https://viacep.com.br/ws/{CEP}/json/
+
+
+Analisando a documentação, vemos apenas um endpoint com a seguinte estrutura:
+
+
+Protocolo HTTPS
+Domínio viacep.com.br
+Subdomínio ws
+Parâmetro {CEP} que deve ser substituído pelo CEP desejado
+Extensão json para formatar a resposta como JSON
+
+Ou seja, para consumirmos essa API, basta informarmos na URL um CEP válido e receberemos em JSON os dados do endereço correspondente.
+
+Podemos testar diretamente no navegador substituindo {CEP} por um CEP de nossa escolha:
+
+https://viacep.com.br/ws/01001000/json/
+
+
+A resposta será um objeto JSON contendo os dados do endereço para o CEP informado.
+
+A documentação ainda lista opções para receber a resposta no formato XML ou até mesmo fazer consultas via callback com JSONP. Porém iremos nos ater ao uso simples com JSON mesmo.
+
+Lendo a Documentação da API OpenWeatherMap
+
+Agora vamos explorar uma API mais complexa: a API OpenWeatherMap, que fornece dados meteorológicos globais.
+
+Ao contrário da ViaCEP que conta com um único endpoint, a API OpenWeatherMap possui vários recursos, endpoints e parâmetros:
+
+
+Previsão do Tempo
+Clima
+Índices Atmosféricos
+Poluição do Ar
+etc.
+
+Além disso, a documentação traz muitas informações sobre autenticação de chaves API, planos de uso, formatos de resposta e mais.
+
+Vamos nos ater às funcionalidades gratuitas de previsão do tempo. A documentação lista vários endpoints REST, como:
+
+/data/2.5/weather
+/data/2.5/forecast
+/data/2.5/forecast/daily
+/data/2.5/onecall
+etc.
+
+
+Cada endpoint possui uma série de parâmetros possíveis, que servem para filtrar e configurar nossa solicitação.
+
+Por exemplo, o endpoint /data/2.5/weather aceita parâmetros como:
+
+
+q={city name}
+lat={lat}
+lon={lon}
+units=metric
+lang=pt
+appid={api key}
+
+Outro recurso interessante é que a própria documentação conta com um gerador de URLs para nos ajudar a montar as requisições com os parâmetros desejados:
+
+Gerador de URLs da API OpenWeatherMap
+
+Nele, basta selecionarmos os dados desejados e obtemos uma URL de exemplo já configurada para fazer nossa consulta.
+
+Isso ajuda muito a entender quais parâmetros estão disponíveis e como utilizá-los para consumir a API corretamente.
+
+Resumo dos Principais Pontos para Ler uma Documentação de API
+
+Em resumo, aqui estão os principais pontos que devemos observar ao ler uma documentação de API:
+
+
+Endpoints disponíveis
+Parâmetros suportados
+Formas de autenticação (chave API, OAuth etc.)
+Formatos de resposta (JSON, XML, etc)
+Exemplos de requisições e respostas
+Status codes retornados
+Significado de códigos de erro
+Limites de uso e planos disponíveis
+Versões da API
+
+Prestar atenção nesses aspectos ao estudar a documentação nos permitirá entender as funcionalidades, possibilidades e também limitações de uma API.
+
+Isso é fundamental para consumi-la corretamente em nossos próprios projetos.
+
+Conclusão
+
+Neste ebook, entendemos a importância de ler com atenção a documentação de APIs que desejamos utilizar.
+
+Vimos que boas documentações trazem endpoints, parâmetros, formatos de resposta e uma série de informações valiosas que nos permitem integrar essas APIs em nossos sistemas.
+
+Também aprendemos a testar APIs facilmente no navegador para entender seu funcionamento na prática.
+
+Espero que as informações apresentadas aqui sirvam de guia para você dominar a leitura e interpretação de documentações de APIs. Isso será muito útil no seu dia a dia como desenvolvedor.

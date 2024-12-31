@@ -1,0 +1,164 @@
+                                        Possibilidades de Desenvolvimento Web
+Elementos Principais
+Sites
+Exemplo: Site da ADNC
+Navegação (cursos, mentoring, blog, login, criar conta)
+URL no canto inferior esquerdo
+Landing Pages
+Mesmo mecanismo de funcionamento que os sites
+Inspeção da página no navegador
+Plataformas
+Exemplo: Plataforma do Aluno
+Mesmo mecanismo de funcionamento que os sites e landing pages
+Acesso via domínio e IP do servidor
+Possibilidade de respostas 200 (OK) ou 401 (Não Autorizado)
+Integração e Automação
+Necessidade de programação
+Mesmo mecanismo de envio de requisição e recebimento de resposta
+Manipulação da resposta recebida
+Servidores de Comunicação
+Aplicações de suporte, chat, Zendesk, WhatsApp
+Diferente das aplicações web tradicionais
+Desafios
+Complexidade
+Variação da complexidade de acordo com o projeto
+Estratégias de simplificação (divisão e conquista, programação dinâmica)
+Tempo
+Necessidade de alinhamento entre as partes sobre prazos e soluções rápidas
+Custo Elevado
+Desafio de Pessoas
+Importância das soft skills (comunicação, trabalho em equipe)
+Diferença entre profissional bom e excepcional
+
+
+                                        Desenvolvimento Front-end: Organizando o Dia a Dia
+Introdução
+Explicação sobre o que é o front-end e sua importância
+Objetivo de fornecer uma visão geral sobre o desenvolvimento front-end
+Stack de Tecnologias
+HTML
+Estrutura da aplicação, como uma casa
+CSS
+Estilização da aplicação, como a decoração da casa
+Soluções como Styled Components, Tailwind e CSS Modules
+JavaScript
+Interações e ações dentro da aplicação, como abrir/fechar portas, janelas, etc.
+TypeScript como superset do JavaScript
+Frameworks e Bibliotecas
+React, Vue, Angular, Next.js, Nuxt.js
+Escolha baseada na demanda do mercado
+Ferramentas Auxiliares
+Figma para prototipação e design
+Conceitos Importantes
+Request URL
+URL da requisição feita pelo front-end
+Recebe a resposta do back-end
+Client-side
+Tudo o que o usuário interage no front-end
+Desafios Comuns
+Estilização: domínio do CSS
+Componentização: reaproveitamento de componentes
+Consumo de API: como lidar com a resposta do back-end
+Manipulação de estado: gerenciamento de informações entre páginas
+Design System: criação de um sistema de design consistente
+Conclusão
+Importância de se preparar para os desafios do mercado de trabalho
+Compromisso da plataforma em capacitar os alunos de acordo com as necessidades do mercado
+
+
+                                        Back-end: Tecnologias, Desafios e Soluções
+Introdução
+O back-end é responsável pela lógica e manipulação por trás da aplicação
+Garante funcionalidades como login, acesso e segurança de dados
+Tecnologias Back-end
+Linguagens de Programação
+Python
+Versatilidade, automação, dados (FastAPI, PySpark)
+PHP
+Facilidade e praticidade, mas complexidade em soluções robustas
+Java
+Orientado a objeto, soluções robustas (Spring Boot, Hibernate)
+JavaScript + TypeScript
+Superset com novas funcionalidades
+Banco de Dados
+SQL (Postgres, MySQL)
+Soluções estruturadas
+NoSQL (MongoDB, DynamoDB)
+Soluções não estruturadas ou semi-estruturadas
+Principais Desafios
+Criar APIs eficientes
+CRUDE (Create, Read, Update, Delete)
+Operações básicas de um back-end
+Comunicação Síncrona vs. Assíncrona
+Autenticação com Sistemas Terceiros
+Modelagem de Banco de Dados Robusta
+Desenvolvimento com Testes
+Testes Unitários, de Integração, de Regressão, de Carga
+Integração Front-end e Back-end
+O back-end fornece a lógica e os dados necessários para o front-end
+Junção das duas camadas é essencial para o funcionamento da aplicação
+Outras Carreiras Relacionadas
+Além de desenvolvedores back-end, existem outras carreiras como:
+Arquiteto de Soluções
+Engenheiro de Dados
+DevOps
+O back-end é a camada responsável pela lógica e manipulação por trás da aplicação, garantindo funcionalidades essenciais como login, acesso e segurança de dados. As principais tecnologias abordadas incluem linguagens de programação como Python, PHP, Java e JavaScript/TypeScript, além de soluções de banco de dados SQL e NoSQL. Os principais desafios envolvem a criação de APIs eficientes, a comunicação síncrona e assíncrona, a autenticação com sistemas terceiros, a modelagem de banco de dados robusta e o desenvolvimento com testes. A integração entre front-end e back-end é fundamental para o funcionamento da aplicação, e existem outras carreiras relacionadas, como arquiteto de soluções, engenheiro de dados e DevOps.
+
+
+                                        Perfil de Profissional Full Stack
+O que é um Profissional Full Stack?
+Profissional versátil que trabalha tanto no front-end quanto no back-end
+Domina habilidades tanto de front-end quanto de back-end
+Algumas atribuições adicionais, como implementação de testes e desenvolvimento de novas funcionalidades
+Habilidades de um Profissional Full Stack
+Conhecimento em front-end e back-end
+Habilidades arquiteturais
+Domínio de design systems e system designs
+Conhecimento de cloud e infraestrutura (AWS, GCP, Azure, DigitalOcean, Vercel, Fly, etc.)
+Diferença entre Full Stack e Engenheiro de Software
+Engenheiro de Software tem maior rigor em relação a requisitos e arquitetura da solução
+Full Stack é mais focado em "fazer as coisas acontecerem"
+Papéis podem variar de empresa para empresa
+Outras Possibilidades de Carreira
+Tech Lead
+Liderança técnica, pode ou não incluir gestão de pessoas
+Arquiteto de Software/Soluções
+Visão macro da arquitetura e design das aplicações
+Conhecimento de infraestrutura e cloud
+Novas Tendências no Mercado
+Product Engineer
+Combina habilidades de produto e engenharia
+Conversa com clientes, faz pesquisa de usuário, desenvolve e valida soluções
+Considerações Finais
+Importância de habilidades técnicas sólidas (hard skills)
+Importância de habilidades interpessoais (soft skills)
+Gestão de pessoas, stakeholders e clientes
+Garantir boa experiência nas entregas
+
+
+                                        Resumo do Módulo de Aprendizagem
+Tema Central: Preparação para a Jornada de Aprendizagem
+Terminologias e Conceitos Importantes
+Tech Stack: Conjunto de tecnologias e linguagens de programação utilizadas em um projeto
+JavaScript, Java, CSS, etc.
+Explicação do que é cada uma dessas tecnologias e como utilizá-las
+Nomenclatura de Desenvolvimento Web
+Request, Response, URL, Endpoint, API
+Familiarização com essa terminologia para facilitar o aprendizado
+Dicas para o Processo de Aprendizagem
+Não se desespere com a quantidade de informações
+Todos os conceitos serão abordados ao longo do curso
+Foco em entender o papel e a utilização de cada tecnologia
+Seja o protagonista do seu aprendizado
+Tire dúvidas com o suporte, mentores e professores
+Aproveite os canais de comunicação disponíveis
+Interação com a Comunidade
+Conecte-se com o instrutor no LinkedIn e GitHub
+Contribua com projetos open source, se possível
+Motivação e Engajamento
+"Bora amassar os códigos!"
+Entusiasmo e determinação para avançar nos estudos
+Incentivo para continuar se dedicando e aprendendo
+O objetivo central deste módulo é preparar os alunos para a jornada de aprendizagem, familiarizando-os com as principais terminologias e conceitos do desenvolvimento web, além de fornecer dicas e motivação para que sejam protagonistas do seu próprio processo de aprendizado.
+
+

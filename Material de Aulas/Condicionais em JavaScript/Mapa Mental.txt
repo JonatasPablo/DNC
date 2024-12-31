@@ -1,0 +1,99 @@
+                                        Estruturas Condicionais no JavaScript
+Variáveis e Funções
+Entendimento sobre variáveis, constantes e tipos de dados
+Criação e chamada de funções
+Uso do tipo de dado booleano
+Estrutura if-else
+Tomada de decisões com base em variáveis
+Sintaxe e funcionamento do if-else
+Uso de operadores condicionais (>, <, >=, <=, ==, !=)
+Encadeamento de Condições
+Uso de else-if para múltiplas condições
+Combinação de operadores condicionais (AND, OR)
+Importância de entender a lógica das condições
+Exemplo Prático: Cálculo de IMC
+Criação da função classificateIMC
+Verificação das faixas de IMC (abaixo do peso, peso normal, sobrepeso, obesidade)
+Integração da função condicional no cálculo do IMC
+Conclusão
+Importância das estruturas condicionais para a tomada de decisões no código
+Vantagens e desvantagens do encadeamento de condições
+Necessidade de entender a lógica das condições para evitar problemas no código
+
+
+                                        Object Mapping: Uma Alternativa Poderosa ao Switch Case
+Introdução
+Revisão da aula anterior sobre suitcases
+Apresentação de uma alternativa interessante: Object Mapping
+Object Mapping
+Analogia com um dicionário
+Cada chave (palavra) tem um valor associado
+Semelhante ao conceito de objeto visto anteriormente
+Exemplo de implementação
+Transformando a estrutura de suitcase em Object Mapping
+Dicionário de dias da semana
+Acesso aos valores usando colchetes
+Vantagens do Object Mapping
+Código mais legível e conciso
+Manutenção mais rápida e fácil
+Eficiência no acesso aos valores
+Refatoração de Código
+Exemplo de refatoração de switch case para Object Mapping
+Retornar a descrição da classificação de peso
+Utilizar dicionário de status
+Tratamento de casos não encontrados
+Conclusão
+Resumo das vantagens do Object Mapping
+Legibilidade
+Manutenção
+Eficiência
+Próxima aula: Ternários
+
+
+                                        Ternários: Uma Alternativa Prática aos If-Else
+O que são Ternários?
+Ternários são uma forma concisa de escrever condicionais if-else
+Sintaxe: condição ? valor_se_verdadeiro : valor_se_falso
+Permitem substituir a estrutura if-else tradicional por uma única linha de código
+Vantagens dos Ternários
+Código mais Conciso
+Reduz a quantidade de código necessária para implementar a mesma lógica
+Melhora a legibilidade do código
+Melhor Legibilidade
+A estrutura ternária é mais fácil de entender em uma única linha
+Facilita a manutenção do código
+Fácil Manutenção
+O código ternário é mais compacto e organizado
+Torna o código menos propenso a erros
+Exemplos de Uso
+Verificar Maioridade
+Condição: idade >= 18
+Ternário: mensagem = idade >= 18 ? 'Você é maior de idade' : 'Você é menor de idade'
+Verificar Sinal de um Número
+Condição: numero > 0
+Ternário: resultado = numero > 0 ? 'Positivo' : numero < 0 ? 'Negativo' : 'Zero'
+Cuidados ao Usar Ternários
+Não use ternários em condições complexas ou encadeadas
+Mantenha os ternários simples e focados em uma única condição
+Use ternários apenas quando eles realmente melhorarem a legibilidade do código
+Conclusão
+Ternários são uma alternativa prática e concisa aos if-else tradicionais
+Quando usados corretamente, ternários podem melhorar a legibilidade e a manutenção do código
+Porém, eles devem ser usados com cuidado, evitando condições complexas ou encadeadas
+
+
+                                        Estruturas Condicionais em Programação
+Controle de Código com Variáveis
+If-Else: Utilizado para tomar caminhos diferentes no código com base em condições
+Pode ter múltiplas condições com else-if
+Switch Cases: Utilizado para fazer escolhas no código com base em uma variável
+Pode ser substituído por object mapping para código mais conciso e legível
+Operador Ternário: Pode substituir o if-else em condições simples
+Não é recomendado para condições complexas, pois pode tornar o código difícil de ler e manter
+Boas Práticas
+Dicionários com Objetos: Boa prática para reutilizar constantes em diferentes partes do código
+Conclusão
+Revisitar o conteúdo e praticar é essencial para consolidar o aprendizado
+Qualquer dúvida, entrar em contato com o instrutor
+
+

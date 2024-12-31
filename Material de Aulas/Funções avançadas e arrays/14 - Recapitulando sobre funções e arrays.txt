@@ -1,0 +1,73 @@
+Revisão de Funções Avançadas e Arrays em JavaScript
+Introdução
+Este ebook oferece uma revisão abrangente dos conceitos de funções avançadas e arrays em JavaScript, abordados em um módulo de programação. O conteúdo é baseado em uma transcrição de aula e inclui um exercício prático para consolidar o aprendizado.
+
+Funções Avançadas
+Sintaxe e Tipos de Funções
+Sintaxe básica: Revisão da estrutura fundamental das funções em JavaScript
+Arrow Functions: Introdução às funções de seta, uma sintaxe mais concisa para funções
+Callbacks: Exploração do conceito de funções passadas como argumentos para outras funções
+Funções de Tempo
+setInterval: Método para executar uma função repetidamente em intervalos específicos
+clearInterval: Função para interromper a execução de um intervalo definido por setInterval
+Estas funções de tempo são cruciais para criar comportamentos assíncronos e temporizados em aplicações JavaScript.
+Arrays e Manipulação de Dados
+Métodos Básicos de Array
+Adição e remoção de elementos:
+push(): Adiciona elementos ao final do array
+pop(): Remove o último elemento do array
+unshift(): Adiciona elementos no início do array
+shift(): Remove o primeiro elemento do array
+Importante: Estes métodos são mutáveis, ou seja, alteram o array original.
+
+Métodos Avançados de Array
+Métodos Imutáveis
+Estes métodos não alteram o array original, mas retornam um novo array ou valor:
+
+map(): Cria um novo array aplicando uma função a cada elemento
+filter(): Cria um novo array com todos os elementos que passam em um teste
+reduce(): Reduz o array a um único valor, aplicando uma função acumuladora
+find(): Retorna o primeiro elemento que satisfaz uma condição
+some(): Verifica se pelo menos um elemento satisfaz uma condição
+every(): Verifica se todos os elementos satisfazem uma condição
+Ordenação
+sort(): Ordena os elementos do array
+Pode ordenar alfabeticamente ou numericamente
+Permite ordenação por propriedades específicas de objetos
+Suporta ordenação crescente e decrescente
+Encadeamento de Métodos
+Uma característica poderosa é a capacidade de encadear métodos como map(), filter(), sort() e reduce():
+
+array.map().sort().filter().reduce()
+Isso permite operações complexas em uma única linha, otimizando o código e a utilização de memória.
+
+Exercício Prático: Sistema de Gerenciamento de Tarefas
+Para consolidar o aprendizado, é proposto um exercício prático envolvendo a criação e manipulação de uma lista de tarefas.
+
+Estrutura da Tarefa
+Cada tarefa é representada por um objeto com as seguintes propriedades:
+
+descrição: string
+prioridade: número (1 a 3, sendo 1 a mais alta)
+status: string ("pendente" ou "concluída")
+Operações Requeridas
+Adicionar novas tarefas: Utilizar push() para adicionar tarefas ao final da lista
+
+Remover tarefas concluídas: Usar filter() para criar uma nova lista sem as tarefas concluídas
+
+Marcar tarefas como concluídas: Atualizar o status de tarefas pendentes para concluídas
+
+Ordenar tarefas: Utilizar sort() para ordenar as tarefas por prioridade (da mais alta para a mais baixa)
+
+Contar tarefas pendentes: Aplicar reduce() para contar quantas tarefas estão pendentes
+
+Encontrar tarefa específica: Usar find() para localizar uma tarefa pela descrição
+
+Verificar conclusão de todas as tarefas: Empregar every() para checar se todas as tarefas estão marcadas como concluídas
+
+Conclusão
+Este módulo sobre funções avançadas e arrays em JavaScript fornece ferramentas essenciais para manipulação eficiente de dados e estruturação de código. O exercício prático proposto permite aplicar esses conceitos em um cenário realista de gerenciamento de tarefas.
+
+A compreensão profunda desses métodos e técnicas é fundamental para o desenvolvimento de aplicações JavaScript robustas e eficientes. Praticar regularmente e explorar diferentes cenários de uso ajudará a solidificar esse conhecimento.
+
+Lembre-se: A prática constante é a chave para dominar esses conceitos avançados de JavaScript. Continue experimentando e aplicando esses métodos em diversos contextos para aprimorar suas habilidades de programação.

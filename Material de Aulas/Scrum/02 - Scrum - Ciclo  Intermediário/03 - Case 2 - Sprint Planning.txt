@@ -1,0 +1,85 @@
+Introdução
+
+O planejamento da sprint (Sprint Planning) é uma reunião importante que ocorre no início de cada sprint no framework Scrum. É quando a equipe se reúne para decidir o que será entregue naquela sprint, quem será responsável por cada tarefa e quando elas precisam ser concluídas.
+
+Este ebook traz um passo a passo detalhado de como fazer o planejamento da sprint utilizando algumas ferramentas que facilitam esse processo, como o Trello.
+
+Participantes do Planejamento da Sprint
+
+Alguns participantes importantes que devem estar presentes no planejamento da sprint:
+
+
+Scrum Master: Responsável por facilitar a reunião e garantir que os rituais do Scrum estão sendo seguidos.
+Product Owner: Representa a área de negócios e define as prioridades baseado no valor para o negócio e feedback dos usuários.
+Time de Desenvolvimento: Equipe multidisciplinar que vai trabalhar para entregar o Incremento do produto na Sprint.
+
+Etapas do Planejamento
+
+O planejamento da Sprint possui algumas etapas importantes:
+
+1. Definir o Objetivo da Sprint
+
+O Product Owner apresenta os itens priorizados no Product Backlog que gostariam que fossem entregues na Sprint, baseado no valor que eles trarão para o negócio e cliente.
+
+2. Selecionar Itens do Backlog
+
+O Time de Desenvolvimento avalia a capacidade que eles terão para a Sprint e selecionam com o PO quais User Stories eles acham que conseguem entregar.
+
+3. Quebrar em Tarefas
+
+As User Stories selecionadas precisam ser detalhadas pelo Time de Desenvolvimento em tarefas menores necessárias para entregá-las.
+
+4. Estimar Tarefas
+
+Cada tarefa receberá uma estimativa em pontos, que mede o esforço necessário para finalizá-la. Técnicas como Planning Poker podem ser utilizadas.
+
+5. Definir Capacidade da Sprint
+
+Soma-se todos os pontos das tarefas para se chegar na capacidade total da Sprint, medida em pontos.
+
+6. Alocar Tarefas
+
+As tarefas são alocadas para cada membro da equipe de acordo com suas especialidades e disponibilidade.
+
+Board no Trello
+
+O Trello é uma ferramenta online muito útil para gerenciar o Scrum, pois permite criar um Board com colunas que representam as etapas do fluxo de trabalho:
+
+
+Product Backlog: Recebe as User Stories priorizadas.
+Sprint Backlog: User Stories selecionadas para a Sprint atual.
+To Do: Tarefas já detalhadas para serem trabalhadas.
+Doing: Itens que já estão sendo executados.
+Done: Tarefas finalizadas.
+
+Além disso, o Trello permite adicionar tags, checklists, datas de entrega e muito mais.
+
+Pontuação e Estimativa
+
+Durante o planejamento, as tarefas recebem uma pontuação para estimar o esforço necessário para executá-las. Existem duas abordagens:
+
+Planning Poker: Cada membro sugere uma pontuação se baseando em feeling. Após discussões, chega-se em um consenso.
+
+Capacidade x Tempo: Converte-se a estimativa de tempo para realizar a tarefa em pontos (ex: 1 ponto = 15 minutos). Tarefas mais complexas recebem mais pontos.
+
+Independente da abordagem, é importante comparar a estimativa com o realizado para calibrar a precisão para as próximas sprints.
+
+Alocação e Deadlines
+
+Com todas as tarefas pontuadas, elas devem ser alocadas para membros específicos da equipe. Também wants to define deadlines para finalização de cada item.
+
+O Trello permite adicionar membros responsáveis por cards e também datas de entrega.
+
+Calculando a Velocidade
+
+A soma de todos os pontos das tarefas fornece a velocidade da sprint, que é a capacidade de entrega da equipe, medida em pontos por sprint.
+
+Monitorar a velocidade ao longo das sprints permite melhorar a precisão da planejamento e entender o aumento de produtividade da equipe.
+
+Conclusão
+
+O planejamento da sprint é uma reunião crítica, pois define o que será entregue em termos de valor para o negócio e cliente. Realizá-lo de forma colaborativa traz comprometimento do time em relação às entregas.
+
+Ferramentas como Trello facilitam a organização e rastreabilidade de tudo o que foi planejado e o que está sendo entregue. As métricas de pontos e velocidade também são importantes para medir o desempenho da equipe Scrum.
+
+Portanto, seguir essas práticas ajuda a aumentar a eficiência, produtividade e qualidade do projeto.

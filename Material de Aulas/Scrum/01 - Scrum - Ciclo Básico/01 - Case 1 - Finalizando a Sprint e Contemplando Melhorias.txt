@@ -1,0 +1,101 @@
+Introdução
+
+Este ebook aborda os conceitos e melhores práticas relacionados à revisão (review) e retrospectiva de sprint em metodologias ágeis, com foco na metodologia Scrum.
+
+Ao final de cada sprint, são realizadas duas importantes reuniões: a revisão da sprint (sprint review) e a retrospectiva da sprint (sprint retrospective). Essas reuniões têm objetivos distintos e complementares dentro do processo Scrum.
+
+Revisão da Sprint
+
+A revisão da sprint, também chamada de sprint review, é uma reunião realizada ao final de cada sprint para validar e aceitar os incrementos desenvolvidos pelo time.
+
+Participantes
+
+Em projetos reais, participam dessa reunião:
+
+
+O time Scrum completo: Product Owner (PO), Scrum Master e Time de Desenvolvimento.
+Partes interessadas, como stakeholders, sponsors e até mesmo clientes finais, a critério do PO.
+
+Duração
+
+
+Para sprints de 1 mês: duração de 4 horas.
+Para sprints menores: dura menos tempo, porém não há regra exata de proporcionalidade.
+
+Objetivos
+
+Os principais objetivos da sprint review são:
+
+
+Validar se os objetivos da sprint foram cumpridos pelo time.
+Apresentar os incrementos e entregáveis desenvolvidos na sprint para o PO e demais partes interessadas.
+Obter o aceite formal do PO em relação aos incrementos.
+Identificar mudanças ou adaptações necessárias no backlog do produto.
+
+É muito comum que sejam feitos testes dos incrementos em tempo real durante a reunião, principalmente em projetos digitais.
+
+Definição de Pronto
+
+Um ponto fundamental para o sucesso da sprint review é ter critérios claros de aceite dos incrementos, também chamados de "Definição de Pronto" (DoD).
+
+Caso a DoD não esteja bem definida, podem ocorrer problemas de comunicação e frustração da equipe em relação à aceitação ou não dos incrementos pelo PO.
+
+Retrospectiva da Sprint
+
+Após a sprint review, é realizada outra reunião muito importante: a retrospectiva da sprint (sprint retrospective).
+
+Participantes
+
+Participam dessa reunião:
+
+
+Time Scrum completo: Product Owner (PO), Scrum Master e Time de Desenvolvimento.
+
+Duração
+
+
+Para sprints de 1 mês: duração de 3 horas.
+Para sprints menores: duração proporcionalmente menor.
+
+Objetivos
+
+O foco da sprint retrospective é inspecionar os processos do time Scrum e identificar melhorias para aplicar nas próximas sprints.
+
+É uma oportunidade para os membros da equipe se expressarem sobre como está ocorrendo a colaboração, comunicação, distribuição de tarefas e demais aspectos que impactam a produtividade.
+
+Formatos Comuns
+
+Alguns formatos comuns de sprint retrospective:
+
+
+Lavação de roupa suja: os membros expressam livremente seus descontentamentos com a sprint.
+Análise de pontos positivos e negativos: os participantes apontam os aspectos bons e ruins da sprint.
+Discussão guiada pelo Scrum Master: o SM conduz as discussões com base em tópicos pré-definidos.
+
+Independente do formato, o objetivo é identificar pelo menos um ponto de melhoria a ser implementado na próxima sprint pelo time.
+
+Exemplo Prático
+
+Vejamos agora um exemplo prático de como ocorrem a sprint review e a sprint retrospective:
+
+Contexto
+
+Uma equipe Scrum está desenvolvendo um aplicativo de gestão de saúde e dieta para a usuária Luísa. Ao final da primeira sprint, eles realizam uma reunião informal em um happy hour para revisar o trabalho e retrospectiva.
+
+Sprint Review
+
+No happy hour, a equipe mostra para Luísa os prints das consultas com nutricionistas agendadas durante a sprint. No entanto, Luísa não aprova os incrementos, pois estava faltando a marcação de retornos após 30 dias com os nutricionistas.
+
+Ocorreu um desalinhamento entre a Definição de Pronto real e a esperada por Luísa. A equipe fica frustrada pelo erro de comunicação.
+
+Sprint Retrospective
+
+Após a reunião com Luísa, a equipe inicia uma retrospectiva mais informal, aproveitando o clima de happy hour. Marcelo começa reclamando que ficou sobrecarregado na sprint e que Carlos não o ajudou o suficiente.
+
+Carlos então sugere que a comunicação via WhatsApp não está funcionando e é melhor fazer ligações diárias. Todos concordam em implementar melhorias de comunicação e distribuição de tarefas para próxima sprint.
+
+Conclusão
+
+A sprint review e a sprint retrospective são rituais fundamentais em metodologias ágeis para garantir a qualidade do produto e a melhoria contínua da equipe. Elas devem fazer parte naturalmente do dia a dia de times que desejam obter sucesso com práticas ágeis.
+
+Este ebook apresentou os principais conceitos, melhores práticas e um exemplo prático envolvendo essas duas importantes cerimônias Scrum. Esperamos que as informações aqui compiladas possam apoiar times Scrum a obter ainda mais valor com esses rituais.

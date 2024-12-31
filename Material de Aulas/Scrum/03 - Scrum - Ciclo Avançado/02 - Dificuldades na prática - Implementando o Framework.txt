@@ -1,0 +1,128 @@
+Introdução
+
+O Scrum é uma metodologia ágil muito popular para gestão de projetos de software. Ela propõe uma abordagem iterativa e incremental para desenvolvimento, com foco em entrega de valor ao cliente e adaptação a mudanças.
+
+No entanto, adotar Scrum em um projeto não é uma tarefa trivial. Exige mudança de mentalidade da equipe e adequação dos processos da organização. Por isso, é comum as equipes terem dificuldades na implementação inicial do Scrum.
+
+Neste ebook, vamos abordar boas práticas para implementar Scrum em projetos de forma tranquila, especialmente para equipes que estão iniciando com a metodologia.
+
+Conteúdo
+
+
+Preparando o backlog do produto
+Adaptação gradual aos eventos do Scrum
+Primeira sprint sem estimativas
+Segunda sprint com estimativas
+Aumentando a frequência das daily meetings
+Importância da integração da equipe
+
+Preparando o backlog do produto
+
+O backlog do produto é uma lista priorizada com todos os requisitos e funcionalidades desejados para o produto. Ele é a base para o planejamento do projeto no Scrum.
+
+Portanto, ter um bom backlog do produto é fundamental para o sucesso da implementação do Scrum. O backlog precisa conter:
+
+
+Requisitos claros e detalhados
+Priorização com base no valor para o negócio e cliente
+Estimativas (ao menos grossas no início) de esforço de desenvolvimento
+
+Além disso, o backlog deve ser constantemente refinado e atualizado pela equipe. Novos requisitos podem surgir, prioridades podem mudar. O backlog é um artefato vivo durante o projeto.
+
+Um backlog mal definido resultará em planejamentos falhos e muito retrabalho. Por isso, dedicar tempo para prepará-lo é extremamente importante antes de iniciar o Scrum.
+
+A equipe deve se reunir com o Product Owner para levantar, analisar e priorizar requisitos para compor um backlog consistente. Isso evitará muitas dores de cabeça no futuro.
+
+Adaptação gradual aos eventos do Scrum
+
+O Scrum define alguns eventos (cerimônias) que compõem o seu framework: Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective.
+
+Para equipes que estão iniciando com Scrum, seguir todos esses rituais desde a primeira sprint pode sobrecarregar o time. É mais prudente introduzir os eventos de forma gradual.
+
+Primeira sprint
+
+Na primeira sprint, ainda não se tem noção de velocidade da equipe ou como estimar as tarefas. Exigir planejamento detalhado e estimativas nesta fase não é produtivo.
+
+O foco deve ser em completar o trabalho e medir empiricamente o output da equipe. Não há necessidade de fazer um Sprint Planning longo ou daily meetings diárias.
+
+Ao final da sprint, durante a retrospectiva, a equipe pode discutir como se sentiu em relação à carga de trabalho, ritmo necessário, dificuldades encontradas. Isso serve de insumo para a segunda sprint.
+
+Segunda sprint
+
+A partir dos dados coletados na primeira sprint, na segunda já se tem informações suficientes para iniciar o planejamento e estimativas.
+
+O Scrum Master deve conduzir o time no Sprint Planning para definir a sprint backlog com base na velocidade medida anteriormente. As tarefas podem ser quebradas e estimadas em pontos.
+
+Daily meetings devem começar a acontecer com mais frequência para acompanhar o andamento do trabalho. O burndown da sprint pode ser construído com as métricas coletadas dia-a-dia.
+
+Ao final da sprint, a retrospectiva vai analisar o que funcionou, os problemas encontrados no planejamento e estimativas, lições aprendidas, oportunidades de melhoria para as próximas sprints.
+
+Sprints seguintes
+
+A cada nova sprint, os eventos e rituais do Scrum devem ser aprimorados e adotados de forma mais estrita pela equipe.
+
+Daily meetings diárias permitem maior transparência e chances de remover impedimentos rapidamente. O Sprint Planning fica mais assertivo em relação à capacidade do time com o refinamento das estimativas. Retrospectivas e reviews produzem melhorias incrementais no processo e produto.
+
+Em pouco tempo, o time se adequa ao framework Scrum e consegue entregar valor de forma ágil e sustentável.
+
+Primeira sprint sem estimativas
+
+Conforme explicado, na primeira sprint ainda não há embasamento para determinar estimativas de esforço confiáveis para as tarefas.
+
+O foco deve estar em completar o trabalho planejado, sem preocupação com pontuação ou velocidade nesta fase. Cada membro do time trabalha nas tarefas e vai movendo no quadro entre as colunas "Doing", "Blocked" e "Done".
+
+À medida que as tarefas são finalizadas, o Scrum Master deve cronometrar o tempo que cada membro levou para completá-la.
+
+Esses dados empíricos de duração das tarefas completadas servem para construir uma tabela simples, calculando assim a produtividade de cada integrante e do time como um todo ao final da sprint.
+
+Essa medição inicial da performance é utilizada como base para as estimativas na segunda sprint.
+
+Segunda sprint com estimativas
+
+Com a produtividade da primeira sprint em mãos, na segunda sprint o time já pode iniciar o planejamento com estimativas de esforço.
+
+A regra geralmente adotada é 1 ponto = 1 hora (ou 2 horas em alguns casos). Então se uma tarefa levou 4 horas ser realizada na sprint anterior, ela pode ser estimada agora como 4 pontos.
+
+O Scrum Master conduz o Sprint Planning para que o time estime todas as tarefas planejadas para a nova sprint. A soma resultará na velocidade da equipe, ou seja, quantos pontos ela é capaz de entregar em uma sprint.
+
+Ao longo da sprint, conforme as tarefas são finalizadas, os pontos estimados podem ser comparados com o esforço real necessário. Isso serve para calibrar ainda mais a acurácia das estimativas para as sprints futuras.
+
+Tendo velocidade e estimativas em pontos, todas as práticas ágeis de gestão como burndown chart, velocity tracking, etc. podem ser aplicadas no projeto.
+
+Aumentando a frequência das daily meetings
+
+Daily meetings (ou standups) são rápidas reuniões diárias da equipe para reportar o progresso, impedimentos e planos do dia. Elas são vitais para transparência e agilidade.
+
+Para equipes novas em Scrum, adotar daily meetings diárias desde o início pode sobrecarregar. A frequência dessas reuniões pode ser aumentada gradativamente sprint após sprint.
+
+Na primeira sprint, pode-se começar com somente 1 ou 2 encontros na semana. Nas sprints seguintes, aumenta para 3 a 4 vezes na semana. Até se tornar um ritual diário na maturidade da equipe.
+
+À medida que a frequência das daily meetings aumenta, a equipe ganha mais oportunidades de inspecionar o trabalho um do outro, remover impedimentos, adaptar os planos, entregar mais rápido.
+
+Portanto, o Scrum Master deve conduzir a evolução da equipe para adotar as daily meetings todos os dias, preparando o time tanto para o aspecto cultural de transparência quanto prático de resolver problemas rapidamente.
+
+Importância da integração da equipe
+
+Para que o Scrum seja bem sucedido, é essencial que o time trabalhe de forma integrada, com boa comunicação e espírito de colaboração.
+
+Isso porque o Scrum tem foco em auto-organização e responsabilidade coletiva sobre o resultado. Se a equipe não funciona como uma unidade, o desempenho do projeto pode ser comprometido.
+
+Por isso, quanto mais frequentemente a equipe interage, melhores resultados ela alcança. Times que adotam daily meetings diárias e outras oportunidades de conversar (como por exemplo, almoços em grupo) costumam ser mais produtivos e entregar software de maior qualidade.
+
+Essa integração frequente melhora a motivação dos membros, trabalho em equipe, compartilhamento de conhecimento, resolução rápida de problemas.
+
+Portanto, à medida que a equipe amadurece em Scrum, ela deve buscar formas de aumentar a interação entre seus integrantes para aprimorar ainda mais a colaboração. Isso leva a um time auto-organizado de alto desempenho.
+
+Conclusão
+
+Implementar Scrum com sucesso em um projeto exige adaptação, disciplina e melhoria contínua da equipe. Seguir alguns passos recomendados neste ebook aumenta as chances de adoção tranquila do Scrum:
+
+
+Investir em um bom backlog do produto
+Introduzir eventos e rituais gradualmente sprint a sprint
+Começar sem estimativas e velocidade na primeira sprint
+Estimar tarefas e medir velocidade na segunda sprint
+Aumentar frequência das daily meetings ao longo das sprints
+Buscar sempre mais integração entre membros do time
+
+Equipes que seguem essas boas práticas conseguem se adaptar à mudança de mindset ágil e obter sucesso com o Scrum em seus projetos.

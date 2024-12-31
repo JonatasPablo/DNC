@@ -1,0 +1,255 @@
+O Node.js apresenta uma série de comandos que permitem gerenciar projetos e bibliotecas Javascript. Embora muitos desses comandos provavelmente não serão utilizados com frequência, é importante entender o funcionamento dos mais essenciais.
+
+Este ebook aborda em detalhes os principais comandos do Node.js que todo desenvolvedor deveria conhecer:
+
+
+npm install
+npm uninstall
+npm update
+npm init
+npm start
+npm run
+
+Vamos explorar o que cada um desses comandos faz, como utilizá-los e exemplos práticos de aplicação em projetos Javascript.
+
+npm install
+
+O comando npm install é provavelmente o mais utilizado e importante para se trabalhar com o Node.js.
+
+Ele serve para instalar pacotes e bibliotecas Javascript dentro de um projeto. Por exemplo:
+
+npm install react
+
+
+Isso irá instalar a última versão disponível do React no projeto atual.
+
+O npm irá baixar a biblioteca React e todas as suas dependências e salvar referências no arquivo package.json.
+
+Além disso, a pasta node_modules será criada com todas as bibliotecas instaladas.
+
+Ou seja, com apenas um comando o npm já deixa o projeto pronto para utilizar o React ou qualquer outra biblioteca Javascript.
+
+Versões específicas
+
+Por padrão, o npm install baixa a versão mais recente disponível no momento da instalação.
+
+Porém, é possível especificar uma versão exata utilizando o formato:
+
+npm install react@18.1.0
+
+
+Dessa forma, a versão 18.1.0 do React será instalada.
+
+Para definir um intervalo de versão, podemos utilizar o til (~):
+
+npm install react@~18.1.0
+
+
+Nesse caso, será instalada a versão 18.1.x mais recente disponível.
+
+Desinstalando pacotes
+
+Caso algum pacote instalado não seja mais necessário no projeto, podemos desinstalá-lo com:
+
+npm uninstall react
+
+
+Isso irá remover tanto a referência no package.json quando os arquivos baixados em node_modules.
+
+Atualizando versões
+
+Se quisermos atualizar um pacote para a versão mais recente, basta utilizar o comando update:
+
+npm update react
+
+
+Assim o npm irá baixar e configurar a versão mais nova disponível do React.
+
+O npm install é essencial para iniciar qualquer projeto Node.js, permitindo adicionar rapidamente qualquer biblioteca Javascript necessária.
+
+npm uninstall
+
+Já explicamos que o comando npm uninstall remove um pacote previamente instalado.
+
+Vamos ver agora um exemplo prático de como utilizá-lo.
+
+Digamos que iniciamos um projeto React com:
+
+npx create-react-app meu-app
+
+
+Isso vai configurar e instalar diversas bibliotecas, incluindo o próprio React.
+
+Caso em algum momento não queiramos mais utilizar o React no projeto, podemos desinstalá-lo com:
+
+npm uninstall react
+
+
+Ao executar este comando:
+
+
+A referência ao React será removida do package.json
+A pasta react dentro de node_modules será deletada
+Todos os arquivos relacionados ao React em node_modules também serão apagados
+
+Ou seja, removemos completamente o React do projeto em apenas um comando!
+
+Isso limpa desnecessários e economiza espaço em disco.
+
+npm update
+
+Já sabemos que o comando npm install sempre baixa a versão mais recente de um pacote.
+
+Mas e se quisermos atualizar um pacote que já estava instalado para uma versão mais nova?
+
+Para isso existe o comando npm update.
+
+Por exemplo, digamos que temos o React na versão 17.0.2 instalado em um projeto:
+
+"dependencies": {
+"react": "17.0.2"
+}
+
+
+Podemos atualizá-lo com:
+
+npm update react
+
+
+Dessa forma, o npm irá baixar e configurar a versão mais recente disponível do React, atualizando nosso package.json:
+
+"dependencies": {
+"react": "18.2.0"
+}
+
+
+Assim podemos facilmente atualizar as bibliotecas do projeto para correções de bugs, melhorias e novas funcionalidades.
+
+npm init
+
+O comando npm init é utilizado para inicializar o npm em um projeto.
+
+Ao rodá-lo, o npm faz algumas perguntas para criar o arquivo package.json com as configurações básicas.
+
+Por exemplo:
+
+npm init
+
+
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (meu-projeto)
+version: (1.0.0)
+description: Minha primeira aplicação Node
+entry point: (index.js)
+test command:
+git repository:
+keywords: node, javascript
+author: João da Silva
+license: (ISC)
+About to write to /meu-projeto/package.json:
+
+{
+"name": "meu-projeto",
+"version": "1.0.0",
+"description": "Minha primeira aplicação Node",
+"main": "index.js",
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1"
+},
+"author": "João da Silva",
+"license": "ISC",
+"keywords": [
+"node",
+"javascript"
+]
+}
+
+Is this OK? (yes)
+
+
+Ao final, um package.json será criado com essas informações.
+
+Esse arquivo é muito importante para definir metadados e gerenciar as dependências do projeto.
+
+Por isso é interessante sempre iniciar os projetos Node.js com npm init.
+
+npm start
+
+O comando npm start é utilizado para iniciar uma aplicação Node.js definida no package.json.
+
+Por exemplo, ao criar um projeto React com create-react-app, temos a seguinte configuração:
+
+"scripts": {
+"start": "react-scripts start",
+}
+
+
+Neste caso, ao executar npm start o script react-scripts start será chamado, subindo o servidor de desenvolvimento do React.
+
+Outro exemplo seria uma aplicação Node.js básica:
+
+"scripts": {
+"start": "node index.js",
+}
+
+
+Que ao executar npm start iria rodar o arquivo index.js com o Node.
+
+Ou seja, o npm start inicia o script definido em "start" no package.json do projeto.
+
+Isso permite padronizar a forma de executar e testar aplicações Node.js e Javascript.
+
+npm run
+
+O comando npm run é similar ao npm start, porém executa qualquer script definido no package.json.
+
+Por exemplo, poderíamos definir um script para build da aplicação React:
+
+```json
+"scripts": {
+"build": "react-scripts build"
+}
+
+Nesse caso, para executar o build bastaria rodar:
+
+
+npm run build
+
+Podemos inclusive passar parâmetros para o script:
+
+
+npm run build -- --output dir
+```
+
+Onde --output dir seria um parâmetro customizado do script build.
+
+Dessa forma, o npm run permite executar qualquer comando definido nos scripts do package.json, facilitando a padronização de tarefas no projeto.
+
+Conclusão
+
+Vimos que o Node.js e o npm provêm diversos comandos que ajudam no desenvolvimento e gerenciamento de aplicações Javascript.
+
+Os principais são:
+
+
+npm install: Para instalar pacotes e bibliotecas
+npm uninstall: Remove pacotes não utilizados
+npm update: Atualiza versões de pacotes
+npm init: Inicializa o npm no projeto
+npm start: Executa a aplicação conforme o script start
+npm run: Executa qualquer script definido no package.json
+
+Dominar esses comandos é essencial para produtividade no desenvolvimento com Node.js e Javascript.
+
+Eles permitem iniciar, gerenciar e executar aplicações de forma rápida e padronizada. Conforme o projeto cresce, saber utilizá-los adequadamente resolve muitos problemas.
+
+Portanto, pratique bastante todos os comandos apresentados neste ebook. Isso vai te transformar em um desenvolvedor Node.js mais eficiente e preparado para scenarios reais.

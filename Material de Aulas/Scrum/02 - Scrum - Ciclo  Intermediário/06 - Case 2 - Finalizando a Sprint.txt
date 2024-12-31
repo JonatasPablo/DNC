@@ -1,0 +1,66 @@
+Ebook: Revisão de Sprint no Scrum com Trello
+Introdução
+Este ebook aborda o processo de revisão de sprint (sprint review) utilizando a ferramenta Trello para gerenciamento ágil de projetos pelo framework Scrum.
+
+Serão explicados conceitos como:
+
+Objetivo da sprint
+Tarefas concluídas e não concluídas
+Aprovação das entregas (DOD)
+Replanejamento de sprint e cronograma
+Registro de impedimentos (buffers)
+Cálculo da velocidade da equipe
+O objetivo é apresentar boas práticas para conduzir a sprint review, validando com o Product Owner a conclusão ou não do objetivo planejado, aprovando os itens entregues e replanejando o que ficou pendente, além de calcular métricas importantes como velocidade do time.
+
+Revisão da Sprint no Quadro Trello
+A sprint review ocorre olhando para o quadro Trello que representa o Sprint Backlog. O primeiro passo é validar com o Product Owner ou cliente se o objetivo planejado para a Sprint foi cumprido.
+
+Para isso, analisamos se todas as tarefas foram concluídas e movida para a coluna "Concluído" do Trello.
+
+Tarefas Pendentes
+Percebemos que algumas tarefas ficaram pendentes (bloqueadas) e impediriam a entrega do incremento planejado.
+
+Nesse caso, movemos os cards dessas tarefas de volta para a coluna Sprint Backlog e alteramos suas tags para a próxima Sprint (Sprint 2).
+
+Assim fica claro que iniciamos a próxima sprint já com itens pendentes.
+
+Aprovação das Entregas
+Para cada tarefa concluída, devemos analisar o DOD (Definition of Done) definido previamente e verificar se os critérios de aceite foram cumpridos.
+
+O Product Owner fará essa validação para aprovar ou rejeitar os itens entregues.
+
+Podemos facilitar anexando nos cards as evidências que comprovam o atendimento dos critérios. Por exemplo, prints de e-mails que confirmam a entrega.
+
+Caso algum item não esteja de acordo com o DOD, não aprovamos e também movimentamos o card para a coluna Sprint Backlog, remarcando-o para a próxima Sprint.
+
+Replanejamento do Cronograma
+Se muitos itens ficaram pendentes, pode ser necessário estender o cronograma total do projeto, aumentando o número de Sprints.
+
+Isso deve ser comunicado pelo Product Owner aos stakeholders. Por exemplo, se eram previstas 6 semanas, talvez precise de 7 ou 8 devido aos atrasos.
+
+É importante que a equipe seja adaptável às mudanças de acordo com os imprevistos e atrasos de cada Sprint.
+
+Registro de Impedimentos (Buffers)
+Outra prática recomendada é registrar os buffers durante a Sprint, ou seja, qualquer item não previsto que consumiu tempo da equipe.
+
+Por exemplo, uma reunião presencial não agendada com um cliente ou mesmo as reuniões do próprio Scrum (Daily Meeting, Planning, Review etc).
+
+Esses itens devem ser registrados como cards no Sprint Backlog com a tag "buffer" para indicar que afetaram o rendimento da equipe.
+
+Assim fica claro na retrospectiva os fatores que impactaram a entrega e medidas podem ser tomadas para mitigá-los.
+
+Cálculo da Velocidade da Equipe
+A sprint review é o momento de calcular a velocidade da equipe, fundamental para o planejamento das próximas sprints.
+
+A velocidade é determinada somando-se os pontos de todas as tarefas concluídas e aprovadas. Exemplo: 29 pontos entregues.
+
+Para a sprint seguinte, deve-se puxar (no Sprint Planning) uma quantidade de itens que some no máximo esse total de pontos, evitando sobrecarregar o time.
+
+Uma boa prática é considerar a velocidade média das 3 últimas sprints para reduzir variações.
+
+Considerações Finais
+Conduzir adequadamente a sprint review é essencial para manter o controle do projeto com Scrum e Trello, validando a entrega de valor, replanejando o que ficou pendente e tomando decisões com base nos buffers e velocidade da equipe.
+
+Isso permite que o time seja adaptativo e reaja rapidamente aos imprevistos, ajustando cronograma, backlog e capacidade para continuar entregando valor de forma sustentável ao cliente.
+
+Esperamos que este ebook possa auxiliar equipes Scrum a aprimorar suas revisões de sprint com o Trello!

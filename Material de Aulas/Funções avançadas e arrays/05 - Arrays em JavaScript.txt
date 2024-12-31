@@ -1,0 +1,23 @@
+const armario = [
+    {item: 'camisetas'},
+    {item: 'pijamas'},
+    {item: 'calças'},
+    {item: 'meias'},
+];
+
+armario.push({item: 'cuecas'});
+armario.pop();
+
+armario[3] = {item: 'cuecas'};
+armario.push({item: 'meias'});
+
+console.log(armario.length);
+console.log(armario);
+
+const armario2 = [
+    'camisetas',
+    'pijamas',
+    'calças',
+    'meias',
+]
+console.log(armario2.indexOf('calças'));

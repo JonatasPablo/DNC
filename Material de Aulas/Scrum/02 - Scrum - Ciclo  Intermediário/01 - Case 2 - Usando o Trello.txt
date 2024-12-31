@@ -1,0 +1,146 @@
+Introdução
+
+Este ebook aborda os conceitos e funcionalidades do Trello, uma ferramenta online muito utilizada para gestão ágil de projetos.
+
+Serão apresentados passo a passo os recursos do Trello para criar quadros, listas, cartões e gerenciar um projeto seguindo as práticas do Scrum.
+
+Criando uma Conta no Trello
+
+O primeiro passo é acessar o site do Trello (trello.com) e criar uma conta gratuita. Você pode conectar com uma conta Google ou Facebook existente ou criar um novo usuário e senha.
+
+Ao criar a conta, você receberá a opção de iniciar um teste grátis do Trello Premium (versão paga) por 30 dias. Mas tudo que será apresentado neste ebook pode ser feito na versão gratuita sem limitações.
+
+Em seguida, você deverá nomear seu espaço de trabalho (workspace). Por exemplo, para um projeto de uma empresa de consultoria chamada Fitness+, podemos nomear o workspace como "Empresa Fitness+".
+
+Também é possível convidar outros membros da equipe para participar desse espaço e colaborar nos quadros. Basta adicionar os e-mails que terão acesso.
+
+Criando o Primeiro Quadro
+
+Os quadros (boards) são a base do Trello. É neles que todas as listas, cartões e informações do seu projeto serão organizadas.
+
+Para criar um quadro, basta clicar em "Criar Quadro" no menu lateral.
+
+Você deverá nomear seu quadro (por exemplo "Projeto Vida Fitness") e pode customizar o layout com cores e imagens de fundo.
+
+Cada workspace pode ter até 10 quadros na versão gratuita.
+
+Entendendo a Metodologia Scrum
+
+Antes de configurar as listas no quadro, é importante entender como a ferramenta apoia os ritos do Scrum.
+
+O Scrum funciona em Sprints (ciclos de trabalho) que costumam durar de 1 a 4 semanas. Em cada Sprint:
+
+
+São selecionadas as tarefas prioritárias a serem realizadas levando em conta a capacidade da equipe. Isso forma o Sprint Backlog.
+
+A equipe trabalha em conjunto para executar essas tarefas.
+
+Ao final da Sprint, o trabalho realizado é apresentado e avaliado, melhorias são identificadas, e o ciclo se reinicia.
+
+
+Dessa forma, o projeto vai sendo construído em pequenos incrementos ao longo das Sprints.
+
+Configurando o Quadro Scrum
+
+Para apoiar essa metodologia, o quadro no Trello deve ser configurado com 5 listas principais:
+
+Product Backlog: lista geral de requisitos e funcionalidades desejadas no produto final. É a visão macro do projeto.
+
+Sprint Backlog: tarefas selecionadas da lista anterior que farão parte do ciclo de trabalho atual.
+
+Fazendo: tarefas que a equipe está trabalhando no momento.
+
+Bloqueado: tarefas pausadas por algum impedimento.
+
+Concluído: tarefas finalizadas e entregues.
+
+Essa configuração permite visualizar o fluxo de trabalho e acompanhar o progresso em cada etapa.
+
+Adicionando Power-Ups
+
+Além das listas padrão, alguns power-ups (ou add-ons) são interessantes para aumentar a customização do quadro.
+
+Dois power-ups gratuitos que iremos utilizar:
+
+Epic Cards: permite criar épicos (iniciativas de maior escopo) no Product Backlog e vinculá-los às tarefas relacionadas.
+
+Card Size: possibilita definir um tamanho em pontos para cada tarefa do Sprint Backlog, permitindo medir a capacidade da equipe.
+
+Para instalar, basta procurar por power-ups gratuitos na área "Show Menu" do quadro e clicar em "Adicionar" ao lado do nome do add-on desejado.
+
+Criando Épicos e Tarefas
+
+Com as configurações básicas finalizadas, podemos começar a criar o conteúdo do quadro.
+
+No Product Backlog, adicionamos os Épicos, que representam os principais objetivos e escopos de trabalho do projeto. Cada épico pode ter várias tarefas associadas.
+
+Por exemplo, para o projeto Fitness+, podemos ter épicos como:
+
+
+Definir plano nutricional
+Criar treinos físicos
+Fazer acompanhamento antropométrico
+Calcular resultados
+
+Já no Sprint Backlog, são inseridas as tarefas que farão parte do ciclo de trabalho atual. Por exemplo, na primeira Sprint, podemos ter tarefas como:
+
+
+Identificar objetivo inicial de emagrecimento
+Definir especialista em nutrição da equipe
+Buscar referências de treinos para emagrecimento
+
+E assim por diante…
+
+Estimando o Tamanho das Tarefas
+
+Uma prática importante do Scrum é estimar o tamanho de cada tarefa em pontos, para medir o esforço necessário para realizá-la.
+
+Isso permite à equipe determinar quantas tarefas é possível executar em cada Sprint, de acordo com sua velocidade e capacidade.
+
+No power-up Card Size, podemos configurar valores como 0, 1, 2, 3, 5, 8, 13 e 21 para representar tarefas pequenas, médias ou grandes.
+
+Não há regra absoluta para a quantidade de pontos. O importante é haver um alinhamento na equipe sobre o significado de cada valor.
+
+Movimentando as Tarefas
+
+À medida que as tarefas são executadas durante a Sprint, arrastamos os cartões entre as listas para visualizar o progresso.
+
+As tarefas vão da lista "Sprint Backlog" para "Fazendo" quando o trabalho se inicia, depois para "Bloqueado" caso haja algum impedimento ou dúvida, e por fim para "Concluído" quando finalizadas.
+
+Ao final do ciclo, as tarefas concluídas representam o incremento pronto para uso pelo cliente ou usuários, enquanto as não finalizadas retornam para o Product Backlog para serem repriorizadas.
+
+Configurando Automatizações
+
+Para facilitar ainda mais o fluxo de trabalho, o Trello permite configurar automatizações com o uso de bots.
+
+Uma automação útil para agilizar o Scrum é o bot Butler. Com ele, podemos fazer com que toda tarefa adicionada ao quadro já venha com um checklist padrão prontinho.
+
+Isso ajuda os membros da equipe a não esquecerem nenhum passo importante durante a execução das tarefas.
+
+Outras possibilidades incluem enviar notificações quando tarefas mudam de lista, copiar informações de um cartão para outro, e mais.
+
+Recursos Adicionais
+
+Além das funcionalidades vistas até agora, o Trello conta com diversos outros recursos, como:
+
+
+Integrações: permite conectar o Trello a centenas de outros aplicativos online, como Google Drive, Calendário, Slack e muito mais.
+
+Páginas de Equipe: para documentação colaborativa da equipe com textos, imagens, listas de tarefas e quadros.
+
+Dashboard: para acompanhar dados e métricas do time em um layout personalizável.
+
+Comentários: os membros podem comentar nos cartões durante a execução das tarefas.
+
+
+E muito mais! O Trello oferece centenas de possibilidades de customização e automação para apoiar seu método de gestão de projetos.
+
+Considerações Finais
+
+O Trello é uma ferramenta muito flexível e pode ser moldada para servir a qualquer tipo de projeto ou metodologia ágil, não apenas o Scrum.
+
+Sua interface intuitiva e recursos gratuitos fazem do Trello uma excelente opção mesmo para equipes pequenas que estão iniciando sua jornada ágil.
+
+Espero que este ebook tenha sido útil para apresentar os principais conceitos e funcionalidades do Trello aplicados à gestão de projetos. Sinta-se à vontade para experimentar e explorar outros recursos por conta própria.
+
+Bons projetos!

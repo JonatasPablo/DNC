@@ -1,0 +1,178 @@
+Limpando o projeto
+
+Primeiro, vamos limpar o projeto atual removendo algumas partes que já havíamos criado anteriormente para começarmos do zero com o Bootstrap.
+
+// Código removido
+
+
+Agora temos uma página em branco para trabalharmos.
+
+O conceito de containers
+
+Um conceito muito importante no Bootstrap é o de containers. Os containers são divs que vamos utilizar para delimitar a área onde nosso conteúdo ficará.
+
+Vamos criar um container básico:
+
+<div class="container">
+// conteúdo aqui
+</div>
+
+
+Os containers possuem algumas vantagens:
+
+
+Delimitam a largura máxima do conteúdo
+Deixam margens nas laterais para respiro
+Se adaptam responsivamente de acordo com o tamanho da tela
+
+Por exemplo, em uma tela grande, o container pode ter até 1320px de largura, mas em dispositivos menores, esse limite máximo vai diminuindo conforme a largura disponível.
+
+Isso faz com que o layout se adapte automaticamente sem quebrar em dispositivos menores. As margens nas laterais também vão diminuindo conforme a tela fica menor.
+
+Container fluid
+
+Uma variação do container padrão é o container-fluid:
+
+<div class="container-fluid">
+
+</div>
+
+
+Ele ocupa 100% da largura da tela em todos os tamanhos, sem limites de largura máxima. Ainda mantém uma pequena margem na lateral para respiro.
+
+Sem containers
+
+Também podemos não usar containers. Nesse caso o conteúdo vai ocupar 100% da largura e sem margens laterais:
+
+<div>
+// ocupa 100% da tela
+</div>
+
+
+Mas o padrão é utilizar os containers para manter a responsividade.
+
+Criando widgets com helpers
+
+Outra funcionalidade interessante do Bootstrap são os helpers. Eles permitem adicionar estilos e comportamentos aos elementos de forma rápida apenas adicionando classes, sem precisar escrever CSS.
+
+Por exemplo, para criar um widget que ocupa 100% da largura dentro de um container, podemos utilizar a classe .w-100:
+
+<div class="container">
+<div class="w-100">
+Widget 100% de largura
+</div>
+</div>
+
+
+Também existem helpers de cores, espaçamentos, displays e vários outros. Vale a pena explorar a documentação para conhecer as opções disponíveis.
+
+Utilizando componentes
+
+Além dos helpers, o Bootstrap também possui uma série de componentes pré-construídos, como navbars, modais, accordions e muitos outros.
+
+Isso facilita muito o desenvolvimento, pois não precisamos construir tudo do zero na marra. Basta utilizar os componentes e customizar conforme a necessidade.
+
+Navbar
+
+O navbar é um ótimo exemplo. Para construir um navbar responsivo do zero requer bastante trabalho. Com o Bootstrap, basta copiar e colar o código de exemplo e já teremos um navbar funcional, que só precisamos customizar.
+
+Vamos adicionar um navbar básico com dropdown:
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">Navbar</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Dropdown
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+<li><a class="dropdown-item" href="#">Action</a></li>
+<li><a class="dropdown-item" href="#">Another action</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><a class="dropdown-item" href="#">Something else here</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+
+Agora já temos um navbar bonito e responsivo sem precisar desenvolver do zero.
+
+Podemos customizar o navbar de acordo com nossas necessidades alterando cores, links, adicionando dropdowns e etc.
+
+Modais
+
+Outro exemplo é o modal. Os modais são aquelas janelas popup que abrem sobrepor o conteúdo da página. Eles têm bastante código e lógica por trás.
+
+Novamente, o Bootstrap já nos provê um componente modal pronto para uso:
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+Conteúdo do modal...
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+<button type="button" class="btn btn-primary">Salvar</button>
+</div>
+</div>
+</div>
+</div>
+
+
+Com esse código temos um modal funcionando, acionado por um botão que apenas precisamos customizar com nosso conteúdo.
+
+Existem também outros tipos de modal com variações de animação, centralização e scroll que podem ser úteis.
+
+Collapse
+
+Outro componente interessante é o collapse. Ele permite mostrar e esconder conteúdo com um clique:
+
+<p>
+<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+Link com href
+</a>
+</p>
+<div class="collapse" id="collapseExample">
+<div class="card card-body">
+Conteúdo escondido
+</div>
+</div>
+
+
+Isso pode ser utilizado para criar FAQs, mostrar/esconder detalhes e etc.
+
+Existem vários outros componentes como accordion, paginação, breadcrumbs e mais.
+
+Considerações finais
+
+Essa foi uma introdução rápida sobre o uso de Bootstrap para criar interfaces. Vimos containers, helpers, componentes e algumas funcionalidades.
+
+O legal do Bootstrap é poder criar projetos complexos de forma rápida, sem precisar desenvolver tudo do zero. Basta utilizar os recursos já prontos!
+
+Isso acelera e facilita muito o desenvolvimento Front-end.

@@ -1,0 +1,134 @@
+                                        NPM - Gerenciador de Pacotes do Node
+O que é
+Gerenciador de pacotes do Node.js
+Permite instalar e gerenciar bibliotecas e dependências JavaScript
+Praticamente todas as bibliotecas JS estão disponíveis no NPM
+Por que é importante
+Aplicações web são complexas e dependem de muitos pacotes
+Facilita a reutilização de código já desenvolvido por outros
+Otimiza e agiliza o desenvolvimento
+O que você vai aprender
+Diferença entre dependência, pacote, biblioteca e framework
+Como instalar e utilizar pacotes com NPM
+Conhecer o ReactJS
+Ler e entender documentações
+Pré-requisitos
+Terminal
+Node.js (já vem com o NPM)
+VS Code
+Conteúdos que serão aprofundados depois
+ReactJS
+Express
+
+
+                                        Tema central: Pacotes, dependências, frameworks e bibliotecas
+Pacotes
+Nome genérico para qualquer código de terceiro que possa ser reutilizado
+Forma de organizar arquivos, código-fonte e outras informações
+Exemplos: React, Angular
+Dependências
+Aplicação de uma biblioteca, framework ou pacote em um projeto
+O projeto passa a depender das funcionalidades desse código externo
+Bibliotecas
+Conjuntos de classes, funções e métodos para realizar certas tarefas
+Projetadas para resolver problemas específicos e acelerar o desenvolvimento
+Exemplos: React, Bootstrap
+Frameworks
+Conjuntos de bibliotecas
+Fornecem uma base sólida para o desenvolvimento de aplicativos
+Abordam várias partes do projeto (front-end, back-end, banco de dados)
+Exemplos: Angular, Express
+Vantagens
+Reutilização de código
+Aceleração no desenvolvimento
+Melhoria na qualidade e padronização
+Suporte da comunidade
+Aplicação
+Gerenciados pelo NPM (Node Package Manager)
+Permite gerenciar versões e dependências
+
+
+                                        Gerenciador de pacotes NPM
+Permite instalar, desinstalar e gerenciar versões de pacotes Node.js
+Tem um grande ecossistema de bibliotecas e frameworks
+Gerencia as dependências das dependências automaticamente
+Comandos básicos
+npm install - Instala um pacote
+npm install -g - Instala globalmente (não recomendado)
+Entendendo versões
+Formato: MAJOR.MINOR.PATCH
+MAJOR - Mudanças drásticas que podem quebrar código
+MINOR - Mudanças menores, geralmente compatível
+PATCH - Correções de bugs
+Ex: 18.2.0
+React teve 18 grandes atualizações
+Está agora na versão minor 2
+Com 0 patches (correções de bug)
+Pastas importantes
+node_modules - Contém todas as dependências
+package.json - Controle de versionamento dos pacotes
+Em resumo, o NPM permite facilmente instalar e gerenciar pacotes Node.js, lidando com todas as dependências automaticamente. É importante prestar atenção nas versões durante atualizações para evitar problemas de compatibilidade.
+
+
+                                        Gerenciamento de pacotes com NPM
+Comandos principais
+npm install
+Instala pacotes
+npm uninstall
+Desinstala pacotes
+npm update
+Atualiza pacotes
+Versões de pacotes      
+Especificar versão:
+npm install nome@1.2.3
+Última versão menor que:
+npm install nome@~1.2.3
+Outros comandos
+npm init
+Inicializa gerenciador de pacotes
+npm start
+Inicia aplicativo da dependência
+npm run
+Executa scripts definidos
+Observações
+Priorizar versões recentes
+Evitar vulnerabilidades
+Comandos iniciar e executar scripts serão vistos depois
+
+
+                                        Bibliotecas JavaScript
+Introdução
+O que são bibliotecas?
+Pacotes de código reutilizável que resolvem problemas específicos
+Onde encontrar e aprender sobre bibliotecas?
+NPM (Node Package Manager)
+Site com documentação e informações sobre pacotes JavaScript
+Pode procurar por bibliotecas e ver informações como:
+Como instalar e usar
+Dependências
+Código fonte
+Principais bibliotecas
+Front-end
+React
+Criado pelo Facebook
+Foco em componentização e performance
+Utiliza o "Virtual DOM" para renderização rápida
+Angular
+Criado pelo Google
+Baseado em MVC para organização de código
+Bom para projetos escaláveis
+Vue
+Alternativa leve e simples
+Utiliza componentes
+Fácil curva de aprendizado
+Back-end
+Express
+Framework Node.js para back-end
+Rotas, requisições HTTP e banco de dados
+Altamente flexível e grande ecossistema
+Considerações finais
+Importante se manter sempre atualizado sobre novas bibliotecas
+Dominar as bibliotecas principais (React, Express)
+Ler documentações para aprender sobre funcionalidades e uso
+
+

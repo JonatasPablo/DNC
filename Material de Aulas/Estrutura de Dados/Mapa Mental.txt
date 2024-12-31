@@ -1,0 +1,335 @@
+                                        Estrutura de Dados
+O que é um dado?
+Blocos básicos de programação
+Representam uma unidade ou elemento de informação
+Tipos de dados: inteiro, real, carácter, cadeia, lógico
+Estrutura de Dados
+Espaço que armazena dados em um layout específico
+Layout permite eficiência em algumas operações e ineficiência em outras
+Principais estruturas:
+Listas ou arrays
+Pilhas
+Filas
+Grafos
+Árvores
+Hash
+Listas encadeadas
+Árvores binárias, ternárias, etc.
+Aplicação Prática
+Organização de informações (ex: livros em uma prateleira vs caixa)
+Eficiência no acesso e manipulação de dados
+Importância da escolha da estrutura ideal para o problema
+Foco do Curso
+Aprofundamento em listas, pilhas e filas
+Abordagem prática e aplicação no dia a dia do desenvolvedor
+Implementação de estruturas de dados
+Relação entre estruturas de dados e lógica de programação
+Conclusão
+Estruturas de dados são fundamentais para organizar e manipular informações de forma eficiente
+A escolha da estrutura adequada é crucial para o desempenho do sistema
+O curso irá abordar as principais estruturas de dados de forma prática e aplicada
+
+
+                                        Estruturas de Dados: Listas (Arrays)
+Introdução
+Listas (Arrays) são a estrutura de dados mais simples e amplamente utilizada
+Também conhecidas como vetores, arrays, etc.
+Características das Listas
+Cada elemento da lista possui um índice numérico, começando do 0
+O tamanho da lista é sempre maior que o último índice
+Exemplo: lista de tamanho 4, com índices de 0 a 3
+Declaração de Listas
+Declaração similar à declaração de variáveis
+Definindo o tipo, nome e dimensão da lista
+Exemplo: inteiro vetor[5], caractere vetor2[200]
+Inicialização de Listas
+Listas podem ser inicializadas com valores
+Exemplo: vetor3 = [1.4, 2.5], vetor4 = [verdadeiro, falso, verdadeiro, verdadeiro]
+Tamanho da lista é definido pelo número de elementos inicializados
+Manipulação de Listas
+Alteração de valores em uma posição específica
+Exemplo: vetor5[0] = "pergunta", vetor5[1] = "fundamental"
+Operações Comuns em Listas
+Inserir (insert) um valor em um índice
+Excluir (delete) um elemento em um índice
+Obter (get) um elemento de um índice
+Obter o tamanho (size) da lista
+Cuidados
+Atenção ao acessar índices fora do intervalo da lista
+Isso pode gerar erros de "argumento inválido"
+Prática
+Realizar exercícios e atividades para consolidar o aprendizado
+Entender e aplicar os conceitos apresentados
+
+
+                                        Prática de Estrutura de Dados
+Exercício 1: Encontrar o Maior e Menor Valor em uma Lista
+Objetivo
+Ler uma lista de 10 valores inteiros
+Exibir o maior e o menor valor informado
+Implementação
+Criar uma lista num para armazenar os 10 valores
+Inicializar variáveis maior e menor com valor 0
+Usar um loop for para:
+Ler cada valor e armazenar em num[x]
+Comparar o valor atual com maior e menor
+Atualizar maior e menor se necessário
+Exibir o maior e menor valor
+Observações
+Inicializar maior e menor com 0 é uma boa prática para evitar lixo de memória
+Usar x como índice do loop é uma opção, mas cont também pode ser usado
+Incrementar x dentro do loop garante que ele execute 10 vezes (de 0 a 9)
+Exibir o valor de x durante o loop ajuda a entender o fluxo de execução
+Exercício 2: Contagem de Aprovados e Reprovados
+Objetivo
+Ler uma lista de 10 médias de alunos
+Exibir a quantidade de alunos aprovados e reprovados
+Implementação
+Criar uma lista media para armazenar as 10 médias
+Inicializar variáveis aprovados e reprovados com 0
+Usar um loop for para:
+Ler cada média e armazenar em media[x]
+Exibir a média do aluno x + 1 (ajuste para o usuário)
+Verificar se a média é maior ou igual a 6
+Incrementar aprovados ou reprovados conforme o resultado
+Exibir a quantidade de aprovados e reprovados
+Observações
+Realizar a validação de aprovação/reprovação durante o loop é mais eficiente
+Ajustar a exibição do número do aluno (x + 1) torna o código mais legível
+Essa abordagem evita a necessidade de loops adicionais após preencher a lista
+
+
+                                        Estrutura de Dados: Pilhas
+O que é uma Pilha?
+Estrutura de dados que segue o princípio LIFO (Last-In-First-Out)
+Elementos são adicionados e removidos do topo da pilha
+Exemplo prático: Desfazer (Ctrl+Z) em aplicativos
+Operações em Pilhas
+Push: Adicionar um elemento no topo da pilha
+Pop: Remover o elemento do topo da pilha
+isEmpty: Verificar se a pilha está vazia
+Manter o controle do topo: É importante acompanhar o elemento no topo da pilha, pois ele é o próximo a ser removido
+Funcionamento da Pilha
+Elementos são empilhados um sobre o outro
+Para acessar um elemento mais abaixo, é necessário remover os elementos acima
+Último elemento adicionado é o primeiro a ser removido (LIFO)
+Aplicações Práticas
+Desfazer (Ctrl+Z) em aplicativos
+Controle de fluxo de execução em programas
+Avaliação de expressões aritméticas
+Navegação em estruturas de dados (ex: árvores)
+Próximos Passos
+Implementação de funções para manipulação de pilhas
+Aprofundamento no estudo de estruturas de dados
+
+
+                                        Funções em Programação
+Definição
+Funções são rotinas ou ações que são executadas repetidamente em programas
+Servem para otimizar a rotina e facilitar o dia a dia do programador
+Exemplos: escreva() e leia()
+Estrutura de uma Função
+Palavra-chave função
+Tipo de retorno (vazio, inteiro, real, caractere, etc.)
+Nome da função
+Parâmetros (se houver)
+Corpo da função
+Vantagens de Usar Funções
+Evita repetição de código
+Torna o código mais modular e legível
+Facilita a manutenção e reutilização de código
+Implementação de Funções
+Exemplo: Função tabuada(base)
+Recebe a base da tabuada como parâmetro
+Imprime a tabuada dessa base de 1 a 10
+Permite implementar tabuadas de diferentes bases de forma fácil e escalável
+Aplicabilidade de Funções
+Funções são amplamente utilizadas em diversas linguagens de programação
+Essencial dominar o conceito e a sintaxe de funções
+Muito cobrado em processos seletivos
+Próximos Passos
+Implementar a estrutura de dados de pilha utilizando funções
+Explorar as principais funcionalidades de uma pilha na prática
+
+
+                                        Implementação de Pilhas
+Funções Principais
+Inicializar
+Verificar se está cheia
+Verificar se está vazia
+Empilhar
+Desempilhar
+Imprimir
+Inicialização da Pilha
+Definir o tamanho da pilha como uma constante tan
+Criar a estrutura da pilha como um vetor
+Inicializar o topo da pilha como -1 para indicar que a pilha está vazia
+Função de Impressão
+Imprimir a mensagem "PILHA 1 2 3" para indicar que a impressão da pilha começou
+Percorrer a pilha do topo até o início, imprimindo cada elemento
+Imprimir a mensagem "PILHA CONT X" para indicar o número de elementos na pilha
+Execução do Programa
+A função inicio() é responsável por chamar todas as outras funções
+Ao executar o programa, apenas a função inicializar() é chamada
+Ao chamar a função imprimir(), a pilha é exibida como vazia, pois nenhum elemento foi adicionado ainda
+Próximos Passos
+Implementar as funções de empilhar e desempilhar
+Testar o funcionamento da pilha com a adição e remoção de elementos
+O objetivo deste código é implementar uma estrutura de dados do tipo pilha, com as operações básicas de empilhar, desempilhar e imprimir os elementos. A implementação é feita usando um vetor como estrutura de dados subjacente, e o topo da pilha é mantido em uma variável global para facilitar o acesso e atualização pelas diferentes funções.
+
+
+                                        Implementação da Pilha
+Funções Implementadas
+Inicializa
+Inicializa a pilha, definindo o topo como -1
+Imprimir
+Imprime os elementos da pilha
+Verificação de Estado da Pilha
+Verifica Vazia
+Verifica se a pilha está vazia
+Condição: topo == -1
+Retorna 1 se vazia, 0 caso contrário
+Verifica Cheia
+Verifica se a pilha está cheia
+Condição: topo == tamanho - 1
+Retorna 1 se cheia, 0 caso contrário
+Próximas Etapas
+Empilhar
+Adicionar elemento no topo da pilha
+Desempilhar
+Remover elemento do topo da pilha
+O objetivo principal deste conteúdo é implementar as funcionalidades básicas de uma pilha, incluindo a inicialização, impressão, verificação de estado (vazia e cheia) e as operações de empilhar e desempilhar. O autor começa explicando as funções já implementadas (inicializa e imprimir) e, em seguida, detalha a implementação das funções de verificação de estado da pilha (verifica vazia e verifica cheia). Para a verificação de vazio, a condição é verificar se o topo é igual a -1, pois este é o valor inicial definido na função de inicialização. Já para a verificação de cheio, a condição é verificar se o topo é igual ao tamanho da pilha menos 1, pois o índice do último elemento é o tamanho da pilha menos 1 (já que a contagem começa em 0). Após implementar essas funções, o autor menciona que o próximo passo será implementar as funções de empilhar e desempilhar, para que a pilha possa ser manipulada de forma completa.
+
+
+                                        Implementação de uma Pilha em Linguagem C
+Introdução
+Continuidade do conteúdo sobre funções de uma pilha
+Funções já implementadas: imprimir, verificar se está vazia, verificar se está cheia, inicializar
+Empilhando Elementos
+Criar uma variável inteira para armazenar o valor a ser empilhado
+Verificar se a pilha está cheia antes de empilhar
+Se a pilha estiver cheia, exibir mensagem de "pilha cheia" e não empilhar
+Caso contrário, solicitar ao usuário que digite o valor a ser empilhado
+Atualizar o topo da pilha para a próxima posição disponível
+Armazenar o valor digitado na posição do topo
+Testes de Empilhamento
+Inicializar a pilha e imprimir seu conteúdo
+Empilhar os valores 1, 20 e 34
+Imprimir a pilha novamente para verificar o resultado
+Tentar empilhar um quarto elemento, verificando a validação de pilha cheia
+Desenho em Pilha
+Implementação da última função a ser implementada
+Não foi abordada nesta parte do vídeo
+Conclusão
+O código implementado está funcionando corretamente, com a validação de pilha cheia
+Próximo passo é implementar a função de desenho em pilha
+
+
+                                        Implementação de uma Pilha em Código
+Tema Central
+A implementação de uma estrutura de dados de pilha, utilizando um vetor como base.
+Tópicos Abordados
+1. Desempilhar
+Verificar se a pilha está vazia antes de desempilhar
+Atualizar o topo da pilha após a remoção de um elemento
+Não é necessário se preocupar com a remoção do elemento, pois o topo é atualizado automaticamente
+2. Empilhar
+Empilhar elementos na pilha
+Imprimir a pilha para visualizar os elementos empilhados
+3. Manipulação de Vetores
+Inserção de novos elementos
+Remoção de elementos
+Listagem dos elementos
+4. Aplicações da Pilha
+Ctrl+Z (desfazer) em computadores
+Estrutura de dados amplamente utilizada
+5. Implementação Prática
+Código implementado é uma pilha funcional
+Não é necessário se preocupar com a manipulação dos elementos no vetor
+As mesmas operações básicas (inserção, remoção, listagem) se aplicam a outras linguagens de programação
+Conclusão
+Nesta aula, foi implementada uma estrutura de dados de pilha, utilizando um vetor como base. Foram abordadas as operações de empilhar e desempilhar, bem como a manipulação de vetores para inserção, remoção e listagem dos elementos. Além disso, foram discutidas as aplicações da pilha, como o Ctrl+Z (desfazer) em computadores, e a implementação prática do código, que se comporta como uma pilha funcional.
+
+
+                                        Estrutura de Dados: Filas (Queues)
+O que são Filas?
+Exemplo de fila na vida real: fila de pessoas em uma bilheteria, fila do banco, fila do metrô
+Sequência de elementos, onde o primeiro a entrar é o primeiro a sair (FIFO - First In, First Out)
+Representação visual de uma fila com 4 elementos (1, 2, 3, 4)
+Operações com Filas
+Enfileirar (Enqueue): adicionar um elemento no final da fila
+Desenfileirar (Dequeue): remover o elemento do início da fila
+Verificar se a fila está vazia
+Acessar o primeiro elemento da fila (Top)
+Diferença entre Filas e Pilhas
+Pilhas usam a lógica LIFO (Last In, First Out)
+Filas usam a lógica FIFO (First In, First Out)
+Aplicações Práticas de Filas
+Sistemas de Mensageria (Ex: Apache Kafka, RabbitMQ, AWS SQS)
+Garantir a consistência e disponibilidade de dados críticos
+Processar informações de forma assíncrona
+Submissão de provas, solicitações de suporte, etc.
+Evitar a perda de informações importantes
+Importância dos Conceitos de Filas
+Ajuda a ter uma visão mais ampla de tecnologia e desenvolvimento de software
+Facilita a comunicação e entendimento em processos seletivos
+Permite projetar soluções mais robustas e desacopladas
+Evita problemas de disponibilidade e lentidão em aplicações
+
+
+                                        Algoritmos de Busca
+Introdução
+O que são algoritmos?
+O que é uma busca?
+Algoritmos de busca se preocupam em encontrar dados em uma base ou estrutura de dados
+Busca Bruta
+Consiste em procurar página por página em uma lista telefônica
+É uma solução válida, mas não é a mais eficiente
+Busca Binária
+Divide o espaço de busca em dois e elimina metade a cada iteração
+Muito mais eficiente que a busca bruta
+Requer que a base de dados esteja ordenada
+Ordenação de Dados
+Se a base de dados não estiver ordenada, é necessário ordená-la primeiro
+Alguns algoritmos de ordenação: Merge Sort, Quick Sort, Selection Sort
+Ordenar a base de dados antes da busca binária é mais eficiente que a busca bruta
+Dicas Importantes
+Não é possível aprender apenas vendo, é necessário praticar
+Não tenha medo de errar, pergunte quando não entender
+Persistência e determinação são essenciais para alcançar seus objetivos
+
+
+                                        Resumo do Curso de Lógica de Programação
+Tópicos Abordados
+Tipos de Dados
+Aprendemos sobre os diferentes tipos de dados, como números, strings, booleanos, etc.
+Comandos de Entrada e Saída
+Aprendemos a receber dados do usuário e exibir resultados na tela.
+Operadores Aritméticos
+Aprendemos a realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão.
+Condicionais
+Aprendemos a usar estruturas condicionais, como if-else, para tomar decisões no nosso código.
+Funções
+Aprendemos a criar e utilizar funções para encapsular e reutilizar blocos de código.
+Repetição
+Aprendemos a usar estruturas de repetição, como for e while, para executar tarefas múltiplas vezes.
+Estruturas de Dados
+Aprendemos sobre diferentes formas de armazenar e manipular dados, como arrays e objetos.
+Outros Tópicos
+Também aprendemos sobre outros conceitos, como Portugal e Concepts Cloud.
+O que Ainda Não Foi Visto
+JavaScript
+HTML
+CSS
+React
+API
+Node
+Pensamento de um Desenvolvedor
+Aprender a pensar como um desenvolvedor é mais importante do que apenas acumular ferramentas.
+É necessário ter um "rigor algorítmico" para sequenciar as etapas e criar soluções eficientes, pensando no cliente final.
+Conclusão
+O curso de Lógica de Programação forneceu uma base sólida para o desenvolvimento de software.
+Agora é hora de avançar para outros tópicos, como as tecnologias mencionadas que ainda não foram abordadas.
+O importante é manter o foco no pensamento lógico e na resolução de problemas, que são habilidades fundamentais para um desenvolvedor.
+
+

@@ -1,0 +1,56 @@
+                                        Reuniões ao final de uma Sprint
+Revisão da Sprint (Sprint Review)
+Participantes: Time completo (Scrum Master, PO, time de desenvolvimento)
+Duração
+Sprints de 1 mês: 4 horas
+Sprints menores: menos tempo (não proporcional)
+Objetivo: Validar se o objetivo da Sprint foi cumprido
+Atividades:
+Time mostra os entregáveis para o PO
+PO aprova ou rejeita
+Pode haver desalinhamento entre o esperado e o entregue
+Retrospectiva da Sprint (Sprint Retrospective)
+Participantes: Time completo
+Duração
+Sprints de 1 mês: 3 horas
+Sprints menores: menos tempo
+Objetivo:
+Inspecionar processos do time
+Apontar melhorias para próxima Sprint
+Atividades:
+Time desabafa sobre problemas
+Discute distribuição de tarefas, comunicação, etc
+Define pelo menos 1 ponto de melhoria para próxima Sprint
+Após as reuniões
+Time parte para uma nova Sprint Planning
+Ciclo se repete até final do projeto
+Esse é um resumo de alto nível do conteúdo do vídeo, cobrindo os principais tópicos e etapas do processo. Fiz em forma de mapa mental para facilitar a visualização. Caso queira que eu aprofunde algum ponto específico, por favor me avise.
+
+
+                                        Sucesso do projeto de emagrecimento usando Scrum
+Papéis
+Product Owner (PO): Luisa
+Definiu a visão e objetivos gerais do projeto
+Criou épicos e product backlog
+Scrum Master: Marcelo
+Garantiu realização das reuniões
+Removeu impedimentos da equipe
+Time de desenvolvimento: Carlos, Maria e Joaquina
+Definiram e distribuíram tarefas
+Executaram o trabalho
+Eventos
+Sprint Planning
+Time negociou escopo com PO
+Daily Meetings
+Acompanhamento diário do progresso
+Visibilidade de problemas
+Sprint Review
+Apresentação do incremento ao PO
+Entregável recusado por falta de critério de aceite
+Sprint Retrospective
+Análise dos processos da equipe
+Identificação de melhorias para próxima sprint
+Próximos passos
+Consultoria em programa de emagrecimento para empresa
+Uso de ferramenta Trello para registrar processo
+Aprofundamento em conceitos Scrum

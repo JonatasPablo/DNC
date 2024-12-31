@@ -1,0 +1,212 @@
+                                        Promises em JavaScript
+O que são Promises?
+Representam uma operação assíncrona futura
+Podem ter 3 estados: pending, fulfilled, rejected
+Sintaxe básica:
+Criar uma nova Promise: new Promise((resolve, reject) => { ... })
+Resolver uma Promise: resolve(value)
+Rejeitar uma Promise: reject(error)
+Analogia com o mundo real
+Pedir um favor a um amigo
+Você precisa de algo, mas não pode parar o que está fazendo
+Seu amigo vai buscar o que você precisa
+Você continua com suas atividades enquanto espera
+Quando seu amigo voltar, você recebe o que pediu
+Exemplo prático
+Precisar de um caderno novo
+Pedir para um amigo ir comprar
+Criar uma Promise para simular a operação assíncrona
+new Promise((resolve, reject) => { ... })
+Usar setTimeout para simular a operação
+Resolver a Promise se a compra for bem-sucedida
+Rejeitar a Promise se houver algum erro
+Usar then e catch para tratar os resultados da Promise
+Exercício prático
+Criar uma Promise que simule a busca de dados em um endpoint
+A Promise deve resolver com um objeto qualquer
+Aplicar os conceitos de Promises aprendidos
+Conclusão
+Promises são usadas para lidar com operações assíncronas em JavaScript
+Permitem que o código continue sendo executado enquanto espera pelo resultado de uma operação
+Possuem 3 estados: pending, fulfilled, rejected
+Exercícios práticos ajudam a consolidar o aprendizado
+
+
+                                        Usando Promises para buscar dados de um servidor
+Introdução
+Exercício sobre um novo conceito
+Resolver o exercício juntos
+Buscando dados em um servidor
+Buscar informações de um usuário
+Criar uma nova Promise
+Função com resolve e reject
+Simulando a busca no servidor
+Usar setTimeout para simular a busca
+Caso de sucesso: resolver a Promise com os dados
+Caso de erro: rejeitar a Promise com a mensagem de erro
+Executando a Promise de busca
+Usar then para lidar com o sucesso
+Usar catch para lidar com o erro
+Imprimir as mensagens de sucesso e erro
+Simplificando o código
+Usar console.log diretamente sem then e catch
+Forma mais fácil de lidar com Promises
+Conclusão
+Entendimento do exercício de busca no servidor
+Revisitar o exercício e refazer se necessário
+Continuar estudando e praticando
+
+
+                                        Encadeamento de Promises
+O que são Promises?
+Promises são uma forma de lidar com operações assíncronas em JavaScript
+Podem estar em três estados: pendente, resolvida ou rejeitada
+Quando uma Promise é resolvida, ela retorna um valor; quando é rejeitada, retorna um erro
+Encadeamento de Promises
+Acontece quando precisamos executar uma segunda ação baseada no resultado da primeira Promise
+Exemplo: pedir a um amigo para comprar um caderno, e só então começar um curso
+Outro exemplo: autenticação no Instagram, seguido da busca de fotos recentes dos seguidores
+Exemplo prático
+Autenticação no Instagram
+Nova Promise para autenticação do usuário
+Resolve com sucesso: retorna username e lista de quem o usuário segue
+Reject em caso de erro na autenticação
+Busca de fotos recentes dos seguidores
+Nova Promise para buscar as fotos
+Resolve com sucesso: retorna as fotos
+Reject em caso de erro na busca
+Encadeamento das Promises
+Após a autenticação, chama a Promise de busca de fotos
+Recebe a resposta da busca e imprime no console
+Exercício proposto
+Simular um processo de encomenda em uma loja online
+Primeiro passo: fazer o pedido
+Segundo passo: aguardar o processamento do pagamento
+Terceiro passo: exibir a mensagem de sucesso (pedido pago, aguardando envio)
+O encadeamento de Promises é um conceito fundamental na programação assíncrona em JavaScript, permitindo que ações dependentes sejam executadas de forma organizada e legível.
+
+
+                                    Criando um Sistema de Pedidos e Encomendas Online
+Introdução
+Exercício semelhante à autenticação de usuário do Instagram
+Resolveremos o exercício juntos para deixá-lo mais claro
+Entendendo o Problema
+Criar uma promessa de pedido confirmado
+Simular o processamento do pedido com setTimeout
+Resolver a promessa com sucesso ou rejeitar em caso de falha
+Criando a Promessa de Pagamento
+Criar uma nova promessa para o pagamento
+Receber o pedido como parâmetro
+Simular a aprovação do pagamento com setTimeout
+Resolver a promessa com sucesso ou rejeitar em caso de falha
+Executando as Promessas
+Executar a promessa de pedido confirmado
+Retornar a promessa de pagamento
+Encadear as promessas com .then()
+Exibir logs para acompanhar o processo
+Sincronicidade do Código
+Entender o comportamento do console.log() em relação às promessas
+Posicionar corretamente o log para que seja exibido após a aprovação do pagamento
+Conclusão
+O exercício foi resolvido com sucesso
+Importante entender o conceito de sincronicidade do código
+
+
+                                        Gerenciamento de Erros com Promises
+Introdução
+Entendendo o que são Promises
+Encadeamento de Promises
+Importância do gerenciamento de erros
+Tratamento de Erros em Promises
+Analogia: Amigo indo comprar algo na loja
+Promises podem retornar erros durante a execução
+Necessidade de estar preparado para lidar com esses erros
+Sintaxe de Tratamento de Erros
+Utilizando o método catch()
+Estrutura básica: promise.then().catch()
+Exemplo prático: Busca de dados no servidor
+Lidando com Erros na Prática
+Exemplo: Erro na busca de dados
+Executando a promessa novamente no catch()
+Outras possíveis ações: Exibir mensagem de erro, tentar mais tarde, etc.
+Exercício Prático
+Implementar o tratamento de erros nos casos:
+Confirmação de pedido
+Promessa de pagamento
+Objetivo: Exibir log de erro, sem tentar novamente
+Conclusão
+Importância do gerenciamento de erros em Promises
+Revisitar aulas e praticar para melhor entendimento
+Continuar aplicando os conceitos aprendidos
+
+
+                                        Async Await: A Forma Mais Bonita de Lidar com Código Assíncrono em JavaScript
+Introdução
+Promises: Conceitos importantes aprendidos anteriormente
+Async Await: Forma mais comum de lidar com código assíncrono no JavaScript moderno
+Analogia: Pedindo um Favor a um Amigo
+Amigo precisa fazer algo para você
+Você espera enquanto ele faz
+Async Await é uma forma de escrever essa mesma lógica
+Sintaxe do Async Await
+Função marcada como async sempre retorna uma Promise
+await faz com que a função espere pela resolução de uma Promise
+Exemplo 1: Confirmação de Pedido
+Função confirmarPedido() retorna uma Promise
+Uso do await para esperar a resolução da Promise
+Exemplo 2: Busca de Dados no Servidor
+Função buscarDadosNoServidor() retorna uma Promise
+Uso do await para esperar a resolução da Promise
+Código parece síncrono, mas espera pelas operações assíncronas
+Exercício Proposto
+Refatorar o fluxo de processo de pagamento online usando Async Await
+Conclusão
+Async Await torna o código mais fácil de ler e mais conciso
+Mesma funcionalidade com muito menos código
+
+
+                                        Transformando Promessas em Código Assíncrono
+Confirmação de Pedido
+A primeira etapa é transformar a promessa de "pedido confirmado" em uma função assíncrona chamada "confirmar pedido".
+Essa função retorna uma nova promessa.
+Processamento de Pagamento
+A próxima etapa é processar o pagamento.
+O processamento de pagamento também é uma função assíncrona.
+Primeiro, é necessário aguardar a aprovação do pagamento antes de mostrar se o pagamento foi aprovado ou ocorreu um erro.
+Código Final
+Agora, o código final é composto por duas etapas:
+Confirmar o pedido usando a função "confirmar pedido".
+Processar o pagamento usando a função "processar pagamento".
+Caso tudo dê certo, será exibida a mensagem "Tudo deu certo no seu pedido, aguardando envio".
+Vantagens do Uso de Async/Await
+Ao usar async/await, o código fica muito mais legível e fácil de entender.
+Não é mais necessário usar os métodos .then() e .catch() para lidar com promessas.
+O fluxo do código fica muito mais claro e linear.
+
+
+                                        Tratamento de Erros com Sync Await
+Introdução
+Conteúdo denso, mas explicado de forma clara e didática
+Objetivo: entender como tratar erros em código assíncrono usando Sync Await
+Revisitando Promises
+Uso do .then() para lidar com sucesso
+Uso do .catch() para lidar com erros
+Sync Await vs Promises
+Sync Await retorna uma Promise
+Necessidade de tratar erros, pois a Promise pode ser rejeitada
+Try/Catch
+Sintaxe similar ao .then() e .catch()
+Tenta executar um bloco de código
+Caso ocorra um erro, captura e trata o erro no bloco catch
+Exemplo Prático
+Cenário: pedido online com pagamento não aprovado
+Sem tratamento de erros: fluxo quebra, não é possível entender o que aconteceu
+Com Try/Catch:
+Inicia o pedido online
+Confirma o pedido com sucesso
+Aguarda o pagamento ser aprovado
+Caso ocorra um erro no pagamento, trata o erro e cancela o pedido
+Conclusão
+Try/Catch é uma forma de gerenciar erros em código assíncrono, similar ao .then() e .catch()
+Permite tratar erros de forma síncrona, facilitando a leitura e compreensão do código
+Importante sempre adicionar tratamento de erros em código assíncrono

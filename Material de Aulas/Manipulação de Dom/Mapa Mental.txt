@@ -1,0 +1,108 @@
+                                        O DOM (Document Object Model)
+O que é o DOM?
+O DOM é uma representação em árvore da estrutura HTML de uma página web
+Cada elemento da página (títulos, parágrafos, imagens, etc.) é um nó na árvore do DOM
+O DOM é uma interface de programação que permite a manipulação da estrutura da página
+Importância do JavaScript no DOM
+O DOM é estático, não consegue realizar ações por conta própria
+O JavaScript atua como um "mágico" que manipula a árvore do DOM
+Com JavaScript, é possível:
+Adicionar novos elementos
+Remover elementos existentes
+Modificar elementos existentes
+Isso permite dar dinamismo e interatividade à página web, sem a necessidade de recarregar a página
+Manipulando o DOM com JavaScript
+Usando o objeto document, é possível acessar e modificar elementos do DOM
+document.getElementById(): Seleciona um elemento pelo seu ID
+element.textContent: Modifica o conteúdo de texto de um elemento
+document.createElement(): Cria um novo elemento HTML
+element.appendChild(): Adiciona um novo elemento como filho de outro
+document.body.removeChild(): Remove um elemento do DOM
+Próximos passos
+Na próxima aula, serão abordados mais detalhes sobre o objeto document e o window
+Esses elementos são fundamentais para a manipulação do DOM com JavaScript
+
+
+                                        Objetos Window e Document no JavaScript
+Objeto Window
+Representa o navegador do usuário
+Fornece informações sobre o navegador, como a URL atual
+Permite manipular o navegador, como redirecionar para outra página
+Propriedades e Métodos
+window.location.href: Obtém a URL atual
+window.location.href = "https://www.google.com": Redireciona para outra URL
+Objeto Document
+Representa o conteúdo da página web
+Permite manipular os elementos HTML da página
+É acessado a partir do objeto window
+Propriedades e Métodos
+document.body: Acessa o elemento <body> da página
+document.getElementById("meu-id"): Obtém um elemento pelo seu ID
+document.createElement("div"): Cria um novo elemento HTML
+Relação entre Window e Document
+O objeto window sempre possui um objeto document associado
+É possível acessar o document a partir do window, mas não o contrário
+O document fornece acesso aos elementos da página, enquanto o window fornece informações sobre o navegador
+Em resumo, o objeto window representa o navegador do usuário, enquanto o objeto document representa o conteúdo da página web. Ambos são fundamentais para a manipulação do DOM (Document Object Model) usando JavaScript.
+
+
+                                        Projeto Final de JavaScript: Lista de Tarefas
+Configuração do Ambiente de Desenvolvimento
+Instalação da extensão Live Server no VS Code
+Permite criar um servidor local com hot reload
+Atualiza a página automaticamente ao salvar o arquivo
+Criação de uma nova pasta para o projeto "To Do List"
+Criação de um novo arquivo HTML
+Estruturação da Página
+Adição de um elemento <main> com um título <h1> "Lista de Tarefas"
+Estilização da página
+Definição de estilos padrão para o HTML e o body
+Tamanho da tela, fonte, background
+Centralização do conteúdo
+Estilização do título <h1>
+Tamanho da fonte, margens
+Estilização do container <main>
+Tamanho máximo, cor de fundo, bordas arredondadas, padding
+Próximos Passos
+Na próxima aula, será abordado como criar a lista de tarefas propriamente dita
+Renderização de uma lista com checkboxes e nomes de tarefas
+Aprendizado sobre conceitos importantes, como o carregamento da página (load) e a interação com o JavaScript
+
+
+                                        Criação de uma Lista de Tarefas com JavaScript
+Estrutura Básica da Tela
+Criação de uma seção para a lista de tarefas
+Adição de um ID e uma classe para a seção
+Importação do arquivo JavaScript (index.js)
+Renderização da Lista de Tarefas
+Criação de um array de tarefas
+Cada tarefa possui um ID, descrição e um status de conclusão (checked)
+Utilização da função window.onload para renderizar a lista
+Iteração sobre o array de tarefas
+Criação de um elemento <li> para cada tarefa
+Adição do texto da descrição da tarefa ao elemento <li>
+Adição do elemento <li> à lista
+Adição de Checkboxes
+Criação de uma função getCheckboxInput para gerar um checkbox
+Criação de um elemento <input> do tipo checkbox
+Criação de um elemento <label> para o checkbox
+Agrupamento do checkbox e label em um elemento <div> (wrapper)
+Retorno do wrapper com o checkbox e label
+Adição do checkbox gerado pela função getCheckboxInput a cada elemento <li> da lista
+Estilização da Lista de Tarefas
+Estilização da seção da lista de tarefas
+Adição de margens, altura mínima e overflow automático
+Estilização dos elementos <li> da lista
+Remoção dos marcadores padrão da lista
+Adição de espaçamento e tamanho de fonte
+Aplicação de background color e display flex
+Estilização do botão de exclusão (ainda não implementado)
+Definição de tamanho, cor de fundo e borda
+Adição de efeito de hover
+Estilização do checkbox e label
+Alinhamento vertical do checkbox e label
+Adição de cursor de ponteiro e margem para o label
+Próximos Passos
+Criação de um formulário para adição de novas tarefas
+Manipulação de arrays e do DOM para adicionar novos itens à lista
+Refatoração do código para melhorar a organização e legibilidade

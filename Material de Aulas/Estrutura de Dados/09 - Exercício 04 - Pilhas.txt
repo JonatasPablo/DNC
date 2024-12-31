@@ -1,0 +1,359 @@
+Introdução
+
+As estruturas de dados são fundamentais na ciência da computação e no desenvolvimento de software. Elas nos permitem organizar e manipular dados de maneira eficiente, otimizando o desempenho e a funcionalidade dos programas. Entre as diversas estruturas de dados existentes, a pilha se destaca por sua simplicidade e ampla aplicabilidade.
+
+Neste ebook, vamos explorar em detalhes a implementação e manipulação de pilhas utilizando a linguagem de programação C. Abordaremos desde os conceitos básicos até aplicações práticas, fornecendo uma compreensão abrangente desta importante estrutura de dados.
+
+A pilha é uma estrutura de dados linear que segue o princípio LIFO (Last In, First Out), ou seja, o último elemento inserido é o primeiro a ser removido. Esta característica torna as pilhas particularmente úteis em diversas situações, como na implementação de funções de desfazer (Ctrl+Z) em editores de texto, no gerenciamento de chamadas de funções em linguagens de programação, e em algoritmos de busca em profundidade, entre outros.
+
+Ao longo deste material, você aprenderá como implementar uma pilha do zero utilizando arrays em C, como realizar operações básicas como empilhar (push) e desempilhar (pop), e como lidar com situações especiais como pilha vazia ou cheia. Além disso, discutiremos boas práticas de programação e forneceremos exemplos práticos para consolidar o aprendizado.
+
+Prepare-se para mergulhar no fascinante mundo das pilhas e aprimorar suas habilidades de programação e estruturas de dados!
+
+Conceitos Básicos de Pilhas
+
+Antes de mergulharmos na implementação prática de uma pilha em C, é crucial compreender os conceitos fundamentais que regem esta estrutura de dados.
+
+O que é uma Pilha?
+
+Uma pilha é uma estrutura de dados linear que segue uma ordem específica para suas operações. Imagine uma pilha de pratos: você sempre adiciona ou remove pratos do topo da pilha. Este é exatamente o princípio de funcionamento de uma pilha em programação.
+
+Princípio LIFO (Last In, First Out)
+
+O princípio LIFO é a característica definidora de uma pilha. Ele estabelece que:
+
+
+O último elemento inserido na pilha será o primeiro a ser removido.
+O primeiro elemento inserido será o último a ser removido.
+
+Este princípio governa todas as operações realizadas em uma pilha.
+
+Elementos de uma Pilha
+
+Uma pilha é composta por:
+
+
+Elementos: Os dados armazenados na pilha.
+Topo: O ponto de acesso à pilha, onde ocorrem as inserções e remoções.
+Base: O fundo da pilha, onde está o elemento mais antigo.
+
+Operações Básicas
+
+As operações fundamentais em uma pilha são:
+
+
+Push (Empilhar): Adiciona um elemento no topo da pilha.
+Pop (Desempilhar): Remove o elemento do topo da pilha.
+Peek (Espiar): Retorna o elemento do topo sem removê-lo.
+isEmpty (Está Vazia): Verifica se a pilha está vazia.
+isFull (Está Cheia): Verifica se a pilha está cheia (relevante para implementações com tamanho fixo).
+
+Tipos de Implementação
+
+Existem duas formas principais de implementar uma pilha:
+
+
+Usando Arrays: Implementação mais simples, com tamanho fixo.
+Usando Listas Encadeadas: Permite uma pilha de tamanho dinâmico.
+
+Neste ebook, focaremos na implementação usando arrays em C.
+
+Aplicações de Pilhas
+
+As pilhas são amplamente utilizadas em diversas áreas da computação, incluindo:
+
+
+Avaliação de expressões matemáticas
+Implementação de funções de desfazer (Undo) em softwares
+Gerenciamento de chamadas de funções em linguagens de programação
+Algoritmos de busca em profundidade em grafos
+Conversão de expressões infix para postfix
+
+Compreender estes conceitos básicos é essencial para implementar e utilizar pilhas eficientemente em seus programas. Na próxima seção, veremos como traduzir estes conceitos para código C, criando nossa própria implementação de pilha.
+
+Implementação de uma Pilha em C
+
+Agora que compreendemos os conceitos básicos de uma pilha, vamos implementá-la utilizando a linguagem C. Utilizaremos um array para armazenar os elementos da pilha e manteremos um controle do topo da pilha.
+
+Estrutura Básica
+
+Primeiramente, vamos definir a estrutura da nossa pilha:
+
+#define MAX_SIZE 100
+
+typedef struct {
+int items[MAX_SIZE];
+int topo;
+} Pilha;
+
+
+Nesta estrutura:
+
+
+items é um array que armazenará os elementos da pilha.
+topo é um inteiro que indica a posição do topo da pilha.
+MAX_SIZE define o tamanho máximo da pilha.
+
+Inicialização da Pilha
+
+Antes de usar a pilha, precisamos inicializá-la:
+
+void inicializarPilha(Pilha *p) {
+p->topo = -1;
+}
+
+
+Esta função define o topo como -1, indicando que a pilha está vazia.
+
+Verificação de Pilha Vazia
+
+Para verificar se a pilha está vazia:
+
+int pilhaVazia(Pilha *p) {
+return (p->topo == -1);
+}
+
+
+Verificação de Pilha Cheia
+
+Para verificar se a pilha está cheia:
+
+int pilhaCheia(Pilha *p) {
+return (p->topo == MAX_SIZE - 1);
+}
+
+
+Empilhar (Push)
+
+Para adicionar um elemento ao topo da pilha:
+
+void empilhar(Pilha *p, int valor) {
+if (pilhaCheia(p)) {
+printf("Erro: Pilha cheia\n");
+return;
+}
+p->topo++;
+p->items[p->topo] = valor;
+}
+
+
+Desempilhar (Pop)
+
+Para remover o elemento do topo da pilha:
+
+int desempilhar(Pilha *p) {
+if (pilhaVazia(p)) {
+printf("Erro: Pilha vazia\n");
+return -1;
+}
+int valor = p->items[p->topo];
+p->topo--;
+return valor;
+}
+
+
+Espiar (Peek)
+
+Para ver o elemento no topo da pilha sem removê-lo:
+
+int espiar(Pilha *p) {
+if (pilhaVazia(p)) {
+printf("Erro: Pilha vazia\n");
+return -1;
+}
+return p->items[p->topo];
+}
+
+
+Imprimir a Pilha
+
+Para visualizar o conteúdo da pilha:
+
+void imprimirPilha(Pilha *p) {
+if (pilhaVazia(p)) {
+printf("Pilha vazia\n");
+return;
+}
+printf("Conteúdo da pilha:\n");
+for (int i = p->topo; i >= 0; i--) {
+printf("%d\n", p->items[i]);
+}
+}
+
+
+Esta implementação fornece todas as operações básicas necessárias para trabalhar com uma pilha. Na próxima seção, exploraremos como utilizar estas funções em um programa completo e discutiremos algumas considerações importantes sobre o uso de pilhas.
+
+Operações Básicas em Pilhas
+
+Agora que temos nossa implementação básica de pilha, vamos explorar em detalhes como realizar as operações fundamentais e como elas funcionam internamente.
+
+Empilhar (Push)
+
+A operação de empilhar é fundamental para adicionar novos elementos à pilha. Vamos analisar o processo passo a passo:
+
+
+Verificamos se a pilha está cheia usando a função pilhaCheia().
+Se a pilha estiver cheia, exibimos uma mensagem de erro e retornamos.
+Se houver espaço, incrementamos o índice do topo (p->topo++).
+Adicionamos o novo valor na posição do topo (p->items[p->topo] = valor).
+
+void empilhar(Pilha *p, int valor) {
+if (pilhaCheia(p)) {
+printf("Erro: Pilha cheia\n");
+return;
+}
+p->topo++;
+p->items[p->topo] = valor;
+printf("Empilhado: %d\n", valor);
+}
+
+
+Desempilhar (Pop)
+
+Desempilhar remove o elemento do topo da pilha. O processo é o seguinte:
+
+
+Verificamos se a pilha está vazia usando pilhaVazia().
+Se estiver vazia, exibimos uma mensagem de erro e retornamos um valor inválido.
+Se não estiver vazia, armazenamos o valor do topo em uma variável.
+Decrementamos o índice do topo (p->topo--).
+Retornamos o valor armazenado.
+
+int desempilhar(Pilha *p) {
+if (pilhaVazia(p)) {
+printf("Erro: Pilha vazia\n");
+return -1;
+}
+int valor = p->items[p->topo];
+p->topo--;
+printf("Desempilhado: %d\n", valor);
+return valor;
+}
+
+
+Espiar (Peek)
+
+A operação de espiar permite ver o elemento no topo da pilha sem removê-lo:
+
+
+Verificamos se a pilha está vazia.
+Se não estiver vazia, retornamos o valor no topo sem modificar a pilha.
+
+int espiar(Pilha *p) {
+if (pilhaVazia(p)) {
+printf("Erro: Pilha vazia\n");
+return -1;
+}
+return p->items[p->topo];
+}
+
+
+Verificação de Pilha Vazia e Cheia
+
+Estas operações são cruciais para evitar erros de underflow (tentar remover de uma pilha vazia) e overflow (tentar adicionar a uma pilha cheia).
+
+int pilhaVazia(Pilha *p) {
+return (p->topo == -1);
+}
+
+int pilhaCheia(Pilha *p) {
+return (p->topo == MAX_SIZE - 1);
+}
+
+
+Imprimir a Pilha
+
+Imprimir a pilha é útil para depuração e visualização do estado atual:
+
+void imprimirPilha(Pilha *p) {
+if (pilhaVazia(p)) {
+printf("Pilha vazia\n");
+return;
+}
+printf("Conteúdo da pilha:\n");
+for (int i = p->topo; i >= 0; i--) {
+printf("%d\n", p->items[i]);
+}
+}
+
+
+Exemplo de Uso
+
+Vamos ver um exemplo completo de como usar todas essas operações:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+// ... (definições de estrutura e funções aqui)
+
+int main() {
+Pilha minhaPilha;
+inicializarPilha(&minhaPilha);
+
+empilhar(&minhaPilha, 10);
+empilhar(&minhaPilha, 20);
+empilhar(&minhaPilha, 30);
+
+printf("Topo da pilha: %d\n", espiar(&minhaPilha));
+
+imprimirPilha(&minhaPilha);
+
+int removido = desempilhar(&minhaPilha);
+printf("Elemento removido: %d\n", removido);
+
+imprimirPilha(&minhaPilha);
+
+return 0;
+}
+
+
+Este exemplo demonstra como usar as operações básicas da pilha em um programa C. Ele cria uma pilha, adiciona alguns elementos, exibe o topo, imprime o conteúdo, remove um elemento e imprime novamente.
+
+Compreender e dominar essas operações básicas é essencial para utilizar pilhas eficientemente em seus programas. Na próxima seção, exploraremos algumas aplicações práticas de pilhas em problemas do mundo real.
+
+Aplicações Práticas de Pilhas
+
+As pilhas são estruturas de dados versáteis com uma ampla gama de aplicações práticas. Nesta seção, exploraremos algumas das utilizações mais comuns de pilhas em programação e resolução de problemas.
+
+1. Verificação de Parênteses Balanceados
+
+Uma aplicação clássica de pilhas é verificar se uma expressão matemática tem parênteses balanceados. Por exemplo, "((2+3)(4-1))" é balanceada, enquanto "((2+3)4)" não é.
+
+int verificaParenteses(char* expressao) {
+Pilha p;
+inicializarPilha(&p);
+
+for (int i = 0; expressao[i] != '\0'; i++) {
+if (expressao[i] == '(') {
+empilhar(&p, '(');
+} else if (expressao[i] == ')') {
+if (pilhaVazia(&p)) {
+return 0; // Desbalanceado
+}
+desempilhar(&p);
+}
+}
+
+return pilhaVazia(&p); // Balanceado se a pilha estiver vazia no final
+}
+
+
+2. Conversão de Expressões Infix para Postfix
+
+As pilhas são fundamentais na conversão de expressões matemáticas da notação infix (comum) para postfix (notação polonesa reversa).
+
+```c
+void infixParaPostfix(char* infix, char* postfix) {
+Pilha p;
+inicializarPilha(&p);
+int j = 0;
+
+for (int i = 0; infix[i] != '\0'; i++) {
+char c = infix[i];
+if (isalnum(c)) {
+postfix[j++] = c;
+} else if (c == '(') {
+empilhar(&p, c);
+} else if (c == ')') {
+while (!pilhaVazia(&p) && espiar(&p) != '(') {
+postfix[j++] =

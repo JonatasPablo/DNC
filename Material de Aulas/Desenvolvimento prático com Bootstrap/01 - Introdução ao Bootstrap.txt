@@ -1,0 +1,158 @@
+Material complementar - https://getbootstrap.com/
+
+O que é o Bootstrap?
+
+O Bootstrap é um framework front-end muito popular que fornece uma série de ferramentas e componentes para criar sites e aplicações web responsivos de forma rápida e fácil, sem precisar criar tudo do zero.
+
+Ele foi criado pelos desenvolvedores do Twitter em 2011 e logo se tornou um dos frameworks front-end mais utilizados no mundo. O Bootstrap introduziu o conceito de desenvolvimento web responsivo, permitindo que os sites se adaptem facilmente a diferentes tamanhos de tela, desde desktops até dispositivos móveis.
+
+Além disso, ele provê componentes visuais prontos para uso, como botões, menus, forms, modais e muitos outros, bastando apenas copiar e colar o código na sua página. Isso agiliza bastante o desenvolvimento, pois não é preciso criar todos esses elementos do zero.
+
+O Bootstrap também é open source, ou seja, seu código está disponível publicamente para que qualquer um possa contribuir com melhorias ou criar suas próprias versões.
+
+Por que usar o Bootstrap?
+
+Existem algumas grandes vantagens em utilizar o Bootstrap no desenvolvimento web:
+
+
+Responsividade: os sites criados com Bootstrap são nativamente responsivos e se adaptam a qualquer tamanho de tela, desde desktops até dispositivos móveis. Isso melhora bastante a experiência do usuário.
+
+Cross-browser: o Bootstrap funciona consistentemente bem nos principais navegadores web como Chrome, Firefox, Safari, Opera e IE10+. Não é preciso se preocupar com inconsistências visuais entre navegadores.
+
+Fácil de aprender: a curva de aprendizado do Bootstrap é bem rápida. Em pouco tempo é possível começar a criar sites responsivos sem precisar aprender CSS avançado.
+
+Grande comunidade: por ser extremamente popular, o Bootstrap tem uma comunidade muito grande por trás, o que significa encontrar ajuda e soluções para problemas é bastante fácil.
+
+Código limpo: o Bootstrap promove boas práticas de codificação e um código front-end limpo, organizado e fácil de dar manutenção.
+
+Customização: apesar de vir com uma aparência visual padrão, o Bootstrap permite fácil customização de cores, fontes, espaçamentos e layouts para criar sites com a sua própria identidade visual.
+
+Componentes reutilizáveis: como o Bootstrap já provê dezenas de componentes prontos, como forms, botões, tabelas e outros, você pode simplesmente reutilizá-los em diferentes projetos, melhorando sua produtividade como desenvolvedor.
+
+
+Como o Bootstrap funciona?
+
+O Bootstrap funciona provendo uma série de estilos CSS e códigos JavaScript já prontos que você pode simplesmente copiar para dentro do seu projeto web.
+
+Ele é baseado em dois conceitos principais:
+
+1. Container, linhas e colunas
+
+O Bootstrap trabalha com o layout do seu site dividido em containers, linhas e colunas.
+
+O container serve para dar um espaçamento do conteúdo para as laterais da página. Geralmente usamos o container fluid para que ele ocupe 100% da largura da tela.
+
+Dentro do container adicionamos linhas (rows). E dentro das linhas adicionamos colunas (columns) para organizar o conteúdo side by side.
+
+O sistema de grid do Bootstrap trabalha com 12 colunas. Então você pode, por exemplo, criar uma linha com 2 colunas de 6 colunas cada. Assim quando diminui a tela as colunas vão empilhando uma embaixo da outra naturalmente.
+
+2. Classes responsivas
+
+O Bootstrap tem um sistema de classes CSS responsivas que permitem mostrar, esconder, empilhar ou reorganizar elementos conforme o tamanho da tela.
+
+Alguns exemplos:
+
+
+.d-none e .d-block para mostrar/esconder elementos
+.flex-column e .flex-row para organizar colunas
+.order-1 até .order-12 para reorganizar a ordem dos elementos
+
+Então combinando o sistema de grid responsivo com as classes responsivas, podemos criar layouts que se adaptam perfeitamente em qualquer dispositivo.
+
+Configurando o Bootstrap no projeto
+
+Existem algumas maneiras de adicionar o Bootstrap ao seu projeto web. As principais são:
+
+CDN: basta adicionar as tags link para os arquivos CSS e JS hospedados nos servidores CDN do Bootstrap:
+
+<!-- CSS bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<!-- JavaScript Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+NPM: instalar via npm e importar os arquivos SCSS ou JavaScript no seu processo de build:
+
+npm install bootstrap
+
+
+Download manual: simplesmente baixar e extrair os arquivos CSS e JS compilados do site do Bootstrap e adicionar na pasta do seu projeto.
+
+Componentes e recursos do Bootstrap
+
+O Bootstrap conta com uma grande variedade de componentes front-end já prontos para uso, como:
+
+
+Botões
+Formulários
+Menu de navegação
+Indicadores de progresso
+Paginação
+Breadcrumbs
+Cards
+Alertas
+Modais
+Tooltips
+Popovers
+
+Além disso, também provê mixins SCSS para criar sombras, transitions, transformações, entre outros efeitos.
+
+Também vale mencionar os recursos:
+
+
+Sistema de grid responsivo
+Classes helpers como textos, imagens, floats, espaçamentos, etc
+Classes responsivas para controlar elementos em diferentes viewports
+Opções de tema com variáveis SCSS
+
+E uma documentação muito completa com exemplos de uso para praticamente qualquer tipo de elemento ou layout que você queira construir.
+
+Bootstrap no mundo real
+
+Hoje em dia o Bootstrap é utilizado em centenas de milhares de sites ao redor do mundo. Desde simples sites institucionais até grandes web apps.
+
+Alguns exemplos famosos que utilizam Bootstrap:
+
+
+Netflix
+Spotify
+Uber
+Globo.com
+Twitch
+Walmart
+
+Além disso, é muito comum encontrarmos templates Bootstrap já prontos para utilizar como base para novos projetos, desde templates gratuitos até templates premium à venda, por exemplo no ThemeForest.
+
+Também existem versões modificadas do Bootstrap com diferentes temas, ícones e plugins adicionais, como:
+
+
+Material Kit
+Creative Tim
+MDBootstrap
+BootstrapMade
+Bootswatch
+
+Evolução para frameworks JavaScript
+
+O Bootstrap foi um grande marco no desenvolvimento front-end, introduzindo conceitos que são base para os frameworks atuais como React, Vue.js e Angular.
+
+Hoje em dia, é muito comum utilizarmos o Bootstrap em conjunto com frameworks JavaScript mais robustos para criar aplicações web complexas.
+
+Alguns exemplos de frameworks que trabalham em cima do Bootstrap:
+
+
+Reactstrap
+Ng-bootstrap
+Bootstrap-vue
+
+Assim podemos aproveitar a base sólida do Bootstrap e adicionar interatividade com JavaScript mais avançado.
+
+Conclusão
+
+O Bootstrap revolucionou a forma como fazemos desenvolvimento front-end para web. Ele tem uma curva de aprendizado rápida, permite construir sites responsivos rapidamente e conta com uma grande comunidade por trás.
+
+Portanto, aprender Bootstrap é essencial para qualquer desenvolvedor web moderno e este ebook cobriu os principais conceitos e fundamentos para você começar.
+
+Espero que as informações apresentadas aqui sejam úteis para você dominar esse framework incrível e produtivo que é o Bootstrap.
+

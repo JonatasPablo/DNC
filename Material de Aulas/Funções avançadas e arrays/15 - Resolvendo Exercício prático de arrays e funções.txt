@@ -1,0 +1,64 @@
+Guia Prático: Manipulação de Arrays em JavaScript
+Introdução
+Este guia aborda técnicas essenciais para manipular arrays em JavaScript, com foco em um exercício prático de gerenciamento de tarefas. Vamos explorar métodos importantes como push, filter, map, sort, reduce, find e every, demonstrando como aplicá-los em situações reais de desenvolvimento.
+
+Criação e Estruturação de Arrays
+Definindo a Estrutura Básica
+Para iniciar nosso exercício, criamos um array de tarefas com a seguinte estrutura:
+
+const tasks = [  { descricao: "Passear com o cachorro", prioridade: 1, status: "concluída" },  { descricao: "Comprar ingredientes para o almoço", prioridade: 1, status: "concluída" },  { descricao: "Fazer o almoço", prioridade: 1, status: "pendente" },  { descricao: "Ir para a academia", prioridade: 2, status: "pendente" },  { descricao: "Resolver exercício do curso", prioridade: 1, status: "concluída" },  { descricao: "Ir para o futebol", prioridade: 3, status: "pendente" }];
+Cada tarefa é representada por um objeto contendo:
+
+descrição: o que deve ser feito
+prioridade: nível de importância (1 sendo o mais alto)
+status: "concluída" ou "pendente"
+Adicionando Novas Tarefas
+Para adicionar uma nova tarefa ao array, utilizamos o método push:
+
+tasks.push({  descricao: "Treinar violão",  prioridade: 2,  status: "pendente"});
+Dica: O método push é ideal para adicionar elementos ao final de um array de forma dinâmica.
+
+Filtragem e Manipulação de Arrays
+Removendo Tarefas Concluídas
+Para filtrar apenas as tarefas pendentes, utilizamos o método filter:
+
+const pendingTasks = tasks.filter(({ status }) => status === "pendente");
+Observação: O uso de destructuring ({ status }) torna o código mais limpo e legível.
+
+Marcando Todas as Tarefas como Concluídas
+Para alterar o status de todas as tarefas para "concluída", usamos o método map:
+
+const doneTasks = tasks.map(task => ({ ...task, status: "concluída" }));
+Importante: O map cria um novo array, não modificando o original.
+
+Ordenação e Contagem
+Ordenando Tarefas por Prioridade
+Para ordenar as tarefas por prioridade, utilizamos o método sort:
+
+const sortedTasks = tasks.sort((prevTask, currentTask) =>   prevTask.prioridade - currentTask.prioridade);
+Contando Tarefas Pendentes
+O método reduce é útil para contar as tarefas pendentes:
+
+const pendingTasksCount = tasks.reduce((prev, next) =>   next.status === "pendente" ? prev + 1 : prev, 0);
+Busca e Verificação
+Encontrando uma Tarefa Específica
+Para localizar uma tarefa específica, usamos o método find:
+
+const selectedTask = tasks.find(task => task.descricao === "Treinar violão");
+Verificando se Todas as Tarefas Estão Concluídas
+O método every é perfeito para verificar se todas as tarefas estão concluídas:
+
+const isEveryTaskDone = tasks.every(task => task.status === "concluída");
+Conclusão
+Neste guia, exploramos diversos métodos de manipulação de arrays em JavaScript, aplicando-os a um cenário prático de gerenciamento de tarefas. Dominar esses métodos é fundamental para o desenvolvimento eficiente em JavaScript, permitindo operações complexas com código limpo e conciso.
+
+Lembre-se:
+
+push para adicionar elementos
+filter para selecionar elementos específicos
+map para transformar elementos
+sort para ordenação
+reduce para cálculos e agregações
+find para busca de elementos
+every para verificações condicionais em todo o array
+Pratique esses conceitos regularmente para aprimorar suas habilidades de programação e desenvolver soluções mais eficientes e elegantes.

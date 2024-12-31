@@ -1,0 +1,113 @@
+Construindo o Backlog do Projeto No trello
+Introdução
+Este ebook tem como objetivo apresentar de forma detalhada o processo de construção do backlog do projeto Nutrello. O Nutrello é um projeto que visa ajudar os funcionários de uma empresa a terem uma alimentação mais saudável e atingirem suas metas de emagrecimento.
+
+Inicialmente, serão apresentados os objetivos e etapas principais do projeto. Em seguida, cada etapa será detalhada, mostrando como o backlog foi sendo construído passo a passo.
+
+Tópicos importantes como a definição de pronto (DOD) e definição de preparado (DOR) serão abordados. Além disso, técnicas como Story Mapping e o método ARO (Ação, Referência, Objeto) serão explicados.
+
+Ao final do ebook, o leitor terá uma visão completa de como construir um backlog de projeto utilizando boas práticas de gerenciamento de projetos ágeis.
+
+Objetivos e Etapas do Projeto Nutrello
+O projeto Nutrello tem como objetivo principal ajudar os funcionários de uma empresa a terem uma alimentação mais saudável e atingirem suas metas de emagrecimento.
+
+Para isso, as principais etapas definidas foram:
+
+Ter um acompanhamento nutricional
+Ter uma alimentação saudável
+Matricular-se em uma academia
+Criar uma rotina de exercícios
+Reportar periodicamente o progresso
+Essas etapas foram definidas como épicos no Product Backlog. Cada épico será destrinchado em pequenas tarefas (tasks) que serão executadas pelos membros da equipe.
+
+A primeira sprint será focada no épico "Ter um acompanhamento nutricional". As demais sprints trabalharão os outros épicos, em um fluxo contínuo, conforme o progresso do projeto.
+
+Detalhando o Épico: Ter um Acompanhamento Nutricional
+O primeiro passo foi destrinchar o épico "Ter um acompanhamento nutricional" em pequenas tarefas.
+
+As tarefas definidas inicialmente foram:
+
+Procurar 5 nutricionistas
+Fazer um orçamento com cada nutricionista
+Verificar disponibilidade dos membros da equipe
+Definir budget máximo para o valor da consulta
+Fechar a consulta para todos os membros do grupo
+Mandar um print da consulta para a PO (Product Owner)
+Porém, como agora o projeto envolve uma empresa, algumas adaptações foram necessárias.
+
+Solicitar Cotação de Nutricionistas
+Ao invés de procurar diretamente os nutricionistas, a tarefa foi adaptada para solicitar uma cotação formal para a área de compras da empresa.
+
+Essa tarefa recebeu vários detalhamentos importantes:
+
+DOR (Definição de Pronto):
+
+Devem ser cotados no mínimo 5 nutricionistas esportivos especializados, que residam em São Paulo ou região
+Os nutricionistas devem emitir nota fiscal e permitir um faturamento de 30, 60 ou 90 dias.
+DOD (Definição de Concluído):
+
+Um e-mail formalizando o orçamento e disponibilidade de agenda dos nutricionistas pelos próximos 30 dias
+Dessa forma, a tarefa fica bem clara tanto para quem vai executá-la como para quem vai recebê-la. O DOR traz todos os detalhes necessários para o preparo da tarefa. O DOD define objetivamente como a tarefa será considerada concluída com qualidade.
+
+Definir Budget Máximo
+Outra tarefa adaptada foi a definição do orçamento máximo para as consultas com os nutricionistas. Novamente, DOR e DOD foram adicionados:
+
+DOR:
+
+O valor deve estar em reais e ser passado para a área de compras antes da cotação ser realizada
+DOD:
+
+Um e-mail confirmando o budget para a área de compras
+Dessa forma fica claro para a área de compras qual é o valor máximo que pode ser gasto nas consultas que eles irão cotar com os nutricionistas.
+
+Verificar Disponibilidade da Equipe
+Para conseguir agendar as consultas, é preciso primeiro encontrar horários em comum entre todos os membros da equipe. Para isso, a tarefa foi detalhada assim:
+
+DOR:
+
+Enviar pelo menos 5 horários disponíveis pelos próximos 10 dias para cada membro da equipe
+DOD:
+
+Um Google Agenda com eventos criados para cada disponibilidade de cada membro da equipe
+Dessa forma fica fácil visualizar as disponibilidades de todos e encontrar o melhor horário para a consulta.
+
+Fechar as Consultas
+Para fechar as consultas, algumas regras importantes foram estabelecidas:
+
+DOR:
+
+Todas as consultas não precisam ser com o mesmo nutricionista
+Todas as consultas não precisam ser na mesma semana
+DOD:
+
+Um e-mail com comprovante de confirmação de consulta para cada membro da equipe
+Assim fica claro que cada membro pode agendar sua consulta de forma independente, desde que depois comprove o agendamento por e-mail.
+
+Criando Regras de Pontuação e Recompensa
+Para engajar os funcionários da empresa a participarem do desafio, um programa de recompensas e pontuação foi criado.
+
+Cada tarefa realizada irá somar pontos em uma planilha. Quem atingir o objetivo final irá ganhar um bônus salarial de R$ 200.
+
+Por exemplo, o envio do comprovante de consulta irá somar 10 pontos no ranking. Já quem não entregar, não pontua.
+
+Dessa forma fica claro para todos as regras e recompensas, estimulando-os a realizarem as tarefas.
+
+Utilizando Técnicas de Construção de Backlog
+Existem algumas técnicas interessantes que podem ser utilizadas para construir backlogs, como Story Mapping e o método ARO.
+
+O Story Mapping consiste em descrever as tarefas como histórias de usuário, trazendo mais contexto ao invés de apenas listar ações.
+
+Já o método ARO significa Ação, Referência e Objeto. Ele estrutura as sentenças em uma forma padronizada que facilita o entendimento das tarefas.
+
+Por uma questão de simplicidade, optou-se por manter a utilização do método ARO no projeto Nutrello. Porém vale a pena conhecer outras abordagens, como o Story Mapping, para projetos futuros.
+
+Conclusão
+Neste ebook, apresentamos em detalhes todo o processo de construção do backlog do projeto Nutrello, um projeto com o objetivo de melhorar a alimentação e saúde dos funcionários de uma empresa.
+
+Vimos como o backlog foi sendo estruturado a partir da definição dos épicos e destrinchamento em pequenas tarefas.
+
+Foram utilizadas boas práticas como DOR, DOD, programa de recompensas e técnicas de construção de backlog.
+
+Ao final do processo, temos um backlog completo, servindo como guia para o sucesso do projeto nas sprints futuras. A equipe sabe exatamente o que deve ser feito em cada tarefa e como validar sua conclusão com qualidade.
+
+Esse nível de detalhamento é fundamental para minimizar falhas de comunicação e executar o projeto com eficiência. Esperamos que este material sirva de guia para a construção de backlogs de seus próprios projetos.

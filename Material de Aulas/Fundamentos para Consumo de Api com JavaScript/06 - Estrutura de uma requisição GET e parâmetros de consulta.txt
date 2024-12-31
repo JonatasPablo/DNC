@@ -1,0 +1,158 @@
+Introdução
+
+Este ebook aborda em detalhes a estrutura e funcionamento de requisições GET, um dos métodos HTTP mais utilizados para consultar informações em APIs REST.
+
+Serão explicados conceitos como:
+
+
+Parâmetros de URL
+Query Strings
+Padrões e boas práticas
+Exemplos práticos
+
+Ao final deste material, você terá uma visão completa de como montar requisições GET eficientes e filtrar dados retornados por uma API.
+
+Requisição GET
+
+O método HTTP GET é utilizado para solicitar dados de um determinado recurso. É o método mais comum em APIs REST.
+
+Algumas características:
+
+
+Somente solicita dados, não altera nenhum recurso no servidor.
+Pode receber parâmetros para filtrar e paginar os dados retornados.
+Os parâmetros são enviados na própria URL.
+Não possui corpo (body) na requisição.
+
+Sintaxe
+
+A sintaxe básica de uma requisição GET é:
+
+GET /recurso HTTP/1.1
+Host: servidor.com
+
+
+Onde:
+
+
+GET: o método HTTP utilizado
+/recurso: o recurso sendo acessado (ex: /users)
+HTTP/1.1: a versão do protocolo HTTP
+Host: o domínio do servidor
+
+Parâmetros
+
+Requisições GET podem receber parâmetros para filtrar, paginar e buscar recursos específicos.
+
+Os dois principais são:
+
+Parâmetros de URL
+
+São valores que vêm logo após a rota na URL. Prefixedos por uma barra "/".
+
+Exemplo:
+
+GET /users/1
+
+
+Neste caso, "/1" é o parâmetro de URL representando o ID do usuário.
+
+Query Strings
+
+São pares de chave-valor após o caractere "?". Permite definir múltiplos parâmetros.
+
+Exemplo:
+
+GET /users?page=2&name=joao
+
+
+Aqui estamos paginando usuários e filtrando pelo nome "João".
+
+
+"page=2": o parâmetro page com valor 2
+"&": separa os parâmetros
+"name=joao": o parâmetro name com valor joao
+
+Boas práticas
+
+Algumas boas práticas no uso de parâmetros:
+
+
+Padronizar nomes (page, perPage, id, name)
+Documentar os parâmetros aceitos
+Validar os valores no backend
+Usar encoding em caracteres especiais (espaços viram %20)
+
+Isso aumenta a consistência, evita erros e melhora a experiência do desenvolvedor.
+
+Exemplos práticos
+
+Vamos agora ver alguns exemplos práticos de uso de parâmetros em requisições GET.
+
+Buscar usuário por ID
+
+Neste caso, vamos passar o ID direto na URL:
+
+GET /users/1
+
+
+Retornaria os detalhes apenas do usuário de ID 1.
+
+Filtrar usuários por nome
+
+Usando query string para filtrar por parte do nome:
+
+GET /users?name=joao
+
+
+Retornaria todos os usuários que contenham "João" no nome.
+
+Paginar resultados
+
+Paginando resultados com page e perPage:
+
+GET /users?page=2&perPage=50
+
+
+Retornaria a página 2, com 50 resultados por página.
+
+Múltiplos filtros
+
+Podemos combinar filtros diferentes:
+
+GET /users?name=joao&age=20&address=são paulo
+
+
+Retornaria usuários chamados João, com 20 anos e moradores de São Paulo.
+
+Padrão de Encoding
+
+Caracteres especiais como espaço podem ser encoding com "%20" no lugar.
+
+Exemplo:
+
+GET /users?name=maria da silva
+
+
+Poderia ser:
+
+GET /users?name=maria%20da%20silva
+
+
+Conclusão
+
+Neste ebook, exploramos em profundidade o funcionamento e as melhores práticas no uso de requisições GET com parâmetros para consultar e filtrar dados de APIs REST.
+
+Vimos dois tipos de parâmetros principais:
+
+
+Parâmetros de URL: valores após barras na URL
+Query Strings: pares chave-valor após o caractere "?"
+
+Também aprendemos boas práticas como padronização, documentação e encoding.
+
+Dominar esses conceitos é essencial para desenvolver integrações eficientes com APIs modernas.
+
+Utilize este conteúdo como referência sempre que for precisar montar requisições GET em seus projetos.
+
+Muito obrigado e bons estudos!

@@ -1,0 +1,17 @@
+// Fazer um programa que gera uma contagem regressiva usando função.
+const atualizaContadorRegressivo = (tempo) => {
+    let segundosRestantes = tempo
+
+    const interval = setInterval(() => {
+        console.log(segundosRestantes)        
+        if(segundosRestantes === 0){
+            clearInterval(interval);
+        }else{
+            segundosRestantes--;
+        }
+    }, 1000)
+}
+
+const iniciarContador = (tempo) => atualizaContadorRegressivo(tempo);
+
+iniciarContador(10);

@@ -1,0 +1,164 @@
+                                        Gestão de projetos com Scrum
+Contextualização
+Apresenta conceitos iniciais sobre gestão de projetos com Scrum
+Destaca a importância de entender o contexto e ter uma visão macro do projeto
+Etapas de um projeto Scrum
+Product Backlog
+Lista de épicos: etapas macro do projeto
+Ajuda a criar uma linha de raciocínio mesmo sem conhecer os detalhes
+Definição de entregáveis
+Para cada épico, pensar nos possíveis entregáveis
+Garante entrega de valor real em cada Sprint
+Sprint Backlog
+A partir dos entregáveis, detalhar as tarefas necessárias
+Vincula cada tarefa a um épico (história)
+Execução
+Fazendo, Bloqueado, Concluído
+Ciclos iterativos de desenvolvimento
+Recomendações
+Validar entregáveis com o time / cliente
+Gerar valor real a cada entrega
+Manter empresa e cliente engajados
+Conclusão
+Explica passo a passo a gestão de projetos com Scrum
+Destaca pontos importantes como visão macro, entregáveis e engajamento
+
+
+                                        Implementando Scrum em projetos novos
+Dificuldades comuns
+Criar um bom backlog
+Adaptação à rotina de eventos do Scrum
+Pode sobrecarregar a equipe
+Dicas para implementação
+Fazer em duas sprints
+
+Primeira sprint
+Não estimar pontos
+Apenas completar tarefas
+Medir tempo real de conclusão
+Tabela simples no Excel:
+Dias da semana
+Pontos por pessoa e dia
+Total por pessoa
+Total geral = velocidade
+Reunião rápida no meio da semana
+Segunda sprint
+Estimar pontos com base na velocidade
+Começar processo normal
+Aumentar frequência das daily meetings
+
+1x por semana
+2x por semana
+3x por semana
+Todos os dias
+Importância
+Times que se reúnem com frequência:
+
+Melhor integração
+Mais motivação
+Mais chances de sucesso
+Implementação gradual é chave para não sobrecarregar
+
+Esse mapa mental resume os principais pontos do vídeo sobre como implementar Scrum em projetos novos, destacando as dificuldades comuns, dicas para fazer a implementação em duas sprints de forma gradual e a importância de criar uma rotina frequente de reuniões e eventos para integrar o time e aumentar as chances de sucesso.
+
+
+                                        Escolhendo os papéis certos no Scrum
+Scrum Master
+Perfil
+Resolve problemas
+Criativo
+Pensamento estruturado
+Operacionaliza o trabalho
+Entende tecnicamente do projeto
+Habilidades
+Empatia e inteligência emocional
+Gerenciamento de conflitos
+Firmeza e agilidade
+Boa integração e comunicação com o time
+Dificuldades
+Ser "pombo correio" entre o time e o PO
+Não participar ativamente das reuniões
+Product Owner
+Perfil
+Comunicativo
+Conhecimento técnico do projeto
+Organizado
+Comprometido
+Bom escritor
+Transmite visão do cliente
+Dificuldades
+Querer ser o chefe
+Cliente ter dependência pessoal do PO
+Falta de comunicação com o time
+Time de desenvolvimento
+Perfil
+Pessoas séniores e generalistas
+Autogerenciável e comprometido
+Dificuldades
+Conflitos internos
+Falta de comprometimento
+Não seguir o framework Scrum
+Recomendações
+Escolher bem os papéis desde o início
+Evitar trocar pessoas ao longo do projeto
+Seguir boas práticas do Scrum
+
+
+                                        Método PBB (Product Backlog Building) para construção de backlogs
+
+Problemas e expectativas
+Identificar os problemas do mercado/cliente
+Definir as expectativas e o estado desejado
+Exemplo: problema de preço alto da carne, expectativa é reduzir o preço para comprar mais quilos
+Personas
+Quem tem os problemas e expectativas?
+Exemplos para um sistema de atendimento ao cliente:
+Atendente
+Cliente
+Gerente
+Funcionalidades
+Sequenciar a jornada do serviço
+Exemplo de jornada de atendimento ao cliente:
+Cliente chama o atendente
+Atendente recebe o chamado
+Atendente entra em contato com o cliente
+Cliente explica o problema
+Atendente tenta resolver o problema
+Se necessário, aciona equipe especializada
+Atendente dá retorno ao cliente
+Itens do Backlog
+Descrever cada item do backlog com base nas funcionalidades
+Organizar e priorizar os itens de acordo com as necessidades
+Aprofundamento
+Curso "Gerenciamento Contínuo de Backlog" na plataforma B2B
+Formação de produto também aborda o assunto
+PDF complementar com resumo da metodologia PBB
+
+
+                                        Certificações em Scrum
+Certificações são diferenciais, mas não essenciais
+Custam de $200 a $300 dólares
+Scrum.org é a organização criadora do Scrum Guide
+Oferece a certificação PSM (Professional Scrum Master)
+Preparação para a prova PSM
+Ler o Scrum Guide em português e inglês
+Saber os detalhes dos papéis, eventos e incrementos
+Decorar:
+Duração das reuniões (timeboxes)
+Pilares e valores do Scrum
+Manifesto Ágil e seus princípios
+Executar um projeto Scrum
+Ajuda a responder questões situacionais
+Fazer simulados (Open Assessments)
+15-20% das questões da prova vêm deles
+A prova:
+80 questões
+1h30 de duração
+Necessário acertar 75%
+Dicas
+Manter a calma durante a prova
+O conteúdo do curso prepara bem para a prova
+Pedir ajuda se necessário
+Esse é um resumo abrangente dos principais tópicos discutidos no vídeo. Foco nos aspectos práticos da certificação PSM, incluindo preparação, simulados, detalhes e dicas para a prova. O mapa mental facilita a visualização dos temas centrais e seus desdobramentos.
+
+

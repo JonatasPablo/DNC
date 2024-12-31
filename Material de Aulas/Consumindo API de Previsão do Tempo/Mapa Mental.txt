@@ -1,0 +1,130 @@
+                                        TEMA CENTRAL: Como ler documentação de API
+
+Introdução
+Apresentação das duas APIs que serão utilizadas: ViaCEP e OpenWeatherMap
+ViaCEP
+API simples que retorna dados de endereço a partir de um CEP
+Basta informar um CEP válido na URL para obter um JSON com os dados
+OpenWeatherMap
+API mais complexa sobre dados climáticos
+Permite montar a URL com diversos parâmetros para obter os dados desejados
+Explicação sobre como montar a URL:
+Versão da API
+Rota
+Parâmetros: latitude, longitude, temperatura, unidades de medida, etc.
+Documentação extensa para entender opções e variáveis disponíveis
+Considerações finais
+Importância de estudar a documentação da API
+APIs mais simples vs APIs complexas
+Próximos passos: fazer requisições GET para consumir essas APIs
+
+
+                                        Obtenção de dados com o verbo GET
+Ferramentas para testar APIs
+Insomnia (utilizada no vídeo)
+Postman
+Thunder Client (do VS Code)
+Exemplos de uso
+ViaCEP
+Rota GET sem parâmetros no body
+Parâmetros passados na URL
+OpenWeather
+Rota GET com query parameters
+Parâmetros passados na URL:
+Latitude e longitude
+Termos como temperature e rain
+Rain retorna probabilidade de chuva por hora em mm
+Próximos passos
+Implementar essas APIs no frontend com Bootstrap
+
+
+                                        Processando dados de API
+Usando a API Fetch
+Estrutura da API Fetch
+fetch()
+.then() - tratar resposta
+.catch() - tratar erros
+Exemplos
+Buscar CEP
+Buscar previsão do tempo
+Formulários
+Campos
+CEP
+Rua
+Bairro
+Cidade
+Latitude
+Longitude
+Botões
+Buscar CEP
+Buscar previsão
+Funções
+getAddressByCep()
+Busca endereço pelo CEP
+Popula campos do formulário
+getPrevisao()
+Busca previsão pelo lat/long
+Exibe previsão na tela
+Recursos
+Bootstrap
+Formulários
+Botões
+JavaScript
+API Fetch
+Funções assíncronas (async/await)
+Try/catch
+Promises
+Próximos passos
+Colocar código na nuvem
+
+
+                                        Deploy
+O que é Deploy?
+Enviar arquivos/código para um servidor na nuvem
+Tornar um site público e acessível na internet
+Ferramentas para Deploy
+Vercel
+Interface simples
+Integração com GitHub
+Hospedagem gratuita
+ngrok
+Abre porta do computador local
+Não recomendado para servidores, apenas testes
+Passo a passo no Vercel
+Criar conta
+Vincular com GitHub
+Importar repositório
+Configurar (linguagem, diretório, etc)
+Fazer deploy
+Acessar URL gerada
+Site online!
+Considerações finais
+Processo foi simples
+Atualizações com novos pushes
+Ótima ferramenta para testes e pequenos projetos
+
+
+                                        Finalização do módulo
+O que aprendemos
+Como fazer requisições com Fetch
+Noções básicas do Bootstrap
+Linhas e colunas
+Breakpoints
+Ferramentas apresentadas
+Axios
+Similar ao Fetch
+Já retorna JSON na resposta
+Permite configurações como base URL
+Fetch
+Nativo do JavaScript
+Pode ser usado no front-end e back-end
+JavaScript
+Linguagem assíncrona
+Async/await é muito útil
+Permite código assíncrono parecer síncrono
+Próximos passos
+Aplicar o aprendizado em frameworks mais modernos:
+React
+Vue
+Angular
+Aproveitar ao máximo os recursos assíncronos e síncronos do JavaScript

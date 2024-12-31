@@ -1,0 +1,184 @@
+Este ebook apresenta um case de sucesso de emagrecimento utilizando a metodologia ágil Scrum. Tudo começou quando Luisa, uma professora de educação física, decidiu ajudar três amigos - Carlos, Maria e Joaquina - a emagrecer.
+
+Ela estruturou um projeto de 6 semanas com o objetivo de fazer cada um dos três amigos perderem 4 quilos. Para isso, utilizou vários conceitos do Scrum para organizar e gerenciar o projeto.
+
+O resultado foi surpreendente: não apenas o time perdeu os 4 quilos, como superou a meta e perdeu 5 quilos cada em apenas 6 semanas!
+
+O sucesso foi tanto que Luisa compartilhou a história no LinkedIn e uma empresa se interessou pela sua abordagem. Ela agora prestará uma consultoria ensinando como aplicar o Scrum para incentivar a prática de exercícios e reeducação alimentar.
+
+Neste ebook, você vai aprender:
+
+
+Os papéis definidos no Scrum e quem assumiu cada um deles no projeto
+Como o Product Backlog e o Sprint Backlog foram criados
+Quais rituais do Scrum foram realizados, como Sprint Planning, Daily Meeting, Review e Retrospective
+Como o time se organizou para entregar valor em cada Sprint
+Por que um incremento foi recusado pela Product Owner mesmo depois de todo o esforço
+Quais lições a equipe tirou para melhorar continuamente o processo
+
+Ao final deste caso, você terá uma visão abrangente de como o Scrum pode ser aplicado mesmo em projetos pessoais para organizar pessoas e alcançar resultados surpreendentes.
+
+Papéis e Responsabilidades
+
+O Scrum define três papéis essenciais: Product Owner, Scrum Master e Time de Desenvolvimento. Veja abaixo quem assumiu cada um desses papéis no projeto de emagrecimento:
+
+Product Owner: Luisa
+
+Como professora de educação física e conhecedora do mercado de reeducação alimentar, Luisa foi a responsável por definir a visão do produto. Ela pensou no objetivo geral e nos resultados esperados, dividindo o projeto em fases (épicos).
+
+A partir desses épicos, Luisa criou o Product Backlog, uma lista com todas as atividades necessárias para se atingir a meta de perda de 4 quilos em 6 semanas.
+
+Scrum Master: Marcelo
+
+Marcelo assumiu o papel de garantir o bom funcionamento do processo Scrum. Ele não precisava participar de todas as reuniões, mas garantia que elas acontecessem.
+
+Seu foco era aumentar a produtividade do time, removendo impedimentos. Por exemplo, quando Carlos não conseguiu marcar com um nutricionista, Marcelo interferiu e conseguiu o agendamento.
+
+O Scrum Master atua como uma liderança servidora, apoiando o time sempre que necessário.
+
+Time de Desenvolvimento: Carlos, Maria e Joaquina
+
+O time formado por Carlos, Maria e Joaquina tinha como responsabilidade pegar os itens priorizados por Luisa no Product Backlog e transformá-los em resultados.
+
+Eles analisavam o Backlog e decidiam o que era possível realizar em cada Sprint (ciclo). A partir disso, criavam o Sprint Backlog com as atividades selecionadas e se organizavam para executá-las.
+
+Ao final de cada Sprint, um incremento potencialmente utilizável deveria ser entregue, demonstrando que o time estava caminhando em direção ao objetivo final.
+
+Product Backlog e Sprint Backlog
+
+Duas das principais ferramentas visuais do Scrum são o Product Backlog e o Sprint Backlog. Elas organizam e dão visibilidade ao trabalho a ser realizado.
+
+Product Backlog
+
+O Product Backlog é onde o Product Owner define todas as atividades necessárias para entregar o projeto. No nosso caso, Luisa pensou em tudo que precisava ser feito para que cada membro do time emagrecesse 4 quilos em 6 semanas.
+
+Seu backlog tinha uma visão de longo prazo sobre o produto final desejado. As atividades eram definidas em diferentes níveis de detalhes, desde épicos maiores até tarefas bem específicas.
+
+Por exemplo, um épico poderia ser "Fazer acompanhamento nutricional". Dentro dele, algumas tarefas seriam:
+
+
+Pesquisar nutricionistas disponíveis na região
+Agendar consulta inicial
+Comparecer à consulta inicial
+Agendar retorno em 30 dias
+
+Sprint Backlog
+
+O Sprint Backlog é criado no início de cada Sprint, durante o ritual de planejamento. Ele contém as tarefas e atividades que o time se compromete a cumprir naquela Sprint.
+
+No nosso caso, o time analisava o Product Backlog criado por Luisa e decidia o que era possível realizar na Sprint que se iniciava levando em conta a própria capacidade.
+
+As tarefas escolhidas para a Sprint eram movidas do Product Backlog para o Sprint Backlog. Por exemplo, na Sprint 1, algumas atividades selecionadas foram:
+
+
+Pesquisar nutricionistas disponíveis na região
+Agendar consulta inicial com nutricionista
+Comparecer à primeira consulta
+
+Ao movimentar itens entre os backlogs, o time tinha clareza sobre seu foco e comprometimento para a Sprint atual.
+
+Rituais Scrum Realizados
+
+O framework Scrum é estruturado em rituais que ocorrem dentro de um ciclo chamado Sprint. Cada evento tem um propósito específico para manter o time alinhado e focado no objetivo. Veja quais rituais foram realizados por Luisa, Marcelo, Carlos, Maria e Joaquina:
+
+Sprint Planning
+
+No planejamento da Sprint, todo o time se reúne para decidir quais atividades vão passar do Product Backlog para o Sprint Backlog. É quando se define o foco dos próximos dias.
+
+Nesse rituais, alguns conflitos saudáveis ocorrem:
+
+
+Luisa, como Product Owner, tenta empurrar a capacidade do time ao máximo.
+O time contra-argumenta sobre o realismo do que pode ser feito.
+Ao final, negocia-se o Sprint Backlog com o que todos concordam ser possível.
+
+Daily Scrum
+
+As reuniões diárias de 15 minutos têm como objetivo acompanhar o andamento da Sprint e identificar impedimentos rapidamente.
+
+Cada membro do time responde a três perguntas:
+
+
+O que fiz desde o último Daily?
+O que farei até o próximo?
+Existe algum impedimento no meu caminho?
+
+Dessa forma, todos têm visibilidade sobre o trabalho um do outro e os obstáculos são levantados para resolução.
+
+Sprint Review
+
+Ao final da Sprint, Carlos, Maria e Joaquina se reuniram com Luisa para uma "Review", apresentando os incrementos desenvolvidos como resultados do Sprint Backlog.
+
+O objetivo desse rituais é inspecionar o incremento e validá-lo, verificando se atende ao que foi acordado inicialmente com o Product Owner.
+
+Nem tudo são flores: o time teve um de seus incrementos rejeitados por Luisa pois faltava um critério de aceite.
+
+Sprint Retrospective
+
+Finalizado o ciclo, a retrospectiva é uma ótima oportunidade para a equipe fazer uma auto-análise, identificando pontos de melhoria nos processos e forma de trabalho.
+
+No nosso caso, alguns insights levantados foram:
+
+
+Definir antecipadamente a disponibilidade de cada membro para as tarefas assumidas, evitando imprevistos;
+Sempre ter um plano B nos orçamentos, com um profissional reserva;
+Padronizar canal de comunicação, com Daily Meetings por chamada para maior participação do time.
+
+Entrega de Valor
+
+Um conceito fundamental do Scrum é a entrega de valor de forma incremental. Em vez de ao final de meses, o time produz e disponibiliza versões utilizáveis do produto a cada poucas semanas.
+
+Isso permite obter feedback constante para redirecionar o projeto se necessário.
+
+No nosso caso, após cada Sprint o time apresentava para Luisa, a Product Owner, os incrementos desenvolvidos como resultado do Sprint Backlog executado.
+
+Por exemplo, o relatório da primeira consulta com o nutricionista, os exames realizados, os treinos efetuados e o registro da evolução de peso eram entregáveis validados por Luisa a cada ciclo como prova do valor entregue.
+
+Recusa de um Incremento
+
+Um ponto importante a destacar foi que nem tudo saiu como planejado inicialmente. Ao final de uma das Sprints, o time apresentou o incremento na reunião de Review com a Product Owner, mas Luisa recusou um dos entregáveis.
+
+O que aconteceu?
+
+Durante a apresentação, Luisa percebeu que faltava um critério de aceite fundamental para uma das tarefas: o print da consulta com o nutricionista deveria conter não apenas o registro do primeiro atendimento, mas também a data de retorno agendada para 30 dias depois.
+
+Ou seja, mesmo com todo o esforço do time durante a Sprint, um detalhe passou batido e o incremento foi reprovado.
+
+A lição aprendida é que a definição clara de "Pronto" para cada tarefa (no jargão Scrum, o "DOD" - Definition of Done) é absolutamente crucial para o sucesso. Caso contrário, corre-se o risco de retrabalho.
+
+Melhoria Contínua
+
+Uma das bases do Scrum é a melhoria contínua por meio da retrospectiva e adaptação dos processos. O framework em si prevê uma inspeção constante sobre como o time está trabalhando.
+
+No nosso caso, na reunião de retrospectiva da Sprint a equipe debateu alguns pontos de aprendizado, tanto para as pessoas quanto para o processo como um todo.
+
+Algumas ações concretas decididas pelo time:
+
+Pessoas
+
+
+Definir e respeitar antecipadamente a disponibilidade individual para tarefas assumidas, evitando imprevistos por sobrecarga.
+
+Processos
+
+
+Incluir backup como padrão em tarefas de orçamento, para mitigar riscos;
+Padronizar canal de comunicação por chamada para Daily Meeting, aumentando participação do time.
+
+Conclusão
+
+Este case demonstrou na prática o sucesso que o Scrum pode trazer para projetos dos mais diversos tipos. A metodologia ajudou Luisa, Carlos, Maria e Joaquina não apenas a alcançarem suas metas pessoais de emagrecimento, como também a aprimorarem a colaboração como time.
+
+Inicialmente aplicado de forma amadora entre amigos, os bons resultados chamaram a atenção de uma empresa interessada na consultoria de Luisa. O próximo passo será profissionalizar ainda mais a utilização do Scrum com ferramentas adequadas e boas práticas.
+
+Você agora entendeu conceitos centrais como:
+
+
+Os papéis e responsabilidades dentro do Scrum;
+Product Backlog e Sprint Backlog;
+Os rituais que compõem o framework;
+A importância da entrega contínua de valor;
+Como lidar com incrementos potencialmente "reprovados";
+A busca pela melhoria contínua nos processos e como time.
+
+Tendo esse case como exemplo e os conceitos solidificados, você está preparado para aplicar o Scrum e transformar ideias em realidade!

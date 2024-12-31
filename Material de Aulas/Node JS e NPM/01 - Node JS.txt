@@ -1,0 +1,162 @@
+Material complementar ------> https://nodejs.org/en/download/package-manager
+
+
+Introdução
+
+O NPM (Node Package Manager) é uma ferramenta essencial para qualquer desenvolvedor JavaScript nos dias de hoje. Ele permite instalar, atualizar e gerenciar bibliotecas e pacotes JavaScript de forma fácil e rápida.
+
+Neste ebook, vamos entender o que é o NPM, por que ele é tão importante, como utilizá-lo para instalar pacotes e bibliotecas, e também conhecer algumas das principais bibliotecas JavaScript que podem ser instaladas com o NPM, como o ReactJS.
+
+O que é o NPM?
+
+O NPM é o gerenciador de pacotes padrão para o Node.js. Ele permite que os desenvolvedores possam compartilhar códigos JavaScript entre si, como bibliotecas e frameworks.
+
+Quando o Node.js é instalado, o NPM também é instalado automaticamente. Assim, com apenas um comando, é possível baixar bibliotecas JavaScript criadas por outras pessoas e utilizá-las em seus próprios projetos.
+
+Isso agiliza bastante o desenvolvimento, pois não é preciso reinventar a roda ou reescrever códigos que já existem. Basta instalar pelo NPM e começar a utilizar!
+
+Além disso, o NPM também gerencia as versões das bibliotecas instaladas e permite atualizá-las ou desinstalá-las com facilidade.
+
+Por que o NPM é importante?
+
+O NPM é extremamente importante por alguns motivos:
+
+Permite reutilizar códigos de terceiros sem precisar reescrevê-los;
+Agiliza o desenvolvimento ao evitar que precisemos criar tudo do zero;
+Fornece acesso a milhares de bibliotecas JavaScript criadas pela comunidade;
+Gerencia as versões das bibliotecas e dependências;
+Permite compartilhar também nossos próprios códigos como bibliotecas.
+
+Atualmente, praticamente todos os projetos JavaScript dependem de bibliotecas e pacotes externos para funcionar. E o NPM se tornou o gerenciador padrão para baixar e gerenciar essas dependências.
+
+Por isso, qualquer desenvolvedor JavaScript precisa saber utilizar o NPM para conseguir trabalhar com as principais tecnologias da atualidade, como React, Angular, Vue.js e muitas outras.
+
+Diferença entre dependência, pacote, biblioteca e framework
+
+Antes de ver como utilizar o NPM, é importante entender a diferença entre os termos: dependência, pacote, biblioteca e framework.
+
+Dependência
+
+Uma dependência é qualquer código externo necessário para que nosso projeto funcione corretamente. Pode ser uma biblioteca, um framework, ou outro pacote. Costumamos chamar de "dependências" porque nosso projeto "depende" desses códigos externos.
+
+Pacote
+
+Um pacote é um pedaço de código JavaScript que empacotamos (daí o nome "pacote") para disponibilizar para outros desenvolvedores utilizarem. Geralmente contém uma biblioteca ou framework. Os pacotes JavaScript são distribuídos através do NPM.
+
+Biblioteca
+
+Uma biblioteca (library) é um pacote/pedaço de código que contém funcionalidades genéricas e reutilizáveis para resolver problemas comuns, como trabalhar com datas, fazer requisições HTTP, manipular o DOM e etc.
+
+Framework
+
+Um framework é um pacote mais completo e definido, que traz uma arquitetura e várias bibliotecas/funcionalidades para construir aplicações de uma forma específica, seguindo suas regras e padrões.
+
+Alguns exemplos famosos: React, Angular, Vue.js.
+
+Como utilizar o NPM
+
+Vamos agora ver como utilizar o NPM para instalar pacotes JavaScript em nossos projetos.
+
+Tudo começa abrindo o terminal (prompt de comando no Windows ou terminal no Linux/Mac) e navegando até a pasta do seu projeto JavaScript.
+
+npm init
+
+O primeiro passo é sempre rodar o comando npm init dentro da pasta do projeto.
+
+Isso irá criar um arquivo chamado package.json com algumas configurações iniciais do projeto. Este arquivo é muito importante pois irá controlar as dependências (pacotes) instalados.
+
+npm install
+
+Uma vez que temos o package.json, podemos começar a instalar pacotes JavaScript rodando o comando:
+
+npm install nome-do-pacote
+
+Por exemplo, para instalar o React:
+
+npm install react
+
+Isso fará o download do pacote React e também de todas as suas dependências e irá salvá-las dentro da pasta node_modules do projeto.
+
+Além disso, o pacote React será automaticamente salvo no package.json como uma dependência do projeto.
+
+Outros comandos
+
+Existem alguns outros comandos NPM muito úteis:
+
+
+npm uninstall nome-do-pacote - desinstala um pacote
+npm update - atualiza todos os pacotes instalados
+npm list - lista os pacotes instalados
+
+E muito mais! A documentação oficial traz todos os detalhes.
+
+Agora que sabemos o básico do NPM, vamos conhecer algumas das principais bibliotecas JavaScript que podem ser instaladas com ele.
+
+ReactJS
+
+O ReactJS (ou simplesmente React) é atualmente a biblioteca JavaScript mais popular para construção de interfaces de usuário (UI). Grandes empresas como Facebook, Instagram, Netflix utilizam o React para construir suas aplicações web.
+
+É muito fácil começar a utilizar o React instalando com o NPM:
+
+npm install react react-dom
+
+
+Isso irá baixar os pacotes do React e do ReactDOM, necessário para fazer a renderização dentro do navegador.
+
+O React segue a abordagem de criar interfaces a partir de componentes. Cada componente é como uma peça isolada, que juntas formam uma interface completa.
+
+Isso ajuda bastante na reutilização de código e separação de responsabilidades.
+
+Vejamos um exemplo de um componente React simples:
+
+import React from 'react';
+
+function MeuComponente() {
+return <h1>Olá Mundo!</h1>;
+}
+
+export default MeuComponente;
+
+
+E para renderizá-lo dentro do HTML:
+
+import ReactDOM from 'react-dom';
+import MeuComponente from './MeuComponente';
+
+ReactDOM.render(<MeuComponente />, document.getElementById('root'));
+
+
+Perceba que a sintaxe lembra bastante HTML, mas na verdade é JSX, uma extensão de sintaxe do JavaScript que permite escrever códigos que lembram HTML, mas com todo o poder do JavaScript.
+
+O React é uma biblioteca muito completa com vários outros recursos além do básico que vimos aqui. Mas o legal é que com apenas esses conceitos já dá para começar a criar interfaces de usuário de forma fácil e modular.
+
+E o melhor: utilizando todas as facilidades do NPM para instalação e gerenciamento!
+
+Lendo documentações
+
+Cada biblioteca e framework JavaScript disponível possui sua própria documentação, normalmente disponível em seus sites oficiais.
+
+A documentação traz guias e referências para aprender a utilizar aquele pacote corretamente.
+
+Portanto, para qualquer biblioteca instalada com NPM, é essencial ler sua documentação para aprender os detalhes.
+
+Algumas documentações muito bem feitas e fáceis de aprender são:
+
+
+React: https://pt-br.reactjs.org/
+Vue.js: https://br.vuejs.org/
+Node.js: https://nodejs.org/en/docs/
+
+Dedique tempo para ler a documentação das tecnologias que deseja aprender. Isso fará toda diferença no seu aprendizado!
+
+Conclusão
+
+O NPM mudou completamente a forma como o JavaScript é utilizado para desenvolvimento web nos dias de hoje. A possibilidade de compartilhar e reutilizar código entre desenvolvedores é extremamente benéfica e agiliza os projetos.
+
+Portanto, não importa se você é front-end, back-end ou full stack, conhecer o NPM é fundamental para trabalhar com JavaScript.
+
+Neste ebook vimos o que é e por que o NPM é importante, como utilizá-lo para instalar pacotes, conhecemos um pouco do ReactJS, e também sobre a importância de ler documentações.
+
+Mas este é apenas o começo! Há muito mais a ser explorado. Siga estudando, praticando, lendo documentações e criando projetos. E aproveite as maravilhas do NPM para turbinar seu desenvolvimento.
+
+Boa sorte e bons estudos!

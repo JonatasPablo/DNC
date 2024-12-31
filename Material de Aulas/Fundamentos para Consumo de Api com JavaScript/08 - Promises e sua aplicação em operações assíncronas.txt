@@ -1,0 +1,134 @@
+Promessas em JavaScript
+Introdução
+As promessas (promises) são uma funcionalidade importante do JavaScript que permite lidar com operações assíncronas de maneira mais fácil e organizada.
+
+Elas representam um valor que ainda não está disponível, mas que será resolvido em algum momento no futuro. Dessa forma, as promises evitam o callback hell e tornam o código assíncrono mais legível e gerenciável.
+
+Neste ebook, vamos aprender:
+
+O que são promises e para que servem
+Como criar e utilizar promises
+Encadeamento de promises com then() e catch()
+Lidando com sucesso e erros
+Promises e requisições assíncronas
+Bibliotecas e utilitários que simplificam o uso de promises
+Ao final, você terá uma boa compreensão sobre promises em JavaScript e como aplicá-las para lidar com código assíncrono em suas aplicações.
+
+O que são promises?
+As promises representam um valor que ainda não está disponível, mas que será resolvido em algum momento no futuro. Elas servem para operações assíncronas, onde você não quer bloquear a execução do código enquanto aguarda o resultado.
+
+Alguns exemplos de operações assíncronas:
+
+Requisições à APIs
+Leitura e escrita de arquivos
+Interações com bancos de dados
+Timers
+Ao invés de usar callbacks aninhados (callback hell), as promises provêm uma alternativa para lidar com assincronicidade de forma mais organizada.
+
+As promises podem ter três estados:
+
+Pending: Estado inicial, ainda não resolvida nem rejeitada.
+Fulfilled: A operação foi concluída com sucesso, a promise foi resolvida.
+Rejected: Ocorreu algum erro, a promise foi rejeitada.
+Uma vez que a promise é resolvida ou rejeitada, ela não muda mais de estado.
+
+As promises trazem muitos benefícios, como:
+
+Evitar callback hell
+Código mais legível e facilmente gerenciável
+Possibilidade de encadear e combinar promises
+Tratamento centralizado de erros
+Em resumo, as promises facilitam muito o trabalho com código assíncrono em JavaScript.
+
+Criando promises
+Para criar uma promise, usamos o construtor Promise:
+
+const minhaPromise = new Promise((resolve, reject) => {  // Lógica assíncrona (ex: requisição à API)    if(deuCerto) {    resolve(resultado);   } else {    reject(erro);  }});
+O construtor Promise recebe uma função com os parâmetros resolve e reject. Execute a lógica assíncrona dentro dessa função (como uma requisição à API).
+
+Se a operação assíncrona for bem-sucedida, chame a função resolve() passando o resultado.
+
+Se ocorrer algum erro, chame reject() passando o erro.
+
+Dessa forma, a promise será resolvida ou rejeitada dependendo do sucesso da operação assíncrona.
+
+Utilizando promises
+Para utilizar uma promise depois de criada, usamos os métodos then() e catch():
+
+minhaPromise  .then(result => {    // código com o resultado  })  .catch(err => {   // código para tratar o erro   });
+O then() será executado quando a promise for resolvida com sucesso, recebendo o resultado. Já o catch() será executado se a promise foi rejeitada, recebendo o erro.
+
+Podemos encadear vários then() e um único catch() no final para tratar erros:
+
+buscarDados()  .then(dados => {    return processarDados(dados)    })  .then(dadosProcessados => {    return salvarDados(dadosProcessados);  })  .catch(err => {    // Tratativa de erro  });
+Desse jeito, temos um código assíncrono mais legível, que vai executando as operações em sequência. Os erros são tratados de forma centralizada no catch().
+
+Lidando com sucesso e erros
+Com as promises, podemos lidar com o sucesso e erro das operações assíncronas de forma mais eficiente:
+
+Sucesso
+
+Usamos o then() para lidar com o sucesso da promise:
+
+fetch(url)  .then(response => {    // requisição ok      }) 
+Se a requisição fetch for bem-sucedida, o then() será executado, recebendo a response.
+
+Podemos encadear outros then() também:
+
+fetch(url)  .then(response => {    // requisição ok       return response.json()  })  .then(data => {    // lidar com os dados  }); 
+Erros
+
+Usamos o catch() para lidar com erros:
+
+fetch(url)  .then(response => {    // requisição ok   })  .catch(error => {    // Deu algum erro!   });
+Se fetch resultar em erro (rede, url inválida etc), pulamos os then() e vai direto pro catch().
+
+O catch() recebe o objeto de erro, permitindo identificar e tratar o problema.
+
+Com promises, fica muito mais fácil lidar com o sucesso e erros das operações assíncronas!
+
+Promises e requisições assíncronas
+As promises são muito úteis para lidar com requisições à APIs e outros serviços assíncronos.
+
+Por exemplo, ao invés de usar callbacks, podemos fazer assim:
+
+function buscarCEP(cep) {  return fetch(`https://viacep.com.br/ws/${cep}/json/`)    .then(res => res.json())    .then(dados => {      return dados;    })    .catch(err => {      throw Error('CEP inválido!');    });}buscarCEP('01001000')  .then(dadosCEP => {    preencherFormulario(dadosCEP);   })  .catch(err => {    console.error(err);    mostrarMsgErro();   });
+Encapsulamos a requisição à API ViaCEP em uma promise (função buscarCEP).
+
+Na chamada, usamos then() e catch() para lidar com o sucesso e erro. Fica muito organizado!
+
+Poderíamos fazer o mesmo com outros serviços assíncronos como banco de dados, arquivos, timers etc.
+
+Bibliotecas e utilitários
+Existem algumas bibliotecas e utilitários que simplificam ainda mais o trabalho com promises:
+
+Async/Await
+
+O async/await permite escrever código assíncrono como se fosse síncrono, baseando-se em promises.
+
+Exemplo:
+
+async function buscarCEP(cep) {  try {    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);    const dadosCEP = await response.json();    return dadosCEP;  } catch(err) {    throw Error('CEP inválido!');   }}// Utilizando a função assíncrona  buscarCEP('01001000')  .then(dados => {    // ...  }) 
+O await pausa a execução da função assíncrona até que a promise seja resolvida. Bem mais simples que encadear vários then()!
+
+Axios
+
+O Axios é uma biblioteca muito popular para fazer requisições à APIs. Por baixo dos panos, ele utiliza promises.
+
+Exemplo:
+
+async function buscarCEP(cep) {  try {    const response = await axios.get(`https://viacep.com.br/ws/${cep}/json/`);    return response.data;  } catch (error) {        throw new Error('CEP inválido');  }}
+Muito fácil né? O Axios abstrai o fetch e já retorna os dados tratados.
+
+Existem várias outras bibliotecas que facilitam o uso de promises como Bluebird, Q, async etc. Escolha a que mais combina com seu projeto!
+
+Conclusão
+As promises são essenciais para lidar com operações assíncronas em JavaScript de forma organizada e confiável.
+
+Elas evitam o callback hell e problemas de código assíncrono complexo demais.
+
+Com then(), catch() e async/await fica muito mais simples lidar com o sucesso e erros das operações.
+
+Espero que este ebook tenha ajudado você a entender melhor as promises. Elas são realmente muito úteis no dia-a-dia do desenvolvimento JavaScript.
+
+Utilize promises para deixar seu código assíncrono mais simples, legível e fácil de dar manutenção!

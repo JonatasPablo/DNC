@@ -1,0 +1,104 @@
+Introdução
+
+Este ebook foi criado a partir de uma aula sobre Scrum, com o objetivo de fornecer um material detalhado que possa ser utilizado em conjunto com o vídeo original.
+
+Nele, discutiremos passo a passo como criar um quadro do Scrum do zero em ferramentas como Trello, definir épicos, construir o backlog, planejar sprints e definir entregáveis de valor para o cliente.
+
+Criando o Quadro Inicial
+
+O primeiro passo é entender que para trabalhar com Scrum, é preciso ter uma visão macro das etapas ou metas do seu projeto. Isso porque sem essa visão, fica difícil construir um backlog inicial detalhado.
+
+O backlog inicial não precisa ter todos os detalhes, pois muitas vezes estamos em projetos que não conhecemos profundamente. Mas é preciso criar uma linha de raciocínio, mesmo que seja algo alto nível.
+
+Criando o Board
+
+Vamos demonstrar como criar um quadro do zero no Trello. Considerando uma conta gratuita, que permite até 10 quadros, podemos criar um novo com o título "Projeto de Atendimento", por exemplo.
+
+Em seguida, montamos as listas padrão do Scrum:
+
+
+Product Backlog
+Sprint Backlog
+Fazendo
+Bloqueado
+Concluído
+
+O "Concluído" fica no final, por ser a etapa final.
+
+Configurando Power-Ups
+
+Para trabalhar melhor, podemos adicionar alguns power-ups úteis:
+
+
+Screen Full: tela cheia
+Card Size: ajustar tamanho dos cards
+Epics: agrupar em épicos
+
+No Epics, fazemos um "pré-setup":
+
+
+Lista de Épicos: Product Backlog
+Lista de Concluídos: Concluído
+Mostrar Nome dos Épicos
+
+Com isso, o quadro inicial está pronto!
+
+Criando uma Linha de Raciocínio
+
+Vamos imaginar um contexto de um projeto de melhoria de atendimento ao cliente, em que os clientes estão reclamando do tempo de espera.
+
+Precisamos descobrir as causas e melhorar a satisfação em 50% em 5 meses.
+
+Como criar uma linha de raciocínio macro?
+
+Definindo Épicos
+
+Podemos começar definindo os principais épicos:
+
+
+Contextualização do Problema
+Análise de Dados
+Entrevistas com Clientes Insatisfeitos
+Criar Ações de Melhoria
+Executar e Medir Ações
+Apresentação e Consolidação Final
+
+Esses épicos formam os principais blocos, ainda em alto nível, do projeto.
+
+Pensando nos Possíveis Entregáveis
+
+Para conseguir gerenciar bem as sprints e entregar valor, é importante já pensar quais serão os possíveis entregáveis de cada fase. Alguns exemplos:
+
+
+Contextualização: fluxograma do processo, documento de reclamações
+Análise de Dados: planilhas, relatórios, dashboards
+Entrevistas: relatório consolidado, gravações
+Ações de Melhoria: documento de testes, apresentação de resultados esperados
+Medir Resultados: planilha de consolidação, apresentação com testes
+Consolidação Final: pasta compartilhada com documentação, apresentação presencial
+
+Esses são alguns exemplos de entregas tangíveis e com valor para o cliente em cada etapa.
+
+Construindo o Backlog
+
+Com os épicos e possíveis entregáveis definidos, fica mais fácil construir o backlog. Vamos imaginar que na Sprint 1, o objetivo é entregar o fluxograma do processo.
+
+Quais atividades precisam ser feitas?
+
+
+Preparar formulário de perguntas
+Executar reunião com a empresa
+Consolidar informações
+Criar apresentação com fluxograma
+Apresentar para equipe e obter feedback
+Ajustar fluxograma com base no feedback
+
+Assim, já temos o backlog da primeira sprint mapeado e vinculado ao épico da contextualização!
+
+Considerações Finais
+
+Construir uma boa visão macro, definir épicos, pensar nos possíveis entregáveis e então destrinchar o backlog é uma forma eficiente de aplicar Scrum em projetos.
+
+Dessa forma, fica claro para o time e para o cliente o que será entregue em cada sprint, aumentando o engajamento e as chances de sucesso.
+
+Esperamos que este material complemente e enriqueça o aprendizado sobre como aplicar Scrum desde o início em seus projetos.

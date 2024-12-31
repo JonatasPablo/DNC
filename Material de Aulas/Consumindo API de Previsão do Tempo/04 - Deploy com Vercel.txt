@@ -1,0 +1,77 @@
+Deploy de aplicações para a nuvem
+Introdução
+O deploy, ou implantação, é o processo de publicar uma aplicação para que ela fique disponível na internet. Isso envolve enviar os arquivos e códigos do projeto para um servidor ou provedor de hospedagem na nuvem.
+
+Nesta transcrição, é apresentado um passo a passo de como realizar o deploy de uma aplicação simples para a plataforma Vercel. O Vercel é um serviço popular de hospedagem e deploy contínuo que permite publicar aplicações front-end de forma rápida e prática.
+
+A seguir, detalharemos tudo o que foi abordado no vídeo, explicando didaticamente cada etapa do processo.
+
+O que é deploy
+Antes de mais nada, precisamos entender o que significa "deploy" e por que ele é importante.
+
+Deploy é a implantação ou publicação de uma aplicação em um ambiente de hospedagem online, de forma que ela fique disponível e acessível publicamente na internet. É o ato de colocar a aplicação "no ar" em um servidor, serviço de hospedagem ou provedor de nuvem.
+
+Sem o deploy, uma aplicação desenvolvida permanece apenas local, no computador do programador, sem que outras pessoas consigam acessá-la. O deploy disponibiliza o site, app ou sistema para que qualquer um na internet possa interagir com ele.
+
+Alguns benefícios do deploy:
+
+Disponibiliza a aplicação na web
+Permite que qualquer pessoa acesse de qualquer lugar
+Facilita o compartilhamento para teste ou uso
+Prepara a aplicação para produção e lançamento
+Existem várias maneiras de se fazer deploy, desde soluções mais simples até complexas. As principais são:
+
+Servidor próprio ou empresa
+Hospedagem compartilhada
+Cloud hosting (Nuvem, como Vercel, Netlify, AWS, etc)
+Serviços de CI/CD (Integração e Entrega Contínuas)
+Cada opção tem suas vantagens e desvantagens. A nuvem se popularizou nos últimos anos por oferecer deploy simplificado, escalável e confiável para diversos tipos de aplicações modernas.
+
+Preparando o ambiente
+Antes de realizar o deploy, é preciso preparar o ambiente e ter o código da aplicação pronto. No caso do vídeo, partimos de uma aplicação muito simples, com um único arquivo HTML.
+
+Para hospedar na nuvem, precisaremos de:
+
+Conta no serviço de hospedagem (no caso, Vercel)
+Código da aplicação em uma repository (usaremos GitHub)
+CLI Git instalado para enviar o código
+Primeiro, é necessário criar uma conta no Vercel. Como alternativa, também é possível vincular a uma conta do GitHub ou GitLab.
+
+Em seguida, o código precisa estar versionado em um repositório Git, como o GitHub. Caso não tenha, pode criar um novo repositório público e enviar o código para lá utilizando o Git através da linha de comando:
+
+git initgit add .git commit -m "iniciando o projeto"git branch -M maingit remote add origin https://github.com/user/repo.gitgit push -u origin main
+Dessa forma, o código estará no GitHub e pronto para ser importado pelo Vercel.
+
+Importando o projeto
+Com a conta criada e o código no GitHub, podemos importar o projeto para o Vercel.
+
+Na página "Import Project", informamos:
+
+O link do repositório GitHub que queremos importar
+O framework sendo utilizado (no caso, JavaScript puro)
+O diretório raiz da aplicação na estrutura do repositório
+Feito isso, o Vercel detecta automaticamente as configurações do projeto e realiza o deploy, gerando uma URL pública para acesso.
+
+O processo é bem simples e rápido, especialmente para aplicações front-end modernas. O Vercel foi projetado pensando em facilitar o deploy contínuo.
+
+Deploy contínuo
+Um grande benefício do Vercel e outros serviços modernos de hospedagem é o deploy contínuo ou CD (Continuous Deployment).
+
+Isso significa que a cada push feito no repositório Git (GitHub, GitLab), o site é republicado automaticamente com as alterações mais recentes. Não é preciso fazer deploy manual após cada atualização.
+
+Assim, temos um fluxo de trabalho em que basta enviar as alterações no código para o GitHub que uma nova versão será implantada no servidor automaticamente.
+
+Isso aumenta muito a produtividade, pois não se perde tempo tendo que gerar builds e fazer upload manual após cada pequena modificação. Cada mudança é implantada e disponibilizada em questão de segundos.
+
+Além disso, como o repositório é vinculado ao serviço de hospedagem, há um histórico de todas as alterações já deployadas. Isso facilita o gerenciamento de versões, updates e até rollback quando necessário.
+
+Considerações finais
+Neste ebook, explicamos didaticamente os conceitos apresentados na transcrição, fornecendo mais detalhes sobre deploy de aplicações para a nuvem.
+
+Vimos que o deploy é fundamental para disponibilizar qualquer site, app ou sistema para acesso público na web. Também entendemos os benefícios do Vercel e outros serviços modernos de hospedagem que simplificam todo o processo.
+
+O passo a passo mostrou na prática como vincular o código do GitHub, configurar as opções e implantar uma aplicação simples, tendo ela publicada e acessível imediatamente após conclusão.
+
+Por fim, destacamos as vantagens do deploy contínuo, que republica automaticamente toda alteração de código enviada para o repositório Git, aumentando a produtividade do desenvolvimento web.
+
+Esse é um fluxo de trabalho essencial para projetos modernos que querem entregar valor para o usuário de forma rápida e iterativa. A integração entre controle de versão, CI/CD e hospedagem na nuvem potencializa ainda mais os resultados.

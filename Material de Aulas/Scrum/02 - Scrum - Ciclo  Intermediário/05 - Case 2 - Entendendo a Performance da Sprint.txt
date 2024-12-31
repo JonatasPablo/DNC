@@ -1,0 +1,83 @@
+Gerenciando Sprints com Scrum
+Introdução
+O Scrum é uma metodologia ágil muito utilizada para gerenciar projetos de software. Nela, o trabalho é dividido em Sprints, que são ciclos de desenvolvimento curtos, geralmente de 2 a 4 semanas.
+
+Uma parte fundamental do Scrum é o acompanhamento contínuo do progresso da Sprint, para garantir que a equipe está no caminho certo para entregar o que foi planejado. Isso é papel primordial do Scrum Master.
+
+Neste ebook, vamos aprender como o Scrum Master pode gerenciar uma Sprint utilizando algumas ferramentas importantes como o Scrum Board, o gráfico Burn Down e reunindo insights para a Sprint Retrospective.
+
+Preparando o Scrum Board
+O Scrum Board é um quadro visual que mostra o progresso das tarefas durante a Sprint. Ele é geralmente dividido em três colunas:
+
+Sprint Backlog: tarefas que precisam ser feitas
+Doing: tarefas que estão em progresso
+Done: tarefas finalizadas
+Antes de iniciar a Sprint, o Scrum Master precisa garantir que o Board está preparado com todas as tarefas mapeadas. Cada tarefa deve ser um cartão dentro de uma das colunas.
+
+Além disso, é importante estimar o tamanho de cada tarefa em pontos. Isso pode ser feito pela equipe usando a técnica de Planning Poker. Uma regra comum é:
+
+1 ponto = 15 minutos de trabalho
+Assim, uma tarefa de 2 horas equivale a 8 pontos.
+
+O Scrum Master então soma todos os pontos das tarefas para ter a pontuação total da Sprint planejada.
+
+Acompanhando o Progresso
+Durante a Sprint, uma das principais responsabilidades do Scrum Master é garantir que o Board está sempre atualizado, mostrando em qual coluna cada tarefa está.
+
+Isso promove transparência para a equipe e partes interessadas. Além disso, permite que o Scrum Master acompanhe o progresso e identifique riscos, impedimentos ou situações que precisam de ajuda.
+
+Reunião Diária
+Uma prática comum no Scrum são as Daily Meetings, reuniões rápidas diárias com a equipe. Nelas, cada membro responde três perguntas:
+
+O que eu fiz ontem?
+O que pretendo fazer hoje?
+Existem impedimentos no meu caminho?
+Essas reuniões servem justamente para atualizar o Board com o status atual e para que o Scrum Master identifique onde seu apoio é necessário, desbloqueando a equipe para progredir.
+
+A regra do "cartão por pessoa"
+Uma dica importante é estabelecer a regra de apenas um cartão por pessoa na coluna "Doing" por vez. Isso ajuda a equipe a focar em terminar uma tarefa antes de partir para a próxima.
+
+Medindo o Progresso
+Para medir o progresso, o Scrum Master pode utilizar uma ferramenta de pontuação por coluna, que soma quantos pontos já foram concluídos e quantos ainda faltam.
+
+Lembre-se: uma tarefa só é considerada concluída quando tudo que foi definido para ela está pronto. Tarefas parcialmente prontas ainda não contam como pontos concluídos.
+
+Com base nisso, o Scrum Master pode calcular se a equipe está dentro do ritmo necessário para cumprir a pontuação total da Sprint até o prazo final.
+
+O Gráfico Burn Down
+Para visualizar a velocidade da equipe sprint a sprint, o Scrum Master pode utilizar um gráfico chamado Burn Down Chart. Nele temos dois eixos:
+
+Eixo X: os dias da Sprint, começando do dia 0 até o último
+Eixo Y: a pontuação total da Sprint
+A ideia é traçar duas linhas:
+
+Linha azul: pontuação ideal. Decresce em progressão constante do total de pontos até 0 ao longo dos dias.
+Linha vermelha: pontuação real. Decresce baseada em quantos pontos foram realmente concluídos a cada dia.
+Comparando as duas linhas, fica fácil detectar se a equipe está no ritmo certo (linhas próximas) ou atrasada (linha vermelha acima da azul).
+
+Isso permite que o Scrum Master tome ações corretivas quando um atraso é identificado, para aumentar as chances de entregar o prometido até o prazo final.
+
+Cancelando Sprints
+Às vezes a equipe pode ficar completamente travada, sem conseguir concluir nenhuma tarefa por vários dias. Nesses casos, pode surgir a tentação de cancelar a Sprint e recomeçar.
+
+Porém, a regra no Scrum é que apenas o Product Owner tem autoridade para cancelar uma Sprint, se o objetivo não fizer mais sentido.
+
+Cabe ao Scrum Master, portanto, identificar as causas do travamento e tomar ações para desbloquear a equipe o mais rápido possível, renegociando com o PO se necessário. Cancelamento deve ser apenas o último recurso.
+
+Retrospectiva
+Ao final da Sprint, uma reunião Retrospectiva é realizada para lições aprendidas. Nela, o Scrum Master apresenta indicadores como o Burn Down Chart para discutir o que funcionou bem e o que pode melhorar.
+
+O objetivo é sempre aumentar a performance e qualidade das próximas Sprints. As decisões tomadas então podem incluir:
+
+Quebrar tarefas grandes em menores
+Melhorar comunicação
+Eliminar impedimentos recorrentes
+Ajustar capacidade da equipe
+E assim a equipe continua evoluindo e melhorando sprint a sprint.
+
+Conclusão
+Gerenciar Sprints com Scrum requer alguns rituais e artefatos importantes, como reuniões diárias, uso extensivo do Scrum Board e criação do Burn Down Chart.
+
+Cabe ao Scrum Master garantir que tudo isso seja seguido, para obter transparência sobre o andamento da Sprint e tomar decisões rápidas quando necessário, aumentando assim as chances de sucesso da equipe.
+
+Uma boa gestão ágil de Sprints leva a um time mais produtivo, motivado e capaz de entregar valor ao cliente de forma rápida e constante.

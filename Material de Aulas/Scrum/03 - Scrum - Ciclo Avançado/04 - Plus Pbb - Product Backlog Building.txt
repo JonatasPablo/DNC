@@ -1,0 +1,59 @@
+Introdução
+
+Este ebook tem como objetivo apresentar de forma detalhada o método PBB (Product Backlog Building) para construção de backlogs de produtos digitais.
+
+O PBB foi desenvolvido pelo brasileiro Paulo Carioli, mesmo criador do método de Flush Retrospective. É um método focado em produtos digitais que guia o processo de entendimento do problema, definição do público-alvo, criação das funcionalidades e itens do backlog já priorizados.
+
+Problemas e Expectativas
+
+O primeiro passo do PBB é entender quais são os problemas que se deseja resolver e quais as expectativas em relação à solução.
+
+Por exemplo, se o problema é que as pessoas pagam muito caro pela carne atualmente, a expectativa pode ser reduzir o preço da carne para que as pessoas consigam comprar mais quilos por mês.
+
+Outro exemplo citado foi de um sistema de atendimento ao cliente. Os problemas podem ser o atendimento demorado e ineficiente. As expectativas seriam ter um atendimento mais rápido e eficaz tanto para o cliente quanto para o atendente.
+
+Personas
+
+Depois de mapear problemas e expectativas, define-se quem são as personas, ou seja, quem são as pessoas que têm esses problemas e expectativas.
+
+No exemplo do sistema de atendimento ao cliente, algumas personas seriam:
+
+
+Atendente: espera conseguir atender clientes de forma mais rápida e eficiente
+Cliente: espera receber um atendimento rápido e de qualidade
+Gerente: precisa melhorar métricas como tempo médio de atendimento (faz parte de seus objetivos)
+
+Para cada persona, detalha-se os problemas enfrentados e as expectativas em relação à solução.
+
+Funcionalidades
+
+Com base nas personas e seus respectivos problemas e expectativas, definem-se as funcionalidades necessárias para a solução.
+
+As funcionalidades devem representar a jornada e os fluxos de trabalho. Por exemplo, para o sistema de atendimento ao cliente algumas funcionalidades seriam:
+
+
+Cliente abre chamado no site
+Atendente recebe o chamado
+Atendente entra em contato com o cliente
+Cliente explica o problema
+Atendente tenta resolver o problema
+Se necessário, atendente encaminha para equipe especializada
+Atendente retorna para o cliente com a solução
+
+Itens do Backlog
+
+A partir das funcionalidades, detalham-se os itens do backlog, quebrando cada funcionalidade em tarefas menores quando necessário.
+
+Cada item deve estar linkado aos problemas e expectativas das personas. Isso garantirá a priorização correta dos itens, trabalhando primeiro naqueles que entregam mais valor para o cliente.
+
+O PBB fornece uma estrutura para organizar e priorizar todos esses itens de acordo com o valor entregue.
+
+Considerações Finais
+
+O PBB é uma metodologia poderosa e estruturada para construir backlogs de produtos digitais, com foco no valor para o cliente.
+
+Mapeia os problemas, expectativas, personas e funcionalidades para então detalhar o backlog já no nível de priorização correto dos itens.
+
+É uma abordagem mais completa e eficiente do que simplesmente listar histórias de usuário ou requisitos. Garante que o produto será construído visando entregar valor real para o público-alvo.
+
+Portanto, vale a pena conhecer e utilizar o PBB caso você vá trabalhar com gestão de produtos digitais ou deseje aprimorar seu processo de product management.

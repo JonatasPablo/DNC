@@ -1,0 +1,119 @@
+O que são Promises?
+
+Promises são objetos que representam o resultado de uma operação assíncrona. Elas permitem escrever código assíncrono de forma mais limpa, evitando o callback hell (aninhamento exagerado de callbacks).
+
+As Promises podem ter três estados:
+
+
+Pending - Estado inicial, pendente.
+Fulfilled - A operação foi concluída com sucesso.
+Rejected - Ocorreu algum erro durante a operação.
+
+Alguns exemplos de operações assíncronas que retornam Promises:
+
+
+Requisições HTTP com Fetch API
+Operações de I/O (entrada e saída)
+Timers
+
+O objeto Promise expõe métodos que permitem anexar callbacks para quando ela for resolvida ou rejeitada:
+
+
+.then() - Chamado quando a Promise é resolvida.
+.catch() - Chamado quando a Promise é rejeitada.
+
+Exemplo:
+
+fetch('/api/users')
+.then(response => {
+// tratar resposta
+})
+.catch(error => {
+// tratar erro
+});
+
+
+Promises permitem encadear várias operações assíncronas, aguardando cada uma ser resolvida antes de iniciar a próxima. Isso evita callback hell.
+
+Limitações das Promises
+
+Apesar de mais simples que callbacks, promises ainda apresentam alguma complexidade:
+
+
+Encadear vários .then() ainda pode ficar verboso.
+Código síncrono precisa ficar dentro dos blocos .then().
+Tratamento de erros com .catch() em cada chamada.
+
+O que é Async/Await?
+
+Async/Await são recursos do JavaScript que simplificam ainda mais o trabalho com Promises.
+
+A palavra-chave async é utilizada para declarar uma função como assíncrona, que retorna implicitamente uma Promise.
+
+Já o await serve para pausar a execução da função assíncrona até que a Promise seja resolvida ou rejeitada.
+
+async function getUsers() {
+
+const response = await fetch('/api/users');
+
+return response.json();
+
+}
+
+
+O await permite escrever código assíncrono como se fosse síncrono, sem precisar encadear .then(). É possível usar try/catch para tratamento de erros.
+
+Vantagens do Async/Await
+
+
+Código mais limpo e parecido com síncrono
+Melhor legibilidade e manutenção
+Encadeamento implícito de promises
+Uso de try/catch para tratamento de erros
+
+Exemplo prático
+
+Vamos ver um exemplo prático de como utilizar Async/Await para consumir uma API:
+
+async function getUser(userId) {
+
+try {
+
+const response = await fetch('/api/users/' + userId);
+
+const user = await response.json();
+
+return user;
+
+} catch (error) {
+
+console.log(error);
+
+}
+
+}
+
+const loadUserData = async () => {
+
+const user = await getUser(123);
+
+// exibir dados do usuário na tela
+
+}
+
+loadUserData();
+
+
+Primeiro declaramos uma função assíncrona getUser() que busca os dados de um usuário na API.
+
+Usamos o await para aguardar o fetch e parse do JSON. Em caso de erro, ele é tratado no bloco catch.
+
+Depois chamamos essa função em loadUserData() precedida por await também. Assim podemos usar os dados buscados de forma síncrona.
+
+Conclusão
+
+Async/Await traz uma sintaxe mais simples e limpa para se trabalhar com código assíncrono em JavaScript.
+
+Promises seguem sendo a base, mas com os helpers de assincronicidade fica muito mais fácil de lidar com chamadas de API, requests HTTP, operações de I/O, etc.
+
+Espero que este ebook tenha ajudado você a entender como aplicar esses recursos para tornar seu código mais legível!

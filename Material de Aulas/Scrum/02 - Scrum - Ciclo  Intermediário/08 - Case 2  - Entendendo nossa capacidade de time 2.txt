@@ -1,0 +1,85 @@
+Planejando a Próxima Sprint com Base na Velocidade da Equipe
+Introdução
+Este ebook aborda conceitos importantes relacionados ao planejamento de sprints em metodologias ágeis, especificamente no Scrum.
+
+Serão discutidos tópicos como:
+
+Velocidade da equipe
+Capacidade de entrega
+Velocity Chart
+Estimativas assertivas
+Buffers
+Entendendo esses conceitos, o Scrum Master pode conduzir o time Scrum de forma mais eficiente, estabelecendo objetivos adequados para cada sprint.
+
+Finalizando a Sprint Atual
+Ao finalizar uma sprint, antes de partir para o planejamento da próxima, é essencial que a equipe reflita sobre o que foi entregue de fato. Isso impacta diretamente a capacidade de entrega do time e consequentemente as estimativas de pontos na sprint planning.
+
+Velocidade da Equipe
+A velocidade representa quantos pontos a equipe foi capaz de entregar durante aquela sprint. No exemplo citado, ao final da sprint, 29 cards haviam sido concluídos, totalizando 29 pontos.
+
+Portanto, a velocidade daquela sprint foi de 29 pontos.
+
+Importância da Velocidade
+Saber a velocidade permite que a equipe estime com maior acurácia o total de pontos que poderá assumir na próxima sprint. Isso aumenta a assertividade nas negociações com o Product Owner sobre os objetivos da sprint.
+
+Além disso, a velocidade também serve como métrica para que o Scrum Master avalie se o time está evoluindo sua produtividade ao longo das sprints. No início é normal que a velocidade seja mais baixa, melhorando com as retrospectivas e adaptações do processo.
+
+Análise das Estimativas
+Outro ponto importante é analisar as estimativas de pontos que foram feitas para as tarefas, comparando com o realmente gasto para concluí-las.
+
+Se uma tarefa foi estimada em 8 pontos mas levou apenas 4 pontos, significa que ela foi superestimada. Por outro lado, se a estimativa foi de 13 pontos e foram necessários 21 pontos, a tarefa foi subestimada.
+
+Identificar essas variações ajuda o time a calibrar melhor as estimativas futuras, entendendo os tipos de tarefas que tendem a superestimar ou subestimar.
+
+Velocity Chart
+O Velocity Chart é um gráfico simples que mostra a capacidade de entrega da equipe sprint a sprint. Nele são plotados:
+
+Pontos planejados durante a sprint planning
+Pontos entregues de fato
+Assim fica visível se o time está entregando acima, abaixo ou conforme o planejado inicialmente.
+
+Construindo o Velocity Chart
+Para construir o gráfico, basta uma planilha com:
+
+Coluna com o número das sprints
+Coluna com pontos planejados por sprint
+Coluna com pontos entregues por sprint
+Em seguida, basta inserir um gráfico de colunas empilhadas:
+
+Uma coluna para pontos planejados (azul)
+Outra coluna para pontos entregues (vermelho)
+À medida que as sprints avançam, novas colunas são adicionadas com as informações atuais.
+
+Velocidade Média do Time
+Após 3 sprints, é possível calcular a velocidade média do time, fazendo uma média aritmética dos pontos entregues nas últimas sprints.
+
+No exemplo, foi:
+
+Sprint 1 = 40 pontos
+Sprint 2 = 55 pontos
+Sprint 3 = 52 pontos
+Total = 147 pontosMédia = 49 pontos
+
+Portanto, estima-se que a velocidade média desse time é de 49 pontos por sprint. Esse número serve de referência para o planejamento das sprints seguintes.
+
+Estimando a Próxima Sprint
+Com base na velocidade média do time e análise do velocity chart, o Scrum Master pode estimar de forma mais realista a capacidade de entrega da equipe para a próxima sprint.
+
+Considerar os Buffers
+Ao assumir pontos com base na velocidade, não se deve esquecer de reservar uma quantidade de pontos para imprevistos (buffers).
+
+Por exemplo, se a velocidade é de 49 pontos, pode-se assumir 42 pontos de tarefas planejadas e reservar 7 pontos para buffers.
+
+Dessa forma, reduz-se o risco de não entregar tudo o que foi planejado inicialmente na sprint.
+
+Trabalhando com Maior Produtividade
+Entendendo esses conceitos sprint a sprint, o Scrum Master consegue conduzir a equipe para uma maior produtividade. As estimativas se tornam mais assertivas, os buffers garantem contingência para imprevistos e o velocity chart sinaliza melhorias ou queda de performance.
+
+Com times trabalhando no seu melhor nível de produtividade, os projetos ágeis alcançam melhores resultados e maior satisfação dos clientes!
+
+Conclusão
+Neste ebook, foram abordados conceitos-chave que o Scrum Master precisa dominar para planejar as sprints de forma adequada, neither estimando de menos nem de mais.
+
+Entender a velocidade da equipe, construir o velocity chart, considerar buffers e calibrar estimativas de pontos torna o processo ágil mais eficiente e assertivo.
+
+Aplicando esses conhecimentos sprint a sprint, o Scrum Master conduz o time Scrum para entregas dentro do planejado, garantindo previsibilidade e qualidade para os clientes.

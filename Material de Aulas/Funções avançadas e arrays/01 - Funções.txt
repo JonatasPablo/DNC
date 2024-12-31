@@ -1,0 +1,7 @@
+O que são funções?
+É um tipo de dado de referência, sendo um objeto.
+Uma função é um bloco de código que realiza uma tarefa específica e pode ser reutilizado em diferentes partes do programa.
+Legibilidade.
+Exercícios:
+1 - Criar uma função que soma dois valores
+2 - Criar uma função que verifica se o número é par

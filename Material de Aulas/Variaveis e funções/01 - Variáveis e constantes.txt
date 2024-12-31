@@ -1,0 +1,149 @@
+Introdução
+
+Este ebook aborda os conceitos fundamentais de JavaScript, focando em variáveis e constantes, e demonstra sua aplicação prática através da criação de uma calculadora de IMC (Índice de Massa Corporal). Vamos explorar como o JavaScript funciona no navegador, suas principais vantagens e como começar a programar usando esta linguagem versátil.
+
+JavaScript: Fundamentos e Ambiente de Desenvolvimento
+
+O que é JavaScript e como funciona
+
+JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web. Suas principais características incluem:
+
+
+Execução no navegador: O código JavaScript é interpretado e executado diretamente no navegador do usuário.
+Interatividade: Permite criar interfaces dinâmicas e responsivas para os usuários.
+Versatilidade: Pode ser usado tanto no frontend quanto no backend (com Node.js).
+
+Configurando o ambiente de desenvolvimento
+
+Para começar a programar em JavaScript, recomendamos o uso do Visual Studio Code (VSCode) com a extensão Quokka.js. Siga estes passos para configurar seu ambiente:
+
+
+Abra o VSCode
+Acesse a seção de extensões (Ctrl+Shift+X)
+Pesquise por "Quokka.js"
+Instale a extensão Quokka.js
+Para iniciar um novo arquivo JavaScript com Quokka, use Ctrl+Shift+P e selecione "Quokka.js: New JavaScript File"
+
+Dica: O Quokka.js permite executar código JavaScript em tempo real dentro do VSCode, facilitando o aprendizado e a experimentação.
+
+
+Variáveis e Constantes em JavaScript
+
+Entendendo variáveis
+
+Variáveis em JavaScript são usadas para armazenar dados que podem ser alterados durante a execução do programa. Principais características:
+
+
+Declaradas usando a palavra-chave let
+Podem ter seu valor reatribuído
+Úteis para dados que precisam ser atualizados
+
+Exemplo de declaração e uso de variável:
+
+let minhaVariavel = "Isso é uma variável";
+console.log(minhaVariavel); // Saída: Isso é uma variável
+
+minhaVariavel = "Agora mudei o valor";
+console.log(minhaVariavel); // Saída: Agora mudei o valor
+
+
+Entendendo constantes
+
+Constantes são usadas para armazenar valores que não devem ser alterados após a atribuição inicial. Características principais:
+
+
+Declaradas usando a palavra-chave const
+Não podem ter seu valor reatribuído após a declaração inicial
+Úteis para valores fixos ou que não devem ser alterados acidentalmente
+
+Exemplo de declaração e uso de constante:
+
+const minhaConstante = "Isso nunca muda";
+console.log(minhaConstante); // Saída: Isso nunca muda
+
+// Tentar reatribuir um valor a uma constante resultará em erro
+// minhaConstante = "Tentando mudar"; // Isso gerará um erro
+
+
+Diferenças práticas entre variáveis e constantes
+
+
+Variáveis (let): Podem ser reatribuídas e são ideais para valores que podem mudar.
+Constantes (const): Não podem ser reatribuídas e são ideais para valores fixos.
+
+É uma boa prática usar const por padrão e mudar para let apenas quando for necessário reatribuir valores.
+
+Projeto Prático: Calculadora de IMC
+
+Vamos aplicar os conceitos aprendidos criando uma calculadora de IMC (Índice de Massa Corporal) em JavaScript.
+
+O que é IMC?
+
+O IMC é uma medida usada para avaliar se uma pessoa está dentro de um peso considerado saudável em relação à sua altura. A fórmula básica é:
+
+IMC = peso / (altura * altura)
+
+
+Onde o peso é em quilogramas e a altura em metros.
+
+Implementando a calculadora
+
+Vamos criar nossa calculadora de IMC passo a passo:
+
+
+Declarar as variáveis necessárias:
+
+let altura = 170; // altura em centímetros
+let peso = 70; // peso em quilogramas
+
+
+
+Criar uma constante para o fator de conversão de centímetros para metros:
+
+const fatorConversao = 0.01;
+
+
+
+Converter a altura de centímetros para metros:
+
+altura *= fatorConversao; // Equivalente a: altura = altura * fatorConversao
+
+
+
+Calcular o IMC:
+
+let imc = peso / (altura * altura);
+
+
+
+Exibir o resultado:
+
+console.log("O IMC calculado é: " + imc.toFixed(2));
+
+
+Código completo da calculadora de IMC
+
+let altura = 170; // altura em centímetros
+let peso = 70; // peso em quilogramas
+const fatorConversao = 0.01;
+
+altura *= fatorConversao; // Converte altura para metros
+let imc = peso / (altura * altura);
+
+console.log("O IMC calculado é: " + imc.toFixed(2));
+
+
+Este código básico calcula o IMC para uma pessoa com 1,70m de altura e 70kg de peso. Você pode facilmente modificar os valores de altura e peso para calcular o IMC de diferentes pessoas.
+
+Conclusão
+
+Neste ebook, exploramos os fundamentos do JavaScript, focando em variáveis e constantes. Aprendemos como configurar um ambiente de desenvolvimento eficiente usando o VSCode e a extensão Quokka.js. Através do projeto prático da calculadora de IMC, aplicamos esses conceitos de forma prática, demonstrando como variáveis e constantes podem ser usadas em um cenário real.
+
+Pontos-chave para lembrar:
+
+
+Use let para variáveis que precisam ser reatribuídas
+Use const para valores que não devem mudar
+Pratique regularmente para solidificar seu entendimento
+
+Continue explorando e experimentando com JavaScript. À medida que você se torna mais confortável com esses conceitos básicos, estará pronto para avançar para tópicos mais complexos e criar aplicações mais sofisticadas.

@@ -1,0 +1,14 @@
+switch (condicao){
+    case 'condicao 1':
+        console.log('executa alguma coisa')
+        break;
+    case 'condicao 2':
+        console.log('executa outra coisa')
+        break;
+    case 'condicao 3':
+        console.log('executa outra coisa')
+        break;
+    default:
+        console.log('faça isso')
+        break;
+}

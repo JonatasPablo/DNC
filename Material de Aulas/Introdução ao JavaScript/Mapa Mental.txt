@@ -1,0 +1,162 @@
+                                        Aprendendo JavaScript: Do Básico ao Avançado
+O que é JavaScript?
+Linguagem de programação amplamente utilizada no desenvolvimento web
+Conhecer JavaScript é essencial para se tornar um bom desenvolvedor
+Estrutura do Curso
+Introdução ao JavaScript
+O que é JavaScript
+Variáveis e Constantes
+Projeto de Cálculo de IMC
+Estruturas e Condicionais
+Estruturas de controle (if-else, switch-case)
+Continuação do projeto de Cálculo de IMC
+Laços e Iterações
+Loops (for, while, do-while)
+Outras interações importantes para desenvolvedores
+Funções e Arrays
+Funções (aprofundamento)
+Arrays (conceito fundamental em programação)
+Programação Assíncrona
+Conceito essencial para os próximos módulos (front-end e back-end)
+Manipulação de DOM
+Projeto de Lista de Tarefas
+Cadastro, remoção e marcação de tarefas concluídas
+Persistência de dados no navegador
+Metodologia do Curso
+Combinação de teoria e prática
+Muitas atividades hands-on para consolidar o aprendizado
+Suporte da equipe da INC para acompanhar o desenvolvimento
+Conclusão
+Objetivo: preparar os alunos para o mercado de trabalho como desenvolvedores competentes em JavaScript
+Dúvidas podem ser esclarecidas com o instrutor (Fábio Tetsuo) ou a equipe da INC
+
+
+                                        Como o JavaScript Funciona
+Preparação dos Bastidores
+O navegador carrega o código JavaScript primeiro para se preparar
+Assim como um mágico se prepara nos bastidores antes de entrar no palco
+Ato da Magia
+Quando o navegador já interpretou o código JavaScript
+Elementos começam a aparecer na tela, animações acontecem, validações de formulário são feitas
+Interação com o Usuário
+Eventos e respostas
+Momentos em que o usuário realiza ações como clicar em botões, enviar dados
+Conceito importante que será abordado no módulo
+Exemplo Prático
+Criar um projeto estático com HTML e JavaScript
+Arquivo HTML com um cabeçalho "Olá, Mundo"
+Arquivo JavaScript com um console.log
+Adicionar a tag <script> no HTML para carregar o JavaScript
+Ao recarregar a página, o console.log é executado
+Adicionar um botão no HTML com um evento de clique
+Criar a função clique_me no JavaScript que é chamada quando o botão é clicado
+Resumo
+O JavaScript precisa ser carregado pelo navegador
+O navegador transforma o código JavaScript em algo que o computador entenda
+Então o código é executado
+O usuário pode interagir com o código através de eventos
+
+
+                                        Entendendo o Funcionamento do JavaScript
+Requisição do Código JavaScript
+O navegador faz uma requisição para obter o arquivo JavaScript (index.js)
+O navegador carrega o arquivo JavaScript
+JavaScript Engine
+Todos os navegadores possuem uma JavaScript Engine embutida
+Alguns exemplos:
+Chrome: V8
+Firefox: SpiderMonkey
+Edge: Chakra
+Safari: JavaScriptCore
+A JavaScript Engine recebe o código JavaScript
+Compilação Just-in-Time
+A JavaScript Engine compila o código JavaScript em tempo real
+Converte o código JavaScript em uma linguagem binária que o computador possa entender
+Execução do Código JavaScript
+Após a compilação, a JavaScript Engine executa o código JavaScript
+Isso permite a interação com o usuário, a exibição de logs no console, etc.
+Próxima Aula
+Serão abordadas as vantagens do JavaScript
+Importância do JavaScript para o desenvolvimento web
+O papel do JavaScript na carreira do desenvolvedor
+O conteúdo desta aula se concentra em entender o funcionamento interno do JavaScript no navegador. O foco principal é explicar como o código JavaScript é processado, desde a requisição do arquivo até a sua execução, com ênfase na atuação da JavaScript Engine e no processo de compilação just-in-time.
+
+
+                                        Vantagens do JavaScript
+Diferenças entre linguagens compiladas e interpretadas
+Linguagens compiladas:
+Necessidade de traduzir a "receita" (código) antes de executá-la
+Processo de tradução é chamado de "compilação"
+Execução do código é mais rápida após a compilação
+Linguagens interpretadas:
+Não é necessário traduzir a "receita" antes de executá-la
+Um "assistente de cozinha" (interpretador) faz a tradução durante a execução
+Processo é chamado de "interpretação"
+Vantagens do JavaScript
+Desenvolvimento rápido:
+Código é interpretado em tempo de execução, sem necessidade de pré-compilação
+Ideal para prototipagem e desenvolvimento ágil
+Interatividade e desenvolvimento web:
+JavaScript pode ser executado no navegador
+Permite criar páginas web mais dinâmicas e interativas
+Facilidade de uso:
+Linguagem de baixa tipagem, não é necessário declarar explicitamente tipos de variáveis
+Reduz o "boilerplate" e a repetição de código
+Portabilidade:
+JavaScript pode ser usado em diferentes ambientes, como navegador, Node.js, desktop, IoT, etc.
+Motivos para usar JavaScript neste curso
+Alta demanda no mercado de trabalho:
+Praticamente todas as empresas precisam de desenvolvedores JavaScript
+JavaScript é amplamente utilizado no front-end e back-end
+Mesma linguagem para front-end e back-end:
+Neste curso, será utilizado React (front-end) e Node.js (back-end), ambos em JavaScript
+Reduz a curva de aprendizado, pois é a mesma linguagem
+Rapidez para validações e prototipagem:
+JavaScript é uma linguagem compilada just-in-time, o que a torna muito rápida
+Ideal para entender práticas e conceitos de forma ágil
+
+
+                                        Diferenças entre JavaScript no Navegador e no Servidor
+Ambiente
+Navegador:
+Acesso a APIs do DOM (Document Object Model)
+Eventos de usuário (cliques, teclado, localização, armazenamento local)
+Servidor:
+Acesso a arquivos de sistema
+Operações de rede (WebSockets, HTTP)
+Manipulação de processos
+Acesso a bancos de dados
+Acesso a módulos nativos
+Objetivos
+Navegador:
+Tornar a tela mais dinâmica
+Promover interatividade com o usuário
+Manipular a interface
+Responder a eventos
+Atualizar conteúdo dinamicamente
+Validar formulários
+Criar animações
+Servidor:
+Processar lógica de negócio
+Comunicar com o banco de dados
+Servir páginas HTML
+Processar requisições HTTP
+Manipular dados
+Performance e Recursos de Máquina
+Navegador:
+Limitado aos recursos do dispositivo do usuário (CPU, memória, internet)
+Servidor:
+Não limitado aos recursos do dispositivo do usuário
+Pode escalar horizontalmente e verticalmente
+Lidar com grandes volumes de tráfego
+Diferenças Práticas
+Navegador:
+Objeto window e document disponíveis
+Execução de código JavaScript
+Servidor:
+Objeto window e document não disponíveis
+Acesso a recursos do sistema operacional (variáveis de ambiente, process)
+Execução de código JavaScript
+Em resumo, o JavaScript no navegador é focado na interatividade e manipulação da interface, enquanto o JavaScript no servidor é voltado para processamento de lógica de negócio, comunicação com bancos de dados e serviço de páginas web. Essas diferenças se refletem no ambiente, objetivos e recursos disponíveis em cada contexto.
+
+

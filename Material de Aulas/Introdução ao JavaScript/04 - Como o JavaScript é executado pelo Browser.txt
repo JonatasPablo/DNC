@@ -1,0 +1,10 @@
+1 - Browser faz a requisição para pegar o arquivo JS no servidor.
+2 - Assim que recebe, ele passa pelo motor JS (JS Engine)
+
+Sequência:
+"Seu código JS" > passa pela JS Engine > "Efeito na página WEB"
+"Seu código JS" > passa pela JS Engine > "JS Engine - Embutida no Browser (V8, SpiderMonkey) > "Parsea o código" > "Compila para código de máquina" > "Executa  código da máquina" > "Efeito na página WEB"
+
+3 - JS Engine recebe o código e faz a compilação JiT (Just in Time), transformando o código para aquilo que a máquina consiga entender.
+
+4 - Executa o código e tem efeito na página WEB

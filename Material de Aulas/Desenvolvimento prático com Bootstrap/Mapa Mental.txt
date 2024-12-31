@@ -1,0 +1,77 @@
+                                        Bootstrap
+O que é
+Framework front-end
+Ferramenta com vários componentes prontos
+Alternativa ao desenvolvimento manual de elementos de interface
+História
+Surgiu da necessidade de facilitar criação de elementos complexos (ex: modais)
+Consolidou libs separadas em uma só ferramenta
+Influenciou frameworks posteriores (React, Vue, Angular)
+Características
+Baseado em jQuery
+Oferece muitos componentes prontos
+Utiliza o conceito de 12 colunas
+Facilita criação de layouts responsivos
+Ainda muito utilizado atualmente
+Comparação com outros frameworks
+Material UI (React)
+Vuetify (Vue)
+Setup
+Será feito por CDN para agilizar
+Próximos passos
+Criar primeiro layout com Bootstrap
+Explorar layout responsivo e sistema de colunas
+
+
+                                        TEMA CENTRAL:Criar um layout responsivo utilizando Bootstrap
+TÓPICOS ABORDADOS:
+O que é layout responsivo:
+Codar utilizando apenas um código que sirva para diversos dispositivos
+Ter "quebras" de layout de acordo com largura/altura
+Exemplo: imagem retangular no desktop vira quadrada no mobile
+Configurando o Bootstrap:
+Adicionar CDNs do CSS e JavaScript
+JavaScript vai no final do body
+Testar se funcionou criando linhas e colunas
+Conceitos:
+Linhas e colunas
+Cada linha tem 12 colunas disponíveis
+Pode definir quantas colunas cada elemento ocupa
+Breakpoints
+Pontos onde o layout se adapta
+Ex: xl, lg, md, sm
+Cada um equivale a um tamanho de tela
+Desenvolvimento Mobile-First:
+Recomendado desenvolver primeiro a versão mobile
+Na prática os projetos pedem primeiro o desktop
+Depois tem que adaptar para mobile, o que dá mais trabalho
+Ferramentas úteis:
+Plugin Live Server no VSCode
+Inspecionar elemento no navegador
+Simular diversos tamanhos de tela
+
+
+                                        Bootstrap
+Container
+Define um espaço padronizado para o conteúdo
+Container: espaço com respiro nas laterais
+Container-fluid: ocupa 100% da tela
+Helpers
+Classes utilitárias para formatação
+bg: background
+text: cor do texto
+w100: largura de 100%
+Componentes
+Elementos já prontos para uso
+Navbar: barra de navegação
+Dropdown: menu suspenso
+Modal: popup
+Collapse: expande e recolhe conteúdo
+Documentação
+Mostra exemplos de uso dos recursos
+Testar os componentes para entender o funcionamento
+Próximos passos
+Consumir API com JavaScript
+Integrar com projeto front-end
+
+

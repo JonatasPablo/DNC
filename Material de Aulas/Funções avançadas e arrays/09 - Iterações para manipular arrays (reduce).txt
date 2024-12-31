@@ -1,0 +1,1 @@
+O método reduce aplica uma função a um acumulador e a cada valor do array (da esqueda para a direita) para reduzi-lo a um único valor. É uma maneira poderosa de transformar um array em um único valor, seja ele um número, string, objeto ou outro array.

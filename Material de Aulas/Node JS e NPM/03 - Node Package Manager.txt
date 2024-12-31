@@ -1,0 +1,145 @@
+Introdução
+
+O NPM (Node Package Manager) é o gerenciador de pacotes padrão do Node.js. Através dele, é possível instalar, desinstalar e gerenciar as versões dos pacotes utilizados em um projeto Node.
+
+O NPM possui um vasto ecossistema com milhares de bibliotecas e frameworks que podem ser utilizados para facilitar e agilizar o desenvolvimento. Além disso, o NPM gerencia automaticamente as dependências das dependências, ou seja, se um pacote que você está utilizando depende de outros pacotes, o NPM se encarrega de instalá-los também.
+
+Utilizando o NPM
+
+O NPM disponibiliza diversos comandos para realizar a instalação, atualização e gerenciamento de pacotes e dependências. A estrutura básica de utilização é:
+
+npm [comando] [pacote]
+
+
+Onde comando é o comando que desejamos executar, como install, e pacote é o pacote que queremos instalar ou gerenciar.
+
+Antes de utilizar o NPM, devemos verificar se o Node.js e o próprio NPM estão instalados corretamente. Isso pode ser feito executando:
+
+node -v
+npm -v
+
+
+Esses comandos retornarão a versão instalada do Node.js e do NPM respectivamente.
+
+Navegando entre diretórios
+
+Antes de instalarmos pacotes com o NPM, é importante saber navegar entre diretórios no terminal. Isso porque vamos querer isolar nossas dependências por projeto, para evitar conflitos de versão.
+
+Vamos relembrar alguns comandos básicos:
+
+
+cd: muda o diretório atual
+cd ..: volta um nível na árvore de diretórios
+mkdir: cria um novo diretório
+ls: lista os arquivos e diretórios do diretório atual
+
+Por exemplo, para criar um diretório "meu_projeto" e entrar nele, podemos fazer:
+
+mkdir meu_projeto
+cd meu_projeto
+
+
+Dessa forma, o NPM irá instalar as dependências localmente dentro do diretório do projeto.
+
+Instalando pacotes
+
+Agora que já estamos dentro do diretório do nosso projeto, podemos começar a instalar pacotes com o NPM.
+
+O comando básico para instalar é npm install. Por exemplo, para instalarmos o pacote react, fazemos:
+
+npm install react
+
+
+Isso fará o NPM instalar o React e todas as suas dependências dentro do diretório atual.
+
+O arquivo package.json
+
+Quando instalamos um pacote via NPM, ele automaticamente cria um arquivo chamado package.json dentro do nosso projeto.
+
+Esse arquivo contém informações sobre as dependências instaladas, suas versões, além de metadados do projeto.
+
+Por exemplo, ao instalarmos o React, um arquivo package.json é criado com o seguinte conteúdo:
+
+{
+"dependencies": {
+"react": "^18.2.0"
+}
+}
+
+
+Ele registra que temos uma dependência chamada react na versão 18.2.0.
+
+O arquivo package.json vai sendo atualizado automaticamente à medida que instalamos novas dependências no projeto.
+
+O diretório node_modules
+
+Quando instalamos dependências via NPM, todas elas são colocadas dentro do diretório node_modules do nosso projeto.
+
+Dentro desse diretório encontram-se os pacotes instalados e suas dependências. Por exemplo, ao instalarmos o React, teremos uma estrutura assim:
+
+meu_projeto/
+- node_modules/
+- react/
+- react-dom/
+- scheduler/
+- etc...
+- package.json
+
+
+Ou seja, o NPM não somente instala o React, mas todas as suas dependências de forma transparente para nós desenvolvedores.
+
+Instalação local x global
+
+Por padrão, quando instalamos pacotes via NPM eles são instalados localmente dentro do diretório do projeto.
+
+No entanto, também é possível instalar pacotes globalmente, de forma que eles fiquem disponíveis em qualquer lugar do sistema.
+
+A instalação global é feita passando a flag -g:
+
+npm install -g react
+
+
+Mas atenção: é recomendado utilizar a instalação local dentro do diretório do projeto na grande maioria dos casos.
+
+Isso porque diferentes projetos podem depender de diferentes versões de um mesmo pacote, então a instalação global pode causar conflitos.
+
+Além disso, pacotes instalados de forma global não são registrados no arquivo package.json do projeto e dificultam o compartilhamento do código.
+
+Gerenciamento de versões
+
+Uma funcionalidade importante do NPM é o gerenciamento de versões dos pacotes. As versões seguem um padrão de x.y.z onde:
+
+
+x: versão principal (major)
+y: versão secundária (minor)
+z: versão de correção (patch)
+
+Por exemplo, na versão 18.2.1 do React:
+
+
+18: versão principal
+2: versão secundária
+1: versão de correção
+
+Quando um pacote é lançado, começa em 1.0.0.
+
+Conforme são feitas atualizações, os números são incrementados de acordo com as mudanças:
+
+
+Major (x): mudanças e funcionalidades incompatíveis com versões anteriores;
+Minor (y): adição de funcionalidades mantendo compatibilidade;
+Patch (z): correções de bugs e melhorias.
+
+Prestar atenção nessas versões é importante para evitar problemas de compatibilidade.
+
+Grandes mudanças entre a versão principal (major) instalada e a mais nova podem quebrar o sistema, enquanto mudanças menores (minor e patch) têm menos riscos.
+
+Conclusão
+
+O NPM é uma ferramenta essencial para qualquer desenvolvedor Node.js, pois permite instalar e gerenciar pacotes de forma fácil e ágil.
+
+Saber utilizar os comandos básicos como install e entender o funcionamento do arquivo package.json e gerenciamento de versões é fundamental.
+
+Isso permite manter as dependências sempre atualizadas, evitar conflitos entre versões e compartilhar configurações entre equipes.
+
+Portanto, dedicar um tempo para aprender o NPM é um investimento que vai facilitar o desenvolvimento de aplicações Node.js robustas e escaláveis.

@@ -1,0 +1,52 @@
+                                        Prática de Laço de Repetição
+Primeiro Problema
+Ler 10 valores numéricos inteiros
+Apresentar o somatório dos valores na tela
+Usar o laço for para resolver o problema
+Inicializar a variável conte em 1
+Condição: conte <= 10
+Incremento: conte++
+Ler a variável valor
+Atualizar a variável soma com soma + valor
+Exibir o valor final da soma
+Também é possível resolver usando o laço while
+Segundo Problema
+Chico tem 1,5m e cresce 2cm por ano
+Zé tem 1,1m e cresce 3cm por ano
+Calcular quantos anos serão necessários para que Zé seja maior que Chico
+Resolver usando o laço while
+Inicializar a variável anos em 0
+Condição: Ze < Chico
+Atualizar a altura de Chico: Chico += 0.02
+Atualizar a altura de Zé: Ze += 0.03
+Incrementar a variável anos
+Exibir o valor final da variável anos
+Exibir as alturas finais de Chico e Zé
+Considerações Finais
+Existem diversas soluções possíveis para o mesmo problema
+É importante entender quando usar for ou while com base na informação disponível
+Acompanhar o valor das variáveis durante a execução do programa é uma boa prática
+
+
+                                        Desafio de Programação: Árvore de Natal
+Introdução
+Proposta de um desafio de programação
+Objetivo: Criar um algoritmo que exiba uma árvore de Natal na tela
+Variações possíveis: de baixo para cima, de cima para baixo, apenas metade da árvore
+Abordagem Inicial
+Resolver o problema da maneira mais simples possível
+Utilizar estruturas de repetição (for e while) para construir a árvore
+Começar com uma única linha e ir expandindo gradualmente
+Implementação
+Criar uma estrutura for com a variável Y para gerar a primeira linha da árvore
+Escrever a árvore usando CTRL+V
+Adicionar mais linhas, observando o padrão de repetição
+Cada linha possui um número crescente de asteriscos
+Tornar a solução mais dinâmica
+Introduzir uma variável X para controlar o número de linhas
+Utilizar um loop externo for para iterar sobre as linhas
+Considerações Finais
+A solução inicial, mesmo simples, é válida e resolveria o problema
+Refinar a solução, tornando-a mais dinâmica, é uma boa prática
+Esse tipo de exercício é comum em processos seletivos
+Aprender a resolver problemas de forma simples e depois refiná-los é uma habilidade importante

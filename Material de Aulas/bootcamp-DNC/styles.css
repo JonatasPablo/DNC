@@ -1,0 +1,367 @@
+:root{ /*Definido uma variável do tipo global*/
+    --azul-dnc: #0c70f2; /*Nome da variável inicial com -- */
+    --preto-dnc: #303030; /*Nome da variável inicial com -- */
+    --cinza-hover: #c9c9c9; /*Nome da variável inicial com -- */
+    --font-padrao: 'inter'; /*Nome da variável inicial com -- */
+}
+
+
+            /*Menu principal de navegação*/
+
+body{/*Tudo o que estiver dentro do corpo da página*/
+
+    margin: 0px; /*Margem Externa*/
+    padding: 0px; /*Margem Interna*/
+    background: linear-gradient(180deg, /*direção do degradê*/
+        rgba(12, 112, 242, 0.5) 19.91%, /*Primeira cor e a porcentagem que ela vai ocupar*/
+        rgba(12, 112, 242, 0) 24.84%), /*Segunda cor e a porcentagem que ela vai ocupar*/
+        #303030; /*Cor que vai finalizar o degradê*/
+    background-repeat: no-repeat; /*Usando para não repetir o linear-gradient por todo o body*/
+}
+
+#principal{/*Todos os componentes dentro da Tag Nav com o Id Principal*/
+
+    width: 100%; /*Largura*/
+    height: 100px; /*Altura*/
+    border: 1px solid black; /*Borda do menu*/
+    background-color: var(--preto-dnc); /*Cor de fundo do menu*/ /*Definido com a variável global*/
+    display: flex; /*Pegou o tamanho total do Nav, sendo flex pode ser organizado melhor o posicionamento*/
+    justify-content: space-between;/*distribui os itens proporcionalmente dentro do espaço especificado em volta dos itens que estão no componente*/
+    align-items: center; /*O alinhamento vertical de todos os itens que estão no componente principal */
+    border-bottom: 1px solid #bababa; /*Borda definida na parte de baixo do menu principal*/
+}
+
+#menu{ /*Todos os componentes dentro da Div com o Id Menu*/
+
+    display: flex; /*Definido que o menu tem o tamanho flex, podendo organizar melhor o posicionamento*/
+    width: 45%; /*Largura*/
+    justify-content: space-around;/*distribui os itens proporcionalmente dentro do espaço especificado entre os itens que estão no componente*/
+    align-items: center; /*O alinhamento vertical de todos os itens que estão no componente Menu */
+    margin-left: 5%; /*margin definida na esquerda dos intens */
+}
+
+#principal div a{ /*Links dentro do menu principal */
+
+    font-family: var(--font-padrao); /*Estilo da fonte importada*/ /*Definido com a variável global*/
+    font-size: 25px; /*Tamamho da fonte*/
+    font-weight: 600; /*Espessura da fonte*/
+    color: white; /*Cor da fonte*/
+    text-decoration: none; /*Retirado o underline dos links*/
+}
+    #principal div a:hover{/*Efeito para quando o mouse passar por cima dos links*/
+
+        transition: 0.3s;
+        color:var(--cinza-hover); /*cor definido para alterar assim que o mouse passar por cima dos links*/ /*Definido com a variável global*/
+    }
+
+#principal button{ /*botão do menu principal*/
+
+    margin-right: 5%; /*Margin especificada a direita do componente*/
+    background-color: var(--azul-dnc);/*Cor de fundo do item*/ /*Definido com a variável global*/
+    border: 0px; /*Borda do item, poderia ser também border: none; que teria o mesmo resultado*/
+    width: 80px; /*Largura do elemento*/
+    height: 40px;/*Altura do elemento*/    
+    font-family: inter; /*Estilo da fonte importada*/
+    font-size: 20px; /*Tamamho da fonte*/
+    font-weight: 600; /*Expessura da fonte*/
+    color: white; /*Cor da fonte*/
+    box-shadow: /*Define uma sombra no componente de acordo com as especificações passadas*/
+        3px /*tamanho da sombra na horizontal*/ 
+        2px /*tamanho da sombra na vertical*/ 
+        4px /*blur-radius: esfumaçado na sombra aplicada*/
+        rgba(12, 112, 242, 0.25);  /*color: Cor da sombra aplicada*/  /*r:red; g:green; b:blue; a = alfa:opacity, vai de 0 a 1;*/
+    cursor: pointer; /*faz com que a seta do mouse fique no modo de clique*/
+}
+
+    #principal button:hover{ /*Efeito para quando o mouse passar por cima do componente*/
+
+        transition: 0.5s;
+        background-color: #0b3d7e;/*Cor de fundo do item*/
+        color:#ffffff; /*cor definido para alterar assim que o mouse passar por cima dos links*/
+        box-shadow: /*Define uma sombra no componente de acordo com as especificações passadas*/
+            3px /*tamanho da sombra na horizontal*/ 
+            2px /*tamanho da sombra na vertical*/ 
+            4px  /*blur-radius: esfumaçado na sombra aplicada*/ 
+            rgba(165, 167, 170, 0.25); /*color: Cor da sombra aplicada*/ /*r:red; g:green; b:blue; a = alfa:opacity, vai de 0 a 1;*/
+    }
+
+
+            /*Seção Principal*/
+
+section{ /*Todos os componetes dentro da tag section*/
+    display: flex; /*Faz com que seja possível ajustar os componentes na página de maneira mais organizada e simples */
+    flex-direction: column; /*defini a direção dos componentes, nesse caso um embaixo do outro por coluna */
+    align-items: center; /*centraliza todos os componentes na página*/
+    margin-top: 100px;/*margem superior*/
+    margin-bottom: 100px;/*margem inferior*/
+}
+
+header { /*cabeçalho da seção principal*/
+    color: white; /*cor da fonte */
+    font-family: var(--font-padrao); /*fonte da letra, usado com a variável global*/
+}
+
+header h1{ /*título principal*/
+    text-transform: uppercase; /*transforma tudo em maiúscolo*/
+    text-align: center; /*centralizado*/   
+    font-size: 80px; /*Tamanho da fonte*/
+    font-weight: 900; /*espessura da fonte*/
+    margin-bottom: 20px; /*margem inferior*/
+}
+
+header h2{ /*Título informativo*/
+    text-align: center; /*centralizado*/
+    font-size: 40px; /*Tamanho da fonte*/
+    font-weight: 700; /*espessura da fonte*/
+    margin-bottom: 100px; /*margem inferior*/
+}
+
+header .invert{ /*frases com estilização diferentes*/
+    background-color: rgb(151, 151, 151); /*cor de fundo*/
+    font-weight: bold; /*Deixando em negrito*/
+    padding: 5px; /*espaçamento interno*/
+}
+
+
+            /*Formulário*/
+
+form{ /*Todos os componentes dentro da tag form*/
+    color: white; /*cor do texto*/
+    font-family: var(--font-padrao); /*fonte do texto definido através da variável global*/
+    font-size: 30px; /*tamanho da fonte*/
+    font-weight: 600; /*espessura da fonte*/
+    width: 650px;/*Largura máxima que o formulário irá ocupar na página*/  
+}
+
+.form-group{ /*Estilizando as Label e os inputs do formulário*/
+    display: flex; /*Faz com que seja possível ajustar os componentes na página de maneira mais organizada e simples */
+    flex-direction:column; /*defini a direção dos componentes, nesse caso um embaixo do outro por coluna */
+    margin-top: 10px; /*margem superior*/
+    margin-bottom: 10px; /*margem inferior*/
+}
+
+form input{ /*modificações nos inputs*/
+    border-radius: 10px; /*Definido a borda do input */
+    height: 30px; /*Altura*/
+    border: 0px; /*removido a linha que fica na borda */  
+    font-size: 20px; /*tamanho da fonte */
+    padding: 10px; /* margem interna*/
+    background-color: rgba(255,255, 255, 0.9); /*Cor de fundo do input*/
+}
+
+form label{/*ajustando a margem entra os inputs e as label*/
+    margin: 10px 0px 10px 0px; /*margem entre as label e os inputs*/
+}
+
+input::placeholder{/*Ajustando a cor do texto dentro dos inputs*/
+    color: rgba(57, 57, 57, 0.5) ;
+}
+
+.checkbox-itens label{/*Para todas as Label dentro da classe checkbox-itens terem o mesmo tamanho*/
+    font-size: 25px;/*Tamanho da fonte da Label*/
+}
+
+.checkbox-itens{/*Estilização para todos os checkbox que contém essa classe*/
+    display:flex;/*Faz com que seja possível ajustar os componentes na página de maneira mais organizada e simples */
+    justify-content: space-around;/*Distribui os espaços entre os componentes*/
+    align-items: center;/*Alinha os itens no centro da div*/
+}
+
+input[type="checkbox"] { /*Altera apenas os componentes que contém o tipo checkbox*/
+    transform: scale(1.7);/*Usando o transform na propriedade scale (escala) é possível alterar o tamanho do componente*/
+}
+
+input[type="submit"] { /*Altera apenas os componentes que contém o tipo submit*/
+    font-size: 30px; /*Tamanho do texto*/
+    color: white; /*Cor do texto*/
+    background-color: rgba(12, 112, 242, 0.9); /*Cor de fundo*/
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25); /*Sombra com esfumaçado*/
+    border-radius: 10px; /*Deixa a borda arredondada*/
+    height: 55px; /*Altura*/
+    width: 100%; /*Largura*/
+    margin-top: 65px; /*Margem na parte de cima*/
+    cursor: pointer; /*troca o ponteiro do mouse quando passa em cima do componente*/
+}
+
+.enviar:hover{ /*Efeito para quando o mouse passar por cima do componente*/
+
+    transition: 0.5s;
+    background-color: #0b3d7e;/*Cor de fundo do item*/
+    color:#ffffff; /*cor definido para alterar assim que o mouse passar por cima dos links*/
+    box-shadow: /*Define uma sombra no componente de acordo com as especificações passadas*/
+        3px /*tamanho da sombra na horizontal*/ 
+        2px /*tamanho da sombra na vertical*/ 
+        4px  /*blur-radius: esfumaçado na sombra aplicada*/ 
+        rgba(165, 167, 170, 0.25); /*color: Cor da sombra aplicada*/ /*r:red; g:green; b:blue; a = alfa:opacity, vai de 0 a 1;*/
+}
+
+            /*Footer (Rodapé)*/
+
+footer{
+    width:100%;
+    background-color: var(--azul-dnc);
+}
+
+footer .linha1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
+
+footer h5{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: var(--font-padrao);
+    background-color: var(--preto-dnc);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 15px;
+}
+footer ul li{
+    text-align: center;
+    color: white;
+    font-weight: 600;  
+    font-size: 18px;
+    font-family: var(--font-padrao); 
+    margin: 20px 0 20px 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+    footer ul li a:hover{
+        transition: 0.3s;
+        color:var(--cinza-hover); /*cor definido para alterar assim que o mouse passar por cima dos links*/ /*Definido com a variável global*/
+    }
+
+footer .endereco{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--font-padrao);
+    color: white;
+    width:20%;
+}
+
+footer .linha2{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 10px;
+    height: 35px;
+}
+
+footer .linha2 a{
+    font-family: var(--font-padrao);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding:5px;
+}
+
+footer .linha2 a:first-child{
+    border-right: 3px solid white;
+}
+
+    footer .linha2 a:hover{
+        transition: 0.3s;
+        color:var(--cinza-hover); /*cor definido para alterar assim que o mouse passar por cima dos links*/ /*Definido com a variável global*/
+    }
+
+            /*Responsividade*/
+
+@media only screen and (max-width:600px){
+    #principal{
+        flex-direction: column;
+        height: auto;
+        
+    }
+
+    #menu{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #menu a{
+        display: flex;
+        align-items: center;
+        height:50px;
+    }
+
+    #principal button{
+        width: 100%;
+        margin-bottom: 10px;
+        margin:10px 0px 0px 0px;
+    }
+
+    /*Seção*/
+
+    section h1{
+        font-size:40px;
+        margin: 0px;
+    }
+
+    section h2{
+        padding:15px;
+        font-size: 30px;
+    }
+
+    header .invert{
+        padding: 5px;
+        font-size: 25px;
+    }
+
+    form{
+        width:95%;
+        font-size: 25px;
+    }
+
+    .checkbox-itens label{
+        font-size:15px;
+    }
+
+    /*Footer*/
+    footer .linha1{
+        flex-direction: column;
+    }
+
+    footer .endereco{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width:1090px){
+
+    #menu{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width:1400px){
+
+    #menu{
+        width: 55%;
+    }
+}

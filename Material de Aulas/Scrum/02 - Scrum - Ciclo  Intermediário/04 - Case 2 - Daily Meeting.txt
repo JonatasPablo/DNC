@@ -1,0 +1,97 @@
+Gestão Ágil de Projetos com Scrum
+Introdução
+O Scrum é uma metodologia ágil muito popular para gestão e planejamento de projetos de software. Ela foca em entregas incrementais, adaptação a mudanças e trabalho em equipe.
+
+Neste ebook, vamos aprender os principais conceitos e práticas do Scrum, incluindo:
+
+Papéis e responsabilidades da equipe
+Cerimônias (rituais)
+Artefatos
+Gestão do backlog
+Gestão da sprint
+Métricas e indicadores
+Vamos também simular situações práticas de aplicação do Scrum para gestão de projetos.
+
+Ao final deste ebook, você terá uma visão abrangente de como o Scrum pode ser aplicado para aumentar a produtividade e qualidade da entrega de projetos.
+
+Papéis e Responsabilidades
+O Scrum define três papéis centrais:
+
+Product Owner: responsável por maximizar o valor do produto e do trabalho da equipe de desenvolvimento. Ele é o representante da área de negócios.
+
+Scrum Master: responsável por guiar, facilitar e ensinar as práticas de Scrum para a equipe. Age como um líder servidor.
+
+Time de Desenvolvimento: profissionais que fazem o trabalho de entregar incrementos potencialmente liberáveis em cada sprint.
+
+O Product Owner prioriza os itens do Backlog do Produto, decidindo o que deve ser feito primeiro. O Time de Desenvolvimento auto-organiza as tarefas para entregar os itens. E o Scrum Master garante o uso correto do Scrum, auxiliando a remoção de impedimentos.
+
+Cerimônias
+O Scrum prescreve cinco eventos formais, realizados em sequência e com frequência definida:
+
+Sprint: ciclo básico de desenvolvimento, de duração pré-definida (normalmente 2 a 4 semanas). Cada sprint origina uma entrega potencialmente liberável.
+
+Planejamento da Sprint: reunião da equipe Scrum para definir o objetivo da sprint e selecionar itens do Product Backlog para a sprint.
+
+Reunião Diária (Daily Scrum): reunião rápida (15 minutos), feita em pé, para alinhamento diário sobre o andamento da sprint.
+
+Revisão da Sprint: apresentação das funcionalidades entregues na sprint, para obter feedbacks e promover ajustes.
+
+Retrospectiva da Sprint: reunião da equipe para lições aprendidas, o que funcionou bem e o que pode melhorar para a próxima sprint.
+
+Artefatos
+Os artefatos do Scrum representam trabalho ou valor. São eles:
+
+Product Backlog: lista ordenada de tudo que é necessário no produto. É definido e priorizado pelo Product Owner.
+
+Sprint Backlog: itens do Product Backlog selecionados para a sprint corrente, mais um plano para entregá-los.
+
+Incremento: resultado da sprint, com funcionalidades entregues que estão em condições de serem utilizadas.
+
+Gestão do Backlog
+O Product Backlog é dinâmico e sofre constantes mudanças. O Product Owner precisa refinar, priorizar e estimar seus itens continuamente, para garantir o valor negocial.
+
+Itens maiores são divididos em itens menores durante o refinamento. A estimativa é feita em pontos de esforço. E a priorização leva em conta critérios como valor negocial, custo, risco e dependências.
+
+Gestão da Sprint
+Durante a sprint, o Time de Desenvolvimento precisa quebrar os itens selecionados em tarefas menores. Essas tarefas são distribuídas e trabalhadas para que o incremento seja entregue.
+
+O progresso é monitorado em reuniões rápidas diárias. Impedimentos são identificados e removidos. E tendências são analisadas para prever o sucesso da sprint.
+
+Métricas e Indicadores
+Algumas métricas e indicadores são úteis para monitorar o progresso e desempenho das sprints:
+
+Velocidade: quantidade de pontos entregues por sprint
+Capacidade: total de pontos que o time consegue assumir por sprint
+Burndown: progresso diário real x planejado
+Outros indicadores medem a saúde e maturidade da implementação do Scrum.
+
+Simulação de Situações Práticas
+Para fixar o conteúdo, vamos simular algumas situações práticas usando o Scrum:
+
+Criação do Scrum Board
+Imagine que temos uma equipe formada pelo Bruno e pelo Felipe. O Bruno divide as tarefas entre os membros, atribuindo metade para cada um.
+
+No Scrum, cada pessoa só pode trabalhar em uma tarefa por vez. Então o Bruno e o Felipe ficam cada um com uma tarefa na coluna "Fazendo".
+
+Se mais de uma tarefa for atribuída para a mesma pessoa, o Scrum Master deve intervir para manter o foco.
+
+Reunião Diária (Daily Scrum)
+Simulamos uma Daily Scrum com base no estado atual do Scrum Board. O Felipe relata que aguarda um orçamento e já prepara os próximos passos. O Bruno também reporta seu progresso e riscos.
+
+O objetivo é dar visibilidade, não resolver problemas. Se impedimentos surgem, o Scrum Master deve atuar após a reunião para removê-los.
+
+Gestão da Sprint
+Conforme a sprint transcorre, simulamos situações como: conclusão de tarefas, bloqueios, redistribuição de tarefas e análise de indicadores.
+
+Isso permite exercitar as boas práticas de gestão de uma sprint: monitorar o progresso, remover impedimentos, ajustar capacidade e prever o sucesso da sprint.
+
+Considerações Finais
+Neste ebook, apresentamos os principais conceitos, práticas e rituais do Scrum para gestão ágil de projetos.
+
+Vimos a importância do empirismo, da auto-organização e da adaptação nessa abordagem. Também simulamos situações comuns enfrentadas pelas equipes Scrum.
+
+Esperamos que este material sirva como guia e referência para você aplicar o Scrum em projetos reais e colher os benefícios de produtividade e qualidade que essa metodologia pode trazer.
+
+O segredo está em praticar continuamente os rituais e artefatos, buscando sempre a melhoria contínua da equipe. Scrum não é algo que se implanta da noite para o dia, mas com paciência os resultados aparecerão.
+
+Desejamos sucesso na sua jornada ágil!

@@ -1,0 +1,110 @@
+Material complementar - https://www.w3schools.com/css/css_grid.asp
+
+Responsividade com Bootstrap: Criando um layout responsivo
+Introdução
+O Bootstrap é um dos frameworks front-end mais populares atualmente para desenvolvimento web responsivo. Ele fornece uma série de recursos e componentes prontos para uso que permitem criar interfaces de usuário adaptáveis para funcionar bem em diversos tamanhos de tela, desde celulares e tablets até desktops.
+
+Neste ebook, vamos aprender como utilizar o Bootstrap para criar um layout responsivo. Iremos cobrir os seguintes tópicos:
+
+O que é design responsivo
+Configurando o Bootstrap no projeto
+Breakpoints e o sistema de grid
+Criando linhas e colunas
+Classes responsivas do Bootstrap
+Debugando responsividade com as ferramentas do navegador
+Boas práticas para desenvolvimento web responsivo
+Ao final deste material, você terá uma boa base para começar a criar seus próprios layouts responsivos utilizando o poderoso Bootstrap.
+
+O que é design responsivo
+Design responsivo refere-se a fazer interfaces de usuário que se adaptem e forneçam uma boa experiência para o usuário em diferentes tamanhos de tela. Isso significa que o layout da página irá se reorganizar de forma flexível, redimensionando, reposicionando ou até mesmo ocultando elementos conforme necessário.
+
+O objetivo é garantir que o conteúdo mais importante esteja sempre visível e fácil de ler, navegar e interagir, independente do dispositivo utilizado para acessar. Seja em um smartphone pequeno ou em uma grande tela de desktop.
+
+Em vez de criar versões separadas de sites e aplicativos para cada plataforma, o design responsivo permite construir uma única versão que funciona bem para todas. Isso economiza tempo e recursos de desenvolvimento.
+
+O Bootstrap fornece recursos e utilitários que facilitam muito a tarefa de tornar o layout responsivo. Ele possui um sistema de grid flexível, breakpoints pré-definidos para diferentes larguras de tela, classes CSS responsivas e componentes já adaptáveis por padrão.
+
+Configurando o Bootstrap
+Para utilizar o Bootstrap no projeto, podemos incluir os arquivos CSS e JavaScript hosted nos CDNs (Content Delivery Network) deles. Assim não é preciso baixar e instalar nada localmente.
+
+Basta adicionar os links no <head>:
+
+<!-- Bootstrap CSS --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+E os scripts JavaScript antes do fechamento da tag <body>:
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+O script do Popper.js é necessário para componentes baseados em tooltip como popovers, modals e dropdowns funcionarem.
+
+E isso já é suficiente para começarmos a utilizar os recursos do Bootstrap no projeto!
+
+Breakpoints e sistema de grid
+Um conceito muito importante para criar layouts responsivos é trabalhar com breakpoints. Breakpoints são pontos onde o layout da página irá mudar baseado no tamanho da viewport (área visível do usuário) para se adaptar à tela.
+
+O Bootstrap tem 5 breakpoints pré-definidos:
+
+Extra small (xs): para telas com largura menor que 576px
+Small (sm): para telas ≥576px
+Medium (md): para telas ≥768px
+Large (lg): para telas ≥992px
+Extra large (xl): para telas ≥1200px
+Além disso, ele provê um sistema de grid flexível e poderoso para organizar o conteúdo em linhas e colunas de até 12 unidades cada.
+
+O grid permite criar rapidamente layouts responsivos que reorganizam as colunas de forma ideal nos diferentes breakpoints.
+
+Por exemplo, no mobile as colunas podem empilhar uma embaixo da outra ocupando 100% da largura cada. Já no desktop elas podem ficar lado a lado dividindo a linha em 2, 3 ou mais colunas.
+
+Vamos ver na prática como utilizar esse sistema de grid responsivo.
+
+Criando linhas e colunas
+Para montar um layout com o grid, precisamos criar <div>s com classes especiais que o Bootstrap entende e aplica os estilos necessários:
+
+.row: cria uma linha que agrupa as colunas
+.col: indica a div como uma coluna dentro da linha
+.col-{tamanho}-{quantidade}: define o número de colunas que essa div irá ocupar em determinado breakpoint, sendo o tamanho sm, md, lg ou xl
+Por exemplo:
+
+<div class="row">  <div class="col-md-6">Coluna 1</div>    <div class="col-md-6">Coluna 2</div></div>
+Nesse caso, estamos definindo que no breakpoint md (telas ≥768px) a linha terá 2 colunas de mesma largura (50% do espaço cada).
+
+Já para telas menores, como mobile, as colunas irão empilhar uma embaixo da outra ocupando 100% do espaço cada, pois não definimos comportamento para breakpoints como xs e sm.
+
+Podemos então começar a montar o layout definindo quantas colunas terá cada linha e o tamanho de cada coluna para os diversos breakpoints.
+
+Classes responsivas
+Além de configurar o grid, o Bootstrap possui utilitários e classes que permitem ocultar, exibir, empilhar elementos ou alterar outros estilos de forma responsiva.
+
+Alguns exemplos:
+
+.d-{tamanho}-{valor}: define a propriedade display nos breakpoints, como .d-md-block para tornar elemento block no md
+.flex-{tamanho}-{direção}: altera a direção do flexbox
+.order-{tamanho}-{ordem}: altera a ordem dos elementos dentro do flexbox
+Essas classes podem ser combinadas para reorganizar os elementos na medida necessária em cada breakpoint.
+
+Debugando com as ferramentas do navegador
+Durante o desenvolvimento, podemos inspecionar e testar o layout em diferentes tamanhos de tela rapidamente utilizando as ferramentas de desenvolvedor dos navegadores.
+
+No Chrome, por exemplo, podemos abrir o DevTools e na aba Elements inspecionar o elemento para analisar o CSS aplicado em cada breakpoint.
+
+Já na aba Device Toolbar, é possível selecionar diversos modelos de dispositivos pré-definidos ou usar a opção de tela responsiva para redimensionar livremente.
+
+Assim fica muito fácil visualizar e debugar cada mudança de layout conforme a largura da viewport.
+
+Boas práticas para web responsivo
+Algumas boas práticas que devemos seguir ao desenvolver layouts responsivos:
+
+Começar pelo mobile first: criar primeiro a versão mobile e depois usar breakpoints e classes para adaptar ao desktop
+Utilizar medidas relativas como %, vw, vh ao invés de valores fixos como px
+Evitar elementos flutuantes e posicionamentos fixos que podem quebrar o layout responsivo
+Priorizar flexbox over floats para alinhamentos e posicionamentos
+Manter HTML semântico, limpo e bem estruturado
+Testar exaustivamente em diversos dispositivos e navegadores
+Seguindo essas dicas e os recursos do Bootstrap, fica muito mais fácil criar interfaces web flexíveis que funcionam muito bem independente do dispositivo.
+
+Conclusão
+Neste ebook, apresentamos os principais conceitos e ferramentas necessários para desenvolver layouts responsivos utilizando o Bootstrap.
+
+Vimos na prática como configurá-lo no projeto, trabalhar com o sistema de grid flexível, aplicar classes responsivas para controlar elementos em diferentes breakpoints e debugar o responsivo com as ferramentas do navegador.
+
+Dominar esses conceitos é essencial para qualquer desenvolvedor front-end que precisa lidar com a grande variedade de tamanhos de tela existentes hoje em dia. O Bootstrap torna essa tarefa muito mais simples e produtiva.
+
+Espero que este material sirva de guia para você começar a criar seus próprios projetos web responsivos. Leve esse conhecimento para seus estudos e aplicação no mundo real!

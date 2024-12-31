@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fonte importada do google fonts inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Anexado o arquivo CSS ao HTML-->
+    <link rel = "stylesheet" href="styles.css">
+    
+    <title>Bootcamp DNC</title>
+</head>
+<body>
+
+    <!--Primeira parte do projeto, barra de navegação superior com links e um botão-->
+    <nav id="principal">
+        <div id="menu">
+            <a href="">Home</a><!--Tag para links-->
+            <a href="">Últimas Edições</a><!--Tag para links-->
+            <a href="">Requisitos para Participar</a><!--Tag para links-->
+        </div>
+        <button>Login</button>
+    </nav>
+
+    <!--Seção principal com cabeçalho e formulário-->
+    <section>
+        <header>
+            <h1> Bootcamp dnc</h1>
+
+            <!--Foi adicionada a tag <b></b> para colocar a palavra em negrito-->
+            <!--Foi adicionada a tag <span></span> com a classe invert, para poder trabalhar no Css apenas as frases que terão
+            um estilo diferente das demais-->
+            <h2> Esse será um evento exclusivo para todos os alunos
+                <br>da <b>DNC</b>, que querem <span class="invert">acelerar a carreira</span> com uma
+                <br>semana intensiva de conteúdo de mercado entre
+                <br><span class="invert">BACK-END, FRONT-END & BANCO DE DADOS.</span>
+            </h2>
+        </header>
+
+        <form> <!--Formulário-->
+            <!--Nome-->
+            <div class="form-group"><!--Definido a classe form-group para todas as divs, pois terão a mesma estilização no CSS-->
+                <label>Nome:</label><!--Tag label para definir no nome do input-->
+                <input type="text" placeholder="Insira seu nome aqui"><!--Tipo do input definido por type e o texto que fica dentro dele definido por placeholder-->
+            </div>
+
+            <!--Sobrenome-->
+            <div class="form-group"><!--Definido a classe form-group para todas as divs, pois terão a mesma estilização no CSS-->
+                <label>Sobrenome:</label><!--Tag label para definir no nome do input-->
+                <input type="text" placeholder="Insira seu sobrenome aqui"><!--Tipo do input definido por type e o texto que fica dentro dele definido por placeholder-->
+            </div>
+
+            <!--Área de interesse-->
+            <div class="form-group"><!--Definido a classe form-group para todas as divs, pois terão a mesma estilização no CSS-->
+                <label>Área de interesse:</label><!--Tag label para definir no nome do input-->
+
+                <div class="checkbox-itens"><!--Aberta uma nova div para os checkbox, pois terão estilização diferente dos demais componentes, usando a classe checkbox-itens para estilizar todos eles-->
+                    <input type="checkbox" value="front"><!--Tag usada para poder ticar uma opção dentre outras, usando o type checkbox com o value front-->
+                    <label>Front-end</label><!--Tag label para definir no nome do input-->
+
+                    <input type="checkbox" value="back"><!--Tag usada para poder ticar uma opção dentre outras, usando o type checkbox com o value back-->
+                    <label>Back-end</label><!--Tag label para definir no nome do input-->
+
+                    <input type="checkbox" value="bd"><!--Tag usada para poder ticar uma opção dentre outras, usando o type checkbox com o value bd-->
+                    <label>Banco de Dados</label><!--Tag label para definir no nome do input-->
+                </div>
+            </div>
+
+            <!--Email-->
+            <div class="form-group"><!--Definido a classe form-group para todas as divs, pois terão a mesma estilização no CSS-->
+                <label>E-mail:</label><!--Tag label para definir no nome do input-->
+                <input type="email" placeholder="Insira seu e-mail aqui"><!--Tipo do input definido por type e o texto que fica dentro dele definido por placeholder-->
+            </div>
+
+            <!--Telefone-->
+            <div class="form-group"><!--Definido a classe form-group para todas as divs, pois terão a mesma estilização no CSS-->
+                <label>Telefone:</label><!--Tag label para definir no nome do input-->
+                <input type="tel" placeholder="(99) 99999-9999"><!--Tipo do input definido por type e o texto que fica dentro dele definido por placeholder-->
+            </div>
+
+            <!--Frase-->
+            <div class="form-group"><!--Definido a classe form-group para todas as divs, pois terão a mesma estilização no CSS-->
+                <label>Insira uma frase criativa aqui:</label><!--Tag label para definir no nome do input-->
+                <input type="text" placeholder="Qual frase criativa voce gostaria de falar? :)"><!--Tipo do input definido por type e o texto que fica dentro dele definido por placeholder-->
+            </div>
+
+            <!--Enviar Cadastro-->
+            <input class="enviar" type="submit" value="Cadastrar"><!--Botão de envio do formulário-->
+
+        </form>
+    </section>
+
+    <footer>
+        <div class="linha1">
+            <nav>
+                <h5>Escolas</h5>
+                <ul>
+                    <li>
+                        <a href="">Formação em Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em MArkenting</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em Dados</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em Projetos</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em Produto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h5>Sobre a DNC</h5>
+                <ul>
+                    <li>
+                        <a href="">História</a>
+                    </li>
+                    <li>
+                        <a href="">Missão e Valores</a>
+                    </li>
+                    <li>
+                        <a href="">Trabalhe Conosco</a>
+                    </li>
+                    <li>
+                        <a href="">Conteúdo Gratuito</a>
+                    </li>
+            </nav>
+
+            <div class="endereco">
+                @ 2022 DTC Treinamentos & Consultoria
+                LTDA | CNPJ: 27.995.577/0001-37 | R.
+                Justino Cobra, 61 - Vila Ema | São José dos
+                Campos - SP | CEP 12243-030
+            </div>
+        </div>
+
+        <div class="linha2">
+            <a href="">Termos de Uso</a>
+            <a href="">Política de Privacidade</a>
+        </div>
+    </footer>
+
+</body>
+</html>

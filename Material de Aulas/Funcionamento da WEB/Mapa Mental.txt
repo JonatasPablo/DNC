@@ -1,0 +1,205 @@
+                                        Introdução à Tecnologia e Desenvolvimento Web
+O que é Tecnologia?
+Definição de Tecnologia: Entidades materiais e imateriais criadas pela aplicação do esforço mental e físico para obter algum valor
+Objetivo da Tecnologia: Aumentar a eficiência, fazer mais com menos, mais rápido e melhor
+Carreira do Palestrante
+Experiência empreendedora com a WAI (projeto social)
+Trabalhou como professor em escolas
+Estruturou times de tecnologia em startups
+Trabalhou como freelancer e contractor
+Desenvolvimento Web
+Funcionamento da web "por baixo dos panos"
+Como a tecnologia pode facilitar o acesso a informações de qualidade
+Identificar dores e criar soluções tecnológicas para melhorar o dia a dia das pessoas
+Próximos Passos
+Aprofundar conhecimentos em tecnologia e desenvolvimento web
+Aplicar os conceitos aprendidos para criar soluções inovadoras
+Entender como a tecnologia pode ser usada de forma estratégica para facilitar a vida das pessoas
+O palestrante, Tercísio, é o Head de Tecnologia da Escola DNC e tem uma ampla experiência em empreendedorismo, ensino e desenvolvimento de soluções tecnológicas. Nesta aula introdutória, ele aborda os conceitos básicos de tecnologia, sua aplicação no desenvolvimento web e a importância de entender o funcionamento da web para criar soluções que melhorem a vida das pessoas.
+
+
+                                        A Web e a Internet
+O que é a Web?
+Conceito de "web" vem da analogia com uma teia de aranha
+É uma rede mundial de computadores conectados
+História da Internet
+Surgiu na década de 1960 com a rede ARPANET
+Tinha como objetivo inicial o envio de informações entre centros de pesquisa e o Pentágono
+Primeira mensagem enviada entre computadores da UCLA e SRI
+Evolução da Conectividade
+Em 2011, 25% da população mundial tinha acesso à internet
+Em 2016/2017, esse número chegou a 46%
+Em 2023/2024, estima-se que 67% da população mundial terá acesso à internet
+No Brasil, a previsão é de 85-87% da população com acesso em 2024
+Iniciativas como o Starlink, de Elon Musk, buscam ampliar ainda mais o acesso
+Importância da Internet
+Permite a comunicação e troca de informações em escala global
+Tem impacto significativo no mercado e no dia a dia das pessoas
+Ainda há uma parcela considerável da população mundial sem acesso
+Desafios da Internet
+Inicialmente, a premissa era de que as pessoas seriam 100% éticas
+Posteriormente, surgiram problemas de segurança e a necessidade de proteger o que está disponível online
+Ainda é uma tecnologia relativamente nova, com menos de um século de existência
+Continua a evoluir e a se aprimorar constantemente
+
+
+                                        Entendendo o Funcionamento da Web
+URL (Uniform Resource Locator)
+Definição: Localizador e identificador de um recurso na web
+Composta por:
+Protocolo (HTTP)
+Domínio
+Domínio
+Facilita a memorização de endereços de computadores na internet
+Funciona como um "apelido" para o endereço IP
+Protocolo HTTP (Hypertext Transfer Protocol)
+Protocolo de transferência de mensagens entre computadores
+Estabelece regras e padrões para a comunicação
+Cliente e Servidor
+Cliente: Computador, dispositivo ou aplicativo que faz um pedido à internet
+Exemplo: Navegador web
+Servidor: Computador configurado para receber e responder a pedidos
+Comunicação entre cliente e servidor é feita através do protocolo TCP
+Protocolos de Comunicação
+TCP (Transmission Control Protocol)
+Garante a entrega correta da informação
+Utilizado em e-mails, mensagens, transferência de arquivos
+UDP (User Datagram Protocol)
+Prioriza a entrega rápida da informação
+Utilizado em transmissões de vídeo e áudio em tempo real
+Considerações Finais
+A escolha do protocolo de comunicação depende do caso de uso
+É importante ter conhecimento sobre os diferentes protocolos para desenvolver aplicações web eficientes
+
+
+                                        Entendendo a Comunicação na Internet
+Domínio
+O domínio é a parte do endereço da web que identifica um site
+Exemplo: google.com.br
+Os computadores e a internet não entendem o domínio, eles entendem endereços de IP
+Endereço de IP
+O endereço de IP é a sequência numérica que identifica um computador na internet
+Exemplo: 172.217.28.277
+Os domínios são convertidos em endereços de IP através do DNS
+DNS (Domain Name System)
+O DNS é responsável por converter o domínio em um endereço de IP
+Quando você digita um domínio, o DNS faz a tradução para o endereço de IP correspondente
+Proxy
+O proxy é qualquer dispositivo no meio do caminho entre o seu computador e o servidor que você está acessando
+Exemplos: roteador, modem, provedores de internet
+O proxy é responsável por encaminhar os pacotes de dados entre os dispositivos
+Processo de Acesso a um Site
+Você digita o domínio (ex: google.com.br) no navegador
+O seu computador envia uma solicitação para o DNS
+O DNS converte o domínio em um endereço de IP
+A solicitação passa por diversos proxies (roteador, modem, provedor de internet) até chegar ao servidor
+O servidor responde à solicitação e envia os dados de volta
+Os dados passam pelos mesmos proxies de volta até chegar ao seu computador
+Portanto, a comunicação na internet envolve a conversão de domínios em endereços de IP, a passagem da solicitação por diversos dispositivos proxy, e a resposta do servidor voltando pelo mesmo caminho. Esse processo acontece de forma transparente para o usuário, mas é importante entender os conceitos básicos por trás dessa comunicação.
+
+
+                                        Entendendo Requisições e Respostas em Aplicações Web
+Conceitos Básicos
+URL (Uniform Resource Locator)
+Domínio
+Servidor
+Requisição (Request)
+Definição: Pedido feito ao servidor para acessar um recurso
+Nomenclatura: "Request"
+Resposta (Response)
+Definição: Resposta do servidor à requisição do cliente
+Nomenclatura: "Response"
+Tipos de Respostas:
+Positiva
+Negativa
+Erro
+Status Code
+Definição: Código numérico que indica o status da resposta
+Categorias:
+Informação (1xx)
+Sucesso (2xx)
+Redirecionamento (3xx)
+Erro do Cliente (4xx)
+Erro do Servidor (5xx)
+Exemplos:
+200 (Sucesso)
+301 (Redirecionamento)
+404 (Erro do Cliente)
+500 (Erro do Servidor)
+Importância do Status Code
+Facilita a identificação e tratamento de problemas
+Evita a necessidade de "investigação" como um "Sherlock Holmes"
+Torna o trabalho mais fluido e eficiente
+Considerações Finais
+Não é necessário decorar todos os status codes
+O conhecimento básico das categorias é suficiente
+A familiaridade com os status codes vem com a prática e construção de aplicações
+
+
+                                        Acesso à Internet: Entendendo o Processo por Trás
+Introdução
+Acordar e tomar café
+Acessar o site google.com.br
+Processo de Acesso
+Solicitação do usuário
+Envio da solicitação
+Comunicação através da rede
+Resposta do Servidor
+Servidor autoriza o acesso
+Comunicação de volta ao usuário
+Exibição da Página
+Recebimento dos dados pelo navegador
+Montagem da página na tela
+Navegadores (Browsers)
+Exemplos: Internet Explorer, Chrome, Mozilla Firefox, Opera, Safari, Arc
+Função: Receber a resposta do servidor e exibir a página na tela
+Recursos da Página
+HTML: Estrutura da página
+CSS: Estilização
+JavaScript: Interações
+Imagens, PDFs, etc.
+Importância do Desempenho
+Rapidez no acesso é crucial para uma boa experiência do usuário
+Necessidade de otimizar o carregamento da página
+Conclusão
+Entender o processo por trás do acesso à internet é fundamental
+Todos os elementos se conectam para fornecer uma experiência fluida ao usuário
+O conteúdo abordado neste vídeo é sobre o processo de acesso à internet, desde a solicitação do usuário até a exibição da página em seu navegador. O tema central é a compreensão detalhada de como funciona essa comunicação, destacando a importância do desempenho e da otimização para proporcionar uma experiência satisfatória ao usuário.
+
+
+                                        Resumo do Funcionamento da Web
+Etapas do Processo
+Cliente Acessa URL
+O usuário digita uma URL no navegador
+O navegador gera uma requisição (request) para o servidor
+Comunicação entre Cliente e Servidor
+A requisição é enviada através do protocolo TCP
+O DNS converte a URL em um endereço IP
+A requisição passa por diversos proxies até chegar no servidor
+Processamento da Requisição pelo Servidor
+O servidor analisa a requisição
+O servidor envia uma resposta (response) com um status code
+Renderização da Resposta no Cliente
+O navegador recebe a resposta do servidor
+O navegador monta a página web para o usuário visualizar
+Detalhamento das Etapas
+Cliente Acessa URL
+O usuário digita uma URL no navegador
+O navegador gera uma requisição (request) para o servidor
+Essa requisição é enviada através do protocolo TCP
+Comunicação entre Cliente e Servidor
+O DNS (Domain Name System) converte a URL em um endereço IP
+A requisição passa por diversos proxies até chegar no servidor correto
+Esse processo de busca do endereço IP envolve uma série de etapas complexas na rede
+Processamento da Requisição pelo Servidor
+O servidor recebe a requisição do cliente
+O servidor analisa a requisição e verifica se está tudo correto
+O servidor envia uma resposta (response) com um status code (ex: 200 OK, 401 Unauthorized)
+Renderização da Resposta no Cliente
+O navegador recebe a resposta do servidor
+O navegador processa a resposta e monta a página web para o usuário visualizar
+O usuário pode interagir com a página web (clicar, arrastar, mudar foto de perfil, etc.)
+Desafios e Próximos Passos
+Entender os detalhes técnicos por trás do funcionamento da web, como os status codes, métodos de requisição, cabeçalhos, etc.
+Aprofundar-se no estudo de redes de computadores e protocolos de comunicação
+Aplicar esse conhecimento no desenvolvimento de aplicações web, seja front-end, back-end ou full-stack

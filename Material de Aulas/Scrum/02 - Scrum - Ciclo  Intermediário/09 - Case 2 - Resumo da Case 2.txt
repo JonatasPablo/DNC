@@ -1,0 +1,92 @@
+Gestão Ágil de Projetos com Scrum
+Introdução
+O Scrum é uma metodologia ágil muito utilizada para gestão de projetos de software. Ela foca em entregas incrementais e contínuas por meio de ciclos curtos de desenvolvimento chamados sprints.
+
+Neste ebook, vamos aprender como aplicar o Scrum em um projeto utilizando algumas ferramentas online muito úteis como Trello, Notion e outras. Veremos desde a criação do backlog e planejamento das sprints até boas práticas para lidar com problemas comuns.
+
+Criando o Project Board no Trello
+O Trello é uma ferramenta visual online que permite criar quadros com colunas personalizáveis para organizar as tarefas. É muito utilizada em projetos ágeis por sua flexibilidade e praticidade.
+
+Para começar, devemos criar um quadro (board) com 5 colunas representando as principais etapas do fluxo Scrum:
+
+Product Backlog: lista geral de requisitos e funcionalidades desejadas para o produto.
+Sprint Backlog: itens selecionados do Product Backlog para serem desenvolvidos na sprint atual.
+Doing: tarefas que estão em andamento na sprint.
+Blocked: tarefas travadas por algum impedimento.
+Done: tarefas finalizadas na sprint.
+Além dessas colunas, podemos adicionar outras que julgarmos necessárias, como uma coluna de testes ou deploy.
+
+Criando Épicos
+Os épicos no Scrum representam iniciativas de alto nível, normalmente relacionadas a funcionalidades ou módulos maiores dentro do produto. Eles servem para organizar o Product Backlog em grupos.
+
+No Trello, podemos criar os cards dos épicos e movê-los para a coluna Product Backlog. Uma boa prática é manter sempre um épico para tarefas não planejadas que sempre surgem, como suporte, bugs ou reuniões. Isso ajuda a ter uma noção mais realista da capacidade da equipe.
+
+Fazendo o Sprint Planning
+O Sprint Planning é a reunião que ocorre no início de cada sprint onde o Product Owner apresenta os itens priorizados do Product Backlog e a equipe seleciona o que será desenvolvido naquela sprint, gerando o Sprint Backlog.
+
+Para cada item selecionado, devemos criar um card no Trello com detalhamento da tarefa, critérios de aceitação (definition of done) e o tamanho estimado em pontos.
+
+Uma boa prática é utilizar a regra 1 ponto = 15 minutos, para ter uma noção do tempo necessário para realizar a tarefa.
+
+Também podemos adicionar etiquetas nos cards para identificar a qual sprint eles pertencem.
+
+Executando a Sprint
+Durante a execução da sprint, os cards vão se movimentando pelas colunas do quadro conforme o status:
+
+Ao começar uma tarefa, movemos o card para Doing. Importante: cada membro da equipe só pode ter 1 card nessa coluna por vez.
+Se algum impedimento ocorrer, movemos o card para Blocked
+Quando finalizar a tarefa, movemos para Done para posterior validação no review da sprint
+O Scrum Master precisa monitorar o quadro para garantir o fluxo das tarefas e fazer a gestão visual.
+
+Fazendo a Daily Meeting
+A daily meeting é uma rápida reunião diária (de 15 minutos) onde cada membro da equipe responde 3 perguntas:
+
+O que fiz desde a última daily?
+O que pretendo fazer hoje?
+Existe algum impedimento ou obstáculo?
+Isso serve para sincronizar o time e identificar gargalos o mais rápido possível.
+
+Atualizando o Burn Down Chart
+O Burndown Chart é um gráfico muito utilizado pelo Scrum Master para monitorar o progresso da sprint em relação às tarefas planejadas.
+
+No Trello, basta clicar em "Card Size" na coluna e depois em "Show totals by list" para ver quantos pontos já foram finalizados e quantos ainda faltam.
+
+Comparando com a linha de base, dá pra ter uma noção se a equipe está no ritmo planejado ou não para entregar tudo até o final da sprint.
+
+Fazendo a Sprint Review
+Ao final da sprint, o Product Owner faz a review, analisando todas as tarefas marcadas como concluídas e validando se elas realmente respeitaram os critérios de aceitação definidos no planejamento.
+
+Caso algum item não esteja de acordo, ele pode devolver para o Sprint Backlog com feedbacks para a equipe revisar e finalizar na próxima sprint.
+
+Realizando a Sprint Retrospective
+Na sprint retrospective, o time se reúne para discutir os pontos positivos e negativos da última sprint, identificando melhorias a serem implementadas na forma de trabalho ou nos processos.
+
+Uma retrospectiva eficiente passa por 4 etapas:
+
+Energizador: atividade rápida para "quebrar o gelo"
+Check-in: como cada membro está se sentindo
+Discussões: pontos positivos e negativos da última sprint
+Check-out: plano de ação com melhorias
+Desta forma, consegue-se ter uma visão mais ampla para evoluir continuamente como time.
+
+Calculando a Velocity
+Após finalizar a sprint, é hora de calcular a velocity, ou seja, quantos pontos a equipe realmente entregou. Isso serve para ter uma base mais precisa ao planejar as próximas sprints e evitar sub ou super estimativas.
+
+O cálculo normalmente utiliza a média aritmética das últimas 3 sprints. No Trello, basta adicionar esse valor no Velocity Chart para acompanhar a evolução.
+
+Boas Práticas e Dicas
+Sempre priorize o trabalho em equipe e procure engajar todos com os objetivos
+Tenha transparência quanto ao andamento das tarefas e eventuais problemas
+Invista tempo para melhorar a qualidade e eficiência dos processos
+Adote uma postura positiva e procure dar feedbacks construtivos
+Comemore as pequenas vitórias em equipe ao final de cada sprint
+Mantenha o foco apenas nas tarefas planejadas para a sprint atual
+Reserve um tempo no fim do dia para organizar o quadro e boards
+Conclusão
+Gerenciar projetos com Scrum exige alguns rituais importantes como o planejamento das sprints, as daily meetings, review, retrospectiva e o acompanhamento do velocity da equipe.
+
+Ferramentas como Trello, Notion e outras podem trazer praticidade e eficiência para esse processo.
+
+O fundamental é trabalhar sempre com transparência, foco no cliente e melhoria contínua. Desta forma, é possível entregar valor de forma rápida e consistente.
+
+Espero que este ebook possa servir como um guia prático para você aplicar o Scrum da melhor forma possível em seus projetos.

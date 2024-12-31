@@ -1,0 +1,240 @@
+                                        Consumo de API com JavaScript
+Tema central
+Aprender a consumir APIs no front-end com JavaScript
+
+Tópicos abordados
+Bootstrap
+
+Aprender componentes básicos
+Facilidades para montar front-ends
+Conhecimentos aplicáveis em outros frameworks
+API
+
+Requisições assíncronas
+Explicação de código síncrono e assíncrono
+Diferenças e aplicações de cada um
+Meteorologia
+
+Consumo de API sobre clima/meteorologia
+Exemplo de requisição e uso de API
+CEP
+
+Consumo de API sobre CEP
+Passar CEP e receber endereço completo
+Exemplo de requisição e uso de API
+Próximos passos
+
+Muito uso de consumo de APIs daqui pra frente
+Futuramente, criação de próprias APIs
+Discorrer sobre cada tópico
+Bootstrap: Framework front-end muito utilizado, com componentes prontos para facilitar o desenvolvimento. Permite criar interfaces rapidamente.
+
+API: Interface para troca de dados entre sistemas. Permite buscar e enviar dados de/para servidores.
+
+Código síncrono: Execução sequencial, sendo bloqueante. Código assíncrono: Execução não bloqueante, continuando mesmo com operações demoradas.
+
+API Meteorologia: Servirá de exemplo prático de consumo de API com JavaScript, buscando dados meteorológicos.
+
+API CEP: Outro exemplo prático, dessa vez buscando dados de endereço a partir de um CEP informado.
+
+Próximos passos: Consumo de APIs é essencial no desenvolvimento web moderno. No futuro, além de consumir, poderão também criar e disponibilizar suas próprias APIs.
+
+
+                                            Entendendo APIs
+O que é uma API?
+Interface de Programação de Aplicativos
+Conjunto de ferramentas e definições para criar aplicativos
+Conecta soluções e serviços sem precisar saber como foram implementados
+Formato de relacionamento entre sistemas
+Analogia com um prédio de empresas
+Cliente = quem consome a API (frontend, postman, app mobile, etc)
+Servidor = onde a API está hospedada
+Porteiro = faz a ponte entre cliente e servidor (protocolo de comunicação)
+Cliente
+Faz uma solicitação (pedido de hambúrguer)
+Não precisa saber os detalhes internos de como é feito
+Apenas espera uma resposta
+Servidor
+Preparado para entregar um produto/resposta
+Não sabe quem é o cliente específico
+Sabe fazer o que o cliente pediu? Entrega a resposta
+Pode ocorrer erros (falta de insumos, fora do horário, etc)
+Porteiro
+Intermediário entre cliente e servidor
+Sabe onde procurar a resposta no servidor
+Verifica se a solicitação pode ou não ser atendida
+Usa uma "documentação" que descreve o que cada serviço oferece
+Exemplos de clientes
+Front-end web
+Aplicativo mobile
+Postman
+Dispositivos IoT
+Considerações finais
+API é uma conversa cliente-servidor
+Próximas aulas: protocolos, metodologias, parte mais técnica
+
+
+                                        Benefícios e casos de uso de APIs
+Introdução
+APIs podem ser consumidas para integrar funcionalidades em nossos sistemas
+Exemplo: amigo que usava API para ligar/desligar sistema hidráulico de sua fazenda remotamente
+Benefícios das APIs
+Integração de funcionalidades sem precisar desenvolvê-las do zero
+Exemplos:
+Consumir API de previsão do tempo para:
+Avisar motoboys sobre condições climáticas da rota
+Decidir sobre locação de tendas em festas infantis
+Alertar quanto a necessidade de roupas de proteção para motociclistas
+Consumir API dos Correios em e-commerces para calcular fretes
+APIs públicas vs APIs pagas
+Exemplos de APIs públicas:
+ViaCEP - preenchimento automático de endereços a partir do CEP
+OpenWeather - previsões meteorológicas customizáveis
+Funcionamento
+Para consumir APIs, precisamos:
+Saber como fazer requisições para suas rotas
+Entender como enviaremos parâmetros nas requisições
+Interpretar as respostas recebidas
+Na próxima aula:
+Falaremos sobre protocolos
+Vamos começar a consolidar conceitos para facilitar quando formos consumir APIs na prática
+
+
+                                        Protocolo HTTP e seus principais métodos
+Introdução
+Analogia entre APIs e relacionamentos humanos
+Existe uma forma padronizada de se comunicar com APIs (protocolo HTTP)
+Principais métodos HTTP
+GET: consultar informações no servidor
+Pode passar parâmetros para filtrar resultados
+POST: enviar informações para o servidor
+Para ele salvar, por exemplo
+PUT: atualizar informações
+Passa ID do registro e novas informações
+DELETE: remover informações
+Passa o que deve ser removido
+PATCH: adendo do PUT para atualizar apenas um campo
+OPTIONS: raramente usado
+Status das respostas
+Códigos numéricos padronizados (200 = OK, 400 = erro no cliente, 500 = erro no servidor etc)
+Considerações
+Na prática esses padrões não são sempre seguidos
+Costuma-se usar muito GET e POST de forma indevida
+Lidamos principalmente com texto (JSON) nas APIs
+
+
+                                        Método GET
+Introdução
+Verbo utilizado em requisições HTTP para coletar informações de um servidor
+Padrão de mercado:
+Conversa entre cliente e servidor via JSON
+Cliente faz requisição (pergunta)
+Servidor responde com dados em formato JSON
+Estrutura da requisição
+Rota (URL)
+Ex: dominio/api/v1/users
+Headers
+Configurações:
+Tipo de conteúdo enviado e recebido (Content-Type)
+Idioma da comunicação
+Ex: JSON, Multipart Form Data
+Utilização
+Consultar informações no servidor
+Exemplos:
+Listar usuários
+Consultar CEP
+Obter previsão do tempo
+Próximos passos
+Enviar parâmetros na requisição GET
+Filtrar resultados
+Buscar informações específicas
+
+
+                                        Estrutura de uma requisição GET e parâmetros de consulta
+Parâmetros de URL
+O que vem depois da barra / em uma URL
+Permite passar um ID ou outros dados para buscar um recurso específico
+Ex: /usuarios/1 busca o usuário com ID 1
+Query Strings
+Conjunto de chave-valor após o ? em uma URL
+Permite fazer filtros e buscas mais refinadas
+Ex: ?nome=Joao&idade=20 filtra por nome Joao e idade 20
+BODY Requisition
+Não é comum em requisições GET
+Mais usado em POST, PUT para passar dados no corpo da requisição
+Algumas APIs podem usar BODY em GET, mas não é o padrão
+Importante
+A API precisa estar preparada para receber e interpretar os parâmetros
+O serviço define as regras, o front-end se adapta
+Documentação da API explica como usar os parâmetros corretamente
+Esse é um resumo abrangendo os principais tópicos e conceitos explicados no vídeo. Foco em entender os diferentes tipos de parâmetros em requisições GET e sua utilidade.
+
+
+                                        API Fetch
+Ferramenta nativa do JavaScript para consumir APIs
+Antes era usado Ajax e jQuery, depois surgiu Axios
+Fetch trabalha de forma assíncrona
+Não espera o retorno da requisição para continuar a execução
+Funciona em multithread
+Permite fazer outra requisição ou processo enquanto aguarda a resposta
+Pode trabalhar de forma síncrona (aguardando a resposta) ou assíncrona
+Exemplos:
+Assíncrono: e-commerce, não precisa esperar toda a confirmação da compra para fazer outra coisa
+Síncrono: cálculo de frete, precisa do valor antes de mostrar o preço final
+Usa o conceito de "resolver"
+A API precisa resolver a requisição no servidor antes de retornar a resposta
+Próxima aula: promessas (promises)
+Vai explicar melhor o conceito de "resolver"
+
+
+                                        Promessas (Promises)
+O que são?
+Metodologia bastante utilizada no JavaScript
+Permitem lidar com operações assíncronas
+É uma "promessa" de que algo será resolvido futuramente
+Para que servem?
+Não travar a execução do código enquanto se aguarda uma resposta assíncrona
+Continuar executando outras partes do código enquanto se aguarda a resolução da promise
+Como funcionam?
+A promise começa no estado "pendente"
+Pode ser resolvida (then) ou rejeitada (catch)
+then -> tratativa do sucesso
+catch -> tratativa do erro
+Exemplos
+Requisição a uma API
+Aguardar resposta assíncrona sem travar execução
+Tratar resposta de sucesso no then
+Tratar erros no catch
+Recursos relacionados
+Fetch API
+Callbacks
+Async/Await (próxima aula)
+
+
+                                        Async e Await
+Problema
+Usar .then e .catch com promises deixa o código verboso e complexo
+Código fica difícil de ler e manter
+Solução
+async/await simplificam o uso de promises
+Async
+Função assíncrona
+Permite o uso de await dentro dela
+Await
+Pausa a execução da função assíncrona
+Aguarda uma promise ser resolvida antes de continuar
+Vantagens
+Código mais simples e legível
+Fluxo parecido com código síncrono
+Melhor que encadear .then
+Uso
+async function getData() {  const response = await fetch(url);  if(response.ok) {    const data = await response.json();    return data;  }} 
+Encapsula fetch em função assíncrona
+Usa await para pausar e esperar resultado
+Simplifica tratamento de erros e dados
+Conclusão
+async/await é o mais comum na prática
+Deixam uso de promises mais simples
+Serão muito utilizados daqui pra frente
+
+
