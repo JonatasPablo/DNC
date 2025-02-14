@@ -106,3 +106,53 @@ Próximos Passos
 Criação de um formulário para adição de novas tarefas
 Manipulação de arrays e do DOM para adicionar novos itens à lista
 Refatoração do código para melhorar a organização e legibilidade
+
+
+                                        Removendo Tarefas Individualmente da Lista de Tarefas
+Introdução
+Nesta aula, aprenderemos como remover itens individualmente da nossa lista de tarefas.
+Anteriormente, discutimos sobre adicionar estilos a um botão vermelho para remover itens específicos da lista.
+Criando a Função RemoverTarefa
+Criamos uma nova função chamada RemoverTarefa ou RemoveTask.
+Essa função precisa receber um ID como parâmetro.
+Utilizamos o conceito de filter em arrays para remover o elemento com o ID correspondente.
+Garantimos que todos os números sejam numéricos para evitar problemas de conversão.
+Removendo o Elemento do DOM
+Utilizamos document.getElementById() para obter a referência do elemento li na lista.
+Em seguida, usamos removeChild() para remover o elemento do DOM.
+Adicionando o Botão de Remoção
+Criamos um botão de remoção usando document.createElement().
+Definimos o texto do botão como "x" e adicionamos um aria-label para acessibilidade.
+Adicionamos um evento de clique ao botão, chamando a função RemoverTarefa com o ID da tarefa.
+Adicionamos o botão de remoção ao elemento li usando appendChild().
+Benefícios da Abordagem
+A função criarTarefa é genérica e pode ser usada tanto para renderizar a lista inicial quanto para adicionar novas tarefas.
+Ao centralizar a lógica de remoção em um único ponto, é mais fácil manter e alterar o código.
+Ao clicar no botão de remoção, a tarefa é removida tanto do array quanto do DOM.
+Próximos Passos
+Na próxima aula, aprenderemos como remover todas as tarefas marcadas como concluídas (com status "done").
+
+
+                                        Persistência de Dados no Navegador
+Local Storage
+Recurso do navegador para armazenar dados
+Dados não expiráveis, ficam salvos entre sessões
+Útil para armazenar informações importantes para o usuário ou a aplicação
+Implementação no Projeto
+Criar função para salvar tarefas no Local Storage
+Usar JSON.stringify() para converter objeto em string
+Criar função para recuperar tarefas do Local Storage
+Usar JSON.parse() para converter string em objeto
+Atualizar lógica da aplicação para usar dados do Local Storage
+Ler tarefas do Local Storage ao carregar a aplicação
+Salvar tarefas no Local Storage ao adicionar, remover ou atualizar
+Benefícios
+Persistência dos dados do usuário entre sessões
+Manutenção do estado da aplicação após atualizações
+Facilidade de implementação usando as APIs do navegador
+Próximos Passos
+Implementar operações assíncronas, como simulação de cadastro no banco de dados
+Utilizar Promises para lidar com operações assíncronas
+Continuar aprimorando a aplicação e aprendendo novos conceitos de programação
+
+

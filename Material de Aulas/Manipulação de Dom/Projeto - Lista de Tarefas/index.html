@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas - Projeto Final JavaScript</title>
+    <title>Lista de tarefas - Projeto Final JavaScript DNC</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="./index.js"></script>
 </head>
 <body>
     <main>
-        <h1>Lista de Tarefas</h1>
+        <h1>Lista de tarefas</h1>
         <section id="create-todo-section">
             <form id="create-todo-form">
-                <input 
-                    type="text" 
-                    id="description" 
+                <input
+                    type="text"
+                    id="description"
                     name="description"
                     class="input-description"
-                    aria-label="Adicionar uma nova tarefa" 
-                    placeholder="Adicionar uma nova tarefa"
+                    aria-label="Qual a tarefa que deseja cadastrar?"
+                    placeholder="Qual a tarefa que deseja cadastrar?"
                 />
-                <button type="submit" aria-label="Cadastrar tarefa" class="add-task-btn">+</button>
+                <button type="submit" id="save-task" aria-label="Cadastrar tarefa" class="add-task-btn">+</button>
             </form>
         </section>
         <section class="todo-list-section">
             <ul id="todo-list"></ul>
         </section>
+        <footer id="todo-footer">
+            <button onclick="removeDoneTasks()" class="remove-done-tasks-btn">
+                Remover tarefas concluídas
+            </button>
+        </footer>
     </main>
 </body>
 </html>
