@@ -1,0 +1,152 @@
+                                        Conceitos Básicos de CSS
+Introdução
+Importância de dominar os conceitos básicos de CSS para criar sites responsivos e de fácil manutenção
+Estrutura do CSS
+Seletores
+Seletores de tags (elementos)
+Seletores de classes
+Seletores de IDs
+Propriedades e valores
+Formas de Aplicar CSS
+CSS inline
+Aplicado diretamente na tag HTML
+CSS interno
+Aplicado dentro da tag <style> no <head> do HTML
+CSS externo
+Aplicado em um arquivo CSS separado, importado pelo HTML
+Hierarquia de Estilos
+Estilos do navegador
+Estilos do usuário
+Estilos externos
+Estilos internos
+Estilos inline
+Especificidade
+Seletores de tags (menor especificidade)
+Seletores de classes
+Seletores de IDs
+Estilos inline (maior especificidade)
+A especificidade determina qual estilo será aplicado quando há conflitos. Entender esse conceito é essencial para criar um código CSS organizado e de fácil manutenção
+
+
+                                        Desenvolvimento de um Projeto Responsivo com CSS
+Estrutura Básica do Projeto
+Criação de uma nova pasta para o projeto
+Criação do arquivo HTML com o template HTML5
+Criação do arquivo CSS "Styles.css" e importação no HTML
+Estrutura da Página
+Utilização da tag <main> para a seção principal
+Criação de uma <div> para agrupar o título e parágrafo
+Adição de um id="presentation-container" para a seção
+Estilização da Página
+Remoção da margem padrão do <body>
+Importação da fonte "Manrope" do Google Fonts
+Definição do box-sizing: border-box para controlar o tamanho dos elementos
+Adição de padding e max-width para o #presentation-container
+Centralização vertical do conteúdo usando position: relative e top: 50%
+Seção de "Entra em Contato"
+Adição de uma nova seção com um título "Entra em Contato"
+Inclusão de um botão "Enviar Mensagem"
+Importação da imagem de ícone de contato na pasta "assets"
+Estilização dos Elementos
+Remoção da margem padrão do <h1>
+Definição de estilos para o <h1> (tamanho, peso da fonte)
+Definição de estilos para o <h2> (tamanho, peso da fonte, margem)
+Personalização do botão (cor de fundo, cor da fonte, padding, border-radius, cursor)
+Adição de uma classe <container> para controlar o espaçamento
+Alinhamento do texto ao centro dentro do container
+Adição de margens entre os elementos (título, parágrafo, botão)
+Próximos Passos
+Adição de um fundo para a página
+Aplicação de gradientes e outros estilos avançados
+
+
+                                        Unidades de Medida Relativas no CSS
+Pixel (px)
+Unidade de medida absoluta
+Pode variar de dispositivo para dispositivo
+Unidades de Medida Relativas
+Em (EM)
+Tamanho relativo ao elemento pai
+1 EM = 16px (padrão)
+Rem (REM)
+Tamanho relativo à raiz (HTML)
+1 REM = 16px (padrão)
+Porcentagem (%)
+Tamanho relativo ao elemento pai
+100% = tamanho total do elemento pai
+Viewport Width (VW)
+Tamanho relativo à largura da viewport
+1 VW = 1% da largura da viewport
+Viewport Height (VH)
+Tamanho relativo à altura da viewport
+1 VH = 1% da altura da viewport
+Aplicação Prática
+Definir fonte padrão de 16px na raiz (HTML)
+Utilizar unidades relativas para definir tamanhos
+Exemplo:
+H1: 4 REM (64px)
+Outros elementos: 1.5 REM, 0.5 REM, etc.
+Altura: 50 VH
+Vantagens:
+Responsividade automática
+Não precisa alterar ponto a ponto
+Conclusão
+Unidades relativas tornam o layout responsivo
+Evitam a necessidade de ajustes manuais
+Permitem uma arquitetura de responsividade no CSS
+
+
+                                        Trabalhando com Backgrounds em CSS
+Estrutura Básica do Background
+Background Color
+Cor definida
+Apenas "background"
+Background Image
+Imagem local
+Imagem externa (URL)
+Background Color Linear Gradient
+Direção do gradiente
+Cores inicial e final
+Aplicando Background no Código
+Presentation Container
+Adicionando imagem de fundo
+Ajustando repetição da imagem
+Ajustando tamanho da imagem
+Session Container
+Aplicando gradiente linear
+Definindo direção do gradiente
+Definindo cores inicial e final
+Conclusão
+Aprendemos a trabalhar com imagens de fundo
+Aprendemos a trabalhar com gradientes de cor
+Aprendemos a posicionar e ajustar as imagens de fundo
+Esses conceitos são muito importantes no dia a dia do desenvolvimento web
+
+
+                                        Animações CSS
+Transições
+Transition: propriedade CSS que permite criar transições suaves entre diferentes estados de um elemento
+TransitionProperty: define a propriedade que será observada para a transição
+TransitionDuration: define o tempo de duração da transição (em segundos)
+TransitionTimeFunction: define a forma como a transição ocorrerá (ex: linear, ease-in, ease-out)
+TransitionDelay: define o tempo de atraso antes da transição começar
+Keyframes
+@keyframes: permite definir uma sequência de estados para uma animação
+Definir os estados da animação em porcentagens (0%, 100%, etc.)
+Aplicar a animação a um elemento usando a propriedade animation
+animation-name: nome da animação definida com @keyframes
+animation-duration: duração da animação
+animation-timing-function: função de tempo da animação
+animation-iteration-count: número de vezes que a animação será repetida
+Aplicando Transições e Animações
+Exemplo de transição de opacidade e tamanho em um botão:
+Adicionar transição de opacidade e transformação (scale) no estado de hover
+Definir duração, função de tempo e atraso da transição
+Exemplo de animação de movimento de um elemento:
+Definir @keyframes para mover o elemento da esquerda para a direita
+Aplicar a animação ao elemento usando a propriedade animation
+Considerações Finais
+Transições e animações CSS são conceitos importantes para melhorar a experiência do usuário
+Conhecer as propriedades e como aplicá-las é essencial no desenvolvimento web
+
+

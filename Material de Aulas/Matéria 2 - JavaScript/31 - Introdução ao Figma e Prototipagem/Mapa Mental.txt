@@ -1,0 +1,93 @@
+                                        Responsabilidade com o CSS
+Importância da Responsividade
+Usuários cada vez mais exigentes
+Uso de diversos dispositivos (notebooks, desktops, celulares, tablets)
+Necessidade de criar sites prontos para diferentes resoluções
+Soluções com CSS
+Utilização de CSS para resolver problemas de responsividade
+Uso de técnicas como Flexbox, Grid e Image Aquarius
+Projeto Prático
+Desenvolvimento de um site de uma construtora digital
+Diferentes layouts para desktop, tablet e celular
+Aprendizado de conceitos importantes de CSS, Flexbox, Grid e Image Aquarius
+Ferramentas
+Utilização do Figma para o projeto
+Importância do Figma no desenvolvimento
+Próximos Passos
+Aprendizado sobre a interface do Figma
+Exploração de funcionalidades como barras de ferramentas, camadas e protótipos
+O objetivo deste módulo é capacitar os alunos a desenvolver sites responsivos e de alta qualidade, utilizando as principais técnicas e ferramentas do CSS. Através de um projeto prático, os alunos terão a oportunidade de aplicar os conceitos aprendidos e criar soluções adaptáveis a diferentes dispositivos.
+
+
+                                        Responsabilidade com o CSS e Figma
+Importância do Design
+Tradução e conversão de protótipos de designers para código
+Comunicação entre designer, UX e desenvolvedor
+Figma
+O que é o Figma?
+Ferramenta de design colaborativa
+Permite criar interfaces e protótipos interativos
+Facilita a colaboração em tempo real e integração com outras ferramentas
+Por que usar o Figma?
+Acessibilidade (basta ter internet)
+Versatilidade (desktop, tablet, celular)
+Prototipagem interativa (validar ideias antes de codificar)
+Uso do Figma no curso
+Protótipos serão criados durante o curso
+Entender o protótipo e como convertê-lo em código
+Interface do Figma
+Barra de ferramentas
+Criar novos quadros, elementos, texto, interações
+Testar o protótipo interativo
+Barra de camadas
+Todas as camadas do projeto
+Painel de design e protótipo
+Customizar propriedades dos objetos
+Área de desenho (Canva)
+Onde o protótipo é criado
+Criando um protótipo simples
+Criar tela para desktop
+Usar ferramenta de frames
+Personalizar tamanho
+Adicionar texto
+Ajustar tamanho e estilo
+Adicionar imagem
+Inserir imagem
+Ajustar preenchimento
+Adicionar menu
+Criar elementos de menu
+Personalizar estética
+Alterar cores
+Alinhar elementos
+Agrupar elementos
+Conclusão
+Familiarizar-se com o Figma
+Criar protótipos diversos
+Entender a importância do design e da comunicação entre equipes
+
+
+                                        Transformando Design em Código
+Estrutura do Figma
+Diferentes telas (desktop, tablet, celular)
+Seções: apresentação, qualidades e processos, o que oferecemos, posts/blog, referências, contato, footer
+Cada seção será uma <section> no HTML
+Elementos de Texto
+Títulos principais são <h1>, <h2>, <h3>
+Tamanhos padrão, como lidar com eles no código
+Posicionamento com Flexbox
+Centralizar elementos na tela
+Responsividade da imagem de fundo
+Trabalhar com flex-direction para posicionamento horizontal e vertical
+Grid Layout
+Criar um grid responsivo
+3 colunas no desktop, 2 colunas no tablet, 1 coluna no celular
+Posicionar elementos dentro do grid
+Flexbox Avançado
+Inverter a ordem dos elementos
+Trabalhar com justify-content e align-items para espaçamento
+Conclusão
+Estruturar o projeto em HTML e CSS
+Aplicar os conceitos de Flexbox e Grid Layout
+Tornar o design responsivo
+
+

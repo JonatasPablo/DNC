@@ -1,0 +1,196 @@
+                                        Componentes de Layout: Flexbox e Grid
+Introdução
+Estamos na metade do curso
+Já revisamos os principais conceitos de responsividade
+Agora vamos falar sobre conceitos mais avançados, como Flexbox e Grid
+Flexbox
+Flexbox é um sistema de layout flexível
+Permite organizar elementos em linhas ou colunas
+Não é necessário saber o tamanho exato dos elementos
+Vantagens do Flexbox
+Organização Flexível:
+
+Possibilidade de organizar elementos em linhas ou colunas
+Não é necessário calcular posicionamento exato
+Controle de Espaço:
+
+Permite controlar o espaço entre os elementos
+O espaçamento se ajusta automaticamente ao tamanho da tela
+Responsividade Automática:
+
+Os elementos se ajustam automaticamente ao tamanho da tela
+Funciona bem em diferentes dispositivos e orientações
+Facilidade de Uso:
+
+Muito mais simples de construir layouts complexos
+Não é necessário fazer cálculos complicados
+Grid
+Grid é outro sistema de layout avançado
+Será abordado em uma próxima aula
+Conclusão
+Fiquem atentos às próximas aulas sobre Flexbox e Grid
+Vamos codar juntos e aplicar esses conceitos
+
+
+                                        Utilizando o Flexbox na Prática
+Introdução
+O Flexbox é uma ferramenta importante para desenvolvedores front-end
+Agora vamos aplicar o Flexbox em um projeto prático
+Aplicando o Flexbox no Container de Apresentação
+O container de apresentação tinha cálculos complexos para centralizar o conteúdo
+Adicionando display: flex e justify-content: center no container, o conteúdo fica centralizado automaticamente
+Adicionando align-items: center, o conteúdo fica perfeitamente centralizado, mesmo que o tamanho da tela mude
+Criando a Seção "O que Oferecemos de Melhor"
+Criamos uma nova seção com um título e um texto
+Adicionamos a classe container para sincronizar o estilo
+Definimos o background como vermelho e ajustamos a cor do texto
+Criando a Barra de Informações
+Copiamos os 4 textos e os inserimos em uma nova div com display: flex
+Importamos uma imagem de seta e a inserimos na barra
+Alinhamos os itens horizontalmente e verticalmente usando justify-content: center e align-items: center
+Adicionamos um espaçamento entre os textos e as setas usando margin
+Conclusão
+Vimos como é fácil utilizar o Flexbox para centralizar e alinhar elementos
+O Flexbox se ajusta automaticamente ao tamanho da tela, facilitando a manutenção
+Conseguimos aplicar o Flexbox tanto no container de apresentação quanto na seção de informações
+
+
+                                        Aplicando Flexbox em um Projeto Web
+Criando uma Seção de Posts
+Estrutura HTML
+Criar uma nova section com a classe container
+Dentro da section, criar article elementos
+Cada article terá uma div com a classe article-details
+Dentro da div, incluir:
+h2 para o título do post
+h3 para uma descrição curta
+p para o texto do post
+button para um botão "Ver Mais"
+Adicionar uma img para a imagem do post
+Estilização com Flexbox
+Aplicar display: flex na classe article-details para alinhar os elementos em linha
+Definir flex-direction: column para empilhar os elementos verticalmente
+Alinhar o texto à esquerda com text-align: left
+Remover o estiramento do botão com align-items: flex-start
+Alinhamento dos Posts
+Criar uma classe article-container para agrupar os posts
+Aplicar display: flex na classe article-container para alinhar os posts lado a lado
+Inverter a ordem dos posts ímpares com flex-direction: row-reverse
+Ajustes Finais
+Adicionar margem entre os posts com margin-top: 5em
+Ajustar o espaçamento interno do article-details com justify-content: space-between
+Diminuir o tamanho da fonte do botão com font-size: 1rem
+Conclusão
+O Flexbox é uma ferramenta poderosa para posicionar e alinhar elementos em um layout web
+Permite inversão de ordem dos elementos sem precisar alterar a estrutura HTML
+Facilita a criação de layouts responsivos e adaptáveis
+
+
+                                        Criação de um Footer com Flex
+Tópicos Abordados
+Revisão do uso do Flex para inversão de elementos
+Utilização do SpaceBetween para criar a parte do footer
+Adição de links e serviços no footer
+Estilização do footer
+Remoção das balas dos list items
+Aplicação de cor de fundo vermelha
+Adição de título em negrito nos itens
+Ajuste do espaçamento entre os itens
+Adição de copyright e redes sociais no footer
+Importação das imagens das redes sociais
+Alinhamento dos elementos do footer
+Adição de margem superior
+Detalhamento dos Tópicos
+Revisão do uso do Flex para inversão de elementos:
+Na aula anterior, foi aprendido como utilizar o Flex para inverter a ordem dos elementos em uma linha.
+Nesta aula, será abordado o uso do SpaceBetween para criar a parte do footer, onde ficarão os links e serviços da consultoria.
+Utilização do SpaceBetween para criar a parte do footer:
+Será adicionado o footer no HTML, após a seção de contato.
+Dentro do footer, haverá uma seção com links, que serão representados por list items.
+Esses links serão para serviços, produtos, páginas institucionais e informações de contato.
+Adição de links e serviços no footer:
+Serão adicionados os list items com os links correspondentes.
+Cada list item conterá um link para um serviço, produto ou página institucional.
+Estilização do footer:
+Remoção das balas dos list items:
+Será aplicada a propriedade list-style: none; aos list items.
+Aplicação de cor de fundo vermelha:
+Será aplicada a classe background-red ao footer.
+Adição de título em negrito nos itens:
+Será adicionada a classe footer-list-title aos primeiros itens de cada lista, com font-weight: 700; para deixá-los em negrito.
+Ajuste do espaçamento entre os itens:
+Será adicionada uma margin-bottom: 1rem; a cada item, exceto o último.
+Adição de copyright e redes sociais no footer:
+Será adicionada uma nova seção abaixo do footer, contendo o texto de copyright e as imagens das redes sociais.
+As imagens das redes sociais (Medium, LinkedIn, Twitter, Instagram e Facebook) serão importadas.
+Será aplicada a classe FooterLeash para alinhar os elementos do footer.
+Será utilizada a propriedade justify-content: space-between; para separar os elementos do footer.
+Será aplicado align-items: center; para alinhar verticalmente os elementos.
+Será adicionada uma margin-top: 8.5rem; para separar o footer do conteúdo principal.
+
+
+                                        Grid Layout
+Introdução
+O Flex é um componente de layout muito utilizado, mas existem momentos em que o Grid Layout pode ser mais apropriado.
+O Grid Layout é uma ferramenta poderosa para organizar elementos em uma página web de forma precisa e organizada.
+Características do Grid Layout
+O Grid Layout é como um tabuleiro com linhas e colunas, formando quadrados onde os elementos podem ser posicionados.
+Você pode definir exatamente onde cada elemento será colocado no grid.
+O Grid Layout se ajusta automaticamente ao tamanho da tela, assim como o Flex, tornando-o responsivo.
+O Grid Layout é muito fácil de usar, sem a necessidade de truques complicados.
+Comparação com o Flex
+Enquanto o Flex não permite um posicionamento exato dos elementos, o Grid Layout permite definir com precisão onde cada elemento ficará.
+O Grid Layout é como um "tabuleiro" com linhas e colunas, enquanto o Flex é mais fluido e se ajusta aos elementos.
+Ambos são ferramentas poderosas para layouts responsivos, mas o Grid Layout oferece um controle mais preciso do posicionamento.
+Aplicação Prática
+Na próxima aula, você verá na prática como utilizar o Grid Layout e suas vantagens em relação ao Flex.
+
+
+                                        Aplicando Grid Layout no Código
+Conceito de Grid
+Baseia-se em linhas e colunas
+Permite posicionar itens em posições específicas
+Implementação do Grid
+Criação de uma seção com uma classe "container"
+Inserção dos elementos (título, parágrafo, imagem) dentro de divs com classe "grid-item"
+Importação das imagens necessárias
+Estilização do Grid
+Definição do container como um "grid container"
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 5rem;
+Ajuste dos estilos dos elementos
+Título (H3): font-size: 1.5rem; font-weight: bold; margin-top: 0.5rem;
+Parágrafo: margin: 0.5rem 0 1rem 0;
+Próximos Passos
+Aplicação de Grid Layout mais avançado na seção de "Parcerias"
+Exploração de recursos adicionais do Grid Layout
+O vídeo apresenta uma introdução prática ao uso do Grid Layout no desenvolvimento web, mostrando como criar uma estrutura de grid simples e estilizá-la de acordo com o design desejado. O objetivo é preparar o aluno para aplicações mais complexas do Grid Layout em seções futuras do projeto.
+
+
+                                        Posicionamento de Itens com Grid Area
+Introdução
+Revisão do conteúdo anterior sobre Grid Layout
+Novo desafio: posicionar itens em uma disposição específica, como uma pirâmide
+Grid Area
+Conceito de Grid Area: similar a um jogo de batalha naval
+Cada item é posicionado em uma coordenada específica (linha e coluna)
+Implementação
+Importar os assets (imagens das empresas)
+Criar uma nova seção no HTML
+Conter o título, descrição e o grid de empresas
+Estruturar o grid no HTML
+Div com classe "grid-container"
+Divs filhas com classe "grid-item company"
+Estilizar o grid no CSS
+Definir o display grid, número de colunas e linhas
+Aplicar a propriedade "grid-area" para cada item
+Posicionar cada item em sua coordenada específica (linha e coluna)
+Aplicar estilos adicionais
+Cor de fundo cinza para o container
+Cor de fundo branca para os itens
+Adicionar espaçamento e bordas arredondadas
+Conclusão
+Revisão dos conceitos de layout (Flex e Grid)
+Importância da prática e revisão do conteúdo
+Preparação para o próximo capítulo
