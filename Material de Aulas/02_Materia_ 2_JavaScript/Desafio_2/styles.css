@@ -1,0 +1,46 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
+body{
+    background-color: #f2f2f2 !important;
+}
+nav{
+    background-color: #0C70F2;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    margin-bottom: 10rem;
+}
+
+.header-principal > h2{
+    font-size: 5rem;
+    font-weight: 800;
+    padding: 8rem 1rem;
+    /* margin-right: 10rem;
+    margin-left: 10rem; */
+
+}
+
+.image-principal{
+    padding: 2rem 0rem 0rem 10rem;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    background-color: #fff;
+    border-radius: 3rem;
+    width: 85.9rem;
+    height: 93rem;
+    font-size: 2.5rem;
+    padding: 8rem 8rem 8rem 8rem;
+}
