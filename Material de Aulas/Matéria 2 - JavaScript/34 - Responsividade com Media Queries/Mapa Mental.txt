@@ -1,0 +1,143 @@
+                                        Design Responsivo com CSS
+Introdução
+Último capítulo do módulo de responsividade com CSS
+Aprendemos muito conteúdo importante sobre responsividade
+Design Responsivo
+Abordagem para criar páginas web que se adaptam a diversos dispositivos
+Celulares, tablets, desktops, diferentes resoluções
+Importante para proporcionar a experiência desejada pelo usuário
+Flexibilidade de Elementos
+Utilizando unidades de medidas relativas
+Utilizando componentes de layout
+Problemas de Responsividade
+Imagem quebrando e ficando menor
+Grid quebrando
+Folder não funcionando corretamente
+Media Queries
+Necessárias para resolver os problemas de responsividade
+Utilização de breakpoints
+Adaptação do design para diferentes tamanhos de tela
+Lidar com os diversos tipos de dispositivos dos usuários
+Próximos Passos
+Aprender a utilizar media queries
+Fazer o site funcionar corretamente em qualquer dispositivo
+Em resumo, este último capítulo aborda a importância das media queries para resolver os problemas de responsividade que surgem quando o design não se adapta corretamente a diferentes tamanhos de tela e dispositivos. Após aprender sobre a flexibilidade de elementos, é necessário utilizar media queries e breakpoints para garantir que o site funcione bem em qualquer dispositivo que o usuário esteja usando.
+
+
+                                        Adaptação de sites para diferentes dispositivos
+Viewport
+Definição: meta tag que permite definir parâmetros importantes para a exibição do site em diferentes dispositivos
+Propriedades:
+Device Width: define o tamanho da janela do navegador ou da tela do dispositivo
+Initial Scale: define a escala inicial do site, sem zoom
+Importância:
+Configuração adequada é essencial para garantir a responsividade do site
+Configuração errada pode prejudicar seriamente a responsividade
+Teste de configuração da Viewport
+Definir tamanho fixo de 600px para o conteúdo
+Adicionar um título (h1) com a classe "test" e definir largura de 100vw
+Observar o comportamento do título ao redimensionar a tela
+Título deveria manter-se responsivo, mas fica com tamanho fixo
+Entender que a configuração da viewport é crucial para a responsividade
+Propriedade "user-scalable"
+Controla se o usuário pode aplicar zoom na página
+Normalmente, é melhor manter o zoom habilitado para garantir acessibilidade
+Desabilitar o zoom (user-scalable=no ou 0) deve ser evitado, exceto em casos específicos
+Considerações finais
+A configuração adequada da viewport é essencial para garantir a responsividade do site
+Evitar definir tamanhos fixos, priorizando o uso de unidades relativas e layout adaptativo
+Conhecer as propriedades da viewport e suas implicações é fundamental para o desenvolvimento de sites responsivos
+
+
+                                        Responsividade com CSS: Entendendo Media Queries e Breakpoints
+Breakpoints
+Medidas padrão para considerar layouts responsivos
+Desktop: ≥ 1024 pixels
+Tablet: ≥ 768 pixels e < 1024 pixels
+Mobile: < 768 pixels
+Media Queries
+Utilizada para aplicar estilos CSS de acordo com o tamanho da tela
+Exemplo:
+@media (max-width: 768px) { ... }
+Tudo dentro dessa regra será aplicado quando a tela tiver até 768 pixels
+Aplicando Media Queries
+Ajuste do tamanho da fonte do h1
+Desktop: 4rem
+Tablet: 3.5rem
+Mobile: 2.5rem
+Ajuste do tamanho da fonte do h2
+Desktop: 3rem
+Tablet: 2.5rem
+Mobile: 2rem
+Layout Grid
+Desktop: 3 colunas
+Tablet: 2 colunas
+Mobile: 1 coluna
+Layout Flex
+Mobile:
+flex-direction: column
+justify-content: center
+align-items: center
+margin-top: 40px
+Rotação da imagem em 90 graus no mobile
+Ajustes Finais
+Remoção de margens desnecessárias
+Alinhamento do texto ao centro
+Inversão da ordem da imagem e texto no mobile
+
+
+                                        Criando um Layout Responsivo
+Comportamento do Desktop
+Adicionando um ID ao elemento article-container
+Definindo o tamanho da imagem para 50% por padrão
+Ajustando o tamanho do texto (H2) para 2.5rem
+Comportamento do Tablet
+Imagem ficando "humilde" no tablet
+Adicionando a propriedade object-fit para corrigir o comportamento da imagem
+Definindo o tamanho da imagem para 100% no mobile
+Ajustes no Grid de Empresas
+Definindo o grid para 3 colunas no tablet
+Definindo o grid para 1 coluna no mobile
+Ajustando o tamanho dos elementos do grid
+Ajustes no Footer
+Alinhando o conteúdo do footer ao centro
+Reduzindo o padding do footer
+Ajustando o alinhamento e espaçamento dos elementos do footer
+Resultado Final
+Layout 100% responsivo, com quebras suaves entre os diferentes dispositivos
+Todos os elementos estão alinhados e com o tamanho adequado
+
+
+                                        Responsividade com CSS
+Conceitos Abordados
+Figma
+Criação de protótipos
+Leitura de protótipos
+Principais Conceitos de CSS
+Unidades de medidas relativas
+Backgrounds responsivos
+Diferentes tipos de dispositivos
+Componentes de Layout
+Flexbox
+Alinhamento de elementos em linha e coluna
+Grid
+Grid simples
+Grid avançado (referências)
+Media Queries
+Trabalhar com breakpoints
+Benefícios da Responsividade
+Satisfação do usuário final
+Aparência do site
+Usabilidade
+Melhoria no SEO
+Melhor ranqueamento nos mecanismos de busca
+Dicas
+Revisar o módulo
+Reassistir as aulas
+Fazer o projeto novamente
+Estudar os conceitos abordados
+Testar diferentes tipos de grid e flexbox
+Entrar em contato com a equipe da DNC em caso de dúvidas
+O módulo de responsividade com CSS abordou diversos conceitos importantes para criar sites responsivos, desde a criação e leitura de protótipos no Figma, passando pelos principais conceitos de CSS, como unidades de medidas relativas e backgrounds responsivos, até chegar nos componentes de layout, como flexbox e grid. Além disso, foram discutidos os benefícios da responsividade, tanto para o usuário final quanto para o SEO do site. Por fim, foram dadas dicas de como os alunos podem continuar estudando e praticando o conteúdo abordado.
+
+
