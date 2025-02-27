@@ -42,5 +42,35 @@ main{
     width: 85.9rem;
     height: 93rem;
     font-size: 2.5rem;
-    padding: 8rem 8rem 8rem 8rem;
+    padding: 12rem 10rem 0rem 10rem;
+}
+
+form div > .formTitle{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+form div > .formInput{
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    height: 5.5rem;
+    background-color: #f2f2f2;
+}
+
+form button{
+    margin-top: 8rem;
+}
+
+footer{
+    background-color: #0C70F2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+footer h3{
+    padding: 3rem 3rem 3rem
 }

@@ -57,29 +57,40 @@
         <div class="formulario">
             <form>
                 <div class="mb-3">
-                    <label for="name" class="form-label" style="font-size: 2.5rem;">Primeiro Nome:</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Insira seu primeiro nome:" style="font-size: 2rem;">
+                    <label for="name" class="form-label formTitle" style="font-size: 2.5rem;">Primeiro Nome:</label>
+                    <br>
+                    <input type="text" class="form-control formInput" id="name" aria-describedby="name" placeholder="Insira seu primeiro nome:" style="font-size: 2rem;">
                 </div>
 
                 <div class="mb-3">
-                    <label for="email" class="form-label" style="font-size: 2.5rem;" >E-mail:</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Insira seu e-mail:" style="font-size: 2rem;">
+                    <label for="email" class="form-label formTitle" style="font-size: 2.5rem;" >E-mail:</label>
+                    <input type="email" class="form-control formInput" id="email" aria-describedby="email" placeholder="Insira seu e-mail" style="font-size: 2rem;">
                 </div>
 
                 <div class="mb-3">
-                    <label for="cep" class="form-label" style="font-size: 2.5rem;" >Digite o CEP:</label>
-                    <input type="text" class="form-control" id="cep" aria-describedby="cep" placeholder="Insira o CEP" style="font-size: 2rem;">
+                    <label for="cep" class="form-label formTitle" style="font-size: 2.5rem;" >Digite o CEP:</label>
+                    <input type="text" class="form-control formInput" id="cep" aria-describedby="cep" placeholder="Insira o CEP" style="font-size: 2rem;">
                 </div>
 
-                <div class="mb-3">
-                    <label for="coordenadas" class="form-label" style="font-size: 2.5rem;" >Digite a latitude e longitude para saber a previsão:</label>
-                    <input type="text" class="form-control" id="coordenadas" aria-describedby="Latitude" placeholder="Latitude" style="font-size: 2rem;">
-                    <input type="text" class="form-control" id="coordenadas" aria-describedby="Longitude" placeholder="Longitude" style="font-size: 2rem;">
+                <div class="row">
+                    <label for="coordenadas" class="form-label formTitle" style="font-size: 2.5rem;" >Digite a latitude e longitude para saber a previsão:</label>
+                    <div class="col">
+                        <input type="text" class="form-control formInput" id="coordenadas" aria-describedby="Latitude" placeholder="Latitude" style="font-size: 2rem;">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control formInput" id="coordenadas" aria-describedby="Longitude" placeholder="Longitude" style="font-size: 2rem;">
+                    </div>
                 </div>
     
                 <button type="submit" class="btn btn-primary w-100" style="font-size: 3.2rem; border-radius: 1rem; box-shadow: 0px 5px 5px #0C70F240; " >Acessar</button>
             </form>
         </div>
     </main>
+
+    <footer>
+        <div class=" footer">
+            <h3>Termos de Uso | Política de Privacidade</h3>        
+        </div>
+    </footer>
 </body>
 </html>
