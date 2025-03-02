@@ -67,6 +67,87 @@ form button{
     margin-top: 8rem;
 }
 
+.introducao {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-left: 22%;
+    margin-top: 7rem;
+}
+
+.introducao_imagem{
+    margin-top: -1rem;
+    margin-left: 3rem;
+}
+
+.buscacep_texto{
+    margin-top: 100px;
+    margin-left: 10%;
+}
+
+.buscacep_imagem{
+    margin-top: 100px;
+    margin-left: 3%;
+}
+
+.resultados{
+    display: grid;
+    place-items: center;
+}
+
+.buscacepsuperior{
+    display: flex;
+    flex-flow: row;
+    place-items: center;
+    justify-content:space-evenly;
+    /* margin-left: 22%; */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: #0C70F2;
+    color: white;
+    height: 40px;
+    width: 650px;
+    font-size: 13px;
+    font-family: 'inter';
+}
+
+.buscacepinferior{
+    display: flex;
+    flex-flow: row;
+    place-items: center;
+    justify-content:space-evenly;
+    /* margin-left: 22%; */
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: white;
+    height: 40px;
+    width: 650px;
+    font-size: 13px;
+    font-family: 'inter';
+    align-items: center;
+}
+
+.buscaInterno{
+    flex: 1; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+.resultadotempopesquisa{
+    border: 1px solid #0C70F2;
+    border-radius: 16px;
+    background-color: white;
+    height: 40px;
+    width: 650px;
+    display: flex;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'inter';
+    justify-content: center; 
+    align-items: center;
+}
+
 footer{
     background-color: #0C70F2;
     color: #fff;
