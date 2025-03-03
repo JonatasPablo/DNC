@@ -1,0 +1,100 @@
+                                        Discovery e entrega de valor
+Descoberta
+Entender o problema
+Mapear a situação
+Definir o alvo
+Não pensar na solução ainda
+Double Diamond
+Descoberta
+Abrir o leque de possibilidades e problemas
+Fazer pesquisas, entrevistas
+Primeira divergência
+Definição
+Convergir para a causa raiz
+Priorizar o problema principal
+Ideação
+Pensar em soluções
+Segunda divergência
+Decisão
+Testar soluções
+Convergir para a melhor solução
+Processo de descoberta
+Pesquisas com usuários
+Benchmarking
+Prototipação rápida
+Testes de usabilidade
+Resultados
+Definir o que precisa ser feito
+Estabelecer metas
+Dar flexibilidade
+Esclarecer a visão do produto
+Responsabilidades
+Produto: descoberta
+Engenharia: entrega
+Ideação: envolvimento de ambos
+
+
+                                        Tema central: Ideação de produtos
+Etapas do processo de criação de um produto (Lean Startup)
+Construir
+Medir
+Aprender
+Ideação
+Processo de pensar em como entregar valor ao usuário e resolver um problema
+Utiliza pesquisas e informações coletadas na fase de descoberta
+Envolve brainstorming e refinamento de ideias
+Reunião de ideação
+Participantes: equipe de produto, designers, stakeholders, desenvolvedores
+Facilitador: normalmente o PM
+Objetivo: gerar o maior número possível de ideias para resolver o problema identificado
+Técnica Crazy Eights
+Cada participante tem 8 ideias em 15 minutos
+Sem julgamentos neste momento
+Depois, selecionar e refinar as melhores ideias
+Riscos a considerar
+Risco de valor: o produto realmente resolve o problema?
+Risco de usabilidade: o produto é fácil e intuitivo de usar?
+Risco de viabilidade técnica: o produto pode ser construído com a tecnologia disponível?
+Risco de viabilidade de negócio: o produto faz sentido financeiramente para a empresa?
+Próximos passos
+Aprofundar o conceito de usabilidade
+
+
+                                        Usabilidade
+Conceito
+Facilidade de interação do usuário com um produto
+Quanto mais simples e intuitivo, mais usabilidade
+Três alavancas principais
+Facilita conversões (compras, etc)
+Diminui tempo de descoberta de valor
+Aumenta tempo do usuário na plataforma
+Exemplos
+Netflix
+Recomendações personalizadas
+Fácil iniciar nova série
+Próximo episódio inicia automaticamente
+Instagram
+Feed infinito
+Fácil descobrir novo conteúdo
+Usuário passa horas deslizando
+Benefícios
+Aumenta adoção e satisfação dos clientes
+Reduz fricção e tickets de suporte
+Reduz custos operacionais
+Dez heurísticas de Nielsen
+Visibilidade do status do sistema
+Correspondência com o mundo real
+Controle e liberdade do usuário
+Consistência e padrões
+Previna erros
+Reconhecimento ao invés de lembrança
+Flexibilidade e eficiência de uso
+Design minimalista
+Ajuda aos usuários
+Reconhecimento de erros
+Importância do protótipo
+Poupa tempo de código
+Estrutura o design de forma eficiente
+Espero que esse resumo em forma de mapa mental ajude a ter uma visão geral dos principais pontos abordados no vídeo sobre usabilidade. Fiz um apanhado dos conceitos centrais, exemplos, benefícios e as dez heurísticas que guiam um bom design centrado no usuário. Avise-me se você precisar de algum esclarecimento ou aprofundamento de algum dos tópicos.
+
+
