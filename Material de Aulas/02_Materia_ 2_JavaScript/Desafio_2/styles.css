@@ -99,7 +99,7 @@ form button{
     align-items: center;
 }
 
-.buscacepsuperior {
+.buscaCepSuperior {
     display: flex;
     width: 100rem;
     max-width: 100rem;
@@ -115,7 +115,7 @@ form button{
     padding: 2rem 0rem 2rem 5rem;
 }
 
-.buscacepinferior{
+.buscaCepInferior{
     display: flex;
     width: 100%;
     max-width: 100rem;
@@ -137,7 +137,7 @@ form button{
     margin-left: 7rem !important;
 }
 
-.resultadotempopesquisa {
+.resultadoTempoPesquisa {
     background-color: #fff;
     border: 1px solid #0C70F2;
     border-radius: 3rem;

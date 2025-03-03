@@ -57,7 +57,7 @@
 
         <!-- Formulário -->
         <div class="formulario">
-            <form>
+            <form id="infoForm">
                 <div class="mb-3">
                     <label for="name" class="form-label formTitle" style="font-size: 2.5rem;">Primeiro Nome:</label>
                     <br>
@@ -71,20 +71,20 @@
 
                 <div class="mb-3">
                     <label for="cep" class="form-label formTitle" style="font-size: 2.5rem;" >Digite o CEP:</label>
-                    <input type="text" class="form-control formInput" id="cep" aria-describedby="cep" placeholder="Insira o CEP" style="font-size: 2rem;">
+                    <input type="text" class="form-control formInput" id="cepInput" aria-describedby="cep" placeholder="Insira o CEP" style="font-size: 2rem;">
                 </div>
 
                 <div class="row">
                     <label for="coordenadas" class="form-label formTitle" style="font-size: 2.5rem;" >Digite a latitude e longitude para saber a previsão:</label>
                     <div class="col">
-                        <input type="text" class="form-control formInput" id="coordenadas" aria-describedby="Latitude" placeholder="Latitude" style="font-size: 2rem;">
+                        <input type="text" class="form-control formInput" id="coordenadas_Latitude" placeholder="Latitude" style="font-size: 2rem;">
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control formInput" id="coordenadas" aria-describedby="Longitude" placeholder="Longitude" style="font-size: 2rem;">
+                        <input type="text" class="form-control formInput" id="coordenadas_Longitude" placeholder="Latitude" style="font-size: 2rem;">
                     </div>
                 </div>
     
-                <button id="btnAcessar type="submit" class="btn btn-primary w-100" style="font-size: 3.2rem; border-radius: 1rem; box-shadow: 0px 5px 5px #0C70F240;">
+                <button id="btnAcessar" type="submit" class="btn btn-primary w-100" style="font-size: 3.2rem; border-radius: 1rem; box-shadow: 0px 5px 5px #0C70F240;">
                     Acessar
                 </button>
             </form>
@@ -100,12 +100,12 @@
         
         <!-- Resultado pesquisa CEP -->
         <div class="resultados">
-            <div class="buscacepsuperior">
+            <div class="buscaCepSuperior">
                 <div class="titles" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;"> Logradouro / Nome</div>
                 <div class=" titles" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;"> Bairro/Distrito</div>
                 <div class=" titles" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;"> Localidade/UF</div>
             </div>
-            <div class="buscacepinferior">
+            <div class="buscaCepInferior">
                 <div id="title1" class=" titles"> <span id="logradouro" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;">Justino Cobra</span></div>
                 <div id="title2"  class=" titles"> <span id="bairro" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;">Vila Ema</span></div>
                 <div id="title3"  class=" titles"> <span id="estado" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;">SP</span></div>
@@ -120,7 +120,7 @@
             </div>
         </div>
         <div class="resultados">
-            <p class="resultadotempopesquisa" ><span id="tempLocal" style="font-size: 2rem;">Previsão de tempo de acordo com a região: --° C</span></p>
+            <p class="resultadoTempoPesquisa" ><span id="tempLocal" style="font-size: 2rem;">Previsão de tempo de acordo com a região: --° C</span></p>
         </div>
 
     </main>
