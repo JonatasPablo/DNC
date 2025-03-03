@@ -1,0 +1,99 @@
+                                        Interface entre times de desenvolvimento e produto
+Objetivos do módulo
+Entender o papel do time de produto em relação à engenharia
+Compreender a importância do design e usabilidade
+Conhecer a origem das regras de negócio e sua importância
+Perceber como o time de tecnologia impacta os objetivos da empresa
+Importância de uma boa interface
+Permite que o "motor" da empresa (tecnologia) funcione bem
+Traz clareza sobre entrega de valor ao usuário
+Ajuda o desenvolvedor a priorizar e organizar melhor seu trabalho
+Abordagem
+Parte teórica
+Construção de protótipo no Figma
+Introdução ao processo de Discovery
+Identificação de problemas
+Encontrar oportunidades de produto
+Benefícios para o desenvolvedor
+Melhor compreensão do seu trabalho
+Mais independência e fluidez com outras áreas
+
+
+                                        Tema central: Como negócios e tecnologia se relacionam
+Negócios
+Precisam gerar lucro resolvendo problemas da sociedade
+Oferecem produtos/serviços em troca de dinheiro
+Esses produtos/serviços atendem demandas da sociedade (geram valor)
+Lucro
+Receita - Despesas/Custos
+Necessário para crescimento e expansão da empresa
+Mantém a empresa viva no sistema capitalista
+Propósito e visão
+Direcionam a geração de valor
+Definem problemas resolvidos e para quem são resolvidos
+Expressos via missão, visão e valores
+Tecnologia
+Times de tecnologia constroem os produtos que geram valor
+Precisam entender o propósito por trás desses produtos
+Devem priorizar features de acordo com o propósito
+Estratégia
+Necessária para alcançar propósito e visão
+Envolve compartilhar objetivos em comum
+Desdobra esses objetivos para diferentes áreas, como tecnologia
+
+
+                                            TEMA CENTRAL:Importância de ter objetivos e indicadores claros (OKRs) para direcionar os esforços dos times e colaboradores.
+TÓPICOS ABORDADOS:
+Não gastar energia em coisa que não traz resultado
+Tempo do desenvolvedor é recurso valioso, precisa ser bem direcionado
+Ter clareza do objetivo ao desenvolver algo novo
+Toda empresa tem um propósito que direciona seus objetivos
+Objetivos da empresa precisam ser desdobrados em todas as áreas
+Áreas precisam ter objetivos alinhados ao objetivo geral da empresa
+Exemplo: nos anos 80 objetivo da Coca-Cola era ser a bebida mais popular do mundo
+Ter indicadores para medir proximidade dos objetivos
+Estrutura de OKRs criada no Google é muito utilizada
+Objetivos precisam inspirar e ser claros, específicos e temporais
+Objetivos maiores são desdobrados em times menores com indicadores
+Exemplos de OKRs para times de tecnologia
+OKRs alinham seus esforços aos objetivos gerais da empresa
+Não precisa se preocupar em desdobrar OKRs sozinho
+Importante entender sobre negócio e OKRs para entrevistas
+Próxima aula: falar sobre estruturas de times de tecnologia
+
+
+                                        Construindo produtos digitais de sucesso
+Tema central: Estratégias para construir produtos digitais capazes de gerar resultados
+Times de tecnologia eficientes
+São times interdisciplinares, com talentos e conhecimentos diferentes
+Envolvem 3 grandes áreas: design, produto e engenharia
+Tipos de produtos digitais
+Tech-only: só envolve tecnologia (ex: Facebook)
+Tech-enabled: dependem de operação física (ex: iFood)
+Papéis em times de tecnologia
+Product Managers: Garantem a viabilidade do produto
+Fazem pesquisas, entrevistas, benchmarks
+Orientam o desenvolvimento
+Próximos do time de design
+Designers: Garantem o que é desejado pelo usuário
+Focam em usabilidade e experiência (UX)
+Responsáveis pelo layout e front-end
+Engenheiros: Garantem o possível
+Responsáveis por desenvolver o back-end
+Entregam o produto funcionando
+Estrutura em Squads
+Equipes multidisciplinares e autônomas
+Focadas em parte específica do produto
+Exemplos de divisões: por produto, jornada, objetivo
+Vantagens:
+Melhor divisão de trabalho e responsabilidades
+Foco em entrega de valor
+Métricas de negócio e tecnologia
+Relação entre áreas
+Importância da comunicação
+Foco no cliente final
+Próximos passos
+Entender processo de descoberta do produto (Product Discovery)
+Requisitos e impacto em times de tecnologia
+
+
