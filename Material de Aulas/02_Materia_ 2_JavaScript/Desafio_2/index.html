@@ -54,6 +54,7 @@
 
     <!-- Conteúdo principal -->
     <main>
+
         <!-- Formulário -->
         <div class="formulario">
             <form>
@@ -83,44 +84,43 @@
                     </div>
                 </div>
     
-                <button type="submit" class="btn btn-primary w-100" style="font-size: 3.2rem; border-radius: 1rem; box-shadow: 0px 5px 5px #0C70F240; " >Acessar</button>
+                <button id="btnAcessar type="submit" class="btn btn-primary w-100" style="font-size: 3.2rem; border-radius: 1rem; box-shadow: 0px 5px 5px #0C70F240;">
+                    Acessar
+                </button>
             </form>
         </div>
 
-        <!-- Seção de Resultado da busca por CEP -->
-        <div class="introducao">
-            <div class="buscacep_texto">
-                <p>Resultado da busca por CEP:</p>
-            </div>
-            <div class="buscacep_imagem">
-                <img src="./assets/image04.png" width=50% height=70% alt="">
+        <!-- Título CEP -->
+        <div id="resultadoCep" class="resultadoCep">
+            <div class="titleCep">
+                <p style="font-size: 5rem; font-weight: 800;">Resultado da busca por CEP:</p>
+                <img src="./assets/image04.png">
             </div>
         </div>
-    
+        
+        <!-- Resultado pesquisa CEP -->
         <div class="resultados">
             <div class="buscacepsuperior">
-                <div class="buscaInterno"> Logradouro / Nome</div>
-                <div class="buscaInterno"> Bairro/Distrito</div>
-                <div class="buscaInterno"> Localidade/UF</div>
+                <div class="titles" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;"> Logradouro / Nome</div>
+                <div class=" titles" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;"> Bairro/Distrito</div>
+                <div class=" titles" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;"> Localidade/UF</div>
             </div>
             <div class="buscacepinferior">
-                <div class="buscaInterno"> <span id="logradouro">Justino Cobra</span></div>
-                <div class="buscaInterno"> <span id="bairro">Vila Ema</span></div>
-                <div class="buscaInterno"> <span id="estado">SP</span></div>
+                <div id="title1" class=" titles"> <span id="logradouro" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;">Justino Cobra</span></div>
+                <div id="title2"  class=" titles"> <span id="bairro" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;">Vila Ema</span></div>
+                <div id="title3"  class=" titles"> <span id="estado" style="margin: 0rem 5rem 0rem 0rem; font-size: 2rem;">SP</span></div>
             </div>
         </div>
 
-    <!-- Seção de RPrevisão do Tempo por CEP -->
-        <div class="introducao">
-            <div class="buscacep_texto">
-                <p>Previsão do tempo na região:</p>
-            </div>
-            <div class="buscacep_imagem">
-                <img src="./assets/image05.png" width=50% height=70% alt="">
+        <!-- Seção de RPrevisão do Tempo por CEP -->
+        <div class="resultadoCep">
+            <div class="titleCep">
+                <p style="font-size: 5rem; font-weight: 800;">Previsão do tempo na região:</p>
+                <img src="./assets/image05.png">
             </div>
         </div>
         <div class="resultados">
-            <p class="resultadotempopesquisa" ><span id="tempLocal">Previsão de tempo de acordo com a região: --° C</span></p>
+            <p class="resultadotempopesquisa" ><span id="tempLocal" style="font-size: 2rem;">Previsão de tempo de acordo com a região: --° C</span></p>
         </div>
 
     </main>

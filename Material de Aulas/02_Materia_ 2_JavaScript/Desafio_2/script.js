@@ -1,6 +1,3 @@
-//VARIAVEIS
-
-
 const tempElement = document.querySelector('#tempLocal');
 
 //FUNÇÕES
@@ -32,7 +29,11 @@ document.getElementById('infoForm').addEventListener('submit', async function(ev
                 alert("Ocorreu um erro ao buscar informações do CEP:", error);
                 }
             }
-
+    
+    document.getElementById('btnAcessar').addEventListener('click', function() {
+        document.getElementById('resultadoCep').scrollIntoView({ behavior: 'smooth' });
+    });
+    
     // Continua com a busca de temperatura mesmo que ocorra um erro nas informações do CEP
     const latitudeInput = document.getElementById('coordenadas_Latitude');
     const longitudeInput = document.getElementById('coordenadas_Longitude');
