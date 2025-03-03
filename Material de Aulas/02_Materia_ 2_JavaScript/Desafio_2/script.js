@@ -1,14 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById('infoForm');
+    const btnAcessar = document.getElementById('btnAcessar');
     const tempElement = document.getElementById('tempLocal');
 
-    // Evento de submissão do formulário
+    btnAcessar.addEventListener('click', function () {
+        const resultadoCep = document.getElementById('resultadoCep');
+        if (resultadoCep) {
+            resultadoCep.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
     form.addEventListener('submit', async function (event) {
-        event.preventDefault(); // Evita o recarregamento da página
+        event.preventDefault();
 
         const cepInput = document.getElementById('cepInput').value.trim();
 
-        // 1️⃣ Validação do CEP antes de chamar a API
+
         if (!validarCEP(cepInput)) {
             alert("Formato inválido de CEP. Use apenas 8 números.");
             return;
@@ -21,6 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 atualizarEndereco(cepInfo);
                 await buscarPrevisaoDoTempo(cepInfo.localidade, cepInfo.uf);
+
+                const resultadoCep = document.getElementById('resultadoCep');
+                if (resultadoCep) {
+                    resultadoCep.scrollIntoView({ behavior: 'smooth' });
+                }
             }
         } catch (error) {
             console.error("Erro ao buscar informações do CEP:", error);
@@ -28,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// ✅ Validação do CEP (Aceita apenas números)
 function validarCEP(cep) {
     return /^[0-9]{8}$/.test(cep);
 }
