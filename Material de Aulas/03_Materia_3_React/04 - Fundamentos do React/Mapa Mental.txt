@@ -1,0 +1,109 @@
+                                        Desenvolvimento em React
+Sobre o Instrutor
+13 anos de experiência como desenvolvedor web
+31 anos de idade, começou a trabalhar como desenvolvedor aos 18 anos
+Especialista em front-end, mas também trabalha com back-end (full-stack)
+Atualmente trabalha em uma empresa de consultoria para um cliente americano
+Sobre o Curso
+Objetivo é ensinar conceitos importantes de React que serão base para a carreira como desenvolvedor
+Mercado de tecnologia é muito dinâmico, com muitas oportunidades e desafios
+É necessário estar sempre se atualizando
+Conteúdo relevante para o dia a dia de um profissional que trabalha com aplicações front-end
+Tópicos Abordados
+Conceitos de React
+Ciclos de vida
+Hooks
+Build e Deploy da aplicação
+Chamadas para APIs REST
+Criação de um projeto do zero
+Conexão com APIs REST
+Uso de hooks
+Interatividade
+Possibilidade de usar como portfólio ou site institucional
+Conclusão
+O curso será um divisor de águas na carreira do aluno
+Ele aprenderá conceitos essenciais que serão muito úteis no dia a dia como desenvolvedor
+Ao final, o aluno terá um projeto prático e funcional, pronto para ser utilizado
+
+
+                                        Fundamentos do React
+O que é o React?
+Biblioteca criada e mantida pelo Facebook (hoje Meta)
+Também conhecido como React.js
+Existe também o React Native, para desenvolvimento mobile
+Foco deste curso: React.js para aplicações web
+Por que usar o React?
+Permite criar interfaces interativas e dinâmicas de forma fácil, eficiente e fluente
+Dá liberdade aos desenvolvedores para estruturar as aplicações da forma que acharem melhor
+Muito popular e amplamente adotado por grandes empresas
+Principais dores que o React resolve
+Manipulação do DOM
+JavaScript puro requer muito código para manipular o DOM
+React fornece funções prontas e otimizadas para essa tarefa
+Ganho de produtividade
+Performance das atualizações no DOM
+JavaScript puro pode gerar atualizações pouco fluidas
+React utiliza uma camada intermediária chamada Virtual DOM
+Atualizações mais rápidas e fluidas
+Organização e reutilização de componentes
+Sem React, é difícil gerenciar a estrutura de um site grande
+Com React, os componentes ficam organizados em pastas
+Componentes são reutilizáveis em diferentes partes da aplicação
+Vantagens do React
+Funções prontas para manipulação do DOM
+Virtual DOM para atualizações mais performáticas
+Organização e reutilização de componentes
+Ampla adoção e comunidade ativa
+Próximos passos
+Aprender a usar o React na prática
+Aplicar os conceitos vistos nesta aula em projetos reais
+
+
+                                        Criando uma Aplicação em React
+Introdução
+Antes de criar uma aplicação em React, é necessário aprender sobre Node.js e NPM
+Esses são ferramentas essenciais para a instalação e criação de projetos em React
+Node.js
+Node.js é uma ferramenta que permite a execução de código JavaScript no lado do servidor
+Com o Node.js, é possível criar um ecossistema para rodar JavaScript tanto no ambiente local quanto em um servidor
+O Node.js é a base para aplicações web modernas, incluindo frameworks de front-end e back-end
+NPM (Node Package Manager)
+O NPM é o gerenciador de pacotes do Node.js
+Ele permite a instalação, remoção e gerenciamento de bibliotecas e dependências para o projeto
+O NPM é uma ferramenta essencial no desenvolvimento web moderno
+Instalação do Node.js
+O processo de instalação do Node.js varia de acordo com o sistema operacional
+Após a instalação, é possível verificar a versão do Node.js instalada usando o comando node -v
+Próximos Passos
+Agora que o Node.js e o NPM estão instalados, é possível criar o primeiro projeto em React
+Na próxima aula, será abordado como usar o Node.js para instalar e configurar um projeto em React na máquina local
+É importante acompanhar as atualizações da comunidade do Node.js, pois isso é fundamental para os desenvolvedores web
+
+
+                                        Criando o Primeiro Projeto React com Vite
+O que é o Vite?
+Ferramenta de construção de projetos front-end
+Objetivo: Oferecer uma experiência mais rápida e leve para projetos de desenvolvimento web moderno
+Pode ser usado para criar projetos com outras bibliotecas/frameworks, além do React
+Criando um Projeto React com Vite
+Abrir o terminal no VS Code
+Navegar até a pasta desejada para o projeto
+Executar o comando npm create vite latest
+Selecionar "React" como opção
+Selecionar "JavaScript" (não TypeScript)
+Entrar na pasta do projeto criado
+Executar npm install para instalar as dependências
+Pasta node_modules é criada, contendo todas as dependências
+Nem todas as dependências serão usadas no ambiente de produção (dev dependencies)
+Executar npm run dev para iniciar o servidor de desenvolvimento
+Abre uma janela no navegador com a aplicação React rodando
+Estrutura do Projeto
+main.jsx: Arquivo principal que inicia a aplicação React
+App.jsx: Componente principal da aplicação
+assets: Pasta com arquivos de imagens, estilos, etc.
+public: Pasta com arquivos públicos (acessíveis diretamente)
+Próximos Passos
+Entender a base do projeto e como desenvolver os primeiros componentes
+Aprender sobre a estrutura e conceitos fundamentais do React
+
+
