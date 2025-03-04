@@ -98,3 +98,66 @@ Estrutura o design de forma eficiente
 Espero que esse resumo em forma de mapa mental ajude a ter uma visão geral dos principais pontos abordados no vídeo sobre usabilidade. Fiz um apanhado dos conceitos centrais, exemplos, benefícios e as dez heurísticas que guiam um bom design centrado no usuário. Avise-me se você precisar de algum esclarecimento ou aprofundamento de algum dos tópicos.
 
 
+                                        Prototipação e design de interfaces
+Protótipos
+Auxiliam a dar vida às ideias e telas
+Transformam ideias em algo palpável
+Facilitam a interpretação pelos desenvolvedores
+Permite visualizar layout e definir fluxos
+Viabilizam testes sem necessidade de tecnologia
+Tipos de protótipos
+Wireframes (baixa fidelidade)
+Foco na disposição das informações
+Sem muitos detalhes visuais
+Feitos manualmente ou em softwares
+Wireflows
+Mostram o fluxo do usuário na plataforma
+Essenciais para compreender a navegação
+Média fidelidade
+Mais detalhado visualmente
+Segue o design system
+Pode mostrar fluxos também
+Alta fidelidade
+Representação exata da interface
+Feito em Figma ou similar
+Usado para desenvolvimento
+Ferramentas
+Figma
+Plataforma popular de prototipação
+Permite testes e simulações
+Interface com times de desenvolvimento
+Design system
+Mantém padronização visual da plataforma
+Define:
+Cores, botões, efeitos
+Componentes de interface
+Princípios de interação
+Padrões de navegação
+Regras de acessibilidade
+Facilita o trabalho de designers e desenvolvedores
+Esse é um resumo abrangente dos principais tópicos abordados no vídeo, focado em protótipos, ferramentas de design e a importância de manter um design system consistente. Foi formatado com markdown para facilitar a visualização.
+
+
+Tema central: Ferramenta Figma
+O que é:
+Principal ferramenta de prototipagem de alta fidelidade
+Mais utilizada, simples e popular
+Interface intuitiva
+Versão gratuita e versão paga (para projetos colaborativos)
+Funcionalidades:
+Criação de frames (telas)
+Diversos tamanhos e layouts pré-definidos
+Inserção de formas, textos e imagens
+Edição de elementos (cores, bordas, sombras etc.)
+Exportação (.png)
+Modo Developer (visualização de código)
+Plugins (incrementam funcionalidades)
+Dicas de uso:
+Manter projetos organizados
+Agrupar elementos
+Utilizar atalhos
+Fazer benchmarking (recriar telas de apps conhecidos)
+Instalar plugins essenciais
+Esse mapa resume os principais tópicos abordados sobre a ferramenta Figma e suas funcionalidades básicas. O tema central é apresentar o Figma, explicando o que ele é, suas funcionalidades, dicas de uso e como exercitar o design reproduzindo telas de aplicativos já existentes.
+
+

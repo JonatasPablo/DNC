@@ -1,0 +1,149 @@
+                                        Modelos de Negócio
+O que é um modelo de negócio?
+Como uma empresa faz dinheiro
+Receitas - Faturamento (venda de produtos/serviços)
+Custos - Gastos com produção e manutenção
+Despesas - Gastos indiretos (RH, etc)
+Lucro = Receitas - Custos - Despesas
+Perguntas que o modelo de negócio responde:
+Como funciona? (recursos, atividades-chave)
+O que faz? (proposta de valor)
+Para quem? (clientes, usuários)
+Quanto custa? (fontes de receita)
+Exemplos de modelos de negócio
+Assinatura (Subscription) - Ex: Netflix
+E-Commerce - Lojas online
+Marketplace - Ex: Mercado Livre
+SaaS - Software como serviço
+Transacional - Ex: PicPay
+Enterprise - Grandes contratos corporativos
+Publicidade (Advertiser) - Ex: Facebook
+Baseado em uso (User-based) - Ex: Telefonia pós-paga
+Importância do modelo de negócio
+Direciona as regras de negócio
+Requisitos para os projetos de tecnologia
+Faz parte de um ecossistema: mercado, tendências, canais de distribuição
+Time de produto define, tech transforma em código
+
+
+                                        Regras de negócio
+Definição
+Diretrizes e instruções de como um produto deve operar
+Lógica de como um sistema funciona
+Orientam as decisões de desenvolvimento
+Essenciais para atingir os objetivos do negócio
+Problemas
+Interpretação errada das regras
+Fazer suposições em vez de perguntar
+Não validar com o Product Manager
+Não considerar exceções
+Código pouco flexível
+Falta de documentação
+Soluções
+Comunicação eficiente entre times
+Informações compartilhadas publicamente
+Stakeholders alinhados
+Validações constantes
+Seguir os rituais do Scrum
+Fazer testes extensivos
+Boas práticas
+Participar das reuniões de alinhamento
+Pedir especificações detalhadas
+Documentar antes de codar
+Manter time atualizado sobre desenvolvimento
+Participar dos rituais do Scrum
+Esse é um resumo abrangente dos principais pontos sobre regras de negócio e boas práticas para aplicá-las durante o desenvolvimento, destacando a importância de uma boa comunicação, alinhamento constante com os times de produto e utilização do Scrum. Fiz em forma de tópicos e subtópicos para facilitar a visualização. Caso queira que eu aprofunde algum ponto específico, por favor me avise.
+
+
+                                        Backlog e priorização de itens
+O que é o backlog
+Lista de itens priorizados que orientam o desenvolvimento do produto
+Contém os itens que o time de desenvolvimento precisa executar
+Permite entender as priorizações e o direcionamento do produto
+Priorização
+Função do produto: transmitir o que é mais importante e os objetivos de cada sprint
+Foco em entregar valor e minimizar retrabalho
+Construção do backlog
+Parte dos problemas mapeados por usuário
+Cada problema gera expectativas de desenvolvimento
+Organiza problemas X pessoas
+Define funcionalidades para resolver os problemas
+Quebra funcionalidades em itens do backlog (tarefas)
+Vantagens
+Alinhamento entre times
+Transparência
+Foco no valor
+Minimiza erros
+Exemplo
+Sistema de chat
+Priorizar envio de mensagens e imagens
+Videochamada como extra
+Backlog não é imutável
+Lista de hipóteses
+Nem tudo vai funcionar como o esperado
+Itens podem ser repriorizados ou descartados
+
+
+                                        Testes e qualidade
+Funcionalidades
+Testar exaustivamente todas as funcionalidades desenvolvidas
+Verificar feedbacks de erros
+Testar em diferentes situações
+Navegação
+Testar em todos os navegadores e sistemas possíveis
+Layout
+Verificar responsividade em diferentes tamanhos de tela
+Checar alinhamentos, textos e imagens
+Carga
+Simular diferentes quantidades de usuários simultâneos
+Verificar impacto em performance e servidor
+Localização
+Testar funcionamento com GPS em diferentes localidades
+Casos de uso
+Simular situações de uso pelo cliente
+Identificar tarefas essenciais
+Usabilidade
+Testes com usuários reais (quando possível)
+Pedir feedbacks sem informações prévias
+Antes da revisão
+Fazer todos os testes antes da revisão final
+Não deixar bugs óbvios passarem
+Experiência do usuário
+Site deve funcionar sem recarregar página
+Não pedir para limpar cache
+Funcionar em qualquer navegador
+Detalhes
+Cuidar de todos os detalhes
+Textos, layouts, alinhamentos
+Impactam muito a experiência
+Espero que este resumo em forma de mapa mental ajude a ter uma visão geral do conteúdo do vídeo. Avise-me se você precisar de algum esclarecimento ou informação adicional!
+
+
+                                        Relação entre times de engenharia e produto
+Papel da engenharia
+Garantir eficiência
+Boa organização e comunicação
+Estrutura escalável
+Promover inovação tecnológica
+Atualizar bibliotecas
+Melhorar e refatorar códigos
+Aplicar novas tecnologias (IA, etc)
+Dicas para boa relação
+Colaboração multidisciplinar
+Manter proximidade com designers e PMs
+Entregas incrementais
+MVPs funcionais
+Validação rápida
+Padronização de código
+Facilita trabalho futuro
+Testes automatizados e manuais
+Gestão de dependências
+Métricas de engenharia
+Documentação e controle de versões
+Resiliência e tolerância a falhas
+Comunicação transparente
+Feedback positivo e negativo
+Visão geral
+Times de engenharia e produto devem trabalhar juntos, não competir
+Foco em entregar valor ao usuário final
+Comunicação e feedbacks cruciais
