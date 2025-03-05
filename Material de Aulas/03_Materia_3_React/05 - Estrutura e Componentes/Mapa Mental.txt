@@ -1,0 +1,100 @@
+                                        Desenvolvimento de um Projeto React
+Introdução
+Apresentação do projeto que será desenvolvido durante as aulas
+Objetivo de reproduzir um ambiente de desenvolvimento real
+Requisitos do Projeto
+Utilização do Figma para obter o design e os requisitos do projeto
+Entendimento do Figma como ferramenta de design para compartilhar protótipos
+Style Guide
+Definição de cores primárias, secundárias e terciárias
+Definição dos tipos de texto a serem utilizados
+Formatação de parágrafos, listas e botões
+Modelo de formulário de contato
+Páginas do Projeto
+Home Page
+Logo da empresa DLNC
+Menu com animação de cor
+Componente "hero" para exibir informações importantes
+Área de projetos com opção de curtir
+Footer com logo, texto, páginas e bandeiras para troca de idioma
+Página "Sobre Nós"
+Estrutura similar à home page
+Componente de banner e de texto personalizado
+Página de Projetos
+Estrutura similar às páginas anteriores
+Lista de projetos com informações e opção de curtir
+Página de Contato
+Estrutura similar às páginas anteriores
+Componente de formulário de contato
+Páginas Adicionais
+Página de loading
+Exemplo de menu mobile com animação
+Demonstração do Projeto
+Apresentação do projeto final implantado na Vercel
+Funcionalidade de troca de idioma entre português e inglês
+Envio de mensagem através do formulário de contato
+Conclusão
+Projeto desenvolvido durante as aulas
+Possibilidade de personalização e utilização do projeto como portfólio
+Desafios interessantes a serem enfrentados
+
+
+                                        Criando um CSS Base para um Projeto React
+Introdução
+Importância de começar um projeto React com o CSS base
+Definir cores, padrões de CSS e elementos reutilizáveis
+Preparando o Ambiente
+Limpar os arquivos padrão do projeto
+Renomear o arquivo index.css para main.css
+Importando Fontes do Google Fonts
+Pesquisar e importar as fontes necessárias
+Adicionar as fontes no arquivo main.css
+Configurando o CSS Base
+Body
+Definir margem zero
+Definir altura mínima de 100vh
+Definir fonte padrão (JOST)
+Links
+Remover estilos padrão de links
+Cores Principais
+Definir cores primárias, secundárias e terciárias
+Criar classes CSS para reutilização
+Grid e Alinhamento
+Criar classes para layout em grid
+Criar classes para alinhamento de elementos
+Media Queries
+Definir estilos para telas menores que 768px
+Ajustar o container e a direção do flex
+Conclusão
+Importância de ter um CSS base organizado
+Benefícios de reutilizar classes ao longo do projeto
+Próxima etapa: configurar as rotas da aplicação
+
+
+                                        Criação de Rotas no React
+O que são Rotas?
+Rotas são caminhos diferentes dentro de uma aplicação web
+Cada rota tem um código específico associado a ela
+Exemplo: google.com/drive vs google.com/mail
+Rotas no React
+Permitem segregar o conteúdo que o usuário vê
+Possibilitam a criação de Single Page Applications (SPAs)
+Navegação entre páginas sem recarregar a página
+Tudo dentro do mesmo projeto React
+Configurando Rotas no React
+Instalar o pacote react-router-dom
+Importar os elementos necessários no arquivo App.js:
+BrowserRouter, Router, Route, Routes
+Criar as rotas dentro do componente App:
+Definir o path de cada rota
+Associar um element (componente) a cada rota
+Utilizar o componente Link para navegar entre as rotas
+Evita recarregamento da página
+Mantém a experiência de SPA
+Benefícios das Rotas no React
+Segregação de conteúdo por página
+Navegação fluida entre páginas
+Melhoria na experiência do usuário
+Tudo dentro do mesmo projeto React
+
+
