@@ -98,3 +98,100 @@ Melhoria na experiência do usuário
 Tudo dentro do mesmo projeto React
 
 
+                                        Criando Páginas com React
+Estruturando Páginas no React
+Páginas são grandes componentes que contêm componentes menores
+Podem ser chamadas de "views" ou "layouts" em alguns projetos
+Não existe uma forma certa ou errada de organizar as páginas
+Aqui usaremos a nomenclatura "pages"
+Criando Páginas
+Home
+Componente funcional com estrutura básica
+Renderiza um título e um subtítulo
+About
+Componente similar à página Home
+Contém título e subtítulo diferentes
+Contact
+Componente similar às páginas anteriores
+Título e subtítulo específicos para a página de contato
+Projects
+Última página criada
+Também possui título e subtítulo próprios
+Importando Páginas no App.jsx
+Importação das páginas é feita de forma organizada, separada por comentários
+Cada página é importada e substituída no elemento da rota correspondente
+Importante exportar os componentes de página para que possam ser importados
+Próximos Passos
+Agora que temos a estrutura de páginas, podemos começar a criar os componentes que serão inseridos em cada página
+O próximo passo será criar o componente de cabeçalho (header) para ser utilizado nas páginas
+
+
+                                        Criação de Componentes de Cabeçalho (Header) em React
+Tópicos Abordados:
+1. Estrutura de Pastas e Arquivos
+Criar pasta "components" dentro de "src"
+Criar pasta "header" dentro de "components"
+Criar arquivos "header.jsx" e "header.css" dentro da pasta "header"
+2. Separação de Lógica CSS e JSX
+Benefícios de manter a lógica CSS separada do JSX
+Facilita manutenção e atualização do código
+3. Criação do Componente de Cabeçalho
+Função "header" para encapsular o conteúdo do cabeçalho
+Utilização de tags HTML como <header> dentro do JSX
+Uso da propriedade "className" para aplicar estilos CSS
+4. Importação de Imagens
+Importar o logotipo da DNC como um arquivo SVG
+Armazenar o logotipo na pasta "assets"
+Utilizar o logotipo importado dentro do componente de cabeçalho
+5. Navegação com React Router
+Utilizar o componente <Link> do React Router para criar links entre páginas
+Vincular o logotipo à página inicial (homepage)
+6. Criação do Menu de Navegação
+Adicionar um componente de navegação (<nav>) dentro do cabeçalho
+Criar uma lista não ordenada (<ul>) com links para as diferentes páginas
+Aplicar estilos CSS à lista e aos links
+7. Estilização do Cabeçalho
+Definir estilos para o cabeçalho, como cor de fundo, padding e alinhamento
+Remover estilos padrão da lista de links (list-style, margin, padding)
+Aplicar estilos personalizados aos links, incluindo hover
+8. Importação do Arquivo CSS
+Importar o arquivo "header.css" no componente de cabeçalho
+Garantir que os estilos sejam aplicados corretamente
+9. Considerações Finais
+O componente de cabeçalho está pronto para ser utilizado em todas as páginas da aplicação
+O próximo passo será criar o componente de rodapé (footer)
+Menciona que o componente de menu mobile será abordado em uma aula futura, durante o bloco de Hooks
+Em resumo, o vídeo abordou a criação de um componente de cabeçalho reutilizável em uma aplicação React, incluindo a estruturação de pastas e arquivos, a separação de lógica CSS e JSX, a importação de imagens, a integração com o React Router e a estilização do componente.
+
+
+                                        Criação do Componente de Footer
+Estruturação do Footer
+Análise do layout no Figma
+Logo da DNC
+Páginas
+Informações de contato
+Copyright
+Bandeiras (Brasil e EUA)
+Importação dos ícones (SVG) para a pasta de assets
+Facebook, Instagram, LinkedIn, Twitter
+Implementação do Componente de Footer
+Criação do arquivo Footer.jsx
+Estrutura similar ao componente de Header
+Criação do arquivo footer.css
+Importação dos ícones dos assets
+Brasil Icon, USA Icon, Facebook Icon, LinkedIn Icon, Instagram Icon, Twitter Icon
+Estruturação do conteúdo do footer
+Div com classe deflex para organização dos elementos
+Inserção do logo da DNC
+Div com classe footer-logo-col para os elementos à esquerda
+Texto com cor cinza personalizada
+Div com classe social-links para os ícones de redes sociais
+Links externos com target="_blank"
+Renderização do Footer
+Importação do componente de Footer na página Home
+Visualização do footer na aplicação
+Próximos Passos
+Continuação da implementação do componente de Footer
+Ajustes de estilos e layout
+
+
