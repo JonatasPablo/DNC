@@ -195,3 +195,42 @@ Continuação da implementação do componente de Footer
 Ajustes de estilos e layout
 
 
+                                        Criação do Componente de Footer
+Configuração do CSS do Footer
+Criação de classes para elementos do footer
+footer, logo, traço call, edit
+footer call, margin, max edit, edit
+footer call ul, text align center, margin, padding
+footer call li, margin
+footer .h3, font-size, margin
+footer .logo, font-size
+footer .p, font-size, margin, line-height
+footer .a, text-decoration, footer hover color
+footer .SocialLinks a, margin
+footer copy, margin
+footer copy .langs area, column gap
+Adição de media queries para responsividade
+maxWidth 768px
+footer call, margin, maxWidth, width
+footer logo call, maxWidth, width
+Estruturação do HTML do Footer
+social links
+footer call
+h3 com "pages"
+Lista de links usando router link
+footer logo call
+Parte inferior do footer
+footer copy
+Texto de copyright
+langs area
+Bandeiras do Brasil e EUA
+Adição de coluna com informações de contato
+h3 com "contact"
+Endereço, e-mail e telefone
+Ajustes Finais
+Correção de alinhamento dos elementos
+Aplicação da fonte correta (DM Serif Display) nos títulos
+Ajuste da cor do link do footer
+O objetivo principal deste vídeo é a criação do componente de footer para uma aplicação web, incluindo a configuração do CSS, a estruturação do HTML e os ajustes finais para que o resultado final fique de acordo com o design proposto no Figma.
+
+
