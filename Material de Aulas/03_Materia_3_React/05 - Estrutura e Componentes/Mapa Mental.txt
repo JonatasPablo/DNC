@@ -234,3 +234,42 @@ Ajuste da cor do link do footer
 O objetivo principal deste vídeo é a criação do componente de footer para uma aplicação web, incluindo a configuração do CSS, a estruturação do HTML e os ajustes finais para que o resultado final fique de acordo com o design proposto no Figma.
 
 
+                                        Criação de Componentes Compartilhados no React
+Componente de Botão
+Conceito de Props
+Props são propriedades que são passadas para um componente
+Permitem que um componente receba informações externas e as utilize para renderizar seu conteúdo
+Tipos de Botões
+Botão Primário
+Cor de fundo: #0CC
+Cor do texto: white
+Hover: #0056B3
+Botão Secundário
+Cor de fundo: #1D1D1D
+Cor do texto: white
+Hover: #4D4D4D
+Botão Outline
+Borda: 2px solid #0CC
+Cor do texto: #0CC
+Hover:
+Cor de fundo: #0CC
+Cor do texto: white
+Botão Desabilitado
+Cor de fundo: #666
+Cor do texto: #CCC
+Cursor: not-allowed
+Hover: Nenhum efeito
+Implementação
+Criar o componente Button.jsx e Button.css
+Definir as props do componente:
+arrow: Renderiza uma seta no botão
+buttonStyle: Define o estilo do botão (primary, secondary, outline, disabled)
+loading: Indica se o botão está em estado de carregamento
+children: Conteúdo a ser exibido no botão
+Utilizar condicional para renderizar o estilo do botão com base na prop buttonStyle
+Adicionar a prop disabled para o botão desabilitado
+Importar e utilizar o componente Button na página Home
+Próximos Passos
+Criar o componente de banner na próxima aula
+
+
