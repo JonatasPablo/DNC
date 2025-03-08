@@ -1,13 +1,13 @@
-// ASSETS
 import './Button.css'
+import WhiteArrow from '../../assets/white-arrow.svg'
 
-export default function Button({arrow, buttonStyle, loading, children, ...props}) {
+function Button({ arrow, buttonStyle, loading, children, ...props }) {
     return(
-        <header>
-            <button className={`button ${buttonStyle}`}>
-                {children}
+            <button className={`button ${buttonStyle}`} {...props}>
+                {children} {arrow && <img src={WhiteArrow}/>}
             </button>
-        </header>
     )
 }
+
+export default Button;
 

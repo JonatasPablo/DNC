@@ -11,7 +11,7 @@
 }
 
 /* PRIMARY */
-.button-primary{
+.button.primary{
     background-color: #0C70F2;
     color:#FFF;
 }
@@ -21,7 +21,7 @@
 }
 
 /* SECONDARY */
-.button-secondary{
+.button.secondary{
     background-color: #1D1D1D;
     color:#FFF;
 }
@@ -31,7 +31,7 @@
 }
 
 /* OUTLINE */
-.button-outline{
+.button.outline{
     background-color: #fff;
     border: 2px solid #0C70F2;
     color:#0C70F2;
@@ -43,7 +43,7 @@
 }
 
 /* DISABLED */
-.button-disabled, .button:disabled>:hover{
+.button:disabled, .button:disabled>:hover{
     background-color: #ccc;
     color:#666;
     pointer-events: none;

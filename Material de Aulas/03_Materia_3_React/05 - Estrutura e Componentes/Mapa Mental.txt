@@ -273,3 +273,115 @@ Próximos Passos
 Criar o componente de banner na próxima aula
 
 
+                                        Criação de Componentes Compartilhados
+Componente de Banner
+Criação do componente de banner
+Estrutura do componente
+Arquivo .jsx e .css
+Definição de classes no CSS
+banner
+background-position: center
+background-size: cover
+height: 356px
+width: 100%
+titlePanel
+background-color: white
+border-radius
+font-size: 50px
+height: 150px
+margin: 0 auto
+max-width: 500px
+Uso de style inline para definir a imagem de fundo
+backgroundImage: url(props.image)
+Componente interno titlePanel
+Exibe o título (props.title)
+Utiliza classes definidas no CSS
+Uso do componente de banner na página inicial
+Passagem de props (title)
+Exibição do componente com fundo cinza enquanto a imagem não é carregada
+Importação de Imagens
+Diferença entre public e assets
+public: imagens acessíveis via URL
+assets: imagens locais, não expostas
+Importação das imagens do Figma
+Exportação das imagens do Figma
+Adição das imagens no diretório public
+Uso das imagens no componente de banner
+Chamada das imagens via about.jpg, contact.jpg, etc.
+Próximos Passos
+Adição de mais componentes compartilhados na próxima aula
+
+
+                                        Criação de um Componente Compartilhado de Hero
+Contexto
+Componentes compartilhados na aplicação
+Necessidade de criar um componente de Hero para a homepage
+Criação do Componente de Hero
+Exportar a imagem do Figma
+Salvar a imagem na pasta public
+Criar a estrutura do componente
+Pasta components/Hero
+Arquivos hero.jsx e hero.css
+Utilizar a estrutura do componente Banner existente
+Renomear para Hero
+Criar uma classe Hero com alignCenter
+Conteúdo do Componente de Hero
+Remover a tag container
+Criar a classe hero.text
+Adicionar um h1 e um p com os textos do Figma
+Utilizar o componente Button compartilhado
+Passar as props secondary e arrow
+Envolver o botão com o componente Link para a página About
+Estilização do Componente de Hero
+Definir o background-image usando a imagem importada
+Centralizar e cobrir a imagem
+Adicionar border-radius e height
+Estilizar o h1 e o hero.text
+Adicionar media queries para responsividade
+Aumentar o tamanho do hero.text em telas de tablet
+Diminuir o tamanho do h1 em telas de celular
+Integração do Componente de Hero
+Chamar o componente no Header
+Colocar dentro do container para alinhamento
+Adicionar box-sizing: border-box no container para responsividade
+Próximo Passo
+Criar o componente compartilhado de ProjectList
+
+
+                                        Criação de um Componente de Lista de Projetos
+Contexto
+Adição de um novo componente compartilhado para a aplicação: o componente de Lista de Projetos
+As imagens dos projetos virão de uma API futuramente
+Criação do Componente
+Exportação dos ícones de "like" e "like preenchido" como SVG
+Criação do componente ProjectsList dentro da pasta components
+Arquivo projects-list.jsx para a lógica
+Arquivo projects-list.css para os estilos
+Estrutura do Componente
+Seção de "hero" com título e subtítulo
+Grid de cards de projetos
+Thumbnail (inicialmente com um background cinza)
+Nome do projeto
+Localização (placeholder)
+Ícone de "like" (com funcionalidade ainda não implementada)
+Estilização
+Aplicação de estilos na seção de "hero"
+Margem, alinhamento e tamanho máximo
+Estilização do título e subtítulo
+Criação do grid de projetos
+Definição do display grid com 4 colunas
+Espaçamento entre os cards
+Estilização dos cards individuais
+Thumbnail (posicionamento e tamanho)
+Título e texto (tamanho da fonte e margem)
+Adição de media queries para responsividade
+Grid com 2 colunas em telas de tablet
+Grid com 1 coluna em telas de celular
+Integração na Página Inicial
+Importação e adição do componente ProjectsList na página inicial
+Visualização do componente na aplicação
+Próximos Passos
+Implementação da lógica de exibição dos projetos vindo da API
+Adição de funcionalidades de interação, como o botão de "like"
+
+
