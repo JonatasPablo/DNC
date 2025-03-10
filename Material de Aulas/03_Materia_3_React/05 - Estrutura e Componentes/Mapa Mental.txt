@@ -385,3 +385,65 @@ Implementação da lógica de exibição dos projetos vindo da API
 Adição de funcionalidades de interação, como o botão de "like"
 
 
+                                        Desenvolvimento de uma Página Web Responsiva
+Configuração da Homepage
+Verificação da responsividade dos componentes
+Hero e Project List já estão responsivos
+Footer não está responsivo
+Adição de responsividade ao footer
+Uso da classe MobileFDColumn para quebrar o footer em linhas
+Criação da Página de Projetos
+Não é necessário reescrever todo o código
+Cópia e colagem dos componentes da homepage
+Banner
+Header e Footer
+Project List
+Ajuste do banner
+Alteração do título para "Projects"
+Uso da imagem project.jpg
+Posicionamento do banner fora do container, como no header
+Resultado Final
+Páginas de homepage e projetos configuradas
+Próximos passos: adição de mais funcionalidades às outras páginas
+O foco principal deste conteúdo é o desenvolvimento de uma página web responsiva, com ênfase na configuração da homepage e da página de projetos. As principais etapas abordadas são:
+Verificação e adição de responsividade aos componentes da homepage, com destaque para o footer.
+Reaproveitamento de código da homepage para a criação da página de projetos, com a cópia e colagem de componentes.
+Ajuste do banner na página de projetos, alterando o título e a imagem de fundo.
+Posicionamento do banner fora do container, seguindo o padrão do header.
+Conclusão com a configuração das duas páginas e a indicação de próximos passos para adicionar mais funcionalidades.
+O conteúdo demonstra a importância da responsividade e do reaproveitamento de código no desenvolvimento web, além de abordar técnicas práticas para a construção de uma interface de usuário coerente e eficiente.
+
+
+                                        Construção de um Site com React
+Tópicos Abordados
+1. Criação da Página "About"
+Adição dos componentes básicos (Header, Footer, Banner)
+Criação do componente "AboutText"
+Estrutura do componente (TextSection, TextSectionText)
+Estilização do componente (ColumnGap, Margin, MediaQuery)
+Inserção do componente na página "About"
+2. Criação da Página "Contato"
+Adição dos componentes básicos (Header, Footer, Banner)
+Criação do componente "ContactForm"
+Estrutura do componente (Form, H2)
+Estilização do componente (Margin, MaxWidth, TextAlign)
+Inserção do componente na página "Contato"
+3. Considerações Finais
+Visão geral do progresso do site
+Incentivo ao autor para continuar o desenvolvimento
+Preparação para a próxima etapa, onde serão adicionadas mais funcionalidades
+Detalhamento dos Tópicos
+1. Criação da Página "About"
+Nesta seção, o instrutor guia o aluno na adição dos componentes básicos (Header, Footer, Banner) à página "About". Em seguida, ele explica a criação de um novo componente chamado "AboutText", que será responsável por exibir o conteúdo textual da página.
+O componente "AboutText" é estruturado com duas seções de texto (TextSection), cada uma contendo um título (H2) e parágrafos (P). Para diferenciar a primeira seção, é aplicada uma classe "primary-color" ao primeiro parágrafo. O instrutor também adiciona uma MediaQuery para ajustar o layout em telas menores (tablets).
+Após a criação do componente, o instrutor o insere na página "About", finalizando a estruturação dessa página.
+2. Criação da Página "Contato"
+Nesta seção, o instrutor segue um processo similar ao da página "About", adicionando os componentes básicos (Header, Footer, Banner) à página "Contato". Em seguida, ele cria um novo componente chamado "ContactForm", que será responsável por exibir o formulário de contato.
+O componente "ContactForm" possui uma estrutura simples, com um título (H2) e um elemento "form" (ainda sem funcionalidade). O instrutor aplica estilos para centralizar e posicionar o componente na página.
+Assim como nas páginas anteriores, o instrutor insere o componente "ContactForm" na página "Contato", concluindo a estruturação dessa página.
+3. Considerações Finais
+Nesta seção, o instrutor faz uma avaliação geral do progresso do site, destacando que a estrutura básica das páginas já está pronta. Ele incentiva o aluno a continuar o desenvolvimento, adicionando mais funcionalidades e interatividade ao site.
+O instrutor também menciona que a implementação completa do formulário de contato será abordada em aulas posteriores, pois envolve lógicas mais complexas que não serão tratadas neste momento.
+Ao final, o instrutor encoraja o aluno a apreciar o trabalho realizado até o momento e a se preparar para a próxima etapa do desenvolvimento do site.
+
+
