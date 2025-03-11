@@ -1,0 +1,56 @@
+                                        Ciclo de Vida de Aplicações React e Hooks
+Ciclo de Vida de Aplicações React
+Montagem (Mounting): Quando um componente é criado e inserido no DOM.
+Atualização (Updating): Quando um componente é re-renderizado devido a mudanças em props ou estado.
+Desmontagem (Unmounting): Quando um componente é removido do DOM.
+Gerenciamento de Estado
+Estado Inicial (Initial State): O estado inicial de um componente.
+Atualização de Estado: Quando o estado de um componente é atualizado, a tela é re-renderizada com as novas informações.
+Hooks
+Objetivo: Fornecer uma maneira mais simples e intuitiva de gerenciar o ciclo de vida e o estado de componentes React.
+Exemplos:
+useState: Permite gerenciar o estado de um componente.
+useEffect: Permite executar efeitos colaterais em um componente.
+useContext: Permite acessar o contexto de um componente.
+Comparação Antes e Depois dos Hooks
+Antes dos Hooks:
+Código mais verboso para gerenciar o ciclo de vida.
+Separação entre métodos de ciclo de vida (mount, update, etc.).
+Depois dos Hooks:
+Código mais conciso e legível.
+Hooks permitem uma abordagem mais declarativa e reativa.
+Conclusão
+Os Hooks simplificam significativamente o desenvolvimento de aplicações React, tornando o código mais legível e fácil de manter.
+Eles permitem uma abordagem mais declarativa e reativa, facilitando o gerenciamento do ciclo de vida e do estado dos componentes.
+
+
+                                        Usando o hook useState no React
+Introdução
+Entender o que são hooks, ciclos de vida e estado
+Usar o hook useState pela primeira vez na aplicação
+Desafio
+Criar um componente de menu mobile
+Usar o useState para controlar a abertura e fechamento do menu
+Implementação
+Estilizar o menu mobile usando CSS
+Adicionar responsividade com media queries
+Criar classes para controlar a abertura e fechamento do menu
+Adicionar efeitos visuais como overlay e animações
+Implementar a lógica do menu mobile usando useState
+Importar o useState do React
+Criar o estado isOpen e a função setIsOpen
+Usar o estado isOpen para controlar a exibição do menu
+Adicionar o botão de menu mobile
+Criar um componente de botão
+Chamar o botão no header e aplicar a classe mobile-menu
+Usar o onClick do botão para chamar a função setIsOpen e alternar o estado
+Adicionar o botão de fechar o menu mobile
+Criar uma função toggleMenu para encapsular a lógica de abertura e fechamento
+Adicionar o botão de fechar com a classe close-btn
+Chamar a função toggleMenu no onClick do botão de fechar
+Conclusão
+O menu mobile está funcionando corretamente, com a possibilidade de abrir e fechar
+Aprendemos a usar o hook useState para gerenciar o estado do componente
+Organizamos a lógica em funções para facilitar a manutenção do código
+
+
