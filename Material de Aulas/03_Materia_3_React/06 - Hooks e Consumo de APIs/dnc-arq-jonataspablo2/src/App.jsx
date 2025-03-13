@@ -6,9 +6,14 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 
+// UTILS
+
+import ScrollToTop from '../src/utils/ScrollTop'
+
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<><Home/></>}></Route>
         <Route path="/about" element={<><About/> <Link to="/">Navegar</Link> </>}></Route>

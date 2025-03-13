@@ -54,3 +54,113 @@ Aprendemos a usar o hook useState para gerenciar o estado do componente
 Organizamos a lógica em funções para facilitar a manutenção do código
 
 
+                                        Usando o UseEffect no React
+Introdução
+O UseEffect é um hook muito importante no desenvolvimento de aplicações React
+Ele permite controlar o ciclo de vida dos componentes, desde a montagem até a desmontagem
+Problema Identificado
+Quando o usuário navega entre as páginas da aplicação, a posição da página não é atualizada corretamente
+Isso ocorre porque o React Router mantém a mesma página carregada, apenas atualizando o conteúdo
+Isso pode gerar uma experiência ruim para o usuário, que pode ficar "perdido" na página
+Solução com UseEffect
+Criamos uma função utilitária scrollToTop que rola a página para o topo sempre que a rota é alterada
+Essa função é implementada usando o hook useEffect, que é chamado sempre que a rota muda
+Dentro do useEffect, usamos o window.scroll para rolar a página para o topo (0, 0)
+Passamos o pathName como dependência do useEffect para garantir que ele seja chamado apenas quando a rota mudar
+Implementação Prática
+Criamos uma pasta utils no projeto para armazenar funções utilitárias
+Dentro dessa pasta, criamos o arquivo scrollToTop.jsx com a função scrollToTop
+No arquivo App.js, importamos e adicionamos o scrollToTop antes das rotas
+Dessa forma, sempre que o usuário navegar entre as páginas, a página será rolada para o topo
+Conclusão
+O useEffect é um hook fundamental no desenvolvimento de aplicações React
+Ele permite controlar o ciclo de vida dos componentes e realizar efeitos colaterais
+Neste exemplo, usamos o useEffect para resolver um problema de experiência do usuário na navegação da aplicação
+É importante estar sempre atualizado sobre os hooks e suas atualizações, pois eles são a base do desenvolvimento em React
+
+
+                                        Consumindo APIs REST
+Objetivo do Bloco
+Entender como trazer dados de um banco de dados ou servidor para um projeto front-end em React
+Conceitos sobre a Internet
+Toda a internet é baseada no protocolo HTTP (Hyper Text Transfer Protocol)
+HTTP é um protocolo de transferência de arquivos
+A internet é uma rede de conexões ponto-a-ponto, onde transferimos dados de um lugar para outro
+Inicialmente, a internet era apenas HTML puro, mas depois começou a incluir dados de servidores
+Instituições que Gerenciam a Internet
+W3C (World Wide Web Consortium) é a instituição que cria as regras e métodos para as conexões na internet
+Métodos de Requisição HTTP
+POST (Create)
+Usado para criar algo no servidor
+Exemplo: Comentar uma foto no Instagram
+GET (Read)
+Usado para buscar dados do servidor
+Exemplo: Ler os comentários de uma foto no Instagram
+PUT (Update)
+Usado para atualizar algo no servidor
+Exemplo: Editar um comentário no Facebook
+DELETE
+Usado para excluir algo no servidor
+Exemplo: Deletar um comentário no WhatsApp
+CRUD
+Sigla que representa os 4 métodos HTTP principais: Create, Read, Update, Delete
+Documentação
+Recomendação de consultar a documentação do Mozilla e da W3C para entender melhor os métodos HTTP
+Respostas dos Métodos HTTP
+Cada método HTTP gera uma resposta na aplicação
+É importante entender essas respostas para lidar com elas adequadamente
+
+
+                                        Códigos de Status HTTP
+Introdução
+Conexão entre aplicação web e servidores, bancos de dados
+Regida pelos métodos HTTP
+Necessidade de entender o que acontece na conexão (sucesso ou erro)
+Códigos de status HTTP fornecem essa informação
+Tipos de Códigos de Status
+Respostas Informativas (100-199)
+Informam algo, não necessariamente sucesso ou erro
+Ex: 100 Continue, 101 Switching Protocols
+Respostas de Sucesso (200-299)
+Indicam que a requisição foi bem-sucedida
+Ex: 200 OK, 201 Created, 202 Accepted, 204 No Content
+Respostas de Redirecionamento (300-399)
+Indicam que a requisição precisa ser redirecionada
+Ex: 301 Moved Permanently, 302 Found, 304 Not Modified
+Erros de Cliente (400-499)
+Indicam que o cliente (desenvolvedor) enviou algo errado
+Ex: 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 405 Method Not Allowed
+Erros de Servidor (500-599)
+Indicam que houve um problema no servidor
+Ex: 500 Internal Server Error, 501 Not Implemented, 502 Bad Gateway, 503 Service Unavailable, 504 Gateway Timeout
+Exemplos Detalhados
+Respostas Informativas
+100 Continue: Servidor informa que a requisição pode continuar
+101 Switching Protocols: Servidor está mudando o protocolo
+Respostas de Sucesso
+200 OK: Operação bem-sucedida
+201 Created: Recurso criado
+202 Accepted: Requisição aceita para processamento
+204 No Content: Requisição bem-sucedida, sem conteúdo de retorno
+Respostas de Redirecionamento
+301 Moved Permanently: Recurso movido permanentemente
+302 Found: Recurso encontrado em URL temporária
+304 Not Modified: Recurso não modificado desde a última requisição
+Erros de Cliente
+400 Bad Request: Requisição mal formatada
+401 Unauthorized: Não autorizado
+403 Forbidden: Acesso negado
+404 Not Found: Recurso não encontrado
+405 Method Not Allowed: Método não permitido
+Erros de Servidor
+500 Internal Server Error: Erro inesperado no servidor
+501 Not Implemented: Funcionalidade não implementada
+502 Bad Gateway: Gateway inválido
+503 Service Unavailable: Serviço indisponível
+504 Gateway Timeout: Tempo limite de gateway excedido
+Conclusão
+Entendimento dos códigos de status HTTP é essencial para desenvolvedores front-end
+Permite lidar com respostas do servidor e identificar problemas
+Recomendação de consultar a documentação oficial para aprofundamento
+
+
