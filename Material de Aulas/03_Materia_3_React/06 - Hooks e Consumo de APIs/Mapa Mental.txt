@@ -224,3 +224,81 @@ Importância de testar as APIs antes de integrá-las ao código
 Evita problemas e economiza tempo durante o desenvolvimento
 
 
+                                        Entendendo e Utilizando o Postman para Testar APIs
+O que é uma API?
+APIs são interfaces de programação de aplicativos que permitem a comunicação entre diferentes sistemas
+APIs resolvem problemas e dores relacionados à integração de sistemas
+Introdução ao Postman
+O Postman é uma ferramenta muito utilizada por desenvolvedores back-end e front-end para testar APIs
+O Postman fornece uma visão clara e intuitiva do que está acontecendo com as APIs
+Outras ferramentas similares incluem o Insomnia e extensões do VSCode
+Instalação e Configuração do Postman
+Baixar e instalar o Postman no computador
+Criar uma conta no Postman para ter acesso a recursos adicionais
+Entender a interface do Postman, incluindo os diferentes métodos HTTP (GET, POST, PUT, DELETE)
+Testando Chamadas de API com o Postman
+No projeto atual, serão utilizados apenas os métodos GET e POST
+Outros métodos, como PUT e DELETE, serão abordados posteriormente
+O Postman será usado para testar as chamadas GET e POST do projeto
+Benefícios do Uso do Postman
+Compartilhamento fácil de APIs entre desenvolvedores
+Manutenção de uma documentação centralizada das APIs do projeto
+Alinhamento da equipe de desenvolvimento em relação às APIs disponíveis
+
+
+                                        Consumindo APIs em Projetos React
+Conceitos Importantes
+Promises
+Promessas de requisições assíncronas
+Estado inicial de espera, estados finais de sucesso ou rejeição
+Base da programação assíncrona em JavaScript
+Hooks useState e useEffect
+useState para gerenciar estados da aplicação
+useEffect para controlar o ciclo de vida dos componentes
+Chamada de Promises em React
+Exemplo 1: Simulação de Resposta de API
+Estado de loading, data e error
+Tratamento de sucesso e erro da Promise
+Atualização da tela de acordo com o estado da Promise
+Exemplo 2: Chamada de API de Projetos
+Uso de async/await para chamada assíncrona
+Tratamento de erros com try/catch
+Checagem de status da resposta (200 OK)
+Tratamento de erros catastróficos no catch
+Conclusão
+Importância do tratamento adequado de erros em chamadas de API
+Uso de Promises, async/await e hooks para gerenciar o ciclo de vida das chamadas
+Aplicação prática dos conceitos em um projeto React
+
+
+                                        Integração de API REST em um Projeto React
+Configuração do Ambiente
+Criar uma pasta "services" dentro da pasta "src"
+Criar um arquivo "API.services.js" dentro da pasta "services"
+Definir uma função "getAPIData" para lidar com requisições GET
+Implementação no Projeto
+Importar "getAPIData" no componente "ProjectList"
+Utilizar os hooks "useState" e "useEffect" para gerenciar o estado e a chamada da API
+Criar uma função "fetchData" que chama "getAPIData" e atualiza o estado de "projects"
+Exibir os dados dos projetos no componente "ProjectList" utilizando o método "map"
+Detalhes da Implementação
+Função "getAPIData"
+Recebe dois parâmetros: "endpoint" e "params"
+Utiliza o método "fetch" para fazer a requisição GET
+Trata erros de resposta com um "try/catch"
+Retorna os dados da API após a requisição ser bem-sucedida
+Componente "ProjectList"
+Importa a função "getAPIData" do arquivo "API.services.js"
+Utiliza os hooks "useState" e "useEffect" para gerenciar o estado e a chamada da API
+Cria a função "fetchData" que chama "getAPIData" e atualiza o estado de "projects"
+Renderiza os dados dos projetos utilizando o método "map"
+Exibe as informações de cada projeto, como título, subtítulo e imagem de capa
+Benefícios
+Separação da lógica de chamada de API em um arquivo dedicado
+Reutilização da função "getAPIData" em diferentes partes do projeto
+Melhor controle e tratamento de erros na chamada da API
+Exibição dinâmica dos dados dos projetos, evitando hardcoding
+Conclusão
+O vídeo demonstra como integrar uma API REST em um projeto React, utilizando boas práticas de organização do código e gerenciamento de estado. A abordagem apresentada permite uma implementação robusta e escalável, facilitando a manutenção e evolução do projeto.
+
+
