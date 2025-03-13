@@ -164,3 +164,63 @@ Permite lidar com respostas do servidor e identificar problemas
 Recomendação de consultar a documentação oficial para aprofundamento
 
 
+                                        O que é uma API?
+O que é uma API?
+Interface de Programação de Aplicações (API)
+Forma de comunicação mais simples e segura entre aplicação web e servidor
+Problemas com a comunicação direta com o banco de dados
+Complexidade no código da aplicação web
+Exposição de risco de segurança
+Baixa performance
+Surgimento das APIs
+Criação de uma camada intermediária (back-end) com endpoints
+Melhor organização e segurança da comunicação
+Tipos de APIs
+REST (Representational State Transfer)
+GraphQL
+Funcionamento de uma API REST
+Endpoints (URLs) com métodos HTTP (GET, POST, PUT, DELETE)
+Parâmetros de caminho e de consumo
+Headers (informações adicionais)
+Exemplo prático: API como um garçom
+Aplicação web (cliente) faz pedido para a API (garçom)
+API (garçom) repassa o pedido para o servidor (cozinheiro)
+Servidor (cozinheiro) processa o pedido e retorna a resposta para a API (garçom)
+API (garçom) entrega a resposta para a aplicação web (cliente)
+Próximo passo: Utilizar o Postman para testar APIs
+
+
+                                        Testando APIs com Postman
+Introdução
+Instalação e configuração do Postman
+Objetivo: testar as APIs utilizadas no projeto
+API de WebText
+Objetivo: obter os textos da aplicação (em português e inglês) para permitir a troca de idioma
+Endpoint: https://dncreactapi.vercel.com/files/webtext
+Resposta em formato JSON
+Teste da API:
+Chamada bem-sucedida (status 200)
+Chamada com parâmetro errado (status 404)
+Importância de testar as APIs antes de integrá-las ao código
+API de Projetos
+Objetivo: obter a lista de projetos a serem exibidos na aplicação
+Endpoint: https://dncreactapi.vercel.com/files/projects
+Resposta em formato JSON
+Teste da API:
+Chamada bem-sucedida (status 200)
+API de Formulário de Contato
+Objetivo: enviar mensagens do formulário de contato da aplicação
+Serviço utilizado: Web Trace Forms
+Configuração: cadastro e obtenção da chave de acesso
+Endpoint: https://www.webtracer.com.br/api/webform/submit
+Requisição POST com:
+Header: Content-Type: application/json
+Body: { "name": "Gabriel Silva", "msg": "Olá", "access_key": "sua_chave_de_acesso" }
+Teste da API:
+Chamada bem-sucedida (status 200)
+Recebimento da mensagem no e-mail cadastrado
+Conclusão
+Importância de testar as APIs antes de integrá-las ao código
+Evita problemas e economiza tempo durante o desenvolvimento
+
+
