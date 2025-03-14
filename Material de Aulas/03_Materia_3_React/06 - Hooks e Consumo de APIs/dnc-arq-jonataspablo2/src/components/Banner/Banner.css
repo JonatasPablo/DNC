@@ -1,16 +1,22 @@
-.banner{
-    background-color: #ccc;
-    background-position: center;
-    background-size: cover;
-    height: 356px;
-    width: 100%;
+/* 
+   Estilização da seção do banner 
+*/
+.banner {
+    background-color: #ccc; /* Cor de fundo padrão para o caso de a imagem não carregar */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do banner */
+    height: 356px; /* Define uma altura fixa para o banner */
+    width: 100%; /* Garante que o banner ocupe toda a largura da tela */
 }
 
-.title-panel{
-    background-color: #fff;
-    border-radius: 37px 37px 0 0;
-    font-size: 50px;
-    height: 150px;
-    margin: 0 auto;
-    max-width: 500px;
+/* 
+   Estilização do painel de título dentro do banner 
+*/
+.title-panel {
+    background-color: #fff; /* Define um fundo branco para o painel de título */
+    border-radius: 37px 37px 0 0; /* Arredonda apenas os cantos superiores do painel */
+    font-size: 50px; /* Define um tamanho grande para o texto do título */
+    height: 150px; /* Define a altura do painel */
+    margin: 0 auto; /* Centraliza o painel horizontalmente */
+    max-width: 500px; /* Limita a largura máxima do painel para manter um bom layout */
 }

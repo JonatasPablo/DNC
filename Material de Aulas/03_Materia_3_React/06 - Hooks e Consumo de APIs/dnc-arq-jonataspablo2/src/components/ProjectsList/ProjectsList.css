@@ -1,53 +1,83 @@
-.projects-section{
-    margin: 150px 0;
-    text-align: center;
+/* ========================== */
+/* SEÇÃO PRINCIPAL DE PROJETOS */
+/* ========================== */
+
+/* Define a estrutura principal da seção de projetos */
+.projects-section {
+    margin: 150px 0; /* Adiciona espaçamento vertical de 150px (acima e abaixo) */
+    text-align: center; /* Centraliza todo o conteúdo dentro da seção */
 }
 
-.projects-hero{
-    margin: 0 auto 100px auto;
-    max-width: 767px;
+/* ========================== */
+/* CABEÇALHO DA SEÇÃO DE PROJETOS */
+/* ========================== */
+
+/* Define a área do título e descrição da seção de projetos */
+.projects-hero {
+    margin: 0 auto 100px auto; /* Centraliza horizontalmente e adiciona espaçamento inferior de 100px */
+    max-width: 767px; /* Define a largura máxima para manter o texto bem formatado */
 }
 
-.projects-hero h2{
-    font-size: 50px;
+/* Define a aparência do título (h2) */
+.projects-hero h2 {
+    font-size: 50px; /* Define um tamanho grande para o título */
 }
 
-.projects-hero p{
-    font-size: 22px;
-    margin: 10px 0 0 0 ;
+/* Define a aparência do parágrafo */
+.projects-hero p {
+    font-size: 22px; /* Define um tamanho adequado para a descrição */
+    margin: 10px 0 0 0; /* Adiciona um pequeno espaçamento acima do texto */
 }
 
-.projects-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px 22px;
+/* ========================== */
+/* GRID DE PROJETOS */
+/* ========================== */
+
+/* Define a exibição dos projetos em formato de grade (grid) */
+.projects-grid {
+    display: grid; /* Usa CSS Grid para organizar os itens */
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de tamanhos iguais */
+    gap: 50px 22px; /* Define o espaçamento entre os elementos (50px vertical, 22px horizontal) */
 }
 
-.project-card .thumb{
-    background-position: center;
-    background-size: cover;
-    border-radius: 37px;
-    height: 430px;
-    width: 100%;
+/* ========================== */
+/* CARTÃO DE PROJETO */
+/* ========================== */
+
+/* Configura a área da imagem (thumb) dentro do card */
+.project-card .thumb {
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área disponível */
+    border-radius: 37px; /* Arredonda os cantos da imagem */
+    height: 430px; /* Define a altura fixa da imagem */
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do card */
 }
 
-.project-card h3{
-    font-size: 25px;
-    margin: 20px 0 0 0;
+/* Define a aparência do título do projeto */
+.project-card h3 {
+    font-size: 25px; /* Define um tamanho adequado para os títulos dos projetos */
+    margin: 20px 0 0 0; /* Adiciona espaçamento superior */
 }
 
-.project-card p{
-    font-size: 18px;
+/* Define a aparência do texto descritivo do projeto */
+.project-card p {
+    font-size: 18px; /* Define um tamanho menor para as descrições */
 }
 
-@media (max-width: 768px){
-    .projects-grid{
-        grid-template-columns: repeat(2, 1fr);
+/* ========================== */
+/* RESPONSIVIDADE */
+/* ========================== */
+
+/* Ajuste para telas menores que 768px (exemplo: tablets) */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
     }
 }
 
-@media (max-width: 568){
-    .projects-grid{
-        grid-template-columns: 1fr;
+/* Ajuste para telas menores que 568px (exemplo: celulares pequenos) */
+@media (max-width: 568px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Altera para uma única coluna */
     }
 }

@@ -1,50 +1,65 @@
-.button{
-    border-radius: 18px;
-    border: none;
-    column-gap: 10px;
-    cursor: pointer;
-    display: flex;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 25px 50px;
-    transition: background-color 0.3s ease;
+/* 
+   Estilização base para o botão padrão (.button)
+   Esta classe é aplicada a todos os botões, independente do estilo específico (primary, secondary, outline, etc.)
+*/
+.button {
+    border-radius: 18px; /* Borda arredondada para um visual moderno */
+    border: none; /* Remove a borda padrão do botão */
+    column-gap: 10px; /* Espaçamento horizontal entre elementos dentro do botão (ex: texto e ícone) */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    display: flex; /* Usa flexbox para alinhar o conteúdo do botão */
+    font-size: 18px; /* Define o tamanho da fonte do texto dentro do botão */
+    font-weight: 600; /* Deixa o texto do botão um pouco mais "negrito" para melhor legibilidade */
+    padding: 25px 50px; /* Define um espaçamento interno grande para um botão robusto */
+    transition: background-color 0.3s ease; /* Suaviza a transição da cor de fundo ao passar o mouse */
 }
 
-/* PRIMARY */
-.button.primary{
-    background-color: #0C70F2;
-    color:#FFF;
+/* ========================= */
+/* ESTILIZAÇÃO PARA VARIAÇÕES */
+/* ========================= */
+
+/* PRIMARY (Botão Azul) */
+.button.primary {
+    background-color: #0C70F2; /* Cor de fundo azul */
+    color: #FFF; /* Texto branco */
 }
 
-.button.primary:hover{
-    background-color: #0056b3;
+/* Quando o usuário passa o mouse sobre o botão primário */
+.button.primary:hover {
+    background-color: #0056b3; /* Azul escuro para dar efeito de interação */
 }
 
-/* SECONDARY */
-.button.secondary{
-    background-color: #1D1D1D;
-    color:#FFF;
+/* SECONDARY (Botão Preto) */
+.button.secondary {
+    background-color: #1D1D1D; /* Preto para um estilo mais sóbrio */
+    color: #FFF; /* Texto branco */
 }
 
-.button.secondary:hover{
-    background-color: #4D5053;
+/* Quando o usuário passa o mouse sobre o botão secundário */
+.button.secondary:hover {
+    background-color: #4D5053; /* Cinza escuro para dar um efeito de realce */
 }
 
-/* OUTLINE */
-.button.outline{
-    background-color: #fff;
-    border: 2px solid #0C70F2;
-    color:#0C70F2;
+/* OUTLINE (Botão com borda azul e fundo branco) */
+.button.outline {
+    background-color: #fff; /* Fundo branco */
+    border: 2px solid #0C70F2; /* Borda azul */
+    color: #0C70F2; /* Texto azul */
 }
 
-.button.outline:hover{
-    background-color: #0C70F2;
-    color: #FFF;
+/* Quando o usuário passa o mouse sobre o botão outline */
+.button.outline:hover {
+    background-color: #0C70F2; /* Fundo azul */
+    color: #FFF; /* Texto branco para contraste */
 }
 
-/* DISABLED */
-.button:disabled, .button:disabled>:hover{
-    background-color: #ccc;
-    color:#666;
-    pointer-events: none;
+/* ========================= */
+/* ESTILIZAÇÃO PARA BOTÃO DESABILITADO */
+/* ========================= */
+
+/* Define o estilo para botões desabilitados (estado `disabled`) */
+.button:disabled, .button:disabled:hover {
+    background-color: #ccc; /* Cinza claro para indicar que não está ativo */
+    color: #666; /* Texto cinza escuro */
+    pointer-events: none; /* Desativa interações como clique ou hover */
 }

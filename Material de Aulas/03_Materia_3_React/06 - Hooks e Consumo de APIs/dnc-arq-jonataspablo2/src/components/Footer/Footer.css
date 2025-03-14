@@ -1,63 +1,104 @@
-.footer-logo-col{
-    max-width: 340px;
-    width: 100%;
+/* ========================== */
+/* ESTILIZAÇÃO DAS COLUNAS DO RODAPÉ */
+/* ========================== */
+
+/* Configurações para a coluna do logotipo e descrição */
+.footer-logo-col {
+    max-width: 340px; /* Define uma largura máxima de 340px */
+    width: 100%; /* Garante que ocupe toda a largura disponível dentro do limite máximo */
 }
 
-.footer-col{
-    margin:  0 0 140px;
-    max-width: 260px;
-    width: 100%;
+/* Configuração das colunas do rodapé (ex: links de navegação e contato) */
+.footer-col {
+    margin: 0 0 140px; /* Define um espaçamento inferior de 140px */
+    max-width: 260px; /* Define uma largura máxima de 260px */
+    width: 100%; /* Faz com que a coluna se ajuste dentro do espaço disponível */
 }
 
-.footer-col ul{
+/* ========================== */
+/* ESTILIZAÇÃO DA LISTA DE LINKS */
+/* ========================== */
+
+/* Remove margens e espaçamentos padrão da lista (ul) para melhor controle */
+.footer-col ul {
     margin: 0;
     padding: 0;
 }
 
-.footer-col li{
-    margin: 0 0 25px 0;
+/* Define espaçamento inferior para cada item da lista */
+.footer-col li {
+    margin: 0 0 25px 0; /* 25px abaixo de cada item */
 }
 
-footer h3, .footer-logo{
-    font-size: 25px;
-    margin: 0 0 25px 0;
+/* ========================== */
+/* ESTILIZAÇÃO DOS TÍTULOS E TEXTOS */
+/* ========================== */
+
+/* Aplica estilos aos títulos das seções e ao logotipo */
+footer h3, .footer-logo {
+    font-size: 25px; /* Define um tamanho de fonte de 25px */
+    margin: 0 0 25px 0; /* Adiciona espaçamento inferior de 25px */
 }
 
-footer a, footer p{
-    font-size: 22px;
-    margin: 0 0 25px 0;
-    line-height: 150%;
+/* Aplica estilos gerais para parágrafos e links dentro do footer */
+footer a, footer p {
+    font-size: 22px; /* Define um tamanho de fonte de 22px */
+    margin: 0 0 25px 0; /* Espaçamento inferior de 25px */
+    line-height: 150%; /* Define um espaçamento entre linhas de 150% para melhor legibilidade */
 }
 
-footer a{
-    text-decoration: none;
-    color: #4D5053;
+/* ========================== */
+/* ESTILIZAÇÃO DOS LINKS */
+/* ========================== */
+
+/* Remove o sublinhado dos links e define a cor padrão */
+footer a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #4D5053; /* Define um tom de cinza escuro como cor padrão */
 }
 
-footer a:hover{
-    color: #0C70F2;
+/* Define a cor azul para links quando o usuário passa o mouse */
+footer a:hover {
+    color: #0C70F2; /* Azul escuro ao passar o mouse */
 }
 
-footer .social-links a{
-    margin: 25px 40px 0 0;
+/* ========================== */
+/* ESTILIZAÇÃO DOS ÍCONES DE REDES SOCIAIS */
+/* ========================== */
+
+/* Ajusta o espaçamento entre os ícones de redes sociais */
+footer .social-links a {
+    margin: 25px 40px 0 0; /* Define espaçamento superior de 25px e lateral direito de 40px */
 }
 
-.footer-copy{
-    margin: 155px 0 50px 0;
+/* ========================== */
+/* ESTILIZAÇÃO DO COPYRIGHT E ÁREA DE IDIOMAS */
+/* ========================== */
+
+/* Define espaçamento superior e inferior para a seção de direitos autorais */
+.footer-copy {
+    margin: 155px 0 50px 0; /* Espaçamento superior de 155px e inferior de 50px */
 }
 
-.footer-copy .langs-area{
-    column-gap: 23px;
+/* Define espaçamento entre os ícones das bandeiras */
+.footer-copy .langs-area {
+    column-gap: 23px; /* Espaço de 23px entre os ícones das bandeiras */
 }
 
-@media (max-width: 768px){
-    .footer-col{
+/* ========================== */
+/* RESPONSIVIDADE PARA TELAS MENORES QUE 768px */
+/* ========================== */
+
+@media (max-width: 768px) {
+    /* Remove a margem inferior das colunas no mobile */
+    .footer-col {
         margin: 0 0 0 0;
         max-width: 100%;
         width: 100%;
     }
 
-    .footer-logo-col{
+    /* Ajusta a largura da coluna do logotipo no mobile */
+    .footer-logo-col {
         max-width: 100%;
         width: 100%;
     }

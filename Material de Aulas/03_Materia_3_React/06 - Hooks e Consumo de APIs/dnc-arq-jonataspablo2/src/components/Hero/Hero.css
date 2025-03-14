@@ -1,30 +1,50 @@
-.hero{
-    background-image: url(/Hero.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 70px;
-    height: 708px;
-    padding: 50px;
+/* ========================== */
+/* ESTILIZAÇÃO DA HERO SECTION */
+/* ========================== */
+
+/* Estilização do contêiner principal da hero section */
+.hero {
+    background-image: url(/Hero.jpg); /* Define a imagem de fundo da hero section */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área do elemento */
+    border-radius: 70px; /* Arredonda as bordas do contêiner */
+    height: 708px; /* Define uma altura fixa de 708px para a seção */
+    padding: 50px; /* Adiciona um espaçamento interno de 50px */
 }
 
-.hero h1{
-    font-size: 65px;
-    line-height: 125%;
+/* ========================== */
+/* ESTILIZAÇÃO DO TÍTULO DENTRO DA HERO SECTION */
+/* ========================== */
+
+/* Define a aparência do título principal dentro da hero section */
+.hero h1 {
+    font-size: 65px; /* Define o tamanho da fonte como 65px */
+    line-height: 125%; /* Ajusta o espaçamento entre linhas para 125% */
 }
 
-.hero-text{
-    width: 40%;
+/* ========================== */
+/* ESTILIZAÇÃO DO BLOCO DE TEXTO DENTRO DA HERO */
+/* ========================== */
+
+/* Define o tamanho da área de texto dentro da hero section */
+.hero-text {
+    width: 40%; /* Define a largura do bloco de texto como 40% do contêiner */
 }
 
-@media (max-width: 768px){
-    .hero-text{
+/* ========================== */
+/* RESPONSIVIDADE PARA TELAS MENORES */
+/* ========================== */
+
+@media (max-width: 768px) {
+    /* Em telas menores que 768px, o texto ocupa toda a largura */
+    .hero-text {
         width: 100%;
     }
 }
 
-@media (max-width: 568){
-    .hero h1{
-        font-size:50px;
+@media (max-width: 568px) {
+    /* Reduz o tamanho do título principal para telas menores */
+    .hero h1 {
+        font-size: 50px;
     }
 }
-

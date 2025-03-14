@@ -1,111 +1,147 @@
+/* ========================= */
+/* IMPORTAÇÃO DE FONTES */
+/* ========================= */
+
+/* Importa as fontes do Google Fonts para serem utilizadas na tipografia do site */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
 
-body{
-  margin: 0;
-  min-height: 100vh;
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-  color: #292F36;
-  background-color: #fff;
+/* ========================= */
+/* ESTILIZAÇÃO GERAL */
+/* ========================= */
+
+body {
+  margin: 0; /* Remove a margem padrão do navegador */
+  min-height: 100vh; /* Garante que o body sempre ocupe pelo menos toda a altura da tela */
+  font-family: "Jost", sans-serif; /* Define a fonte principal do site como "Jost" */
+  font-weight: 400; /* Define o peso padrão da fonte como regular */
+  color: #292F36; /* Define a cor padrão do texto como um cinza escuro */
+  background-color: #fff; /* Define o fundo do site como branco */
 }
 
-a{
-  text-decoration: none;
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
 }
 
-/* MAIN COLOR */
+/* ========================= */
+/* CORES PADRÕES */
+/* ========================= */
 
-.primary-background{
-  background-color: #0C70F2;
+/* Cor primária usada para botões, links ou elementos de destaque */
+.primary-background {
+  background-color: #0C70F2; /* Azul vibrante */
 }
 
-.primary-color{
-  color: #0C70F2;
+.primary-color {
+  color: #0C70F2; /* Azul vibrante para textos */
 }
 
-.secundary-background{
-  background-color: #1D1D1D;
+/* Cor secundária usada para fundo escuro e elementos de destaque */
+.secundary-background {
+  background-color: #1D1D1D; /* Preto/cinza escuro */
 }
 
-.secundary-color{
-  color: #1D1D1D;
+.secundary-color {
+  color: #1D1D1D; /* Preto/cinza escuro para textos */
 }
 
-.tertiary-background{
-  background-color: #F6F6F6;
+/* Cor terciária usada para áreas com fundo claro */
+.tertiary-background {
+  background-color: #F6F6F6; /* Cinza claro */
 }
 
-.tertiary-color{
-  color: #F6F6F6;
+.tertiary-color {
+  color: #F6F6F6; /* Cinza claro para textos */
 }
 
-.grey-1-color{
-  color: #4D5053;
+/* Cor adicional para tons de cinza mais escuros */
+.grey-1-color {
+  color: #4D5053; /* Cinza escuro */
 }
 
-/* TYPOGRAPHY */
+/* ========================= */
+/* TIPOGRAFIA */
+/* ========================= */
 
-h1, h2, h3, h4, h5, h6{
-  font-family: "DM Serif Display", serif;
-  font-size: inherit;
-  padding: 0;
-  margin: 0;
-  letter-spacing: 2.5px;
+/* Define a tipografia dos títulos para garantir um design uniforme */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Serif Display", serif; /* Fonte serifada para títulos */
+  font-size: inherit; /* Mantém o tamanho de fonte conforme o contexto */
+  padding: 0; /* Remove preenchimento interno */
+  margin: 0; /* Remove margens externas */
+  letter-spacing: 2.5px; /* Aumenta o espaçamento entre letras para melhor leitura */
 }
 
-p{
-  line-height: 150%;
+/* Define a tipografia dos parágrafos */
+p {
+  line-height: 150%; /* Define um espaçamento entre linhas de 150% para melhorar a leitura */
 }
 
-.txt-center{
+/* Centraliza o texto onde necessário */
+.txt-center {
   text-align: center;
 }
 
-/* GRID */
+/* ========================= */
+/* GRID E LAYOUT */
+/* ========================= */
 
-.container{
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1140px;
-  position: relative;
-  padding: 0 30px;
+/* Define um container centralizado para o conteúdo do site */
+.container {
+  box-sizing: border-box; /* Garante que padding e bordas não afetem a largura total */
+  margin: 0 auto; /* Centraliza o container na página */
+  width: 100%; /* Garante que ocupe toda a largura disponível */
+  max-width: 1140px; /* Define uma largura máxima para manter o design responsivo */
+  position: relative; /* Mantém a posição relativa para alinhamentos internos */
+  padding: 0 30px; /* Adiciona um espaçamento lateral para não encostar nas bordas */
 }
 
-.al-center{
+/* Alinhamento vertical ao centro */
+.al-center {
   align-items: center;
 }
 
-.al-end{
+/* Alinha elementos ao final do eixo vertical */
+.al-end {
   align-items: end;
 }
 
-.d-flex{
+/* Ativa o display flex */
+.d-flex {
   display: flex;
 }
 
-.fd-column{
+/* Define a direção do flex container para coluna */
+.fd-column {
   flex-direction: column;
 }
 
-.jc-center{
+/* Centraliza os elementos horizontalmente */
+.jc-center {
   justify-content: center;
 }
 
-.jc-end{
+/* Alinha os elementos no final do eixo principal */
+.jc-end {
   justify-content: end;
 }
 
-.jc-space-between{
+/* Distribui os elementos igualmente no espaço disponível */
+.jc-space-between {
   justify-content: space-between;
 }
 
-@media(max-width:768px){
-  .container{
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  /* Ajusta a largura do container para ocupar 90% da tela em dispositivos menores */
+  .container {
     width: 90%;
   }
 
-  .mobile-fd-column{
+  /* Muda a direção do flex container para coluna em dispositivos móveis */
+  .mobile-fd-column {
     flex-direction: column;
   }
 }

@@ -1,85 +1,119 @@
-header{
-    background-color: #fff;
-    padding: 50px 0;
+/* ========================== */
+/* ESTILIZAÇÃO DO HEADER GERAL */
+/* ========================== */
+
+/* Define o estilo padrão do cabeçalho */
+header {
+    background-color: #fff; /* Define o fundo branco para o cabeçalho */
+    padding: 50px 0; /* Adiciona um espaçamento vertical de 50px acima e abaixo */
 }
 
-header ul, li{
-    list-style: none;
+/* ========================== */
+/* ESTILIZAÇÃO DA LISTA DE NAVEGAÇÃO */
+/* ========================== */
+
+/* Remove os estilos padrão das listas e espaçamentos */
+header ul, li {
+    list-style: none; /* Remove os marcadores padrão das listas */
     margin: 0;
     padding: 0;
 }
 
-nav{
-    display: flex;
+/* ========================== */
+/* ESTILIZAÇÃO DO MENU PRINCIPAL */
+/* ========================== */
+
+/* Configuração inicial da navegação principal */
+nav {
+    display: flex; /* Utiliza o Flexbox para organizar os itens horizontalmente */
 }
 
-nav a{
-    color: #1D1D1D;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 0 0 0 50px;
+/* Estiliza os links dentro do menu de navegação */
+nav a {
+    color: #1D1D1D; /* Define a cor do texto como preto */
+    font-size: 20px; /* Define o tamanho da fonte dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin: 0 0 0 50px; /* Adiciona um espaçamento à esquerda de 50px entre os links */
 }
 
-nav a:hover{
-    color: #0C70F2;
+/* Efeito ao passar o mouse nos links do menu */
+nav a:hover {
+    color: #0C70F2; /* Muda a cor do texto para azul ao passar o mouse */
 }
 
-.mobile-menu{
+/* ========================== */
+/* ESTILIZAÇÃO DO MENU MOBILE */
+/* ========================== */
+
+/* Oculta o menu mobile por padrão */
+.mobile-menu {
     display: none;
 }
 
+/* ========================== */
+/* ESTILIZAÇÃO PARA TELAS MENORES (MOBILE) */
+/* ========================== */
+
 @media (max-width: 768px) {
-    nav.open{
+
+    /* Quando o menu estiver aberto (`.open`), os itens serão alinhados ao final */
+    nav.open {
         align-items: end;
-        display: flex;
+        display: flex; /* Faz o menu ser exibido */
     }
 
-    nav{
-        background-color: #1D1D1D;
-        border-left: 10px solid #333;
-        display: none;
-        flex-direction: column;
-        height: 100%;
-        padding: 37px;
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 40vw;
-        z-index: 1;
-        box-shadow: -50vw 0px 0px 0px rgba(0, 0, 0, 0.75);
+    /* Estilização do menu de navegação no mobile */
+    nav {
+        background-color: #1D1D1D; /* Define o fundo preto para o menu */
+        border-left: 10px solid #333; /* Adiciona uma borda preta à esquerda */
+        display: none; /* Mantém o menu oculto até ser ativado */
+        flex-direction: column; /* Organiza os itens verticalmente */
+        height: 100%; /* O menu ocupa toda a altura da tela */
+        padding: 37px; /* Adiciona espaçamento interno */
+        position: fixed; /* Fixa o menu no lado direito da tela */
+        right: 0; /* Posiciona o menu à direita */
+        top: 0; /* Alinha o menu ao topo da tela */
+        width: 40vw; /* Define a largura do menu como 40% da tela */
+        z-index: 1; /* Garante que o menu fique acima de outros elementos */
+        box-shadow: -50vw 0px 0px 0px rgba(0, 0, 0, 0.75); /* Adiciona um sombreamento ao menu */
     }
 
-    nav ul{
+    /* Define a lista de links como uma coluna vertical */
+    nav ul {
         flex-direction: column;
         width: 100%;
     }
 
-    nav ul li{
+    /* Configura os itens da lista para serem exibidos corretamente */
+    nav ul li {
         display: flex;
     }
 
-    nav a{
-        border-bottom: 1px solid #fff;
-        color: #fff;
-        font-size: 20px;
-        margin: 0 0 10px 0;
-        padding: 12px;
-        text-decoration: none;
-        width: 100%;
+    /* Estilização dos links dentro do menu mobile */
+    nav a {
+        border-bottom: 1px solid #fff; /* Adiciona uma linha branca abaixo de cada link */
+        color: #fff; /* Define a cor do texto como branca */
+        font-size: 20px; /* Mantém o tamanho da fonte dos links */
+        margin: 0 0 10px 0; /* Adiciona espaçamento inferior entre os links */
+        padding: 12px; /* Adiciona espaçamento interno */
+        text-decoration: none; /* Remove o sublinhado */
+        width: 100%; /* Faz com que o link ocupe toda a largura disponível */
     }
 
-    .mobile-menu{
+    /* Exibe o botão de abrir o menu mobile */
+    .mobile-menu {
         display: block;
     }
 
-    .close-btn{
-        cursor: pointer;
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 25px;
-        margin: 0 0 12px;
-        padding: 12px;
-        width: fit-content;
+    /* Estilização do botão de fechar (`X`) no menu mobile */
+    .close-btn {
+        cursor: pointer; /* Define o cursor como apontador (mãozinha) */
+        background: none; /* Remove qualquer fundo */
+        border: none; /* Remove a borda padrão */
+        color: #fff; /* Define a cor do texto como branca */
+        font-size: 25px; /* Define um tamanho de fonte maior */
+        margin: 0 0 12px; /* Adiciona espaçamento inferior */
+        padding: 12px; /* Adiciona espaçamento interno */
+        width: fit-content; /* Faz com que o botão ocupe apenas o espaço necessário */
     }
 }
