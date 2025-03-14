@@ -1,0 +1,177 @@
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÃO DO HEADER GERAL                                                           */
+/* ======================================================================================== */
+
+/**
+ * O seletor `header` estiliza a seção de cabeçalho do site.
+ * Ele deve sempre estar presente em todas as páginas para fornecer navegação principal.
+ */
+ header {
+    background-color: #fff; /* ✅ Fundo branco para um visual limpo e neutro.
+                               Facilita a leitura dos textos e ícones no menu. */
+    
+    padding: 50px 0; /* ✅ Espaçamento superior e inferior de 50px.
+                        Garante que o conteúdo interno (logo, menu) fique afastado das bordas,
+                        melhorando a estética e a experiência visual. */
+}
+
+
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÃO DA LISTA DE NAVEGAÇÃO                                                    */
+/* ======================================================================================== */
+
+/**
+ * O seletor `header ul, li` remove a formatação padrão dos navegadores:
+ * - `ul` normalmente tem margens e paddings próprios.
+ * - `li` tem marcadores (bolinhas) que não são necessários aqui.
+ */
+header ul, li {
+    list-style: none; /* ✅ Remove as bolinhas/marcadores padrão de listas. */
+    margin: 0;        /* ✅ Zera a margem externa para evitar espaçamentos indesejados. */
+    padding: 0;       /* ✅ Zera o padding interno para manter o controle total dos espaçamentos. */
+}
+
+
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÃO DO MENU PRINCIPAL (DESKTOP)                                              */
+/* ======================================================================================== */
+
+/**
+ * O seletor `nav` aplica a estrutura do menu de navegação principal.
+ * No desktop, os itens do menu aparecem alinhados horizontalmente.
+ */
+nav {
+    display: flex; /* ✅ Flexbox organiza os links em linha (horizontal) por padrão. */
+}
+
+/**
+ * Estilização dos links do menu:
+ * - Usando `a` para navegação interna entre páginas.
+ * - Importante manter consistência visual entre os itens.
+ */
+nav a {
+    color: #1D1D1D; /* ✅ Cor preta ou cinza escuro para textos, priorizando contraste com fundo branco. */
+    font-size: 20px; /* ✅ Tamanho de texto adequado para leitura confortável em telas grandes. */
+    text-decoration: none; /* ✅ Remove o sublinhado padrão dos links. 
+                               Deixa o visual mais limpo, mas deve ser compensado por outra indicação (hover). */
+    margin: 0 0 0 50px; /* ✅ Espaçamento à esquerda de 50px para separar os links uniformemente. */
+}
+
+/**
+ * Efeito `hover` no link do menu:
+ * - Dá feedback ao usuário de que o item é clicável.
+ * - Melhora a usabilidade e a navegação.
+ */
+nav a:hover {
+    color: #0C70F2; /* ✅ Cor azul vibrante ao passar o mouse.
+                       Reforça a identidade visual e cria um estado visual de ação. */
+}
+
+
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÃO DO BOTÃO DE MENU MOBILE (HAMBURGUER)                                     */
+/* ======================================================================================== */
+
+/**
+ * `.mobile-menu` define o container para o botão que abre o menu em telas pequenas.
+ * Por padrão, ele fica escondido no desktop.
+ */
+.mobile-menu {
+    display: none; /* ✅ Esconde o botão de menu mobile em telas grandes. */
+}
+
+
+/* ======================================================================================== */
+/* ✅ MEDIA QUERIES - TELAS MENORES (MOBILE E TABLET)                                      */
+/* ======================================================================================== */
+
+/**
+ * Ativação da responsividade para telas com largura máxima de 768px:
+ * - Normalmente tablets em orientação vertical ou celulares.
+ */
+@media (max-width: 768px) {
+
+    /**
+     * Menu de navegação quando aberto no mobile:
+     * - Ativa a exibição (`display: flex`) quando a classe `open` está presente.
+     */
+    nav.open {
+        align-items: end; /* ✅ Alinha os itens ao final do eixo transversal (flex-direction: column). */
+        display: flex;    /* ✅ Faz o menu aparecer. */
+    }
+
+    /**
+     * Configuração padrão do menu no mobile:
+     * - Inicialmente fica oculto com `display: none`.
+     * - Torna-se um menu lateral (off-canvas) quando a classe `open` é aplicada.
+     */
+    nav {
+        background-color: #1D1D1D; /* ✅ Fundo preto para destacar o menu do restante da página. */
+        border-left: 10px solid #333; /* ✅ Adiciona uma borda mais clara à esquerda para destacar a separação. */
+        display: none; /* ✅ Mantém o menu oculto até ser explicitamente aberto. */
+        flex-direction: column; /* ✅ Organiza os itens verticalmente para facilitar a navegação touch. */
+        height: 100%; /* ✅ O menu ocupa 100% da altura da viewport. */
+        padding: 37px; /* ✅ Espaçamento interno generoso para conforto visual e usabilidade no touch. */
+        position: fixed; /* ✅ O menu fica fixo no lado direito da tela, sobrepondo o conteúdo. */
+        right: 0; /* ✅ Posiciona o menu à direita. */
+        top: 0; /* ✅ Faz o menu começar no topo da tela. */
+        width: 40vw; /* ✅ O menu ocupa 40% da largura da viewport. */
+        z-index: 1; /* ✅ Garante que o menu fique acima dos outros elementos. */
+        box-shadow: -50vw 0px 0px 0px rgba(0, 0, 0, 0.75); /* ✅ Adiciona sombra no restante da tela,
+                                                               escurecendo o fundo para foco no menu. */
+    }
+
+    /**
+     * A lista de navegação no mobile:
+     * - Organizada verticalmente.
+     */
+    nav ul {
+        flex-direction: column; /* ✅ Itens empilhados verticalmente para acessibilidade mobile. */
+        width: 100%; /* ✅ Ocupa toda a largura do menu lateral. */
+    }
+
+    /**
+     * Cada item da lista de navegação no mobile:
+     * - Facilita a navegação em dispositivos de toque.
+     */
+    nav ul li {
+        display: flex; /* ✅ Mantém a flexibilidade dos itens e garante alinhamento correto. */
+    }
+
+    /**
+     * Links de navegação no mobile:
+     * - Facilita a interação com o toque.
+     */
+    nav a {
+        border-bottom: 1px solid #fff; /* ✅ Cria divisões visuais entre links para melhorar a usabilidade. */
+        color: #fff; /* ✅ Cor branca para contrastar com o fundo escuro do menu. */
+        font-size: 20px; /* ✅ Mantém o tamanho do texto legível para mobile. */
+        margin: 0 0 10px 0; /* ✅ Espaço inferior entre os links para separação visual. */
+        padding: 12px; /* ✅ Aumenta a área clicável, respeitando as diretrizes de acessibilidade mobile (48px recomendado). */
+        text-decoration: none; /* ✅ Remove sublinhado para manter o design consistente. */
+        width: 100%; /* ✅ Faz com que o link ocupe a linha inteira, facilitando o clique. */
+    }
+
+    /**
+     * Exibe o botão de abrir o menu mobile:
+     * - O botão hamburguer só aparece em resoluções mobile.
+     */
+    .mobile-menu {
+        display: block; /* ✅ Exibe o botão quando em resoluções menores que 768px. */
+    }
+
+    /**
+     * Botão de fechar o menu lateral (ícone "X"):
+     * - Localizado no topo do menu para rápida interação.
+     */
+    .close-btn {
+        cursor: pointer; /* ✅ Cursor em forma de mãozinha para indicar que é clicável. */
+        background: none; /* ✅ Remove o fundo do botão para integrá-lo ao fundo escuro do menu. */
+        border: none; /* ✅ Remove qualquer borda padrão de botão. */
+        color: #fff; /* ✅ Cor branca para se destacar no fundo escuro. */
+        font-size: 25px; /* ✅ Tamanho grande para facilitar o toque e o reconhecimento. */
+        margin: 0 0 12px; /* ✅ Espaçamento inferior para separar dos demais itens do menu. */
+        padding: 12px; /* ✅ Área de toque mais confortável. */
+        width: fit-content; /* ✅ Tamanho do botão se ajusta ao conteúdo (X). */
+    }
+}

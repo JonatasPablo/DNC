@@ -1,0 +1,28 @@
+                                        Desenvolvimento de Formulários em Projetos Web
+Introdução
+Inserção de requisição para API REST no projeto
+Desenvolvimento de formulários para fazer requisições POST
+Criação do Formulário de Contato
+Estrutura básica do formulário
+Tag <form>
+Campos de entrada (<input>)
+Nome
+E-mail
+Área de texto (<textarea>)
+Botão de envio (<button>)
+Estilização do formulário
+Classe contact-form
+Classe form-group para alinhar os campos
+Estilização dos campos de entrada
+Sem borda, apenas borda inferior
+Cor, tamanho e fonte definidos
+Padding e outline removidos
+Estilização do botão de envio
+Centralizado e alinhado à direita
+Melhorias Futuras
+Adicionar interatividade e melhorias para o usuário
+Conclusão
+Formulário de contato estruturado e estilizado com base no design do Figma
+Próximos passos: adicionar interatividade e funcionalidades
+
+

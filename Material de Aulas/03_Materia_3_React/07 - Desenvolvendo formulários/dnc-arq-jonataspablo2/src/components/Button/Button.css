@@ -1,0 +1,169 @@
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÃO BASE DO BOTÃO PADRÃO `.button`                                           */
+/* ======================================================================================== */
+
+/**
+ * 🔹 `.button` é a classe base de todos os botões.
+ * - Essa configuração garante consistência entre diferentes tipos de botões.
+ * - Os estilos específicos (como .primary, .secondary, etc.) irão sobrescrever apenas o necessário.
+ */
+
+ .button {
+    border-radius: 18px;       /* ✅ Deixa o botão com bordas arredondadas.
+                                  - Cria um visual moderno e amigável.
+                                  - Bordas arredondadas são mais acessíveis visualmente e mais "tocáveis" no mobile. */
+    
+    border: none;              /* ✅ Remove a borda padrão do botão nativo do HTML.
+                                  - Evita interferência com a personalização que você criou.
+                                  - Mantém um visual clean. */
+    
+    column-gap: 10px;          /* ✅ Espaçamento horizontal entre o conteúdo do botão.
+                                  - Funciona quando o botão tem mais de um item (ex: texto + ícone).
+                                  - Evita que ícones fiquem "colados" no texto. */
+    
+    cursor: pointer;           /* ✅ Troca o cursor para a mãozinha ao passar o mouse.
+                                  - Indica claramente que o elemento é clicável (melhora a UX). */
+    
+    display: flex;             /* ✅ Torna o botão um container flexível.
+                                  - Flexbox facilita o alinhamento vertical e horizontal do conteúdo. */
+    
+    align-items: center;       /* ✅ Centraliza verticalmente o conteúdo do botão (texto e ícones).
+                                  - ⚠️ É essencial quando se usa `display: flex`. */
+
+    justify-content: center;   /* ✅ Centraliza horizontalmente o conteúdo do botão.
+                                  - Útil para botões que não têm largura fixa. */
+    
+    font-size: 18px;           /* ✅ Define um tamanho de fonte confortável para botões.
+                                  - O tamanho 18px é uma escolha acessível para mobile e desktop. */
+    
+    font-weight: 600;          /* ✅ Deixa o texto com peso "semi-bold" para aumentar a legibilidade.
+                                  - Melhora a leitura rápida e destaca ações principais. */
+    
+    padding: 25px 50px;        /* ✅ Área interna de espaçamento:
+                                  - 25px no topo/baixo (altura do botão).
+                                  - 50px na esquerda/direita (largura do botão).
+                                  - Cria um botão robusto e com área clicável maior (respeita o padrão de acessibilidade que recomenda no mínimo 44px). */
+    
+    transition: background-color 0.3s ease, color 0.3s ease; /* ✅ Suaviza as mudanças de cor durante o hover ou outros estados.
+                                                                - Aumenta a sensação de "fluidez" nas interações.
+                                                                - Adicionada a transição de `color` para evitar mudanças bruscas na cor do texto. */
+}
+
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÕES VARIÁVEIS POR CLASSES ESPECÍFICAS (TIPOS DE BOTÕES)                     */
+/* ======================================================================================== */
+
+/* ------------------------------------ */
+/* PRIMARY (Botão principal, azul)      */
+/* ------------------------------------ */
+.button.primary {
+    background-color: #0C70F2; /* ✅ Azul vibrante como cor de fundo.
+                                  - Ideal para ações primárias no layout.
+                                  - Cor chamativa sem ser agressiva. */
+    
+    color: #FFF;               /* ✅ Texto branco para garantir contraste e legibilidade.
+                                  - Contraste ideal com o fundo azul. */
+}
+
+.button.primary:hover {
+    background-color: #0056b3; /* ✅ Tom de azul mais escuro ao passar o mouse.
+                                  - Dá feedback ao usuário de que algo mudou (melhora a experiência de interação). */
+}
+
+/* ------------------------------------ */
+/* SECONDARY (Botão alternativo, preto) */
+/* ------------------------------------ */
+.button.secondary {
+    background-color: #1D1D1D; /* ✅ Preto clássico como cor de fundo.
+                                  - Boa opção para ações secundárias ou neutras. */
+    
+    color: #FFF;               /* ✅ Texto branco para manter contraste. */
+}
+
+.button.secondary:hover {
+    background-color: #4D5053; /* ✅ Cinza escuro ao passar o mouse.
+                                  - Indica a interação sem sair da paleta sóbria do botão. */
+}
+
+/* ------------------------------------ */
+/* OUTLINE (Botão com borda e fundo branco) */
+/* ------------------------------------ */
+.button.outline {
+    background-color: #FFF;          /* ✅ Fundo branco para um visual minimalista.
+                                        - Transmite neutralidade e leveza. */
+    
+    border: 2px solid #0C70F2;       /* ✅ Borda azul para destacar o contorno do botão.
+                                        - Útil para ações secundárias ou links "call to action". */
+    
+    color: #0C70F2;                  /* ✅ Texto azul, combinando com a borda.
+                                        - Mantém a harmonia de cores. */
+}
+
+.button.outline:hover {
+    background-color: #0C70F2;       /* ✅ Preenche o fundo de azul ao passar o mouse.
+                                        - Dá uma sensação de "preenchimento" visual.
+                                        - Reforça que o botão é clicável. */
+    
+    color: #FFF;                     /* ✅ Texto branco para manter contraste no novo fundo azul. */
+}
+
+/* ======================================================================================== */
+/* ✅ BOTÃO DESABILITADO (`disabled` + `:hover`)                                           */
+/* ======================================================================================== */
+
+/**
+ * 🔹 Estados desativados indicam que a ação não está disponível.
+ * - O cursor não muda.
+ * - A interação visual é bloqueada (feedback importante!).
+ */
+.button:disabled,
+.button:disabled:hover {
+    background-color: #ccc;   /* ✅ Cinza claro no fundo para indicar inatividade. */
+    color: #666;              /* ✅ Texto em cinza médio para reforçar o estado desativado. */
+    pointer-events: none;     /* ✅ Remove qualquer possibilidade de interação (click, hover).
+                                 - Boas práticas de acessibilidade para evitar enganos. */
+    opacity: 0.7;             /* ✅ (Sugestão) Um leve efeito de transparência para reforçar a inatividade visualmente. */
+    cursor: not-allowed;      /* ✅ (Sugestão) Indica ao usuário que não há permissão de interação no botão desabilitado. */
+}
+
+/* ======================================================================================== */
+/* ✅ BOAS PRÁTICAS E CONSIDERAÇÕES EXTRAS                                                 */
+/* ======================================================================================== */
+
+/**
+ * 1️⃣ PADRÃO DE COR:
+ *    - Cores consistentes reforçam a identidade visual.
+ *    - Azul (primary) destaca ações principais.
+ *    - Preto (secondary) é neutro e forte.
+ *    - Outline sugere leveza e foco em links e ações secundárias.
+ *
+ * 2️⃣ ACESSIBILIDADE:
+ *    - Contraste entre texto e fundo segue diretrizes WCAG (mínimo 4.5:1 recomendado).
+ *    - Área clicável respeita 44x44px como área mínima para toque (por conta do padding).
+ *    - `cursor: not-allowed` + `pointer-events: none` previnem confusão em botões desativados.
+ *
+ * 3️⃣ TRANSIÇÕES E ANIMAÇÕES:
+ *    - `transition` dá fluidez às interações, tornando a experiência mais amigável.
+ *    - Sugestão para animações extras em ícones:
+ *
+ *    ```css
+ *    .button img {
+ *        transition: transform 0.3s ease;
+ *    }
+ *    .button:hover img {
+ *        transform: translateX(5px);
+ *    }
+ *    ```
+ */
+
+/* ======================================================================================== */
+/* ✅ EXEMPLOS DE USO NO HTML/JSX                                                          */
+/* ======================================================================================== */
+
+/**
+ * <button class="button primary">Enviar</button>
+ * <button class="button secondary">Cancelar</button>
+ * <button class="button outline">Saiba mais</button>
+ * <button class="button primary" disabled>Carregando...</button>
+ */
+
