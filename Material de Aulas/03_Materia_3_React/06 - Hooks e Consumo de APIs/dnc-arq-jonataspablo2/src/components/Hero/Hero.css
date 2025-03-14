@@ -1,50 +1,93 @@
-/* ========================== */
-/* ESTILIZAÇÃO DA HERO SECTION */
-/* ========================== */
+/* ======================================================================================= */
+/* ✅ ESTILIZAÇÃO DA HERO SECTION (SEÇÃO PRINCIPAL DO SITE)                                */
+/* ======================================================================================= */
 
-/* Estilização do contêiner principal da hero section */
-.hero {
-    background-image: url(/Hero.jpg); /* Define a imagem de fundo da hero section */
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-size: cover; /* Faz a imagem cobrir toda a área do elemento */
-    border-radius: 70px; /* Arredonda as bordas do contêiner */
-    height: 708px; /* Define uma altura fixa de 708px para a seção */
-    padding: 50px; /* Adiciona um espaçamento interno de 50px */
+/*
+  A classe `.hero` é o container visual principal da Hero Section.
+  Geralmente, ela aparece no topo da página inicial e serve para causar impacto visual.
+ */
+ .hero {
+    background-image: url(/Hero.jpg); /* ✅ Define a imagem de fundo da hero section.
+                                       * - Essa imagem transmite a identidade visual da marca/produto.
+                                       * - Pode ser substituída por uma imagem diferente em cada página. */
+
+    background-position: center; /* ✅ Centraliza a imagem no eixo X e Y.
+                                  * - Isso garante que a parte mais importante da imagem sempre esteja visível.
+                                  * - Funciona muito bem com imagens que não têm tamanho exato do container. */
+
+    background-size: cover; /* ✅ Faz com que a imagem cubra todo o elemento.
+                             * - Evita que sobre espaços vazios.
+                             * - Pode cortar partes da imagem para manter a proporção. */
+
+    border-radius: 70px; /* ✅ Arredonda as bordas do container com 70px de raio.
+                          * - Proporciona um visual mais moderno e suave.
+                          * - O valor pode ser ajustado para menos/more dependendo do design. */
+
+    height: 708px; /* ✅ Define a altura fixa da seção.
+                    * - O valor é alto o suficiente para garantir impacto visual.
+                    * - Pode ser convertido para unidade relativa (ex: vh) para tornar mais flexível. */
+
+    padding: 50px; /* ✅ Adiciona espaçamento interno em todos os lados.
+                    * - Garante que o conteúdo dentro do `.hero` não encoste nas bordas.
+                    * - Mantém o texto e botões bem afastados do limite do container. */
 }
 
-/* ========================== */
-/* ESTILIZAÇÃO DO TÍTULO DENTRO DA HERO SECTION */
-/* ========================== */
+/* ======================================================================================= */
+/* ✅ ESTILIZAÇÃO DO TÍTULO PRINCIPAL DENTRO DA HERO SECTION                               */
+/* ======================================================================================= */
 
-/* Define a aparência do título principal dentro da hero section */
+/**
+ * O título principal (provavelmente um `<h1>`) dentro da hero section.
+ * Importante para capturar a atenção do usuário logo no primeiro contato com a página.
+ */
 .hero h1 {
-    font-size: 65px; /* Define o tamanho da fonte como 65px */
-    line-height: 125%; /* Ajusta o espaçamento entre linhas para 125% */
+    font-size: 65px; /* ✅ Define o tamanho do texto do título.
+                      * - Títulos grandes criam uma hierarquia forte e guiam o olhar do usuário.
+                      * - Usar `rem` em vez de `px` pode ajudar na responsividade. */
+
+    line-height: 125%; /* ✅ Controla a altura das linhas de texto.
+                        * - 125% garante um espaçamento confortável sem quebrar o visual.
+                        * - Uma boa prática para melhorar a leitura, especialmente em títulos grandes. */
 }
 
-/* ========================== */
-/* ESTILIZAÇÃO DO BLOCO DE TEXTO DENTRO DA HERO */
-/* ========================== */
+/* ======================================================================================= */
+/* ✅ ESTILIZAÇÃO DO BLOCO DE TEXTO DENTRO DA HERO SECTION                                 */
+/* ======================================================================================= */
 
-/* Define o tamanho da área de texto dentro da hero section */
+/**
+ * `.hero-text` define o bloco de conteúdo textual dentro da Hero Section.
+ * Normalmente contém título, descrição e CTA (botão).
+ */
 .hero-text {
-    width: 40%; /* Define a largura do bloco de texto como 40% do contêiner */
+    width: 40%; /* ✅ Define a largura do bloco de texto em 40% da largura do container pai (.hero).
+                 * - Isso permite que o texto ocupe menos da metade da tela, deixando espaço para a imagem de fundo.
+                 * - Melhora a legibilidade e cria um layout mais equilibrado.
+                 * - Em dispositivos menores, o texto deve ocupar mais espaço, como veremos nas media queries. */
 }
 
-/* ========================== */
-/* RESPONSIVIDADE PARA TELAS MENORES */
-/* ========================== */
+/* ======================================================================================= */
+/* ✅ RESPONSIVIDADE PARA TELAS MENORES                                                    */
+/* ======================================================================================= */
 
+/**
+ * O uso de media queries aqui garante que a Hero Section se adapte a dispositivos menores,
+ * proporcionando uma **experiência de usuário responsiva** e evitando quebras de layout.
+ */
+
+/* Telas com largura máxima de 768px (exemplo: tablets em orientação vertical e celulares grandes) */
 @media (max-width: 768px) {
-    /* Em telas menores que 768px, o texto ocupa toda a largura */
     .hero-text {
-        width: 100%;
+        width: 100%; /* ✅ Faz com que o conteúdo de texto ocupe a largura inteira do container.
+                      * - Em telas pequenas, não há espaço para dividir em colunas.
+                      * - Melhora a leitura e a usabilidade no mobile. */
     }
 }
 
+/* Telas com largura máxima de 568px (exemplo: celulares pequenos) */
 @media (max-width: 568px) {
-    /* Reduz o tamanho do título principal para telas menores */
     .hero h1 {
-        font-size: 50px;
+        font-size: 50px; /* ✅ Reduz o tamanho da fonte do título para que ele continue cabendo na tela.
+                          * - Evita quebras de texto em locais indesejados.
+                          * - Ajuda a manter o layout elegante e legível em dispositivos com pouco espaço. */
     }
 }

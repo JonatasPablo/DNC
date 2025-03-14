@@ -1,83 +1,140 @@
-/* ========================== */
-/* SEÇÃO PRINCIPAL DE PROJETOS */
-/* ========================== */
+/* ======================================================== */
+/* ✅ SEÇÃO PRINCIPAL DE PROJETOS                           */
+/* ======================================================== */
 
-/* Define a estrutura principal da seção de projetos */
-.projects-section {
-    margin: 150px 0; /* Adiciona espaçamento vertical de 150px (acima e abaixo) */
-    text-align: center; /* Centraliza todo o conteúdo dentro da seção */
+/**
+ * A classe `.projects-section` representa o container principal onde os projetos serão exibidos.
+ * Ele engloba todo o conteúdo visual relacionado à seção de projetos do site.
+ */
+ .projects-section {
+    margin: 150px 0; /* Adiciona um espaçamento externo (margem) de 150px em cima e embaixo.
+                        Zero nas laterais. Isso cria respiro visual e separação da seção anterior/próxima. */
+
+    text-align: center; /* Centraliza o texto e elementos inline (ex: títulos, parágrafos, ícones) */
 }
 
-/* ========================== */
-/* CABEÇALHO DA SEÇÃO DE PROJETOS */
-/* ========================== */
 
-/* Define a área do título e descrição da seção de projetos */
+/* ======================================================== */
+/* ✅ CABEÇALHO DA SEÇÃO DE PROJETOS                       */
+/* ======================================================== */
+
+/**
+ * `.projects-hero` é a área de introdução da seção, contendo um título e um parágrafo descritivo.
+ * Ela ajuda o usuário a entender o contexto antes de visualizar os projetos.
+ */
 .projects-hero {
-    margin: 0 auto 100px auto; /* Centraliza horizontalmente e adiciona espaçamento inferior de 100px */
-    max-width: 767px; /* Define a largura máxima para manter o texto bem formatado */
+    margin: 0 auto 100px auto; /* Centraliza o container horizontalmente e dá um espaço inferior de 100px
+                                  para afastar do grid abaixo. */
+
+    max-width: 767px; /* Limita a largura máxima do conteúdo.
+                         Evita que o texto fique muito espalhado em telas grandes,
+                         o que melhoraria a legibilidade. */
 }
 
-/* Define a aparência do título (h2) */
+/**
+ * Estilização do título (normalmente um `<h2>`).
+ * Esse elemento é o primeiro contato do usuário com o conteúdo da seção.
+ */
 .projects-hero h2 {
-    font-size: 50px; /* Define um tamanho grande para o título */
+    font-size: 50px; /* Define o tamanho do texto do título.
+                        Títulos grandes chamam atenção e criam hierarquia visual. */
 }
 
-/* Define a aparência do parágrafo */
+/**
+ * Estilização do parágrafo descritivo logo abaixo do título.
+ * Ele complementa a informação e pode servir para "convidar" o usuário a explorar os projetos.
+ */
 .projects-hero p {
-    font-size: 22px; /* Define um tamanho adequado para a descrição */
-    margin: 10px 0 0 0; /* Adiciona um pequeno espaçamento acima do texto */
+    font-size: 22px; /* Define o tamanho da fonte para ser legível e confortável à leitura. */
+
+    margin: 10px 0 0 0; /* Adiciona 10px de margem no topo para afastar do título.
+                            Zeramos as outras margens para manter a distância controlada. */
 }
 
-/* ========================== */
-/* GRID DE PROJETOS */
-/* ========================== */
 
-/* Define a exibição dos projetos em formato de grade (grid) */
+/* ======================================================== */
+/* ✅ GRID DE PROJETOS                                     */
+/* ======================================================== */
+
+/**
+ * `.projects-grid` define a estrutura do layout onde os projetos serão apresentados.
+ * Usamos CSS Grid Layout, que é ideal para exibir elementos repetitivos de forma flexível.
+ */
 .projects-grid {
-    display: grid; /* Usa CSS Grid para organizar os itens */
-    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de tamanhos iguais */
-    gap: 50px 22px; /* Define o espaçamento entre os elementos (50px vertical, 22px horizontal) */
+    display: grid; /* Ativa o modo grid, criando um layout de colunas e linhas automaticamente. */
+
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de tamanhos iguais (1fr = 1 fração do espaço disponível).
+                                              Os projetos serão organizados de 4 em 4 na horizontal. */
+
+    gap: 50px 22px; /* Controla o espaço entre os itens do grid.
+                       50px entre linhas (vertical) e 22px entre colunas (horizontal). */
 }
 
-/* ========================== */
-/* CARTÃO DE PROJETO */
-/* ========================== */
 
-/* Configura a área da imagem (thumb) dentro do card */
+/* ======================================================== */
+/* ✅ CARTÃO INDIVIDUAL DE PROJETO (PROJECT CARD)          */
+/* ======================================================== */
+
+/**
+ * `.project-card .thumb` estiliza a "capa" do projeto dentro de cada card.
+ * Este é o elemento visual mais importante do card, geralmente exibindo uma imagem do projeto.
+ */
 .project-card .thumb {
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-size: cover; /* Faz a imagem cobrir toda a área disponível */
-    border-radius: 37px; /* Arredonda os cantos da imagem */
-    height: 430px; /* Define a altura fixa da imagem */
-    width: 100%; /* Faz com que a imagem ocupe toda a largura do card */
+    background-position: center; /* Centraliza a imagem no container da `thumb`.
+                                    Se a imagem for maior que a área, ela será centralizada. */
+
+    background-size: cover; /* A imagem cobre todo o container sem distorcer.
+                               Pode cortar partes da imagem para preencher a área sem deixar bordas. */
+
+    border-radius: 37px; /* Arredonda as bordas da imagem para dar um visual mais suave e moderno.
+                            O valor define a curvatura do canto (quanto maior, mais arredondado). */
+
+    height: 430px; /* Define a altura fixa da "thumb" para manter uniformidade entre os cards. */
+
+    width: 100%; /* Faz com que a imagem ocupe toda a largura disponível do card pai. */
 }
 
-/* Define a aparência do título do projeto */
+/**
+ * Título dentro de cada `project-card`.
+ * Costuma ser o nome do projeto ou algum título relacionado.
+ */
 .project-card h3 {
-    font-size: 25px; /* Define um tamanho adequado para os títulos dos projetos */
-    margin: 20px 0 0 0; /* Adiciona espaçamento superior */
+    font-size: 25px; /* Define o tamanho do título do projeto.
+                        Mantém-se menor que o título principal (`h2`), criando hierarquia. */
+
+    margin: 20px 0 0 0; /* Adiciona margem no topo para afastar da `thumb`.
+                           Não adiciona nas laterais nem embaixo, para melhor alinhamento com o restante do conteúdo. */
 }
 
-/* Define a aparência do texto descritivo do projeto */
+/**
+ * Parágrafo descritivo (ou subtítulo) do projeto.
+ * Pode servir para descrever brevemente do que se trata o projeto.
+ */
 .project-card p {
-    font-size: 18px; /* Define um tamanho menor para as descrições */
+    font-size: 18px; /* Tamanho menor do que o título para indicar que é um texto complementar. */
 }
 
-/* ========================== */
-/* RESPONSIVIDADE */
-/* ========================== */
 
-/* Ajuste para telas menores que 768px (exemplo: tablets) */
+/* ======================================================== */
+/* ✅ MEDIA QUERIES - RESPONSIVIDADE                       */
+/* ======================================================== */
+
+/**
+ * Mobile First: o layout adapta-se às telas pequenas, mas podemos reforçar a responsividade com `@media`.
+ */
+
+/* Telas médias (por exemplo, tablets e dispositivos até 768px de largura) */
 @media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
+        grid-template-columns: repeat(2, 1fr); /* Em telas menores, exibe 2 colunas ao invés de 4.
+                                                  Melhora a leitura e o espaçamento. */
     }
 }
 
-/* Ajuste para telas menores que 568px (exemplo: celulares pequenos) */
+/* Telas pequenas (por exemplo, smartphones de 568px para baixo) */
 @media (max-width: 568px) {
     .projects-grid {
-        grid-template-columns: 1fr; /* Altera para uma única coluna */
+        grid-template-columns: 1fr; /* Em celulares pequenos, exibe apenas uma coluna.
+                                       Permite que o conteúdo fique acessível e legível, com foco em usabilidade. */
     }
 }

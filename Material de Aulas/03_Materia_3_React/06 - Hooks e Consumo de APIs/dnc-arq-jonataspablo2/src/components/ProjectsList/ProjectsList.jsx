@@ -1,78 +1,214 @@
-// Importação dos hooks do React para manipulação de estado e efeitos colaterais.
-import { useState, useEffect } from 'react'; 
+// =========================================================================================
+// 🔹 IMPORTAÇÃO DOS HOOKS ESSENCIAIS DO REACT 🔹
+// =========================================================================================
 
-// Importação do arquivo de estilos CSS para estilizar o componente.
+/**
+ * useState:
+ * - Permite criar um **estado** dentro do componente funcional.
+ * - Armazena informações que podem **mudar ao longo do tempo** (exemplo: lista de projetos).
+ * 
+ * useEffect:
+ * - Permite realizar **efeitos colaterais** dentro do componente.
+ * - Exemplo de efeitos colaterais: buscar dados de uma API, manipular o DOM, configurar um listener.
+ */
+import { useState, useEffect } from 'react';
+
+// =========================================================================================
+// 🔹 IMPORTAÇÃO DO ARQUIVO CSS 🔹
+// =========================================================================================
+
+/**
+ * Aqui importamos o arquivo de estilos específicos para este componente.
+ * O CSS garante que o layout, cores, espaçamento e tipografia estejam de acordo com o design.
+ */
 import './ProjectsList.css';
 
-// Importação de ícones utilizados no projeto (ícone de "curtir" preenchido e não preenchido).
+// =========================================================================================
+// 🔹 IMPORTAÇÃO DE ASSETS (IMAGENS DE ÍCONES) 🔹
+// =========================================================================================
+
+/**
+ * Aqui importamos imagens que servem como ícones no projeto.
+ * - `LikedFilled`: representa o ícone preenchido de "curtida" (exemplo: quando o usuário curtiu algo).
+ * - `Liked`: representa o ícone vazio de "curtida" (não utilizado neste momento, mas poderia ser para alternar estados).
+ */
 import LikedFilled from '../../assets/like-filled.svg';
 import Liked from '../../assets/like.svg';
 
-// Importação da função `getApiData`, responsável por buscar dados da API.
+// =========================================================================================
+// 🔹 IMPORTAÇÃO DA FUNÇÃO DE SERVIÇO QUE BUSCA DADOS DA API 🔹
+// =========================================================================================
+
+/**
+ * Importa a função `getApiData`, responsável por buscar dados em uma API externa.
+ * - O `getApiData` centraliza a lógica de chamadas HTTP para evitar repetição de código.
+ * - Torna o código mais organizado e fácil de manter.
+ */
 import { getApiData } from '../../services/apiServices';
 
-// Definição do componente funcional `ProjectsList`.
+// =========================================================================================
+// 🔹 DEFINIÇÃO DO COMPONENTE FUNCIONAL: `ProjectsList` 🔹
+// =========================================================================================
+
+/**
+ * O componente `ProjectsList` tem como função exibir uma **lista de projetos**.
+ * 
+ * Componentes funcionais:
+ * - São declarados como **funções JavaScript**.
+ * - No React, um componente sempre **começa com letra maiúscula** (ProjectsList).
+ * - Retornam **JSX**, que descreve a interface visual no navegador.
+ */
 function ProjectsList() {
-    
-    // Estado `projects` para armazenar a lista de projetos obtida da API.
-    // `setProjects` é a função para atualizar esse estado.
+
+    // =====================================================================================
+    // 🔹 DECLARAÇÃO DO ESTADO: LISTA DE PROJETOS 🔹
+    // =====================================================================================
+
+    /**
+     * useState([]):
+     * - Cria um estado chamado `projects` que começa com um array vazio `[]`.
+     * - O estado `projects` vai armazenar os dados retornados pela API.
+     * 
+     * setProjects:
+     * - Função que atualiza o estado `projects`.
+     */
     const [projects, setProjects] = useState([]);
 
-    // `useEffect` é utilizado para executar código assim que o componente é montado.
-    // Neste caso, ele busca os projetos da API.
+    // =====================================================================================
+    // 🔹 EFEITO COLATERAL: BUSCAR DADOS DA API AO CARREGAR A PÁGINA 🔹
+    // =====================================================================================
+
+    /**
+     * useEffect(() => {...}, []);
+     * - Executa a função de efeito colateral quando o componente **monta pela primeira vez**.
+     * - O array de dependências `[]` garante que isso acontece **apenas uma vez** (componentDidMount).
+     */
     useEffect(() => {
-        
-        // Função assíncrona que busca os dados da API.
+
+        // =================================================================================
+        // 🔸 DECLARAÇÃO DA FUNÇÃO ASSÍNCRONA fetchData 🔸
+        // =================================================================================
+
+        /**
+         * Uma função assíncrona que:
+         * - Faz uma chamada HTTP para a API.
+         * - Aguarda a resposta.
+         * - Atualiza o estado com os dados recebidos.
+         */
         const fetchData = async () => {
             try {
-                // Chamada à API para obter a lista de projetos.
+                /**
+                 * getApiData('projects'):
+                 * - Faz uma requisição GET para o endpoint 'projects'.
+                 * - Aguarda o retorno com a palavra-chave `await`.
+                 */
                 const projectsResponse = await getApiData('projects');
 
-                // Atualiza o estado com os projetos retornados da API.
+                /**
+                 * Atualiza o estado `projects` com os dados recebidos da API.
+                 * Isso automaticamente **re-renderiza** o componente exibindo os novos dados.
+                 */
                 setProjects(projectsResponse);
+
             } catch {
-                // Em caso de erro na requisição, define o estado como um array vazio.
+                /**
+                 * Se ocorrer algum erro (exemplo: API indisponível), define a lista como vazia.
+                 * Em um projeto real, você pode mostrar um alerta ou mensagem de erro para o usuário.
+                 */
                 setProjects([]);
             }
         };
 
-        // Chama a função `fetchData` ao montar o componente.
+        // =================================================================================
+        // 🔸 EXECUTA A FUNÇÃO fetchData 🔸
+        // =================================================================================
+
+        /**
+         * Chamamos `fetchData` para iniciar a busca de dados assim que o componente é montado.
+         */
         fetchData();
 
-    }, []); // O array vazio `[]` garante que esse efeito roda apenas uma vez, quando o componente é montado.
+    }, []); // Dependência vazia = executa apenas uma vez no ciclo de vida do componente.
 
+    // =====================================================================================
+    // 🔹 RENDERIZAÇÃO DO COMPONENTE 🔹
+    // =====================================================================================
+
+    /**
+     * O JSX abaixo descreve como o componente será renderizado na interface.
+     */
     return (
-        // Contêiner principal do componente, com classe CSS 'projects-section' para estilização.
+        // Container principal do componente, estilizado pela classe CSS 'projects-section'.
         <div className='projects-section'>
-            
-            {/* Seção do cabeçalho dos projetos */}
+
+            {/* ================================================================================= */}
+            {/* 🔸 SEÇÃO DO CABEÇALHO (TÍTULO E DESCRIÇÃO) 🔸 */}
+            {/* ================================================================================= */}
+
             <div className='projects-hero'>
                 <h2>Follow Our Projects</h2>
-                <p>It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.</p>
+                <p>
+                    It is a long established fact that a reader will be distracted by the 
+                    of readable content of page lookings at its layouts points.
+                </p>
             </div>
 
-            {/* Grid para exibição dos projetos */}
+            {/* ================================================================================= */}
+            {/* 🔸 GRID DOS PROJETOS 🔸 */}
+            {/* ================================================================================= */}
+
             <div className='projects-grid'>
                 {
-                    // Mapeia a lista de projetos e renderiza um card para cada projeto.
+                    /**
+                     * Iteramos sobre a lista de `projects` com o método `map()`.
+                     * Para cada item no array, retornamos um card com suas informações.
+                     * 
+                     * O `project` representa um único item no array `projects`.
+                     */
                     projects.map((project) => (
-                        // Cada card de projeto recebe uma `key` única (project.id) para otimizar a renderização no React.
-                        <div className='project-card d-flex jc-center al-center fd-column' key={project.id}>
-                            
-                            {/* Imagem de capa do projeto */}
+
+                        /**
+                         * Cada elemento da lista deve ter uma `key` única para o React identificar e otimizar renderizações.
+                         * Aqui usamos `project.id` como `key`.
+                         */
+                        <div 
+                            className='project-card d-flex jc-center al-center fd-column' 
+                            key={project.id}
+                        >
+
+                            {/* ================================================================================= */}
+                            {/* 🔸 IMAGEM DO PROJETO 🔸 */}
+                            {/* ================================================================================= */}
+
                             <div 
                                 className='thumb tertiary-background'
-                                style={{ backgroundImage: `url(${project.thumb})` }} // Define a imagem de fundo dinamicamente com base na URL do projeto.
+                                style={{ backgroundImage: `url(${project.thumb})` }}
+                                /**
+                                 * Define dinamicamente a imagem de fundo com o link de `project.thumb`.
+                                 */
                             ></div>
 
-                            {/* Título do projeto */}
+                            {/* ================================================================================= */}
+                            {/* 🔸 TÍTULO DO PROJETO 🔸 */}
+                            {/* ================================================================================= */}
+
                             <h3>{project.title}</h3>
 
-                            {/* Subtítulo ou breve descrição do projeto */}
+                            {/* ================================================================================= */}
+                            {/* 🔸 SUBTÍTULO OU DESCRIÇÃO CURTA 🔸 */}
+                            {/* ================================================================================= */}
+
                             <p>{project.subtitle}</p>
 
-                            {/* Ícone de "curtida" */}
-                            <img src={LikedFilled} height='20px' alt="Liked"/>
+                            {/* ================================================================================= */}
+                            {/* 🔸 ÍCONE DE CURTIDA 🔸 */}
+                            {/* ================================================================================= */}
+
+                            <img 
+                                src={LikedFilled}    // Exibe o ícone de "curtido" (poderia trocar dinamicamente para Liked)
+                                height='20px'        // Altura do ícone
+                                alt="Liked"          // Descrição para acessibilidade (SEO e leitores de tela)
+                            />
 
                         </div>
                     ))
@@ -82,5 +218,13 @@ function ProjectsList() {
     );
 }
 
-// Exportação do componente `ProjectsList` para ser utilizado em outras partes da aplicação.
+// =========================================================================================
+// 🔹 EXPORTAÇÃO DO COMPONENTE 🔹
+// =========================================================================================
+
+/**
+ * `export default` permite que `ProjectsList` seja importado e usado em qualquer lugar do projeto.
+ * Exemplo:
+ * import ProjectsList from './components/ProjectsList/ProjectsList';
+ */
 export default ProjectsList;

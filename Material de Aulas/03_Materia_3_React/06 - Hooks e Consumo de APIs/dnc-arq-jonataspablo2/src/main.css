@@ -1,147 +1,186 @@
-/* ========================= */
-/* IMPORTAÇÃO DE FONTES */
-/* ========================= */
+/* ======================================================= */
+/* 🔹 IMPORTAÇÃO DE FONTES 🔹 */
+/* ======================================================= */
 
-/* Importa as fontes do Google Fonts para serem utilizadas na tipografia do site */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+/**
+ * O `@import` é usado para carregar fontes externas no CSS.
+ * Aqui, estamos importando três fontes do Google Fonts:
+ * - `DM Serif Display`: Para títulos e cabeçalhos.
+ * - `Jost`: Para textos principais do site.
+ * - `Manrope`: Fonte extra, que pode ser usada caso necessário.
+ * 
+ * 🔹 As fontes são carregadas diretamente da internet.
+ * 🔹 Isso permite que o site tenha uma aparência mais bonita e profissional.
+ */
 
-/* ========================= */
-/* ESTILIZAÇÃO GERAL */
-/* ========================= */
+ @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
 
-body {
-  margin: 0; /* Remove a margem padrão do navegador */
-  min-height: 100vh; /* Garante que o body sempre ocupe pelo menos toda a altura da tela */
-  font-family: "Jost", sans-serif; /* Define a fonte principal do site como "Jost" */
-  font-weight: 400; /* Define o peso padrão da fonte como regular */
-  color: #292F36; /* Define a cor padrão do texto como um cinza escuro */
-  background-color: #fff; /* Define o fundo do site como branco */
-}
-
-a {
-  text-decoration: none; /* Remove o sublinhado dos links */
-}
-
-/* ========================= */
-/* CORES PADRÕES */
-/* ========================= */
-
-/* Cor primária usada para botões, links ou elementos de destaque */
-.primary-background {
-  background-color: #0C70F2; /* Azul vibrante */
-}
-
-.primary-color {
-  color: #0C70F2; /* Azul vibrante para textos */
-}
-
-/* Cor secundária usada para fundo escuro e elementos de destaque */
-.secundary-background {
-  background-color: #1D1D1D; /* Preto/cinza escuro */
-}
-
-.secundary-color {
-  color: #1D1D1D; /* Preto/cinza escuro para textos */
-}
-
-/* Cor terciária usada para áreas com fundo claro */
-.tertiary-background {
-  background-color: #F6F6F6; /* Cinza claro */
-}
-
-.tertiary-color {
-  color: #F6F6F6; /* Cinza claro para textos */
-}
-
-/* Cor adicional para tons de cinza mais escuros */
-.grey-1-color {
-  color: #4D5053; /* Cinza escuro */
-}
-
-/* ========================= */
-/* TIPOGRAFIA */
-/* ========================= */
-
-/* Define a tipografia dos títulos para garantir um design uniforme */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "DM Serif Display", serif; /* Fonte serifada para títulos */
-  font-size: inherit; /* Mantém o tamanho de fonte conforme o contexto */
-  padding: 0; /* Remove preenchimento interno */
-  margin: 0; /* Remove margens externas */
-  letter-spacing: 2.5px; /* Aumenta o espaçamento entre letras para melhor leitura */
-}
-
-/* Define a tipografia dos parágrafos */
-p {
-  line-height: 150%; /* Define um espaçamento entre linhas de 150% para melhorar a leitura */
-}
-
-/* Centraliza o texto onde necessário */
-.txt-center {
-  text-align: center;
-}
-
-/* ========================= */
-/* GRID E LAYOUT */
-/* ========================= */
-
-/* Define um container centralizado para o conteúdo do site */
-.container {
-  box-sizing: border-box; /* Garante que padding e bordas não afetem a largura total */
-  margin: 0 auto; /* Centraliza o container na página */
-  width: 100%; /* Garante que ocupe toda a largura disponível */
-  max-width: 1140px; /* Define uma largura máxima para manter o design responsivo */
-  position: relative; /* Mantém a posição relativa para alinhamentos internos */
-  padding: 0 30px; /* Adiciona um espaçamento lateral para não encostar nas bordas */
-}
-
-/* Alinhamento vertical ao centro */
-.al-center {
-  align-items: center;
-}
-
-/* Alinha elementos ao final do eixo vertical */
-.al-end {
-  align-items: end;
-}
-
-/* Ativa o display flex */
-.d-flex {
-  display: flex;
-}
-
-/* Define a direção do flex container para coluna */
-.fd-column {
-  flex-direction: column;
-}
-
-/* Centraliza os elementos horizontalmente */
-.jc-center {
-  justify-content: center;
-}
-
-/* Alinha os elementos no final do eixo principal */
-.jc-end {
-  justify-content: end;
-}
-
-/* Distribui os elementos igualmente no espaço disponível */
-.jc-space-between {
-  justify-content: space-between;
-}
-
-/* ========================= */
-/* RESPONSIVIDADE */
-/* ========================= */
-
-@media (max-width: 768px) {
-  /* Ajusta a largura do container para ocupar 90% da tela em dispositivos menores */
-  .container {
-    width: 90%;
-  }
-
-  /* Muda a direção do flex container para coluna em dispositivos móveis */
-  .mobile-fd-column {
-    flex-direction: column;
-  }
-}
+ /* ======================================================= */
+ /* 🔹 ESTILIZAÇÃO GERAL 🔹 */
+ /* ======================================================= */
+ 
+ body {
+   margin: 0; /* Remove a margem padrão do navegador, evitando espaços indesejados */
+   min-height: 100vh; /* Garante que a página sempre ocupe toda a altura da tela */
+   font-family: "Jost", sans-serif; /* Define a fonte principal do site como "Jost" */
+   font-weight: 400; /* Define o peso padrão da fonte como regular (400) */
+   color: #292F36; /* Define a cor do texto como um tom escuro de cinza */
+   background-color: #fff; /* Define o fundo do site como branco */
+ }
+ 
+ a {
+   text-decoration: none; /* Remove o sublinhado dos links para um visual mais limpo */
+ }
+ 
+ /* ======================================================= */
+ /* 🔹 CORES PADRÕES 🔹 */
+ /* ======================================================= */
+ 
+ /**
+  * Aqui definimos classes para as **cores principais** da aplicação.
+  * Elas são usadas para definir cores de fundo (`background-color`) 
+  * e cores de texto (`color`).
+  */
+ 
+ /* 🔹 Cor primária (usada para botões, links ou elementos de destaque) */
+ .primary-background {
+   background-color: #0C70F2; /* Azul vibrante */
+ }
+ 
+ .primary-color {
+   color: #0C70F2; /* Azul vibrante para textos */
+ }
+ 
+ /* 🔹 Cor secundária (usada para fundo escuro e elementos de destaque) */
+ .secundary-background {
+   background-color: #1D1D1D; /* Preto/cinza escuro */
+ }
+ 
+ .secundary-color {
+   color: #1D1D1D; /* Preto/cinza escuro para textos */
+ }
+ 
+ /* 🔹 Cor terciária (usada para áreas com fundo claro) */
+ .tertiary-background {
+   background-color: #F6F6F6; /* Cinza claro */
+ }
+ 
+ .tertiary-color {
+   color: #F6F6F6; /* Cinza claro para textos */
+ }
+ 
+ /* 🔹 Cor adicional para tons de cinza mais escuros */
+ .grey-1-color {
+   color: #4D5053; /* Cinza escuro */
+ }
+ 
+ /* ======================================================= */
+ /* 🔹 TIPOGRAFIA 🔹 */
+ /* ======================================================= */
+ 
+ /**
+  * Definição de estilos para títulos e parágrafos.
+  * 
+  * - Garantimos que os títulos usem a fonte serifada `DM Serif Display`.
+  * - Ajustamos o espaçamento e a aparência geral da tipografia.
+  */
+ 
+ /* 🔹 Estilização para títulos (`h1` até `h6`) */
+ h1, h2, h3, h4, h5, h6 {
+   font-family: "DM Serif Display", serif; /* Usa a fonte serifada para títulos */
+   font-size: inherit; /* Mantém o tamanho de fonte definido pelo CSS */
+   padding: 0; /* Remove qualquer preenchimento extra */
+   margin: 0; /* Remove margens externas */
+   letter-spacing: 2.5px; /* Adiciona espaçamento entre letras para um visual mais sofisticado */
+ }
+ 
+ /* 🔹 Estilização para parágrafos */
+ p {
+   line-height: 150%; /* Define um espaçamento entre linhas de 150% para melhorar a legibilidade */
+ }
+ 
+ /* 🔹 Classe para centralizar o texto */
+ .txt-center {
+   text-align: center;
+ }
+ 
+ /* ======================================================= */
+ /* 🔹 GRID E LAYOUT 🔹 */
+ /* ======================================================= */
+ 
+ /**
+  * Classes para organizar o layout da página de forma responsiva e estruturada.
+  * - Usamos `flexbox` para posicionar os elementos corretamente.
+  * - Criamos um container centralizado para melhor apresentação.
+  */
+ 
+ /* 🔹 Container principal da página */
+ .container {
+   box-sizing: border-box; /* Garante que padding e bordas não afetem a largura total */
+   margin: 0 auto; /* Centraliza o container na página */
+   width: 100%; /* Garante que ocupe toda a largura disponível */
+   max-width: 1140px; /* Define uma largura máxima para manter o design responsivo */
+   position: relative; /* Mantém a posição relativa para alinhamentos internos */
+   padding: 0 30px; /* Adiciona um espaçamento lateral para não encostar nas bordas */
+ }
+ 
+ /* 🔹 Classes para alinhamento e organização */
+ 
+ /* Alinhamento vertical ao centro */
+ .al-center {
+   align-items: center;
+ }
+ 
+ /* Alinha elementos ao final do eixo vertical */
+ .al-end {
+   align-items: end;
+ }
+ 
+ /* Ativa o `display: flex` */
+ .d-flex {
+   display: flex;
+ }
+ 
+ /* Define a direção do flex container para **coluna** */
+ .fd-column {
+   flex-direction: column;
+ }
+ 
+ /* Centraliza os elementos horizontalmente */
+ .jc-center {
+   justify-content: center;
+ }
+ 
+ /* Alinha os elementos no final do eixo principal */
+ .jc-end {
+   justify-content: end;
+ }
+ 
+ /* Distribui os elementos igualmente no espaço disponível */
+ .jc-space-between {
+   justify-content: space-between;
+ }
+ 
+ /* ======================================================= */
+ /* 🔹 RESPONSIVIDADE 🔹 */
+ /* ======================================================= */
+ 
+ /**
+  * Media Queries permitem **ajustar o design** do site para diferentes tamanhos de tela.
+  * 
+  * - Aqui, ajustamos o layout quando a largura da tela for **menor que 768px**.
+  * - Isso melhora a experiência do usuário em dispositivos móveis.
+  */
+ 
+ @media (max-width: 768px) {
+   /* 🔹 Ajusta a largura do container para ocupar 90% da tela */
+   .container {
+     width: 90%;
+   }
+ 
+   /* 🔹 Em telas menores, muda a direção dos flex containers para **coluna** */
+   .mobile-fd-column {
+     flex-direction: column;
+   }
+ }
+ 
