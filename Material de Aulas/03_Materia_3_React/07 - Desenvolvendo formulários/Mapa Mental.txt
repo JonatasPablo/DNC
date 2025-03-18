@@ -26,3 +26,51 @@ Formulário de contato estruturado e estilizado com base no design do Figma
 Próximos passos: adicionar interatividade e funcionalidades
 
 
+                                            Adicionando Validações em um Formulário React
+Introdução
+Objetivo: Adicionar validações no formulário para que o usuário não envie informações vazias ou irrelevantes.
+Hooks Utilizados
+useEffect
+useState
+Função de Submissão do Formulário
+Prevenir o comportamento padrão de recarregar a página
+Criar uma função de submissão para ter maior controle sobre o envio do formulário
+Validação do E-mail
+Utilizar a função isValidEmail para verificar se o e-mail é válido
+Usar a função rejects para validar o formato do e-mail
+Validação dos Campos do Formulário
+Criar uma constante isValid para verificar se todos os campos estão preenchidos corretamente
+Utilizar o useEffect para monitorar as alterações no formData e atualizar o estado de validação
+Função handleChange
+Receber o evento de mudança nos campos do formulário
+Atualizar o estado formData com os novos valores
+Desabilitar o Botão de Envio
+Usar a propriedade disabled do botão de envio
+Passar o valor inverso de isFormValid para desabilitar o botão quando o formulário não estiver válido
+Conclusão
+Implementar uma validação inicial no formulário
+Continuar aprimorando a validação para poder enviar o POST através do formulário
+
+
+                                            Validação e Envio de Formulário em React
+Validação Inicial do Formulário
+Verificar se o e-mail é válido
+Desabilitar o botão de envio se o formulário não estiver válido
+Exibir mensagem de erro se o formulário não estiver válido
+Envio do Formulário
+Remover a submissão padrão do formulário HTML
+Criar uma função de handleSubmit para controlar o envio
+Verificar se o formulário está válido antes de enviar
+Exibir um estado de "carregando" durante o envio
+Desabilitar o botão de envio durante o envio
+Chamada à API
+Fazer uma chamada POST para a API de contato
+Passar os dados do formulário no corpo da requisição
+Tratar erros durante o envio
+Exibir mensagem de sucesso ou erro para o usuário
+Finalização
+Usar o método finally para limpar o estado de "carregando" após o envio
+Exibir uma mensagem de sucesso após o envio do formulário
+Em resumo, este projeto envolve a criação de um formulário em React com validação inicial e envio de dados para uma API. A validação é feita antes do envio, e durante o envio é exibido um estado de "carregando" para melhorar a experiência do usuário. Após o envio, é exibida uma mensagem de sucesso ou erro, dependendo do resultado da chamada à API.
+
+

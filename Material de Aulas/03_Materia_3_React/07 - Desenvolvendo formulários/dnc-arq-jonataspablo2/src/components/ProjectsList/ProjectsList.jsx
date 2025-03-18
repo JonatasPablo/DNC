@@ -165,53 +165,55 @@ function ProjectsList() {
                      * 
                      * O `project` representa um único item no array `projects`.
                      */
-                    projects.map((project) => (
+                    projects ?
+                        projects.map((project) => (
 
-                        /**
-                         * Cada elemento da lista deve ter uma `key` única para o React identificar e otimizar renderizações.
-                         * Aqui usamos `project.id` como `key`.
-                         */
-                        <div 
-                            className='project-card d-flex jc-center al-center fd-column' 
-                            key={project.id}
-                        >
-
-                            {/* ================================================================================= */}
-                            {/* 🔸 IMAGEM DO PROJETO 🔸 */}
-                            {/* ================================================================================= */}
-
+                            /**
+                            * Cada elemento da lista deve ter uma `key` única para o React identificar e otimizar  renderizações.
+                            * Aqui usamos `project.id` como `key`.
+                            */
                             <div 
-                                className='thumb tertiary-background'
-                                style={{ backgroundImage: `url(${project.thumb})` }}
-                                /**
-                                 * Define dinamicamente a imagem de fundo com o link de `project.thumb`.
-                                 */
-                            ></div>
+                                className='project-card d-flex jc-center al-center fd-column' 
+                                key={project.id}
+                            >
 
-                            {/* ================================================================================= */}
-                            {/* 🔸 TÍTULO DO PROJETO 🔸 */}
-                            {/* ================================================================================= */}
+                                {/* ================================================================================= */}
+                                {/* 🔸 IMAGEM DO PROJETO 🔸 */}
+                                {/* ================================================================================= */}
 
-                            <h3>{project.title}</h3>
+                                <div 
+                                    className='thumb tertiary-background'
+                                    style={{ backgroundImage: `url(${project.thumb})` }}
+                                    /**
+                                    * Define dinamicamente a imagem de fundo com o link de `project.thumb`.
+                                     */
+                                ></div>
 
-                            {/* ================================================================================= */}
-                            {/* 🔸 SUBTÍTULO OU DESCRIÇÃO CURTA 🔸 */}
-                            {/* ================================================================================= */}
+                                {/* ================================================================================= */}
+                                {/* 🔸 TÍTULO DO PROJETO 🔸 */}
+                                {/* ================================================================================= */}
 
-                            <p>{project.subtitle}</p>
+                                <h3>{project.title}</h3>
 
-                            {/* ================================================================================= */}
-                            {/* 🔸 ÍCONE DE CURTIDA 🔸 */}
-                            {/* ================================================================================= */}
+                                {/* ================================================================================= */}
+                                {/* 🔸 SUBTÍTULO OU DESCRIÇÃO CURTA 🔸 */}
+                                {/* ================================================================================= */}
 
-                            <img 
-                                src={LikedFilled}    // Exibe o ícone de "curtido" (poderia trocar dinamicamente para Liked)
-                                height='20px'        // Altura do ícone
-                                alt="Liked"          // Descrição para acessibilidade (SEO e leitores de tela)
-                            />
+                                <p>{project.subtitle}</p>
 
-                        </div>
-                    ))
+                                {/* ================================================================================= */}
+                                {/* 🔸 ÍCONE DE CURTIDA 🔸 */}
+                                {/* ================================================================================= */}
+
+                                <img 
+                                    src={LikedFilled}    // Exibe o ícone de "curtido" (poderia trocar dinamicamente para Liked)
+                                    height='20px'        // Altura do ícone
+                                    alt="Liked"          // Descrição para acessibilidade (SEO e leitores de tela)
+                                />
+
+                            </div>
+                        ))
+                    : null
                 }
             </div>
         </div>
