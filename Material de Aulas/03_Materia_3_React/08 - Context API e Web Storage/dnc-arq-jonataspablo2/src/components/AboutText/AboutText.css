@@ -1,0 +1,37 @@
+/* 
+    Estilização da seção principal de texto 
+*/
+.text-section {
+    column-gap: 97px; /* Define um espaçamento de 97px entre as colunas */
+    margin: 160px auto; /* Define uma margem superior e inferior de 160px e centraliza horizontalmente */
+}
+
+/* 
+   Estilização do bloco de texto dentro da seção 
+*/
+.text-section-text {
+    flex: 1; /* Faz com que o bloco de texto ocupe todo o espaço disponível dentro do container flex */
+}
+
+/* 
+   Estilização do título dentro do bloco de texto 
+*/
+.text-section-text h2 {
+    font-size: 50px; /* Define um tamanho grande para o título */
+}
+
+/* 
+   Estilização do parágrafo dentro do bloco de texto 
+*/
+.text-section-text p {
+    font-size: 25px; /* Define um tamanho maior para o texto do parágrafo */
+}
+
+/* 
+   Responsividade para telas menores que 768px de largura 
+*/
+@media (max-width: 768px) {
+    .text-section {
+        flex-direction: column; /* Altera a direção do layout para empilhar os elementos verticalmente */
+    }
+}

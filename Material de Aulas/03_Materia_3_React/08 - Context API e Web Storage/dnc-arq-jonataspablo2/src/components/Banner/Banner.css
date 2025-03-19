@@ -1,0 +1,75 @@
+/* ========================================================================================= */
+/* ✅ ESTILIZAÇÃO PRINCIPAL DA SEÇÃO DO BANNER                                               */
+/* ========================================================================================= */
+
+/**
+ * 🔹 Seletor `.banner`:
+ * - Representa a `div` com a classe `banner` no JSX do componente `Banner`.
+ * - Esta `div` é o container principal do banner e ocupa toda a largura disponível no layout.
+ * 
+ * ➡️ Objetivo: Definir o visual de fundo (imagem e fallback) e tamanho da área.
+ */
+
+ .banner {
+    background-color: #ccc; /* ✅ Cor de fundo cinza clara (usada como fallback):
+                               - Se a imagem de fundo não carregar, a cor de fundo será exibida.
+                               - Importante para melhorar a UX em conexões lentas ou falhas na imagem. */
+    
+    background-position: center; /* ✅ Centraliza a imagem de fundo:
+                                    - A partir do centro da imagem, ajusta a posição para ficar sempre equilibrada.
+                                    - Bom para imagens com foco central, como fotos de pessoas ou logos. */
+
+    background-size: cover; /* ✅ Faz a imagem "cobrir" toda a área disponível do banner:
+                               - A imagem escala proporcionalmente para preencher todo o elemento.
+                               - Pode cortar partes da imagem se necessário para manter a proporção.
+                               - ⚠️ Ideal para evitar distorções, mas exige que você escolha bem a imagem. */
+
+    height: 356px; /* ✅ Define uma altura fixa de 356 pixels:
+                      - Importante para banners que precisam de um tamanho consistente no layout.
+                      - ⚠️ Em telas menores, o `height` fixo pode precisar ser ajustado via media queries.
+                      - ✅ Alternativa dinâmica: usar `min-height` ou `height: 50vh;` (50% da altura da tela). */
+
+    width: 100%; /* ✅ O banner ocupa toda a largura da tela:
+                    - Garante um visual de faixa que se estende de uma borda à outra.
+                    - Se o container pai tiver limite de largura, pode ser necessário ajustar. */
+}
+
+/* ========================================================================================= */
+/* ✅ ESTILIZAÇÃO DO PAINEL DE TÍTULO DENTRO DO BANNER                                       */
+/* ========================================================================================= */
+
+/**
+ * 🔹 Seletor `.title-panel`:
+ * - Refere-se à `div` interna que agrupa o `<h1>` com o título.
+ * - Serve como destaque para o texto no banner.
+ */
+
+.title-panel {
+    background-color: #fff; /* ✅ Fundo branco:
+                               - Cria contraste entre o título e o fundo (imagem do banner).
+                               - Melhora a legibilidade do texto. */
+
+    border-radius: 37px 37px 0 0; /* ✅ Arredonda apenas os cantos superiores do painel:
+                                      - 37px nos cantos superiores → dá um ar mais suave e moderno.
+                                      - 0 nos cantos inferiores → mantém o retângulo na base reto.
+                                      - Visual comum em caixas de destaque e painéis no design. */
+
+    font-size: 50px; /* ✅ Tamanho da fonte:
+                        - O `font-size` aqui afeta diretamente qualquer texto dentro do `title-panel`, como o `<h1>`.
+                        - 50px é considerado um tamanho grande, usado para títulos principais.
+                        - ⚠️ Para responsividade, pode ser interessante diminuir esse tamanho em telas pequenas. */
+
+    height: 150px; /* ✅ Define uma altura fixa para o painel:
+                      - Altura de 150px cria uma área confortável para conter o título.
+                      - ⚠️ Se o texto for muito longo, pode estourar a altura → ajustar com padding ou altura mínima. */
+
+    margin: 0 auto; /* ✅ Centraliza o painel horizontalmente:
+                       - Margens automáticas nas laterais (`auto`) + `display: block` (padrão das divs) → centro.
+                       - Alinhamento simples e eficiente para conteúdo de largura controlada. */
+
+    max-width: 500px; /* ✅ Limita a largura máxima do painel:
+                         - Evita que o painel fique muito largo em telas grandes.
+                         - 500px é uma boa escolha para equilíbrio entre leitura e visual.
+                         - ⚠️ Sem `max-width`, o painel poderia ocupar toda a largura do container, o que não é desejado aqui. */
+}
+

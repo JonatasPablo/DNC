@@ -1,0 +1,163 @@
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÃO DAS COLUNAS DO RODAPÉ                                                    */
+/* ======================================================================================== */
+
+/**
+ * 🔹 `.footer-logo-col`
+ * - Esta coluna é responsável por conter o logotipo e a descrição institucional.
+ * - Definimos limites de largura para manter a harmonia visual e não ocupar espaço excessivo.
+ */
+ .footer-logo-col {
+    max-width: 340px;  /* ✅ Limita a largura máxima para manter o design equilibrado, mesmo em telas grandes. */
+    width: 100%;       /* ✅ Faz com que o elemento se ajuste à largura disponível do seu container pai.
+                          ⚠️ Útil em cenários responsivos ou dentro de layouts flexbox/grid. */
+}
+
+/**
+ * 🔹 `.footer-col`
+ * - Usada para as demais colunas do rodapé, como links de navegação e informações de contato.
+ */
+.footer-col {
+    margin: 0 0 140px; /* ✅ Espaçamento inferior grande (140px) para separar verticalmente, quando em layout de coluna.
+                          ⚠️ Em telas grandes, cria um respiro visual importante para evitar poluição de informação. */
+    max-width: 260px;  /* ✅ Limita a largura da coluna para que o conteúdo (textos, listas) fique com boa leitura.
+                          ⚠️ Facilita o alinhamento dos elementos em colunas. */
+    width: 100%;       /* ✅ Garante que ocupe toda a largura disponível dentro do limite máximo. */
+}
+
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÃO DA LISTA DE LINKS                                                        */
+/* ======================================================================================== */
+
+/**
+ * 🔹 `.footer-col ul`
+ * - Elimina estilos padrão de lista não controlados (como marcadores e paddings automáticos dos navegadores).
+ */
+.footer-col ul {
+    margin: 0;  /* ✅ Remove margens que possam gerar espaços indesejados. */
+    padding: 0; /* ✅ Zera o padding interno para controle total dos espaçamentos via CSS customizado. */
+}
+
+/**
+ * 🔹 `.footer-col li`
+ * - Define o espaçamento individual entre os itens da lista de navegação.
+ */
+.footer-col li {
+    margin: 0 0 25px 0; /* ✅ Espaçamento inferior (25px) entre os itens da lista para não ficarem "grudados". */
+}
+
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÃO DOS TÍTULOS E TEXTOS                                                    */
+/* ======================================================================================== */
+
+/**
+ * 🔹 `footer h3, .footer-logo`
+ * - Estilização tanto para os títulos das seções quanto para a logo (que é tratada como título visual).
+ */
+footer h3, .footer-logo {
+    font-size: 25px;       /* ✅ Tamanho de fonte ideal para títulos dentro do footer, mantendo a hierarquia visual. */
+    margin: 0 0 25px 0;    /* ✅ Espaçamento inferior para separar do conteúdo subsequente. */
+}
+
+/**
+ * 🔹 `footer a, footer p`
+ * - Regras de estilo globais para links e parágrafos dentro do footer.
+ * - Uniformiza a tipografia para consistência de design.
+ */
+footer a, footer p {
+    font-size: 22px;     /* ✅ Tamanho confortável para leitura no footer, sem ser exagerado ou pequeno demais. */
+    margin: 0 0 25px 0;  /* ✅ Espaçamento inferior consistente, mantendo o alinhamento vertical limpo. */
+    line-height: 150%;   /* ✅ Aumenta o espaçamento entre as linhas, melhorando a legibilidade, especialmente em blocos de texto maiores. */
+}
+
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÃO DOS LINKS                                                               */
+/* ======================================================================================== */
+
+/**
+ * 🔹 `footer a`
+ * - Remove decorações padrão e define a cor para links.
+ */
+footer a {
+    text-decoration: none; /* ✅ Remove o sublinhado padrão, oferecendo um visual mais "limpo". */
+    color: #4D5053;        /* ✅ Cor cinza escura, suave, evitando contraste excessivo no layout do footer. */
+}
+
+/**
+ * 🔹 `footer a:hover`
+ * - Efeito visual no estado hover, reforçando interatividade.
+ */
+footer a:hover {
+    color: #0C70F2;        /* ✅ Cor azul vibrante no hover, indicando claramente que o elemento é clicável. */
+}
+
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÃO DOS ÍCONES DE REDES SOCIAIS                                             */
+/* ======================================================================================== */
+
+/**
+ * 🔹 `.social-links a`
+ * - Define o espaçamento entre os ícones de redes sociais.
+ */
+footer .social-links a {
+    margin: 25px 40px 0 0; /* ✅ Espaçamento superior para separar das descrições e lateral direito para separar entre ícones. */
+}
+
+/* ======================================================================================== */
+/* ✅ ESTILIZAÇÃO DO COPYRIGHT E ÁREA DE IDIOMAS                                           */
+/* ======================================================================================== */
+
+/**
+ * 🔹 `.footer-copy`
+ * - Seção inferior do footer, geralmente usada para informações legais e seletores de idioma.
+ */
+.footer-copy {
+    margin: 155px 0 50px 0; /* ✅ Espaçamento grande superior (155px) separando da seção acima,
+                                e 50px inferior, antes do final do conteúdo/página. */
+}
+
+/**
+ * 🔹 `.footer-copy .langs-area`
+ * - Estilização dos ícones de idioma (bandeiras).
+ * - Mantém o alinhamento e espaço entre os elementos.
+ */
+.footer-copy .langs-area {
+    column-gap: 23px; /* ✅ Define a distância horizontal de 23px entre as bandeiras (ícones de idioma). */
+}
+
+/* ======================================================================================== */
+/* ✅ MEDIA QUERY - RESPONSIVIDADE PARA TELAS MENORES QUE 768px                           */
+/* ======================================================================================== */
+
+@media (max-width: 768px) {
+
+    /**
+     * 🔹 `.footer-col`
+     * - Remove o espaçamento inferior das colunas no mobile.
+     * - Garante que as colunas se ajustem de forma flexível e ocupem 100% da largura.
+     */
+    .footer-col {
+        margin: 0 0 0 0;   /* ✅ Zera margens que poderiam causar gaps visuais indesejados no mobile. */
+        max-width: 100%;   /* ✅ A coluna ocupa toda a largura da tela, tornando-se uma única linha de conteúdo. */
+        width: 100%;
+    }
+
+    /**
+     * 🔹 `.footer-logo-col`
+     * - Aplica a mesma lógica de largura total no mobile, centralizando o logo e texto.
+     */
+    .footer-logo-col {
+        max-width: 100%;  /* ✅ Faz com que a logo e descrição ocupem 100% do espaço disponível no mobile. */
+        width: 100%;
+    }
+
+    /**
+     * 🔹 Sugestão: Adicionar alinhamento e centralização no mobile.
+     * (caso deseje um visual mais amigável para telas pequenas)
+     *
+     * Exemplo adicional:
+     * text-align: center;
+     * align-items: center;
+     */
+}
+
