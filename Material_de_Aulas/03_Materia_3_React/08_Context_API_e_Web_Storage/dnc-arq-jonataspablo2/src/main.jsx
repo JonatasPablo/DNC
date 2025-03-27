@@ -7,19 +7,9 @@
  * Aqui, estamos importando módulos essenciais para inicializar a aplicação React.
  */
 
-// 🔹 Importa o `StrictMode`, que ajuda a identificar problemas no código durante o desenvolvimento
-import { StrictMode } from 'react';
+import React from 'react';
 
-/**
- * 🔹 O QUE É O `StrictMode`?
- * - Ele **não afeta** a aplicação em produção.
- * - Ajuda a detectar **erros comuns** no código.
- * - Mostra **alertas de práticas obsoletas**.
- * - Faz **verificações extras** no código para garantir boas práticas.
- */
-
-// 🔹 Importa `createRoot`, responsável por renderizar o React no DOM da página
-import { createRoot } from 'react-dom/client';
+import ReactDom from 'react-dom/client'
 
 /**
  * 🔹 O QUE `createRoot` FAZ?
@@ -29,6 +19,9 @@ import { createRoot } from 'react-dom/client';
 
 // 🔹 Importa o arquivo de estilos globais do projeto
 import './main.css';
+
+// 🔹 Importa o `AppProvider` do contexto da aplicação
+import { AppProvider } from './contexts/AppContext';
 
 /**
  * 🔹 PARA QUE SERVE `main.css`?
@@ -60,10 +53,12 @@ import App from './App.jsx';
  * 3️⃣ `.render(<StrictMode> <App /> </StrictMode>)` → Renderiza a aplicação dentro do StrictMode.
  */
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode> {/* 🔹 Ativa verificações extras no desenvolvimento */}
-    <App /> {/* 🔹 Renderiza o componente principal `App` dentro da div `#root` */}
-  </StrictMode>,
+ReactDom.createRoot(document.getElementById('root')).render(
+  <React.StrictMode> {/* 🔹 Ativa verificações extras no desenvolvimento */}
+    <AppProvider>
+      <App />
+    </AppProvider> {/* 🔹 Renderiza o componente principal `App` dentro da div `#root` */}
+  </React.StrictMode>,
 );
 
 /**

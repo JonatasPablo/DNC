@@ -9,7 +9,13 @@
  * - Evita recarregar toda a página.
  * - Mantém o estado da aplicação intacto (SPA).
  */
+
+import Button from '../Button/Button';
+
 import { Link } from 'react-router-dom';
+
+// CONTEXT
+import { useContext } from 'react';
 
 /**
  * 🔹 Importa o arquivo CSS específico do Footer.
@@ -46,23 +52,19 @@ import TwitterIcon from '../../assets/twitter-icon.svg';     // Ícone Twitter
  * - Botões de idiomas.
  * - Ícones das redes sociais.
  */
-export default function Footer() {
-    return (
-        // ===============================================
-        // ✅ FOOTER: Container principal semântico
-        // ===============================================
 
-        /**
-         * O elemento `<footer>` é semântico e indica o rodapé do documento.
-         * Benefícios:
-         * - Melhora a estrutura do HTML para SEO.
-         * - Leitores de tela identificam facilmente o rodapé.
-         */
+import { AppContext } from '../../contexts/AppContext';
+
+export default function Footer() {
+    const appContext = useContext(AppContext);
+    const changeLanguage = (country) =>{
+        appContext.setLanguage(country);
+    }
+
+    return (
+    
         <footer>
 
-            {/* ============================================
-                ✅ CONTAINER: Centraliza e limita a largura
-            ============================================ */}
             <div className="container">
 
                 {/* ============================================================================================
@@ -88,15 +90,8 @@ export default function Footer() {
                             className='footer-logo' 
                             alt="Logo da Escola DNC" 
                         />
-                        {/**
-                         * ✅ O atributo `alt`:
-                         * - Acessibilidade: leitores de tela descrevem a imagem.
-                         * - SEO: ajuda mecanismos de busca a entender o conteúdo visual.
-                         */}
-
-                        {/* DESCRIÇÃO INSTITUCIONAL */}
                         <p className='grey-1-color'>
-                            A escola que prepara você para as profissões em alta no mercado de trabalho.
+                            {appContext.languages[appContext.language].general.footerLogoText}
                         </p>
 
                         {/* LINKS DAS REDES SOCIAIS */}
@@ -220,8 +215,12 @@ export default function Footer() {
 
                     {/* IDIOMAS (Bandeiras como ícones de troca de idioma) */}
                     <div className='langs-area d-flex'>
-                        <img src={BrasilLogo} height='29px' alt="Bandeira do Brasil" />
-                        <img src={UsaLogo} height='29px' alt="Bandeira dos EUA" />
+                        <Button buttonStyle='unstyled' onClick={() => changeLanguage('br')}>
+                            <img src={BrasilLogo} height='29px' alt="Bandeira do Brasil" />
+                        </Button>
+                        <Button buttonStyle='unstyled' onClick={() => changeLanguage('en')}>
+                            <img src={UsaLogo} height='29px' alt="Bandeira do EUA" />
+                        </Button>
                     </div>
 
                     {/**
