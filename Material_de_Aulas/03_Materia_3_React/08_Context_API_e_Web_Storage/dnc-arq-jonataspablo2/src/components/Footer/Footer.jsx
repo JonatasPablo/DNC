@@ -153,7 +153,7 @@ export default function Footer() {
                         <div className='footer-col'>
 
                             {/* TÍTULO DA SEÇÃO */}
-                            <h3>Pages</h3>
+                            <h3>{appContext.languages[appContext.language].general.pages}</h3>
 
                             {/* LISTA DE NAVEGAÇÃO INTERNA */}
                             <ul>
@@ -161,10 +161,10 @@ export default function Footer() {
                                     - Navegação interna sem recarregar a página.
                                     - Preserva o estado da aplicação (SPA).
                                 */}
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/about">About</Link></li>
-                                <li><Link to="/projects">Projects</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
+                                <li><Link to="/">{appContext.languages[appContext.language].menu.home}</Link></li>
+                                <li><Link to="/about">{appContext.languages[appContext.language].menu.about}</Link></li>
+                                <li><Link to="/projects">{appContext.languages[appContext.language].menu.projects}</Link></li>
+                                <li><Link to="/contact">{appContext.languages[appContext.language].menu.contact}</Link></li>
                             </ul>
 
                         </div>
@@ -177,7 +177,7 @@ export default function Footer() {
                     <div className='footer-col'>
 
                         {/* TÍTULO DA SEÇÃO */}
-                        <h3>Contact</h3>
+                        <h3>{appContext.languages[appContext.language].general.contact}</h3>
 
                         {/* ENDEREÇO */}
                         <p className='grey-1-color'>
