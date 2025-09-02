@@ -19,14 +19,14 @@ function ProjectsList() {
     const [favProjects, setFavProject] = useState([])
     const appContext = useContext(AppContext)   
     
-    const handleSavedProjects = (id) =>{
-            setFavProject((prevFavProjects) =>{
+    const handleSavedProjects = (id) => {
+            setFavProject((prevFavProjects) => {
                 if(prevFavProjects.includes(id)){
                     const filterArray = prevFavProjects.filter((projectId) => projectId !== id)
                     sessionStorage.setItem('favProjects', JSON.stringify(filterArray))
                     return prevFavProjects.filter((projectId) => projectId !== id)
                 } else {
-                    sessionStorage.setItem('favProjetcs', JSON.stringify([...prevFavProjects, id]))
+                    sessionStorage.setItem('favProjects', JSON.stringify([...prevFavProjects, id]))
                     return [...prevFavProjects, id]
                 }
             })
@@ -62,7 +62,7 @@ function ProjectsList() {
                 
                 {
                     projects ?
-                        Array.isArray(projects) && projects.map((project) => (
+                        projects.map((project) => (
                             <div className="project-card d-flex jc-center al-center fd-column" key={project.id}>
                                 <div 
                                     className="thumb tertiary-background"
