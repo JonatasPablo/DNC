@@ -15,9 +15,10 @@ import { getApiData } from '../../services/apiServices';
 import { AppContext} from '../../contexts/AppContext'
 
 function ProjectsList() {
-    const appContext = useContext(AppContext)
+    const [projects, setProjects] = useState([])
     const [favProjects, setFavProject] = useState([])
-    const [projects, setProjects] = useState([]);
+    const appContext = useContext(AppContext)   
+    
     const handleSavedProjects = (id) =>{
             setFavProject((prevFavProjects) =>{
                 if(prevFavProjects.includes(id)){
