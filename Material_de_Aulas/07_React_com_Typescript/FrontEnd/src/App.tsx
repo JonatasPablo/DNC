@@ -1,35 +1,60 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
+interface TodoItem{
+  id: string,
+  texto: string,
+  completado: boolean
+}
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [todos, setTodos] = useState<TodoItem[]>([])
+  const [newTodo, setNewTodo] = useState<string>("")
+
+  const adicionarTarefa = () => {
+    if(newTodo !== ""){
+      const newId = crypto.randomUUID()
+      const newTodoItem: TodoItem = {
+        id: newId,
+        texto: newTodo,
+        completado: false
+      }
+      setTodos([...todos, newTodoItem])
+      setNewTodo("")
+    }
+  }
+
+  const marcarCompleto = (id: string) =>{
+    const todosAtualizados = todos.map((todo) => {
+      if (todo.id === id){
+        return {...todo, completado: !todo.completado}
+      }
+      return todo
+    })
+    setTodos(todosAtualizados)
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="app">
+      <div className="container">
+        <h1>Lista de Tarefas</h1>
+        <div className="input-container">
+          <input type="text" value={newTodo} onChange={(e) => setNewTodo(e.target.value)} />
+          <button onClick={adicionarTarefa}>Adicionar Tarefa</button>
+        </div>
+        <ol>
+          {
+            todos.map((todo) => (
+              <li key={todo.id}>
+                <input type="checkbox" checked={todo.completado} onChange={() => marcarCompleto(todo.id)}/>
+                <span style={{textDecoration: todo.completado ? 'line-through' : 'none'}}>{todo.texto}</span>
+              </li>
+            ))
+          }
+        </ol>
       </div>
-      <h1>TypeScript + React + DNC</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
-export default App
+export default App  
