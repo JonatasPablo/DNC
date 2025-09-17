@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import './App.css'
+import { useTheme } from './ThemeContext'
 
 interface TodoItem{
   id: string,
@@ -8,9 +9,16 @@ interface TodoItem{
 }
 
 function App() {
+  const chaveTarefasMemoria = "tarefas"
+  const {theme, toggleTheme} = useTheme()
+  const focoInput = useRef<HTMLInputElement>(null)
   const [todos, setTodos] = useState<TodoItem[]>([])
   const [novoTodo, setNovoTodo] = useState<string>("")
   const [estaCarregado, setEstaCarregado] = useState<boolean>(false)
+
+  const trasFoco = () =>{
+    focoInput.current?.focus()
+  }
 
   const adicionarTarefa = ():void => {
     if(novoTodo !== ""){
@@ -22,6 +30,7 @@ function App() {
       }
       setTodos([...todos, novoTodoItem])
       setNovoTodo("")
+      trasFoco()
     }
   }
 
@@ -44,12 +53,28 @@ function App() {
     return todos.filter(todo => todo.completado)
   }
 
+  useEffect(() => {
+    if(estaCarregado){
+      localStorage.setItem(chaveTarefasMemoria, JSON.stringify(todos))
+    }
+  }, [todos, estaCarregado])
+
+  useEffect(() => {
+    const tarefasDaMemoria = localStorage.getItem(chaveTarefasMemoria)
+    if(tarefasDaMemoria){
+      setTodos(JSON.parse(tarefasDaMemoria))
+    }
+    setEstaCarregado(true)
+  }, [])
+
+
+
   return (
-    <div className="app">
-      <div className="container">
+    <div className={`app ${theme}`}>
+      <div className={`container ${theme}`}>
         <h1>Lista de Tarefas - {obterTarefasCompletas().length} / {todos.length}</h1>
         <div className="input-container">
-          <input type="text" value={novoTodo} onChange={(e) => setNovoTodo(e.target.value)} />
+          <input ref={focoInput} type="text" value={novoTodo} onChange={(e) => setNovoTodo(e.target.value)} />
           <button onClick={adicionarTarefa}>Adicionar Tarefa</button>
         </div>
         <ol>
@@ -63,6 +88,9 @@ function App() {
             ))
           }
         </ol>
+        <button onClick={toggleTheme}>
+          {theme === 'light' ? 'Dark' : 'Light'}
+        </button>
       </div>
     </div>
   )

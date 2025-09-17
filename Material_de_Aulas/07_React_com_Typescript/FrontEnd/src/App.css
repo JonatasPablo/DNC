@@ -77,7 +77,7 @@ button:hover {
 }
 
 .container.dark button {
-    background-color: #444;
+    background-color: #28a745;
     color: #fff;
 }
 
@@ -116,5 +116,5 @@ li button:hover {
 }
 
 .container.dark li button {
-    background-color: #666;
+    background-color: #dc3545;
 }
