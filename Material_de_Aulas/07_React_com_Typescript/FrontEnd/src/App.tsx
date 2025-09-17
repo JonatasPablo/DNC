@@ -67,8 +67,6 @@ function App() {
     setEstaCarregado(true)
   }, [])
 
-
-
   return (
     <div className={`app ${theme}`}>
       <div className={`container ${theme}`}>
